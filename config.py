@@ -17,9 +17,10 @@ SOURCE_LANG: str = "en"
 TARGET_LANGS: List[str] = ["es", "fr", "it"]
 
 SPLITS: Dict[str, Path] = {
-    "train": RELATIONS_DIR / "train_relations.jsonl",
-    "validation": RELATIONS_DIR / "validation_relations.jsonl",
-    "test": RELATIONS_DIR / "test_relations.jsonl"
+    "train": RELATIONS_DIR / SOURCE_LANG / "train_relations.jsonl",
+    "validation": RELATIONS_DIR / SOURCE_LANG / "validation_relations.jsonl",
+    "test": RELATIONS_DIR / SOURCE_LANG / "test_relations.jsonl"
 }
 
 OUTPUT_JSONL: str = "{lang}/{jsonl_split}_relations.jsonl"
+MANUAL_FIX_JSON: Path = RELATIONS_DIR / "fix_relations.json"

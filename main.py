@@ -21,7 +21,7 @@ def main():
                 logging.warning(f"\t(!) > Missing {relations_path}... >>> SKIPPED RELATION")
                 continue
                 
-            aligned_data = aligner.align_split(lang, split, relations_path)
+            aligned_data = aligner.align_split(lang, split, relations_path, settings.MANUAL_FIX_JSON)
             
             aligner.save(aligned_data, settings.RELATIONS_DIR / settings.OUTPUT_JSONL.format(lang=lang, jsonl_split=split))           
 
