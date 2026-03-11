@@ -11,7 +11,11 @@ from pathlib import Path
 HF_REPO: str = "HiTZ/casimedicos-arg"
 
 BASE_DATA_DIR: Path = Path("data")
+SPLITS_DATA_DIR: Path = Path("splits")
+MODEL_DIR: Path = Path("model")
+
 RELATIONS_DIR: Path = BASE_DATA_DIR / "relations"
+RESULTS_DIR: Path = MODEL_DIR / "results"
 
 SOURCE_LANG: str = "en"
 TARGET_LANGS: List[str] = ["es", "fr", "it"]
