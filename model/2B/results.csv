@@ -1,5 +1,0 @@
-Metric,Subtask 1 (Relevance),Subtask 2 (Spans),Subtask 3 (Relations)
-Precision,+ 0.0218,+ 0.2537,N/A
-Recall,+ 0.3941,+ 0.1087,N/A
-F1-Score,+ 0.2641,+ 0.1563,N/A
-Accuracy,+ 0.2280,N/A,+ 0.0106

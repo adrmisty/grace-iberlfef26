@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--align", action="store_true", help="Run multi-lingualrelation alignment on CasiMedicos-Arg")
     parser.add_argument("--run", action="store_true", help="Run model prompting")
     parser.add_argument("--evaluate", action="store_true", help="Run metrics calculation")
-    parser.add_argument("--sizes", nargs="+", default=["2B", "4B", "8B"], help="Model sizes (2B, 4B or 8B)")
+    parser.add_argument("--sizes", nargs="+", default=["2B", "4B", "27B"], help="Model sizes (2B, 4B or 8B)")
     parser.add_argument("--settings", nargs="+", default=["zero_shot", "few_shot"], help="Prompt settings")
     
     args = parser.parse_args()

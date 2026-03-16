@@ -47,10 +47,14 @@ def load_cases(file_path: Path) -> List[Dict[str, Any]]:
                         parsed_cases.append(parse_case(str(case_id), case_data))
                     elif isinstance(case_data, list) and not case_data:
                         parsed_cases.append(parse_case(str(case_id), {}))
+                        
+                    # case where JSON object is empty!
+                    """
                     else:
                         logging.warning(
                             f"\t> (!) Skipping unexpected data structure for key {case_id}"
                         )
+                    """
 
     return parsed_cases
 

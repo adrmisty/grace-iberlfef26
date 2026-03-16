@@ -1,9 +1,15 @@
-INFO: 
 ========================================================
 INFO: EVALUATING RESULTS: Qwen-2B / zero_shot
 INFO: ========================================================
-INFO: > Evaluating Subtask 1 metrics for: Qwen_2B_zero_shot_S1.json
-         --- SUBTASK 1 RESULTS ---
+INFO: 
+
+> Evaluating Subtask 1 metrics for: Qwen_2B_zero_shot_S1.json
+INFO: > Loading cases from test_es_ordered.jsonl
+INFO:   > (!) Failed to parse prediction JSON.
+INFO:   > (!) Failed to parse prediction JSON.
+INFO:   > (!) Failed to parse prediction JSON.
+INFO: 
+         --- SUBTASK 2.1 RESULTS ---
 INFO:    Total items evaluated: 1899
 INFO:    TP: 575
 INFO:    FP: 147
@@ -12,36 +18,41 @@ INFO:    FN: 775
 INFO:    -------------------------
 INFO:    Precision: 0.7964
 INFO:    Recall:    0.4259
-INFO:    F1-score:  0.5550
 INFO:    Accuracy:  0.5145
+INFO:    F1-score (Positive class): 0.5550
 
 INFO: > Evaluating Subtask 2 metrics for: Qwen_2B_zero_shot_S2.json
 INFO: > Loading cases from test_es_ordered.jsonl
-         --- SUBTASK 2 RESULTS ---
+INFO: 
+         --- SUBTASK 2.2 RESULTS ---
 INFO:    TP: 291
 INFO:    FP: 706
 INFO:    FN: 1217
 INFO:    -------------------------
 INFO:    Precision: 0.2919
 INFO:    Recall:    0.1930
-INFO:    F1-score:  0.2323
+INFO:    F1-score (exact match): 0.2323
 
-INFO: > Evaluating Subtask 3 metrics for: Qwen_2B_zero_shot_S3.json
 INFO: 
-         --- SUBTASK 3 RESULTS ---
+
+> Evaluating Subtask 3 metrics for: Qwen_2B_zero_shot_S3.json
+INFO: 
+         --- SUBTASK 2.3 RESULTS ---
 INFO:    Total relations: 754
-INFO:    Correct: 496
-INFO:    Incorrect: 258
 INFO:    -------------------------
-INFO:    Accuracy: 0.6578
+INFO:    Accuracy:       0.6578
+INFO:    Macro F1-score: 0.6302
 
 INFO: 
 ========================================================
 INFO: EVALUATING RESULTS: Qwen-2B / few_shot
 INFO: ========================================================
-INFO: > Evaluating Subtask 1 metrics for: Qwen_2B_few_shot_S1.json
 INFO: 
-         --- SUBTASK 1 RESULTS ---
+
+> Evaluating Subtask 1 metrics for: Qwen_2B_few_shot_S1.json
+INFO: > Loading cases from test_es_ordered.jsonl
+INFO: 
+         --- SUBTASK 2.1 RESULTS ---
 INFO:    Total items evaluated: 1899
 INFO:    TP: 1107
 INFO:    FP: 246
@@ -50,26 +61,27 @@ INFO:    FN: 243
 INFO:    -------------------------
 INFO:    Precision: 0.8182
 INFO:    Recall:    0.8200
-INFO:    F1-score:  0.8191
 INFO:    Accuracy:  0.7425
 
+INFO:    F1-score (Positive class): 0.8191
 INFO: > Evaluating Subtask 2 metrics for: Qwen_2B_few_shot_S2.json
 INFO: > Loading cases from test_es_ordered.jsonl
 INFO: 
-         --- SUBTASK 2 RESULTS ---
+         --- SUBTASK 2.2 RESULTS ---
 INFO:    TP: 455
 INFO:    FP: 379
 INFO:    FN: 1053
 INFO:    -------------------------
 INFO:    Precision: 0.5456
 INFO:    Recall:    0.3017
-INFO:    F1-score:  0.3886
+INFO:    F1-score (exact match): 0.3886
 
-INFO: > Evaluating Subtask 3 metrics for: Qwen_2B_few_shot_S3.json
 INFO: 
-         --- SUBTASK 3 RESULTS ---
+
+> Evaluating Subtask 3 metrics for: Qwen_2B_few_shot_S3.json
+INFO: 
+         --- SUBTASK 2.3 RESULTS ---
 INFO:    Total relations: 754
-INFO:    Correct: 504
-INFO:    Incorrect: 250
 INFO:    -------------------------
-INFO:    Accuracy: 0.6684
+INFO:    Accuracy:       0.6684
+INFO:    Macro F1-score: 0.6489

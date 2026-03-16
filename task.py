@@ -33,9 +33,10 @@ def run_subtasks(sizes: list[str], prompt_settings: list[str]):
         grace = GraceModel(model_size=size)
         
         for setting in prompt_settings:
+            examples = None
             if setting == "few_shot":
                 examples = train_cases
-                
+
             logging.info(f"\n\t >>> [{setting.upper()}] ---")
             
             # --- [1] ---
