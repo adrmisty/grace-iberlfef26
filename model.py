@@ -107,14 +107,14 @@ class GraceModel:
             
         return results
 
-    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128):
+    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 15):
         logging.info(f"> Subtask 3 (relation detection)...")
         results = []
         
         for relation in test_relations:
             user_prompt = self._build_s3_prompt(relation, few_shot_examples)
-            # ++ TOKENS
-            response = self._generate(prompts.SYSTEM["SUBTASK_3"], user_prompt, max_new_tokens=max_new_tokens)
+            # prefill: start with label key for the JSON
+            response = self._generate(prompts.SYSTEM["SUBTASK_3"], user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
             results.append({"id": relation.get("id"), "prediction": response.strip()})
             
         return results
@@ -178,14 +178,13 @@ class GraceModel:
             for ex in examples:
                 prompt += f"Premise: \"{ex.get('head', '')}\"\n"
                 prompt += f"Claim: \"{ex.get('tail', '')}\"\n"
-                prompt += f"Relación: {ex.get('label', '')}\n\n"
+                prompt += f"Output esperado:\n{{\n  \"label\": \"{ex.get('label', '')}\"\n}}\n\n"
             prompt += "--- FIN DE EJEMPLOS ---\n\n"
         else:
-            prompt += "FORMATO ESPERADO: Debes responder ÚNICAMENTE con la palabra 'Support' o la palabra 'Attack'.\n\n"
+            prompt += "FORMATO ESPERADO: Un JSON estricto con la clave 'label'.\nEjemplo:\n{\n  \"label\": \"Support\"\n}\n\n"
             
         prompt += "Clasifica la siguiente relación:\n\n"
         prompt += f"Premise: \"{relation.get('head', '')}\"\n"
         prompt += f"Claim: \"{relation.get('tail', '')}\"\n"
-        prompt += "Relación:"
-        prompt += "\nREGLA ESTRICTA: Responde ÚNICAMENTE con la palabra 'Support' o 'Attack'. NO escribas 'Thinking Process' ni des explicaciones."
+        prompt += "\nDevuelve el JSON con la clasificación ('Support' o 'Attack')."
         return prompt

@@ -128,8 +128,12 @@ def _load(n: int = 3):
     test_relations = load_relations(test_dir / "test_es_relations.jsonl")
     train_relations = load_relations(train_dir / "train_es_relations.jsonl")
     
+    # ** EXAMPLES **
+    # sort by ID
+    train_cases.sort(key=lambda x: str(x.get("id", "")))
+    train_relations.sort(key=lambda x: str(x.get("id", "")))
     random.seed(42)
-    train_cases = random.sample(train_cases, n) if len(train_cases) >= n else train_cases
-    train_relations = random.sample(train_relations, n) if len(train_relations) >= n else train_relations
-        
-    return train_cases, train_relations, test_cases, test_relations
+    fs_cases = random.sample(train_cases, n) if len(train_cases) >= n else train_cases
+    fs_relations = random.sample(train_relations, n) if len(train_relations) >= n else train_relations
+    
+    return fs_cases, fs_relations, test_cases, test_relations
