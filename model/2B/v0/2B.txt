@@ -34,7 +34,6 @@ INFO:    Recall:    0.1930
 INFO:    F1-score (exact match): 0.2323
 
 INFO: 
-
 > Evaluating Subtask 3 metrics for: Qwen_2B_zero_shot_S3.json
 INFO: 
          --- SUBTASK 2.3 RESULTS ---
@@ -62,8 +61,8 @@ INFO:    -------------------------
 INFO:    Precision: 0.8182
 INFO:    Recall:    0.8200
 INFO:    Accuracy:  0.7425
-
 INFO:    F1-score (Positive class): 0.8191
+
 INFO: > Evaluating Subtask 2 metrics for: Qwen_2B_few_shot_S2.json
 INFO: > Loading cases from test_es_ordered.jsonl
 INFO: 
