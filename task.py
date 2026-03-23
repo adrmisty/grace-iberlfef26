@@ -6,7 +6,7 @@
 # mar-2026
 
 from eval import GraceEvaluator
-from model import GraceModel
+from model import GraceModel, MedGemmaModel
 from case import load_cases, load_relations
 
 import gc
@@ -21,16 +21,21 @@ from typing import List, Dict, Any
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
 
-def run_subtasks(sizes: list[str], prompt_settings: list[str]):    
+def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], tasks: list[str] = ["S1", "S2", "S3"]):    
     # ** FEW-SHOT EXAMPLES AND MODEL SET UP **
     train_cases, train_relations, test_cases, test_relations = _load(n=3)
     
     for size in sizes:
+        if model_type.lower() == "medgemma":
+            llm = MedGemmaModel(model_size=size)
+            model_prefix = "medgemma"
+        else:
+            llm = GraceModel(model_size=size)
+            model_prefix = "Qwen"
+            
         logging.info(f"\n========================================================")
-        logging.info(f"QWEN3.5-{size} / FEW-SHOT / ZERO-SHOT EVALUATION")
+        logging.info(f"{model_prefix.upper()}-{size} / EVALUATION")
         logging.info(f"========================================================")
-        
-        grace = GraceModel(model_size=size)
         
         for setting in prompt_settings:
             examples = None
@@ -39,71 +44,78 @@ def run_subtasks(sizes: list[str], prompt_settings: list[str]):
 
             logging.info(f"\n\t >>> [{setting.upper()}] ---")
             
-            # --- [1] ---
-            s1_results = grace.run_subtask_1(test_cases, few_shot_examples=examples)
-            _save(s1_results, settings.MODEL_DIR / size / f"Qwen_{size}_{setting}_S1.json")
+            # --- ---
+            if "S1" in tasks:
+                s1_results = llm.run_subtask_1(test_cases, few_shot_examples=examples)
+                _save(s1_results, settings.MODEL_DIR / size / f"{model_prefix}_{size}_{setting}_S1.json")
             
-            # --- [2] ---
-            s2_results = grace.run_subtask_2(test_cases, few_shot_examples=examples)
-            _save(s2_results, settings.MODEL_DIR / size / f"Qwen_{size}_{setting}_S2.json")
+            # --- ---
+            if "S2" in tasks:
+                s2_results = llm.run_subtask_2(test_cases, few_shot_examples=examples)
+                _save(s2_results, settings.MODEL_DIR / size / f"{model_prefix}_{size}_{setting}_S2.json")
             
-            # --- [3] ---
-            s3_results = grace.run_subtask_3(test_relations, few_shot_examples=examples)
-            _save(s3_results, settings.MODEL_DIR / size / f"Qwen_{size}_{setting}_S3.json")
+            # --- ---
+            if "S3" in tasks:
+                s3_results = llm.run_subtask_3(test_relations, few_shot_examples=examples)
+                _save(s3_results, settings.MODEL_DIR / size / f"{model_prefix}_{size}_{setting}_S3.json")
             
         # ** clear memory upon model size change **
-        logging.info(f"\t> Clearing Qwen3.5-{size}...")
-        del grace.model
-        del grace.tokenizer
-        del grace
+        logging.info(f"\t> Clearing {model_prefix}-{size}...")
+        del llm.model
+        del llm.tokenizer
+        del llm
         torch.cuda.empty_cache()
         gc.collect()
 
-def evaluate_subtasks(model_size: str, setting: str, MODEL_DIR: Path = settings.MODEL_DIR, splits_dir: Path = settings.SPLITS_DATA_DIR):
+def evaluate_subtasks(model_type: str, model_size: str, setting: str, tasks: list[str] = ["S1", "S2", "S3"], MODEL_DIR: Path = settings.MODEL_DIR, splits_dir: Path = settings.SPLITS_DATA_DIR):
     """
-    Evaluates all three subtasks for a given experiment run."""
+    Evaluates subtasks for a given experiment run."""
 
     evaluator = GraceEvaluator()
+    model_prefix = "MedGemma" if model_type.lower() == "medgemma" else "Qwen"
 
     logging.info("\n========================================================")
-    logging.info(f"EVALUATING RESULTS: Qwen-{model_size} / {setting}")
+    logging.info(f"EVALUATING RESULTS: {model_prefix}-{model_size} / {setting}")
     logging.info("========================================================")
 
     # prediction files from run_subtasks
-    s1_path = MODEL_DIR / model_size / f"Qwen_{model_size}_{setting}_S1.json"
-    s2_path = MODEL_DIR / model_size / f"Qwen_{model_size}_{setting}_S2.json"
-    s3_path = MODEL_DIR / model_size / f"Qwen_{model_size}_{setting}_S3.json"
+    s1_path = MODEL_DIR / model_size / f"{model_prefix}_{model_size}_{setting}_S1.json"
+    s2_path = MODEL_DIR / model_size / f"{model_prefix}_{model_size}_{setting}_S2.json"
+    s3_path = MODEL_DIR / model_size / f"{model_prefix}_{model_size}_{setting}_S3.json"
 
     # ground truth files
     gt_cases = splits_dir / "test" / "test_es_ordered.jsonl"
     gt_relations = splits_dir / "test" / "test_es_relations.jsonl"
 
-    # --- [1] ---
-    if s1_path.exists():
-        evaluator.evaluate_subtask_1(
-            predictions_path=s1_path,
-            ground_truth_path=gt_cases
-        )
-    else:
-        logging.warning(f"\t> Missing predictions: {s1_path}")
+    # --- ---
+    if "S1" in tasks:
+        if s1_path.exists() or s1_path.with_name(s1_path.stem + ".clean.json").exists():
+            evaluator.evaluate_subtask_1(
+                predictions_path=s1_path,
+                ground_truth_path=gt_cases
+            )
+        else:
+            logging.warning(f"\t> Missing predictions: {s1_path}")
 
-    # --- [2] ---
-    if s2_path.exists():
-        evaluator.evaluate_subtask_2(
-            predictions_path=s2_path,
-            ground_truth_path=gt_cases
-        )
-    else:
-        logging.warning(f"\t> Missing predictions: {s2_path}")
+    # --- ---
+    if "S2" in tasks:
+        if s2_path.exists() or s2_path.with_name(s2_path.stem + ".clean.json").exists():
+            evaluator.evaluate_subtask_2(
+                predictions_path=s2_path,
+                ground_truth_path=gt_cases
+            )
+        else:
+            logging.warning(f"\t> Missing predictions: {s2_path}")
 
-    # --- [3] ---
-    if s3_path.exists():
-        evaluator.evaluate_subtask_3(
-            predictions_path=s3_path,
-            ground_truth_path=gt_relations
-        )
-    else:
-        logging.warning(f"\t> Missing predictions: {s3_path}")
+    # --- ---
+    if "S3" in tasks:
+        if s3_path.exists() or s3_path.with_name(s3_path.stem + ".clean.json").exists():
+            evaluator.evaluate_subtask_3(
+                predictions_path=s3_path,
+                ground_truth_path=gt_relations
+            )
+        else:
+            logging.warning(f"\t> Missing predictions: {s3_path}")
 
 # --- io -------------------------------------------------------------------------
 

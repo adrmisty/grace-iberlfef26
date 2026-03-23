@@ -1,6 +1,6 @@
 # model.py
 # ----------------------------------------------------------------------------------------
-# zero-shot & few-shot evaluation on Qwen3.5 for CasiMedicos-Arg
+# zero-shot & few-shot run on LLMs for CasiMedicos-Arg
 # ----------------------------------------------------------------------------------------
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
 # mar-2026
@@ -16,39 +16,21 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
-class GraceModel:
-    def __init__(self, model_size: str = "2B", data_dir: str = settings.BASE_DATA_DIR):
-        """
-        Inits the Qwen3.5 evaluator, with model_size: "2B", "4B", or "8B"
-        """
-        self.model_id = f"Qwen/Qwen3.5-{model_size}"
+
+class Model:
+    def __init__(self, model_size: str, data_dir: str):
+        """Inits the model for a given size."""
         self.data_dir = Path(data_dir)
         self.splits_dir = self.data_dir / "splits"
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        
-        self._load_model()
-
-    # --- model init -------------------------------------------------------------------------
-
-    def _load_model(self):
-        """Loads the model for zero/few-shot prompting."""
-        logging.info(f"> Loading {self.model_id} on {self.device} for evaluation...")
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            self.model_id,
-            device_map="auto",
-            torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-            trust_remote_code=True
-        )
-        self.model.eval()
-        logging.info(f"\t >>> {self.model_id} model for [zero-shot/few-shot] prompting loaded successfully!!!")
+        self.model_id = ""
+        self.model = None
+        self.model_size = model_size
+        self.tokenizer = None
 
     def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 512, prefill: str = "") -> str:
-        """Generates a response using Qwen's chat template, supporting assistant prefilling."""
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt}
-        ]
+        """Generates model's response to the zero/few-shot prompt."""
+        messages = self._build_messages(system_prompt, user_prompt)
         
         text = self.tokenizer.apply_chat_template(
             messages,
@@ -56,10 +38,8 @@ class GraceModel:
             add_generation_prompt=True
         )
         
-        # ** prefill ** to guide model's output instead of verbose thinking process
-        if prefill:
+        if prefill: # instruct to reinforce JSON/list results
             text += prefill
-        
         model_inputs = self.tokenizer([text], return_tensors="pt").to(self.model.device)
         
         with torch.no_grad():
@@ -78,52 +58,50 @@ class GraceModel:
             output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
         ]
         
-        decoded_text = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+        decoded_text = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+        if isinstance(decoded_text, list):
+            decoded_text = decoded_text[0]
         return prefill + decoded_text
+
+    def _load_model(self):
+        raise NotImplementedError("> impl. in model subclass")
     
+    def _build_messages(self, system_prompt: str, user_prompt: str) -> List[Dict[str, str]]:
+        raise NotImplementedError("> impl. in model subclass")
+
     # --- subtasks prompting -------------------------------------------------------------------------
 
     def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None):
         logging.info(f"> Subtask 1 (relevance detection)...")
         results = []
-        
         for case in test_data:
             user_prompt = self._s1_fewshot(case, few_shot_examples)
-            # prefill: start with JSON output
             response = self._generate(prompts.SYSTEM["SUBTASK_1"], user_prompt, prefill="{\n")
             results.append({"id": case.get("id"), "prediction": response})
-            
         return results
 
     def run_subtask_2(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None):
         logging.info(f"> Subtask 2 (span detection)...")
         results = []
-        
         for case in test_data:
             user_prompt = self._s2_fewshot(case, few_shot_examples)
-            # prefill: Premises:\n- to guide the model to start with the required output
             response = self._generate(prompts.SYSTEM["SUBTASK_2"], user_prompt, prefill="Premisas:\n-")
             results.append({"id": case.get("id"), "prediction": response})
-            
         return results
 
     def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 15):
         logging.info(f"> Subtask 3 (relation detection)...")
         results = []
-        
         for relation in test_relations:
             user_prompt = self._build_s3_prompt(relation, few_shot_examples)
-            # prefill: start with label key for the JSON
             response = self._generate(prompts.SYSTEM["SUBTASK_3"], user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
             results.append({"id": relation.get("id"), "prediction": response.strip()})
-            
         return results
 
     # --- prompt building -------------------------------------------------------------------------
     
     def _s1_fewshot(self, case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
         prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
-        
         if examples:
             prompt += "--- EJEMPLOS ---\n"
             for ex in examples:
@@ -134,7 +112,6 @@ class GraceModel:
             prompt += "FORMATO ESPERADO: Un diccionario JSON estricto donde las claves son los índices de las oraciones y los valores son booleanos (true/false).\nEjemplo de formato:\n{\n  \"0\": true,\n  \"1\": false\n}\n\n"
             
         prompt += "A continuación el caso clínico a clasificar:\n\n"
-        
         sentences = case.get('text', [])
         if isinstance(sentences, list):
             for i, sent in enumerate(sentences):
@@ -149,7 +126,6 @@ class GraceModel:
 
     def _s2_fewshot(self, case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
         prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
-        
         if examples:
             prompt += "--- EJEMPLOS ---\n"
             for ex in examples:
@@ -172,7 +148,6 @@ class GraceModel:
 
     def _build_s3_prompt(self, relation: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
         prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
-        
         if examples:
             prompt += "--- EJEMPLOS ---\n"
             for ex in examples:
@@ -188,3 +163,56 @@ class GraceModel:
         prompt += f"Claim: \"{relation.get('tail', '')}\"\n"
         prompt += "\nDevuelve el JSON con la clasificación ('Support' o 'Attack')."
         return prompt
+
+
+# --- hugging face models -------------------------------------------------------------------------
+
+class GraceModel(Model):
+    def __init__(self, model_size: str = "2B", data_dir: str = settings.BASE_DATA_DIR):
+        """Inits the Qwen model."""
+        super().__init__(model_size, data_dir)
+        self.model_id = f"Qwen/Qwen3.5-{model_size}"
+        self._load_model()
+
+    def _load_model(self):
+        logging.info(f"> Loading {self.model_id} on {self.device} for evaluation...")
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_id,
+            device_map="auto",
+            torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
+            trust_remote_code=True
+        )
+        self.model.eval()
+        logging.info(f"\t >>> {self.model_id} model loaded successfully!!!")
+
+    def _build_messages(self, system_prompt: str, user_prompt: str) -> List[Dict[str, str]]:
+        return [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ]
+
+
+class MedGemmaModel(Model):
+    def __init__(self, model_size: str = "4B", data_dir: str = settings.BASE_DATA_DIR):
+        """Inits the MedGemma model."""
+        super().__init__(model_size, data_dir)
+        self.model_id = f"google/medgemma-{model_size.lower()}-it"
+        self._load_model()
+
+    def _load_model(self):
+        logging.info(f"> Loading {self.model_id} on {self.device} for evaluation...")
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_id,
+            device_map="auto",
+            torch_dtype=torch.bfloat16 if self.device == "cuda" else torch.float32,
+            trust_remote_code=True
+        )
+        self.model.eval()
+        logging.info(f"\t >>> {self.model_id} model loaded successfully!!!")
+
+    def _build_messages(self, system_prompt: str, user_prompt: str) -> List[Dict[str, str]]:
+        return [
+            {"role": "user", "content": f"{system_prompt}\n\n{user_prompt}"}
+        ]
