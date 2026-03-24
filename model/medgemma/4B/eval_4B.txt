@@ -1,0 +1,72 @@
+
+> Evaluating Subtask 1 metrics for: MedGemma_4B_zero_shot_S1.clean.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 881
+	 FP: 226
+	 TN: 323
+	 FN: 469
+	 -------------------------
+	 Precision: 0.7958
+	 Recall:    0.6526
+	 F1-score (Positive class): 0.7171
+	 Accuracy:  0.6340
+
+
+> Evaluating Subtask 2 metrics for: MedGemma_4B_zero_shot_S2.clean.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 516
+	 FP: 679
+	 FN: 992
+	 -------------------------
+	 Precision: 0.4318
+	 Recall:    0.3422
+	 Exact Match F1: 0.3818
+
+
+> Evaluating Subtask 3 metrics for: MedGemma_4B_zero_shot_S3.clean.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7626
+	 Macro F1-score: 0.7280
+
+
+> Evaluating Subtask 1 metrics for: MedGemma_4B_few_shot_S1.clean.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 1187
+	 FP: 307
+	 TN: 242
+	 FN: 163
+	 -------------------------
+	 Precision: 0.7945
+	 Recall:    0.8793
+	 F1-score (Positive class): 0.8347
+	 Accuracy:  0.7525
+
+
+> Evaluating Subtask 2 metrics for: MedGemma_4B_few_shot_S2.clean.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 803
+	 FP: 252
+	 FN: 705
+	 -------------------------
+	 Precision: 0.7611
+	 Recall:    0.5325
+	 Exact Match F1: 0.6266
+
+
+> Evaluating Subtask 3 metrics for: MedGemma_4B_few_shot_S3.clean.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7865
+	 Macro F1-score: 0.7515
+
