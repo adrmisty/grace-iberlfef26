@@ -79,7 +79,7 @@ class Model:
         results = []
         for case in test_data:
             user_prompt = prompts.build_s1_prompt(case, few_shot_examples)
-            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_1"], user_prompt, prefill="{\n")
+            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_1"], user_prompt, max_new_tokens=1024, prefill="{\n")
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
@@ -88,11 +88,11 @@ class Model:
         results = []
         for case in test_data:
             user_prompt = prompts.build_s2_prompt(case, few_shot_examples)
-            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_2"], user_prompt, prefill="Premisas:\n-")
+            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_2"], user_prompt, max_new_tokens=1024, prefill="Premisas:\n-")
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
-    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 15):
+    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128): # INCREASED DEFAULT TO 128
         logging.info(f"> Subtask 3 (relation detection)...")
         results = []
         for relation in test_relations:
@@ -191,7 +191,14 @@ class GeminiAPIModel(Model):
                 )
             )
 
-            text = response.text.strip() # delete prefill/instructions/whatever from output
+            try:
+                text = response.text.strip()
+                text = text.replace("```json", "").replace("```", "").strip()
+            except ValueError:
+                reason = response.candidates.finish_reason.name if response.candidates else "Unknown"
+                logging.error(f"\t> (!) Gemini API returned empty text: {reason}")
+                return prefill
+
             if text.startswith(prefill.strip()):
                 text = text[len(prefill.strip()):].strip()
                 
@@ -240,8 +247,8 @@ class OpenAIModel(Model):
             )
             
             text = response.choices.message.content.strip()
+            text = text.replace("```json", "").replace("```", "").strip()
             
-            # same as gemini, strip off prefill in case model includes it in output
             if text.startswith(prefill.strip()):
                 text = text[len(prefill.strip()):].strip()
                 
