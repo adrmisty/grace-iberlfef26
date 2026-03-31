@@ -11,33 +11,9 @@ import logging
 from typing import Dict, List, Any, Tuple
 import pandas as pd
 from pathlib import Path
-import config as settings
-
-# --- relations alignment -------------------------------------------------------------------------
-
-def align():
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-    logging.info(f"[{settings.SOURCE_LANG}] relation alignment for target languages: {', '.join(settings.TARGET_LANGS)}")
-    
-    aligner = RelationAligner(source_lang=settings.SOURCE_LANG)
-    
-    for lang in settings.TARGET_LANGS:
-        for split, relations_path in settings.SPLITS.items():
-            if not relations_path.exists():
-                logging.warning(f"\t(!) > Missing {relations_path}... >>> SKIPPED RELATION")
-                continue
-                
-            aligned_data = aligner.align_split(lang, split, relations_path, settings.MANUAL_FIX_JSON)
-            
-            aligner.save(aligned_data, settings.RELATIONS_DIR / settings.OUTPUT_JSONL.format(lang=lang, jsonl_split=split))
-
-# --------------------------------------------------------------------------------------------------
-
 
 class RelationAligner:
-    """
-    Cross-lingual relation aligner for the CasiMedicos dataset.
-    """
+    """Cross-lingual relation aligner for the CasiMedicos dataset."""
     
     def __init__(self, source_lang: str = "en"):
         self.source_lang = source_lang
@@ -53,18 +29,17 @@ class RelationAligner:
             return []
             
         translation_map = self._build_translation_map(df_src, df_tgt)
-        
         aligned_relations, skipped_relations, base_stats = self._map_relations(translation_map, source_jsonl_path, target_lang, split)
         
-        # ** FIX: inject manually-validated skipped relations **
+        # manually-validated skipped relations
         if manual_fixes_path and manual_fixes_path.exists():
             aligned_relations, skipped_relations = self._apply_manual_fixes(
                 aligned_relations, skipped_relations, manual_fixes_path, target_lang, split
             )
         
-        # ** FIX: final statistics after manual injections **
-        final_matched = sum(len(list(record.values())[0]) for record in aligned_relations)
-        final_skipped = sum(len(list(record.values())[0]) for record in skipped_relations)
+        # stats after manual injections
+        final_matched = sum(len(list(record.values())) for record in aligned_relations)
+        final_skipped = sum(len(list(record.values())) for record in skipped_relations)
         final_total = final_matched + final_skipped
         final_cov = (final_matched / final_total) * 100 if final_total > 0 else 0.0
 
@@ -79,13 +54,13 @@ class RelationAligner:
             f"\t -------------------------------------------------------"
         )
         
-        if skipped_relations: # saved skipped relations for debugging
+        if skipped_relations: 
             skipped_path = Path(f"data/relations/{target_lang.lower()}/skipped/skipped_{split}.jsonl")
             self.save(skipped_relations, skipped_path)
             self._print_skipped_relations(skipped_relations, target_lang, split)        
             
         return aligned_relations
-
+    
     # --- core logic -------------------------------------------------------------------------
 
     def _apply_manual_fixes(self, aligned_relations: List[Dict[str, Any]], skipped_relations: List[Dict[str, Any]], manual_fixes_path: Path, target_lang: str, split: str) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:

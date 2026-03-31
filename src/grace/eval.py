@@ -8,24 +8,21 @@
 import re
 import json
 import logging
-import config as settings
 from pathlib import Path
 from typing import List, Dict, Any
-from case import load_cases, load_relations
+from src.case import load_cases, load_relations
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 EVAL_PATH = "eval.txt"
 
 class GraceEvaluator:
-    def __init__(self, splits_dir: str = settings.SPLITS_DATA_DIR):
-        self.splits_dir = Path(splits_dir)
+    def __init__(self):
+        pass
 
     # --- SUBTASK 1 -------------------------------------------------------------------------
 
     def evaluate_subtask_1(self, predictions_path: Path, ground_truth_path: Path):
         """SUBTASK 1: Sentence relevance detection (F1-score positive class)."""
-        predictions_path = predictions_path.with_suffix(".clean.json")
-        
         header = f"> Evaluating Subtask 1 metrics for: {predictions_path.name}"
         logging.info(header)
         
@@ -60,7 +57,6 @@ class GraceEvaluator:
     
     def evaluate_subtask_2(self, predictions_path: Path, ground_truth_path: Path):
         """SUBTASK 2: Span detection (exact match F1)."""
-        predictions_path = predictions_path.with_suffix(".clean.json")
         header = f"> Evaluating Subtask 2 metrics for: {predictions_path.name}"
         logging.info(header)
         
@@ -93,7 +89,6 @@ class GraceEvaluator:
 
     def evaluate_subtask_3(self, predictions_path: Path, ground_truth_path: Path):
         """SUBTASK 3: Relation detection (Macro F1-score)."""
-        predictions_path = predictions_path.with_suffix(".clean.json")
         header = f"> Evaluating Subtask 3 metrics for: {predictions_path.name}"
         logging.info(header)
         

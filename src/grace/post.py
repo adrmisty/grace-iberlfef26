@@ -7,18 +7,17 @@
 
 import json
 import logging
-import config as settings
 import re
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
-def clean(filepath):
-    path = settings.MODEL_DIR / filepath
-    if not path.exists():
-        print(f"\t(!) > File not found: {path}")
+def clean(filepath: Path):
+    if not filepath.exists():
+        logging.warning(f"\t(!) > File not found: {filepath}")
         return
 
-    with open(path, 'r', encoding='utf-8') as f:
+    with open(filepath, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     cleaned_count = 0
@@ -28,7 +27,7 @@ def clean(filepath):
 
         # <think> hallucinations
         if "</think>" in pred:
-            pred = pred.split("</think>")[0].strip()
+            pred = pred.split("</think>").strip()
             cleaned_count += 1
 
         # newlines
@@ -48,10 +47,10 @@ def clean(filepath):
         # cleaned string
         item["prediction"] = pred
 
-    with open(path.with_suffix(".clean.json"), 'w', encoding='utf-8') as f:
+    with open(filepath.with_suffix(".clean.json"), 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    logging.info(f">>> Cleaned {cleaned_count} entries in {path.name}")
+    logging.info(f">>> Cleaned {cleaned_count} entries in {filepath.name}")
     
 # --- aux -------------------------------------------------------------------------
 
@@ -62,12 +61,11 @@ def _json_parse(text):
     except Exception:
         return text
 
-
 def _entity_parse(text):
     """Parse full text into list of spans of argument entity strings."""
     text = re.sub(r"\s+", " ", text).strip()
 
-    #  brackets: [ premise... ]
+    # brackets: [ premise... ]
     bracket_spans = re.findall(r"\[\s*(.*?)\s*\]", text)
     if bracket_spans:
         spans = [s.strip() for s in bracket_spans if len(s.strip()) > 3]
@@ -112,10 +110,6 @@ def _list_parse(text):
             if not line or "nan" in line.lower():
                 continue
             line = line.strip("[]").strip()
-
-            # TODO: filter out the correct answer?
-            #if "correct answer" in line.lower():
-                #continue
 
             result[current_list].append(line)
 
