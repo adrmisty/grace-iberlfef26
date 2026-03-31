@@ -41,7 +41,7 @@ def main():
                     path = settings.get_prediction_path(model_prefix, size, setting, task)
                     clean(filepath=path)
 
-    if args.evaluate:
+    if args.eval:
         for size in args.sizes:
             for setting in args.settings:
                 evaluate_subtasks(model_type=args.model, model_size=size, setting=setting, tasks=args.tasks)
