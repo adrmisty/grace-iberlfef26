@@ -12,8 +12,6 @@ from typing import List, Dict, Any
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
-logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
-
 def load_cases(file_path: Path) -> List[Dict[str, Any]]:
     """Loads and parses BIO-tagged clinical cases."""
     logging.info(f"> Loading cases from {file_path.name}")

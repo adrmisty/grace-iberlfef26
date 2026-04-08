@@ -14,7 +14,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from openai import OpenAI
-
+import re
 import src.config as settings
 import src.grace.prompts as prompts
 
@@ -65,7 +65,7 @@ class Model:
         
         decoded_text = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
         if isinstance(decoded_text, list):
-            decoded_text = decoded_text
+            decoded_text = decoded_text[0]
         return prefill + decoded_text
 
     def _load_model(self):
@@ -159,6 +159,7 @@ class MedGemmaModel(Model):
 
 
 # --- gemini/openai APIs -------------------------------------------------------------------------
+# for this, do not use the prefill trick
 
 class GeminiAPIModel(Model):
     def __init__(self, model_version: str = "gemini-1.5-flash", data_dir: str = settings.BASE_DATA_DIR):
@@ -180,45 +181,44 @@ class GeminiAPIModel(Model):
         pass
 
     def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "") -> str:
-        if prefill:
-            system_prompt += f"\n\nMUY IMPORTANTE: Tu respuesta debe comenzar EXACTAMENTE con la siguiente cadena, sin formato markdown adicional:\n{prefill}"
+        if "{" in prefill:
+            instruction = "REGLA ABSOLUTA: Tu respuesta debe ser ÚNICAMENTE un JSON válido. NINGUNA palabra antes o después. NO uses formato Markdown, solo el JSON puro."
+        else:
+            instruction = "REGLA ABSOLUTA: Tu respuesta debe comenzar directamente con la palabra 'Premisas:'. NINGUNA palabra antes o después. NO uses formato JSON, usa estrictamente listas con guiones (-)."
             
-        prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}"
+        prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}\n\n{instruction}"
         
-        # ** safety filters ** 
         safety_settings = {
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
         }
+        
         try:
             response = self.model.generate_content(
-                contents=prompt,
+                prompt,
                 safety_settings=safety_settings,
                 generation_config=genai.types.GenerationConfig(
                     max_output_tokens=max_new_tokens,
-                    response_mime_type="application/json",
-                    temperature=0.0
+                    temperature=0.0,
                 )
             )
-            
+
             try:
                 text = response.text.strip()
             except ValueError:
-                logging.error("\t> (!) Gemini API returned empty text (hit max_tokens or safety filter)")
-                return prefill
+                return ""
 
-            text = text.replace("```json", "").replace("```", "").strip()
-            if prefill:
-                if text.startswith(prefill.strip()):
-                    return text
-                return prefill + text
-            return text
+            text = re.sub(r"^```json\s*", "", text, flags=re.IGNORECASE)
+            text = re.sub(r"^```\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+            
+            return text.strip()
             
         except Exception as e:
             logging.error(f"\t> (!) Gemini API error during generation: {e}")
-            return prefill
+            return ""
                     
 class OpenAIModel(Model):
     def __init__(self, model_version: str = "gpt-5.4-mini", data_dir: str = settings.BASE_DATA_DIR):
@@ -239,8 +239,12 @@ class OpenAIModel(Model):
         pass 
 
     def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 512, prefill: str = "") -> str:
-        if prefill:
-            system_prompt += f"\n\nMUY IMPORTANTE: Tu respuesta debe comenzar EXACTAMENTE con la siguiente cadena, sin formato markdown adicional:\n{prefill}"
+        if "{" in prefill:
+            instruction = "Tu respuesta debe ser ÚNICAMENTE un JSON válido. NINGUNA palabra antes o después. NO uses comillas invertidas de markdown (```)."
+        else:
+            instruction = "Tu respuesta debe comenzar directamente con la palabra 'Premisas:'. NINGUNA palabra antes o después. NO uses formato JSON, usa estrictamente listas con guiones (-)."
+
+        system_prompt += f"\n\n{instruction}"
             
         messages = [
             {"role": "system", "content": system_prompt},
@@ -257,18 +261,15 @@ class OpenAIModel(Model):
             
             text = response.choices.message.content.strip()
             
-            # FIX: Strip Markdown hallucinations
-            text = text.replace("```json", "").replace("```", "").strip()
+            text = re.sub(r"^```json\s*", "", text, flags=re.IGNORECASE)
+            text = re.sub(r"^```\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
             
-            if prefill:
-                if text.startswith(prefill.strip()):
-                    return text
-                return prefill + text
-            return text
+            return text.strip()
             
         except Exception as e:
             logging.error(f"\t> (!) OpenAI API error during generation: {e}")
-            return prefill
+            return ""
 
 # --- model factory -------------------------------------------------------------------------
 

@@ -8,7 +8,11 @@
         "La exploración ecográfica es compatible con hemartros y en la analítica que se realiza sólo destaca un alargamiento del APTT de 52’’ (normal 25-35’’)."
       ],
       "claims": [
-        "Aunque otras enfermedades hemorrágicas pueden tener el tiempo de tromboplastina alargado, por la intensidad de la lesión y por el sexo del niño y los antecedentes familiares, el diagnóstico más probable es el de hemofilia."
+        "Síndrome de Marfan.",
+        "Enfermedad de Von-Willebrand.",
+        "Enfermedad de Ehlers-Danlos.",
+        "Hemofilia A.",
+        "Enfermedad de Bernard-Soulier."
       ]
     }
   },
@@ -18,17 +22,14 @@
       "premises": [
         "Nos consulta una mujer de 84 años, por insomnio de conciliación.",
         "Tras fracasar a medidas de higuiene del sueño, se decide iniciar tratamiento farmacológico.",
-        "¿Cuál de los siguientes fármacos selecionaría para la paciente?",
-        "1- Diacepam.",
-        "2- Lormetacepam.",
-        "3- Fenobarbital.",
-        "4- Clordiacepóxido.",
-        "5- Cloracepato.",
-        "CORRECT ANSWER: 2",
         "Sabiendo que hemos tomado medidas de higiene del sueño, hemos explorado que le provoca el no dormir, y no duerme nueve horas y aún quiere dormir más,..entonces la respuesta menos lesiva es la 2. Porque es el de vida media más corta y no quiere que la señora se caiga al día siguiente."
       ],
       "claims": [
-        "Lormetacepam."
+        "Diacepam.",
+        "Lormetacepam.",
+        "Fenobarbital.",
+        "Clordiacepóxido.",
+        "Cloracepato."
       ]
     }
   },
@@ -41,7 +42,10 @@
         "Existe un signo de Babinski bilateral."
       ],
       "claims": [
-        "Estudio electromiografico."
+        "TC cerebral.",
+        "Estudio electromiografico.",
+        "RM cerebral.",
+        "Potenciales evocados multimodales."
       ]
     }
   },
@@ -52,7 +56,13 @@
         "Mujer de 61 años, administrativa, con antecedentes de sobrepeso, hipertensión, dislipemia y síndrome metabólico, que consulta por dolor en ambas nalgas, región trocantérea izquierda, cara lateral del muslo izquierdo hasta la rodilla y pierna izquierda hasta el tercio medio.",
         "El dolor aparece cuando levantamos el miembro inferior con la rodilla extendida, pero se alivia al flexionar la rodilla."
       ],
-      "claims": []
+      "claims": [
+        "Artritis gotosa de cadera izquierda.",
+        "Artrosis coxofemoral izquierda.",
+        "Lumbalgia irradiada / lumbociatalgia.",
+        "Claudicación por estenosis de canal.",
+        "Maniobra de Lasègue."
+      ]
     }
   },
   {
@@ -68,20 +78,12 @@
         "El resto de la exploración neurológica es rigurosamente normal."
       ],
       "claims": [
-        "Indique cuál es el diagnóstico más probable en este caso:",
-        "1- Neuropatía periférica sensitvo simétrica distal de causa diabética.",
-        "2- Lesión compresiva medular cervical.",
-        "3- Síndrome del túnel del carpo bilateral.",
-        "4- Enfermedad desmielinizante tipo esclerosis múltiple.",
-        "5- Lesión medular central cervical.",
-        "CORRECT ANSWER: 5",
-        "La pregunta puñetera de la sección de Neurología de este año.",
-        "Presenta un paciente diabético pero a tratamiento insulínico con buen control (aunque las neuropatías diabéticas no sólo se desarrollan en pacientes con mal control) con un cuadro sensitivo limitado a miembros superiores y de corto tiempo de instauración, sin clínica motora ni a otro nivel.",
-        "En la exploración hay una clara disociación con anestesia termoalgésica y conservación de artrocinética y vibratoria.",
-        "Los reflejos son normales, ni abolidos ni exaltados.",
-        "Y además el resto de exploración es rigurosamente normal.",
-        "Con todo ello creo que la respuesta correcta es la 5, o sea una lesión siringomiélica, cuya característica inicial es la disociación sensitiva con anestesia para la termoalgésica y conservación de la cordonal posterior.",
-        "La EM y resto de lesiones medulares se acompañarían de otros signos exploratorios como exaltación de los reflejos"
+        "Lesión compresiva medular cervical.",
+        "Síndrome del túnel del carpo bilateral.",
+        "Enfermedad desmielinizante tipo esclerosis múltiple.",
+        "Lesión medular central cervical.",
+        "Neuropatía periférica sensitvo simétrica distal de causa diabética.",
+        "Lesión siringomiélica"
       ]
     }
   },
@@ -94,9 +96,10 @@
         "Se detectan anticuerpos antinucleares positivos (titulo 1/640), con anticuerpos anti-DNA nativo también positivos; anti-Sm negativos"
       ],
       "claims": [
-        "Es un LES con afectación articular, cutánea y serositis.",
-        "El tratamiento son CE a moderadas-altas dosis.",
-        "El micofenolato no es nunca un tratamiento en fase aguda sino en el mantenimiento, ni ha demostrado utilidad en afectación articular."
+        "Glucocorticoides a altas dosis.",
+        "Glucocorticoides y micofenolato.",
+        "Antiinflamatorios no esteroideos y antipalúdicos.",
+        "El cuadro probablemente será autolimitado y no precisa tratamiento."
       ]
     }
   },
@@ -105,11 +108,7 @@
     "prediction": {
       "premises": [
         "Una mujer de 75 años consulta por lesiones violáceas en manos y cuello junto a debilidad muscular progresiva de 3 meses de evolución.",
-        "Ante este cuadro clínico, una posibilidad es que se trate de una dermatomiositis.",
-        "De las pruebas propuestas, la determinación de la aldolasa sérica puede ser de utilidad.",
-        "Su elevación es característica de esta enfermedad.",
-        "La biopsia debería ser muscular y no subcutánea.",
-        "Los anticuerpos anti-músculo liso no son los propios de esta enfermedad."
+        "De las pruebas propuestas, la determinación de la aldolasa sérica puede ser de utilidad. Su elevación es característica de esta enfermedad. La biopsia debería ser muscular y no subcutánea. Los anticuerpos anti-músculo liso no son los propios de esta enfermedad."
       ],
       "claims": [
         "Determinación de aldolasa sérica.",
@@ -129,9 +128,11 @@
         "En la exploración destaca soplo sistólico con frémito, irradiado al borde esternal derecho que no estaba presente al ingreso."
       ],
       "claims": [
-        "Rotura del tabique interventricular.",
-        "Las complicaciones mecánicas son típicas en infartos en mujeres ancianas.",
-        "Asimismo, un soplo que no estaba presente indica un flujo de sangre anormal: las complicaciones más frecuentes son la insuficiencia mitral, que cursaría con un soplo musical o piante, y la CIV, que cursa con un soplo irradiado al borde derecho (piensa en la dirección del flujo de sangre)."
+        "Insuficiencia cardiaca por necrosis extensa.",
+        "Aneurisma anterior.",
+        "Rotura de la pared libre del ventrículo izquierdo.",
+        "Rotura en el tabique interventricular.",
+        "Rotura del tabique interventricular."
       ]
     }
   },
@@ -153,7 +154,8 @@
         "Valorar tratamiento neurolítico ya que el dolor neuropático es de difícil control.",
         "Disminuir la dosis de morfina ya que es ineficaz en este tipo de dolor.",
         "Administrar amitriptilina o gabapentina, dexametasona y aumentar la dosis de morfina.",
-        "CORRECT ANSWER: 4"
+        "Darle una dosis de recuerdo o booster.",
+        "Darle inmunoglobulina anti-hepatitis B y reiniciar pauta vacunal (0-1-2-12 meses)."
       ]
     }
   },
@@ -166,17 +168,14 @@
         "Juan refiere que la parte medial de su mano izquierda está adormecida y con menos fuerza.",
         "Su médico comprueba la ptosis palpebral y la miosis izquierda; comprueba que Puede cerrar con fuerza ambos párpados simétricamente y que las dos pupilas responden correctamente a la luz.",
         "Además comprueba que no suda por la hemicara izquierda, que siente menos el pinchazo en la superficie interna de dicha mano y que tiene menos fuerza en la prensión de dicha mano.",
-        "Respecto a la sintomatología ocular, ¿dónde se localiza la lesión?",
-        "1- Las fibras simpáticas, en algún nivel que abarcaría desde el hipotálamo a la columna de Clark interinedio-lateral de la médula dorsal.",
-        "2- El nervio motor ocular común izquierdo en el mesencéfalo.",
-        "3- El núcleo de Edinger-Westphal, encima del núcleo del nervio motor ocular común izquierdo.",
-        "4- Las fibras parasimpáticas, en algún nivel que abarcaría desde el núcleo de Edinger-Westphal hasta el músculo constrictor de la pupila izquierda.",
-        "5- El músculo tarsal exclusivamente."
+        "Respecto a la sintomatología ocular, ¿dónde se localiza la lesión?"
       ],
       "claims": [
-        "La pregunta seria mas de neurologia.",
-        "Se trata de un sindrome de claude bernard horner y probablemente la correcta sea la 1.",
-        "Pero por seguridad es mejor que lo revise un neurologo."
+        "Las fibras simpáticas, en algún nivel que abarcaría desde el hipotálamo a la columna de Clark interinedio-lateral de la médula dorsal.",
+        "El nervio motor ocular común izquierdo en el mesencéfalo.",
+        "El núcleo de Edinger-Westphal, encima del núcleo del nervio motor ocular común izquierdo.",
+        "Las fibras parasimpáticas, en algún nivel que abarcaría desde el núcleo de Edinger-Westphal hasta el músculo constrictor de la pupila izquierda.",
+        "El músculo tarsal exclusivamente."
       ]
     }
   },
@@ -192,9 +191,10 @@
         "Es necesario que se realice controles periódicos ya que en el 40% de los casos desarrollará una neoplasia trofoblástica gestacional."
       ],
       "claims": [
-        "No debe quedar embarazada hasta realizar controles periódicos y haber pasado un año con niveles de beta-HCG negativos.",
-        "Las pacientes serán controladas semanalmente con la dosificación de la hcg hasta que se convierta indetectable, por tres veces consecutivas.",
-        "Después el control será mensual, durante seis meses y luego cada dos meses otros seis meses más, antes de nueva gestación."
+        "El riesgo de una nueva gestación molar en un futuro embarazo es del 50%.",
+        "No debe quedar embarazada hasta realizar controles periódicos y haber pasado un año con niveles de BHCG negativos.",
+        "No es necesario realizar controles posteriores si la evacuación del tejido trofoblástico fue completa.",
+        "Es necesario que se realice controles periódicos ya que en el 40% de los casos desarrollará una neoplasia trofoblástica gestacional."
       ]
     }
   },
@@ -205,9 +205,7 @@
         "Niña de 10 años que viene a revisión de salud.",
         "La exploración física es normal con un peso y una talla en el percentil 50 y TA 109/65.",
         "Un análisis de orina de rutina muestra una densidad específica de 1035 pH6 sangre 2+ sin proteínas.",
-        "El sedimento urinario muestra 5-10 hematíes por campo.",
-        "Lo que no me queda muy claro es lo de “análisis de orina de rutina” porque no se suelen hacer en un niño sano asintomático.",
-        "La microhematuria sin síntomas asociados, puede ser un hallazgo sin significado patológico y hay que confirmarla en un nuevo sedimento posterior (aunque no sé si a los 15 días o más tarde)."
+        "El sedimento urinario muestra 5-10 hematíes por campo."
       ],
       "claims": [
         "Determinar creatinina y nitrógeno en sangre.",
@@ -227,9 +225,11 @@
         "La actitud correcta a tomar será:"
       ],
       "claims": [
-        "Ortesis.",
-        "Angulo de Cobb entre 25º – 45º.",
-        "Esqueleto inmaduro (Risser 0)."
+        "Recomendar natación y revisión en tres meses.",
+        "Prescribir una ortesis tipo corsé.",
+        "Derivar a fisioterapia para elastificación del raquis.",
+        "Revisar en 6 meses con una nueva radiografía.",
+        "Ortesis."
       ]
     }
   },
@@ -260,8 +260,7 @@
         "Presenta desde hace 48 horas malestar general y cefalea intensa, por lo que acude a urgencias.",
         "En la exploración destaca únicamente una taquicardia rítmica a 100 lpm, no se aprecia focalidad neurológica.",
         "La presión arterial es de 200/110 mmHg.",
-        "En la analítica destaca únicamente una creatinina de 2,5 mg/dl.",
-        "Se trata de un caso clínico claro de esclerosis sistémica (Raynaud, afectación esofágica, induración cutánea) que presenta una crisis renal."
+        "En la analítica destaca únicamente una creatinina de 2,5 mg/dl."
       ],
       "claims": [
         "Anticuerpos anti-RNA polimerasa III.",
@@ -276,17 +275,17 @@
     "prediction": {
       "premises": [
         "Joven de 18 años con antecedentes de asma, alergia a pólenes, ácaros y pelo de gato, acude a urgencias refiriendo sensación de detención de alimentos a nivel retroesternal con práctica incapacidad para deglutir su propia saliva.",
-        "Refiere episodios similares en otras ocasiones que han cedido de forma espontánea en pocos minutos."
+        "Refiere episodios similares en otras ocasiones que han cedido de forma espontánea en pocos minutos.",
+        "Se trata de una disfagia intermitente.",
+        "El esófago de Barrett no implica necesariamente una estenosis péptica, pero suponiéndola, esta es progresiva.",
+        "La esofagitis infecciosa es más propia de pacientes inmunodeprimidos.",
+        "Quedan el anillo esofágico distal y la esofagitis eosinofílica; ambas son posibles, pero la insistencia en la carga atópica del paciente indica la probabilidad de que se trate de la última de las opciones."
       ],
       "claims": [
         "Esófago de Barrett.",
         "Anillo esofágico distal (Schatzki).",
         "Esofagitis infecciosa.",
-        "Esofagitis eosinofílica.",
-        "Se trata de una disfagia intermitente.",
-        "El esófago de Barrett no implica necesariamente una estenosis péptica, pero suponiéndola, esta es progresiva.",
-        "La esofagitis infecciosa es más propia de pacientes inmunodeprimidos.",
-        "Quedan el anillo esofágico distal y la esofagitis eosinofílica; ambas son posibles, pero la insistencia en la carga atópica del paciente indica la probabilidad de que se trate de la última de las opciones."
+        "Esofagitis eosinofílica."
       ]
     }
   },
@@ -308,11 +307,9 @@
         "La disminución del crecimiento y desarrollo sexual, edad ósea retrasada, cefalea y alteración visual sugieren déficit hormonal y compromiso del quiasma óptico.",
         "Al ser una niña en edad puberal, lo más probable es que su disminución de crecimiento y retraso sexual sean debidos a un síndrome de Turner.",
         "No debe tener un tumor hipotalámico por la ausencia de poliuria y polidipsia.",
-        "Seguramente tenga retraso constitucional y su problema visual sea de refracción.",
         "Un déficit de hormona de crecimiento puede explicar el retraso del desarrollo y estradiol bajo.",
-        "Valorar si precisa gafas, por sus cefaleas y alteraciones visuales.",
         "Podría tener un craneofaringioma, pero sería raro que no hubiera dado síntomas antes.",
-        "Además, no justificaría las gonadotrofinas y estradiol bajos."
+        "Mientras los niveles serológicos de antiHBs estén por encima de 10 UI/l no es necesario revacunar."
       ]
     }
   },
@@ -329,9 +326,7 @@
         "Tolerancia",
         "Hiperalgesia",
         "Dependencia",
-        "Ineficacia",
-        "La respuesta correcta es la 1.",
-        "El enunciado define perfectamente un fenómeno de tolerancia en el que el paciente se ha “acostumbrado” a la dosis y necesita más para poder tener el mismo efecto analgésico."
+        "Ineficacia"
       ]
     }
   },
@@ -341,23 +336,14 @@
       "premises": [
         "Una mujer de 33 años consulta por epistaxis de repetición, petequias y equimosis.",
         "Las pruebas de laboratorio muestran trombocitopenia con un recuento plaquetario de 4000 plaque­tas/microlitro.",
-        "El diagnóstico de presunción inicial es de púrpura trombocitopénica inmuni­taria crónica (PTI).",
-        "La presencia de adenopatías o esplenomega­lia en la exploración física sugiere un diag­nóstico diferente de PTI.",
-        "El análisis de médula ósea muestra un número disminuido de megacariocitos sin otras alteraciones.",
-        "El hemograma completo muestra trombocitopenia aislada con plaquetas a menudo gran­des, sin anemia salvo que exista una hemo­rragia importante o hemólisis autoinmune asociada (síndrome de Evans).",
-        "El diagnóstico de PTI se establece por exclu­sión de otros procesos causantes de tromboci­topenia.",
-        "La determinación de anticuerpos antiplaque­ tarios no es precisa para establecer el diag­nóstico."
+        "El diagnóstico de presunción inicial es de púrpura trombocitopénica inmuni­taria crónica (PTI)."
       ],
       "claims": [
         "La presencia de adenopatías o esplenomega­lia en la exploración física sugiere un diag­nóstico diferente de PTI.",
         "El análisis de médula ósea muestra un número disminuido de megacariocitos sin otras alteraciones.",
         "El hemograma completo muestra trombocitopenia aislada con plaquetas a menudo gran­des, sin anemia salvo que exista una hemo­rragia importante o hemólisis autoinmune asociada (síndrome de Evans).",
         "El diagnóstico de PTI se establece por exclu­sión de otros procesos causantes de tromboci­topenia.",
-        "La determinación de anticuerpos antiplaque­ tarios no es precisa para establecer el diag­nóstico.",
-        "Ante una trombocitopenia aislada no hay que perder de vista la exploración física; así, la presencia de adenopatías nos obliga a descartar la presencia de un linfoma, por ejemplo.",
-        "La 1 es correcta.",
-        "Al realizar una biopsia-aspirado de médula ósea se ve que el número de megacariocitos es normal o incluso está aumentado, el fallo no está en la médula sino en la sangre periférica, donde se destruyen las plaquetas.",
-        "La respuesta falsa es la 2."
+        "La determinación de anticuerpos antiplaque­ tarios no es precisa para establecer el diag­nóstico."
       ]
     }
   },
@@ -371,7 +357,9 @@
         "En la exploración ginecológica tan sólo se aprecia dolor al presionar fondo de saco vaginal posterior."
       ],
       "claims": [
+        "Ecografía transvaginal.",
         "Laparoscopia diagnóstica.",
+        "Colonoscopia.",
         "Es un caso típico de endometriosis profunda, con implantes diferentes partes de la pelvis.",
         "El diagnóstico definitivo nos lo dará la anatomía patológica, así que para ello tenemos que hacer Laparoscopia y enviar a AP."
       ]
@@ -402,16 +390,15 @@
         "Varón de 49 años que ingresa en UCI por un traumatismo craneoencefálico tras un accidente laboral.",
         "En la exploración física no abre ojos, no emite sonidos antes de ser intubado y presenta extensión de extremidades al estímulo nociceptivo.",
         "Se coloca un sensor de presión intracraneal y debe realizarse una craneotomía descompresiva por una hemorragia intraparenquimatosa.",
+        "Según la exploración descrita el Glasgow es de 4 (O1V1M2).",
+        "La hipercapnia y la acidosis producen vasodilatación que provocan aumento del flujo sanguíneo cerebral.",
+        "El edema cerebral en el que se produce edema celular por introducción de líquido extracelular a compartimento intracelular es el citotóxico."
+      ],
+      "claims": [
         "A su llegada se encuentra en un coma de la escala de Glasgow de 7.",
         "La presión de perfusión cerebral es la presión arterial media más la presión intracraneal.",
         "El edema cerebral vasogénico se produce por edema celular, rotura de la membrana y muerte celular.",
         "El flujo vascular cerebral aumenta con la hipercapnia y la acidosis."
-      ],
-      "claims": [
-        "La hipercapnia y la acidosis producen vasodilatación que provocan aumento del flujo sanguíneo cerebral.",
-        "Según la exploración descrita el Glasgow es de 4 (O1V1M2).",
-        "La presión de perfusión cerebral es la presión arterial media menos la presión intracraneal.",
-        "El edema cerebral en el que se produce edema celular por introducción de líquido extracelular a compartimento intracelular es el citotóxico."
       ]
     }
   },
@@ -423,7 +410,11 @@
         "Seis semanas después de la cirugía refiere que poco tiempo después (menos de media hora) de las ingestas presenta estado nauseoso, astenia y sudoración, mareos y retortijones abdominales generalmente acompañados de despeños diarreicos."
       ],
       "claims": [
-        "Las respuestas 1, 2 y 5 son tratamientos adecuados para el síndrome de dumping o postgastrectomía, pero la pregunta está enfocada al manejo inicial, por lo que la respuesta más adecuada parece la 2."
+        "Aplicar tratamiento con un inhibidor de la somatostatina (octreótido).",
+        "Seguir unas medidas dietéticas concretas.",
+        "Realizar un tratamiento de prueba con una benzodiacepina.",
+        "Realizar la búsqueda de un probable tumor neuroendocrino (p.ej. carcinoide).",
+        "Indicar tratamiento quirúrgico para efectuar una gastroyeyunostomía antiperistáltica en Y de Roux."
       ]
     }
   },
@@ -453,15 +444,14 @@
       "premises": [
         "Niña de 4 años que presenta fiebre alta de 6 días de evolución.",
         "En la exploración clínica presenta un exantema eritematoso maculopapular en tronco y zona genital, con tendencia a la confluencia, sin llegar a ser escarlatiniforme; inyección conjuntival sin secreciones y labios rojos con lengua aframbuesada.",
-        "Presenta también eritema con edema en manos y pies y una adenopatía cervical unilateral de 2 cm de diámetro."
+        "Presenta también eritema con edema en manos y pies y una adenopatía cervical unilateral de 2 cm de diámetro.",
+        "El diagnóstico clínico de sospecha más probable es:"
       ],
       "claims": [
-        "El diagnóstico clínico de sospecha más probable es:",
-        "1- Enfermedad de Kawasaki.",
-        "2- Sarampión.",
-        "3- Rubeola.",
-        "4- Escarlatina.",
-        "No hay lugar a dudas, no están dando los criterios diagnósticos de una enfermedad de Kawasaki (fiebre de varios días de evolución, exantema, inyección conjuntival, labios rojos, lengua aframbuesada, edema de partes acrales y adenopatía)."
+        "Enfermedad de Kawasaki.",
+        "Sarampión.",
+        "Rubeola.",
+        "Escarlatina."
       ]
     }
   },
@@ -473,17 +463,17 @@
         "En los últimos días nota dolor en el ojo derecho y asimetría respecto al contralateral.",
         "En la exploración física se objetiva proptosis del globo ocular derecho y la inspección de las fosas nasales constata una mucosa eritematosa con costras serohemáticas.",
         "El resto de la exploración es normal.",
-        "Los análisis de sangre (hemograma, función renal y hepática) son normales, a excepción de una VSG de 65 mm/h; en el análisis de orina se detecta microhematuria y proteinuria de 520 mg/24h."
+        "Los análisis de sangre (hemograma, función renal y hepática) son normales, a excepción de una VSG de 65 mm/h; en el análisis de orina se detecta microhematuria y proteinuria de 520 mg/24h.",
+        "Nos comentan en el caso clínico la afectación otorrinolaringológica que está presente en el 92% de los pacientes.",
+        "A nivel pulmonar nos comenta que ha presentado moco con algún coágulo, este tipo de afectación está presente en el 85% de los pacientes.",
+        "También al acabar el caso, nos comentan el análisis de orina con una glomerulonefritis que están presentes en el 77% de los pacientes."
       ],
       "claims": [
         "Granulomatosis eosinofílica con poliangitis.",
         "Poliangitis microscópica.",
         "Granulomatosis con poliangitis.",
         "Poliarteritis nudosa.",
-        "En este paciente, presenta una granulomatosis con poliangitis antes conocida como granulomatosis de Wegener.",
-        "Nos comentan en el caso clínico la afectación otorrinolaringológica que está presente en el 92% de los pacientes.",
-        "A nivel pulmonar nos comenta que ha presentado moco con algún coágulo, este tipo de afectación está presente en el 85% de los pacientes.",
-        "También al acabar el caso, nos comentan el análisis de orina con una glomerulonefritis que están presentes en el 77% de los pacientes."
+        "Granulomatosis con poliangitis."
       ]
     }
   },
@@ -492,16 +482,7 @@
     "prediction": {
       "premises": [
         "Mujer de 75 años diagnosticada hace 3 años de drusas blandas en el fondo de ojo.",
-        "Refiere presentar, desde hace 2 semanas, metamorfopsia y pérdida visual importante en su ojo derecho que le impide leer.",
-        "De las cinco opciones, cuatro podrían ser compatibles con la clínica referida.",
-        "Podríamos descartar inicialmente la coriorretinopatía serosa central porque por definición sucede en gente joven (hasta los 55 años, más o menos).",
-        "La clave para diferenciar entre las cuatro restantes es que tenía drusas blandas en el fondo de ojo.",
-        "Que si bien no es un “diagnóstico” (la pregunta podía estar mejor redactada) es un hallazgo relacionado con la degeneración macular asociada a la edad, o degeneración macular senil.",
-        "La forma seca o atrófica cursa con pérdida visual lentamente progresiva.",
-        "Pero la forma húmeda o exudativa produce de forma aguda o rápidamente progresiva una pérdida visual severa (normalmente por hemorragia subrretiniana acompañado de metamorfopsia (se deforma la imagen por el levantamiento de la retina).",
-        "Una membrana epirretiniana suele llevar un curso más lento.",
-        "En un agujero macular es más relevante la pérdida visual (puede referir también metamorfopsia, pero es menos probable en el momento agudo).",
-        "En la trombosis de la vena central de la retina es más importante la pérdida visual y no suelen explicar metamorfopsia (pero la puede tener, por el edema macular)."
+        "Refiere presentar, desde hace 2 semanas, metamorfopsia y pérdida visual importante en su ojo derecho que le impide leer."
       ],
       "claims": [
         "Membrana epirretiniana macular.",
@@ -525,7 +506,8 @@
         "Osteoporosis post-menopáusica, diabetes mellitus tipo 2 e hipertensión arterial esencial, con disminución de fuerza por polineuropatia diabética.",
         "Es necesario descartar enfermedad de Cushing mediante test de supresión con dexametasona y realizar una TC craneal.",
         "Sugiere un Cushing. Determinar cortisol libre urinario y ACTH basal, que sirve para orientar su etiología y seleccionar la técnica de imagen más apropiada.",
-        "Probablemente tiene un Cushing. Si la ACTH basal es baja, probablemente tenga un micro-adenoma hipofisario, debiendo realizar una TC craneal."
+        "Probablemente tiene un Cushing. Si la ACTH basal es baja, probablemente tenga un micro-adenoma hipofisario, debiendo realizar una TC craneal.",
+        "Mientras los niveles serológicos de antiHBs estén por encima de 10 UI/l no es necesario revacunar."
       ]
     }
   },
@@ -533,9 +515,8 @@
     "id": "7_208_es",
     "prediction": {
       "premises": [
-        "Durante una colonoscopia se detecta un tumor de 5 cm localizado en colon derecho en un hombre de 48 años. No se han encontrado otras lesiones.",
-        "Su abuela materna también padeció un cáncer de colon.",
-        "Las biopsias son superficiales y muestran un tumor pobremente diferenciado con abundantes células inflamatorias en el estroma que se diagnostica como un carcinoma de tipo medular.",
+        "Durante una colonoscopia se detecta un tumor de 5 cm localizado en colon derecho en un hombre de 48 años. No se han encontrado otras lesiones. Su abuela materna también padeció un cáncer de colon. Las biopsias son superficiales y muestran un tumor pobremente diferenciado con abundantes células inflamatorias en el estroma que se diagnostica como un carcinoma de tipo medular.",
+        "La mayor parte de los ca. de colon se desarrollan sobre adenomas con lo cual esta la podríamos eliminar.",
         "Entre las otras 2 hay que saber que la 5 es correcta ya que suelen presentar casi siempre inestabilidad de microsatélites incluso sin cumplir criterios de Amsterdam y tienen mejor pronóstico frente a otros ca de colon poco diferenciados."
       ],
       "claims": [
@@ -555,8 +536,11 @@
         "Se realiza artrocentesis y en el microscopio de luz polarizada se observan cristales intracelulares con birrefringencia negativa."
       ],
       "claims": [
-        "Ante un artritis gotosa aguda (la presencia de cristales intracelulares con birrefringencia negativa lo confirma) en un paciente hiperuricémico que previamente seguía tratamiento con alopurinol se debe añadir un AINE hasta que la crisis remita.",
-        "No se deben hacer cambios en el tratamiento hipouricemiante durante este periodo porque se altera la cadena metabólica del ácido úrico y puede empeorar la situación."
+        "Suspender alopurinol e iniciar tratamiento con colchicina.",
+        "Suspender alopurinol y comenzar con AINE.",
+        "Añadir un AINE hasta que la crisis remita.",
+        "Aumentar la dosis de alopurinol a 300 mg/día.",
+        "Sustituir el alopurinol por un uricosúrico."
       ]
     }
   },
@@ -587,10 +571,7 @@
     "prediction": {
       "premises": [
         "Hombre de 47 años, con antecedente de un adenoma pleomorfo parotídeo derecho, tratado con cirugía (parotidectomía extrafacial) hace 6 meses, que acude a nuestra consulta por presentar durante la masticación dolor con sudoración y enrojecimiento de la piel de la región preauricular.",
-        "Están preguntando por el síndrome auriculotemporal o síndrome de Frey.",
-        "Es la expresión clínica de una neuropatía vegetativa que tiene como causa la lesión mecánica o irritativa de las fibras vegetativas del nervio auriculotemporal en su trayecto infratemporal.",
-        "En nuestro medio la causa más frecuente es la cirugía de la glándula partida con un porcentaje de aparición entre el 10 y el 80%.",
-        "El tratamiento conservador con toxina botulínica ofrece buenos resultados."
+        "Están preguntando por el síndrome auriculotemporal o síndrome de Frey. Es la expresión clínica de una neuropatía vegetativa que tiene como causa la lesión mecánica o irritativa de las fibras vegetativas del nervio auriculotemporal en su trayecto infratemporal. En nuestro medio la causa más frecuente es la cirugía de la glándula partida con un porcentaje de aparición entre el 10 y el 80%. El tratamiento conservador con toxina botulínica ofrece buenos resultados."
       ],
       "claims": [
         "Parotidectomía total ampliada ante la sospecha de recidiva tumoral.",
@@ -611,8 +592,11 @@
         "En el análisis de orina se observan Hb 3+, leucocitos 3+, nitritos 2+, Sedimento: 15-20 leucocitos por campo y 5-10 hematíes por campo."
       ],
       "claims": [
-        "La respuesta correcta es la primera.",
-        "La causa más frecuente de infecciones urinarias es Escherichia coli y en el caso de las embarazadas también."
+        "Escherichia coli.",
+        "Enterococcus faecalis.",
+        "Streptococcus agalactiae.",
+        "Proteus mirabilis.",
+        "Satphylococcus saprophyticus."
       ]
     }
   },
@@ -623,15 +607,13 @@
         "Mujer de 66 años diagnosticada de diabetes mellitus tipo 2 desde hace tres meses.",
         "Tiene un IMC de 31 Kg/m2 y presenta mal control glucémico a pesar de realizar un programa de medidas no farmacológicas (alimentación saludable, ejercicio).",
         "¿Cuál de los siguientes fármacos hipoglucemiantes se asocia a aumento de peso y deberíamos evitar en esta paciente?:",
-        "1- Metformina (biguanida).",
-        "2- Pioglitazona (tiazolidindiona).",
-        "3- Canagliflozina (inhibidor del cotransportador 2 de sodio-glucosa- iSGLT2).",
-        "4- Liraglutida (agonista del receptor para GLP-1)."
+        "Metformina (biguanida).",
+        "Pioglitazona (tiazolidindiona).",
+        "Canagliflozina (inhibidor del cotransportador 2 de sodio-glucosa- iSGLT2).",
+        "Liraglutida (agonista del receptor para GLP-1)."
       ],
       "claims": [
-        "Una pregunta algo más complicada que la anterior.",
-        "En cuanto al peso, la metformina en menor medidas, los inhibidores de SGLT-2 y, sobre todo, los agonistas de GLP-1, se han relacionado con una disminución significativa del peso en paciente con DM-2 (respuestas 1,3 y 4 incorrectas).",
-        "En cambio, la pioglitazona, tal como refleja su ficha técnica, puede producir aumento de peso dosis-dependiente, principalmente por acumulación de grasa y añadida, en algunos casos, a la retención hídrica."
+        "Pioglitazona (tiazolidindiona)."
       ]
     }
   },
@@ -646,6 +628,11 @@
         "Nunca había sentido contracciones."
       ],
       "claims": [
+        "Le pautaría una profilaxis con atosibán por vía oral durante todo el embarazo.",
+        "Le ofrecería la maduración pulmonar con corticoides a partir de las 19-20 semanas de gestación.",
+        "Le recomendaría realizar un cerclaje cervical programado a partir de la semana 14 de gestación.",
+        "Le aconsejaría no intentar más embarazos por el alto riesgo de recidiva.",
+        "Le recomendaría recurrir a técnicas de reproducción asistida.",
         "Se trata de un típico caso de incompetencia cervical (y esta paciente tiene como factor de riesgo la conización).",
         "Esta patología consiste en una dilatación del cérvix en ausencia de contracciones, y que requiere la realización de un cerclaje para evitar el aborto o el parto inmaduro.",
         "El cerclaje se realiza idealmente de forma electiva, programada, y no cuando la paciente llega a Urgencias “in extemis” (que también se hacen, pero con menor tasa de éxito… lo ideal es hacerlos en frío)."
@@ -663,15 +650,10 @@
         "En la angio-TC se observan múltiples defectos de replección ocupando ambas arterias pulmonares principales."
       ],
       "claims": [
-        "El paciente presenta un tromboembolismo pulmonar que, además de ser bilateral, produce una afectación hemodinámica severa, una situación de shock y requiere ventilación mecánica.",
-        "No nos dicen que tenga ninguna contraindicación para realizar fibrinolisis, así que ésta sería la opción más adecuada por su rapidez de administración y acción.",
-        "La heparina sódica se reserva para casos en los que el paciente está estable.",
-        "La tromboendarterectomía podría realizarse de urgencia en centros seleccionados (no disponible en todos) en pacientes en los que estuviera contraindicada la fibrinolisis sistémica, o bien en centros donde la experiencia de esta técnica sea constatada y se pueda realizar con rapidez.",
-        "El filtro en vena cava inferior es un tratamiento que se indica en el momento agudo pacientes estables, cuando tienen contraindicada la anticoagulación; o bien a posteriori, como profilaxis, en este grupo de pacientes.",
-        "Las indicaciones de realización de fibrinolisis del último documento de consenso de la SEPAR incluían pacientes en riesgo intermedio (podrían beneficiarse de ella) y riesgo alto.",
-        "Clasifican el riesgo intermedio como PESIs ≥ 1 o PESI III-IV.",
-        "En este subgrupo, parece que se benefician más de la fibrinolisis los pacientes con disfunción de ventrículo derecho, troponina o BNP superior al límite de corte y trombosis venosa profunda.",
-        "En el subgrupo de pacientes de riesgo alto (definido por hipotensión o criterios de shock cardiogénico), está mucho más claro el uso de fibrinolisis sistémica, como el caso que nos presentan en la pregunta."
+        "Heparina sódica en perfusión intravenosa.",
+        "Tromboendartectomía.",
+        "Fibrinolisis sistémica con rt-PA (alteplase) 100 mg intravenoso.",
+        "Filtro en vena cava inferior."
       ]
     }
   },
@@ -687,6 +669,10 @@
         "Se decide mantener al paciente en observación en el hospital durante unas horas."
       ],
       "claims": [
+        "Solicitar gasometría venosa, recuento leucocitario y reactantes de fase aguda.",
+        "Solicitar radiografía de tórax.",
+        "Solicitar gasometría arterial y reactantes de fase aguda.",
+        "No solicitar pruebas complementarias.",
         "El paciente probablemente presenta un cuadro de bronquiolitis.",
         "En este momento no sería necesario realizar ninguna prueba complementaria salvo empeoramiento clínico."
       ]
@@ -697,9 +683,17 @@
     "prediction": {
       "premises": [
         "Un paciente con antecedentes de cuadro febril y dolor torácico acude al hospital con disnea y taquipnea.",
-        "En la exploración física las cifrad de presión arterial están bajas, la presión venosa yugular está elevada con un seno X descendiente profundo y tiene pulso paradójico."
+        "En la exploración física las cifrad de presión arterial están bajas, la presión venosa yugular está elevada con un seno X descendiente profundo y tiene pulso paradójico.",
+        "La PA baja con Presión yugular alta debe hacer siempre sospechar un taponamiento cardiaco.",
+        "El cuadro febril y dolor torácico con disnea y taquipnea deben hacer sospechar un derrame pericárdico con compromiso hemodinámica.",
+        "El pulso paradójico es un hallazgo típico de taponamiento cardiaco.",
+        "Por tanto la respuesta correcata es la 5."
       ],
       "claims": [
+        "Cardiopatía isquémica.",
+        "Miocardiopatía dilatada.",
+        "Estenosis valvular aórtica severa.",
+        "Pericarditis constrictiva.",
         "Derrame pericárdico con taponamiento cardiaco."
       ]
     }
@@ -708,15 +702,14 @@
     "id": "486_45_es",
     "prediction": {
       "premises": [
-        "Mujer de 15 años que presenta un retraso en la menarquia y una talla baja. No tiene discapacidad intelectual."
+        "Mujer de 15 años que presenta un retraso en la menarquia y una talla baja.",
+        "No tiene discapacidad intelectual."
       ],
       "claims": [
-        "1- Secuenciación masiva (NGS).",
-        "2- FISH.",
-        "3- Microarrays de ADN y/o de ARN.",
-        "4- Cariotipo.",
-        "CORRECT ANSWER: 4",
-        "Mientras los niveles serológicos de antiHBs estén por encima de 10 UI/l no es necesario revacunar."
+        "Secuenciación masiva (NGS).",
+        "FISH.",
+        "Microarrays de ADN y/o de ARN.",
+        "Cariotipo."
       ]
     }
   },
@@ -729,9 +722,11 @@
         "Se realiza biopsia renal que muestra semilunas en el 75% de los glomérulos y en la inmunofluorescencia aparece un patrón depósito lineal de Ig."
       ],
       "claims": [
-        "La sospecha diagnóstica por los datos que nos dan (sobre todo los anticuerpos anti- MBG y la presencia de síndrome renopulmonar) es la de un síndrome de Goodpasture.",
-        "El resto de datos (seminulas en la biopsia, depósito lineal IgG) apoya el diagnóstico.",
-        "Sabiendo esto, las opciones se descartan fácilmente: la opción 1 nos habla de una nefropatía IgA (no es el caso porque los depósitos son de IgG); la opción 3 también queda descartada, al no tratarse de una GMN primaria, como la membranosa, sino de una glomerulopatía secundaria; la opción 4 también es falsa: el tratamiento inicial se realiza con corticoides y ciclofosfamida asociados a plasmaféresis; y la opción 5 es igualmente falsa, ya que el daño no es por inmunocomplejos circulantes, sino por anticuerpos depositados en la membrana basal glomerular."
+        "Se trata de una Nefropatía IgA con fracaso renal agudo.",
+        "Estaría indicada la realización de plasmaféresis.",
+        "Se trata de una glomerulonefritis membranosa.",
+        "El micofenolato mofetilo es el tratamiento inicial de elección.",
+        "La afectación glomerular está causada por la presencia de inmunocomplejos circulantes."
       ]
     }
   },
@@ -748,13 +743,7 @@
         "Seguimiento cada 3-4 meses, ya que se trata de una condición temporal que a menudo se resuelve sola.",
         "Biopsia mamaria.",
         "Mamografía.",
-        "Administración de análogos GnRh.",
-        "Esta pregunta está regular planteada, demasiado desarrollo para unas exploraciones complementarias normales… Parece que nos quieren presentar una pubertad precoz (o una telarquia prematura) pero no aportan ningún dato analítico y los datos de la ecografía son ambiguos (habría que dar por supuesto que con un pequeño útero se están refiriendo a un útero prepuberal, pero no aportan datos a cerca del tamaño ovárico).",
-        "Nos presentan el caso de una niña con desarrollo mamario avanzado de tres años de edad, en principio sin ninguna causa asociada (en principio no toma fármacos que puedan aumentar el nivel de estrógeno en sangre, no parece usar cremas corporales ni ingesta importante de carne de pollo).",
-        "Si seguimos el esquema diagnóstico ante una telarquia prematura o sospecha de pubertad precoz, se solicita edad ósea y ecografía abdominal (la EO no está adelantada como ocurre en la pubertad precoz, y damos por supuesto que con un útero pequeño se quieren referir a un útero prepuberal); según las exploraciones complementarias que nos dan, no parece una pubertad precoz, salvo la clínica (Tanner IV).",
-        "Estrictamente, sin datos hormonales analíticos, parece que podríamos marcar la opción 1, siendo necesario hacer un seguimiento estrecho de la niña.",
-        "Si damos por hecho todos los datos anteriores, podríamos descartar la opción 4, que sería el tratamiento de una pubertad precoz central.",
-        "Respecto a la opción de mamografía, en pediatría se usa la ecografía mamaria, y en este caso estaría indicada si nos dijesen que existe una asimet"
+        "Administración de análogos GnRh."
       ]
     }
   },
@@ -762,24 +751,14 @@
     "id": "238_145_es",
     "prediction": {
       "premises": [
-        "Mujer de 40 años que consulta por aproximadamente 20 episodios al día de dolor intenso, periocular izquierdo de 15 minutos de duración, acompañado de intenso lagrimeo y rinorrea.",
-        "Su tratamiento de elección sería:",
+        "Mujer de 40 años que consulta por aproximadamente 20 episodios al día de dolor intenso, periocular izquierdo de 15 minutos de duración, acompañado de intenso lagrimeo y rinorrea."
+      ],
+      "claims": [
         "Indometacina.",
         "Lamotrigina.",
         "Verapamilo.",
         "Prednisona.",
         "Carbonato de litio."
-      ],
-      "claims": [
-        "En esta pregunta nos presentan un caso para deducir un diagnóstico y luego indicar cual sería el tratamiento de elección.",
-        "Tanto por las características del caso como por las respuestas se deduce que se trata de una cefalea trigémino-autonómica (dolor intenso, periocular con lagrimeo y rinorrea).",
-        "La idea es realizar un diagnóstico diferencial fundamentalmente entre una cefalea en racimos (cuyo tratamientos incluyen las respuestas 2, 3, 4 y 5), una hemicranea paroxística (cuyo tratamiento de elección es la indometacina de la respuesta 1) y un SUNCT (Cefalea Neuralgiforme unilateral con inyección conjuntival y lagrimeo).",
-        "La cefalea en racimos predomina en varones cuya duración puede variar entre 15-180 minutos, entre una vez cada 2 días, hasta 8 veces al día.",
-        "La hemicranea paroxística predomina en la mujer, con episodios de dolor similares a la cefalea en racimos, pero con una duración más breve (2-30 min), y una frecuencia mayor (5-30 episodios al día).",
-        "En cuanto al SUNCT las crisis son mucho más breves, de segundos de duración (5-240 segundos de duración) y suele ser refractaria a tratamiento.",
-        "Por lo tanto el diagnóstico sería de una hemicranea paroxística y su tratamiento de elección es la indometacina (que además la respuesta es un criterio diagnóstico).",
-        "Con lo cual respuesta correcta 1 (Indometacina).",
-        "Todos los datos ofrecidos se basan en Criterios Diagnósticos de la International Headache Society."
       ]
     }
   },
@@ -791,7 +770,11 @@
         "Padece alopecia en dicha zona y 3 adenomegalias de consistencia bastante dura en región cervical posterior derecha."
       ],
       "claims": [
-        "La respuesta correcta es la 3. Si no me equivoco está describiendo un Querion de Celso para el cual el tratamiento de elección es la griseofulvina vía oral."
+        "Incisión y drenaje.",
+        "Mupirocina tópica.",
+        "Griseofulvina por vía oral.",
+        "Cefazolina intravenosa.",
+        "Ketoconazol tópico."
       ]
     }
   },
@@ -799,7 +782,7 @@
     "id": "381_139_es",
     "prediction": {
       "premises": [
-        "Mujer de 70 años con antecedente de anorexia, pérdida de peso, molestias en la musculatura y articulaciones proximales más dolorimiento en la región temporo-mandibular que acude al servicio de urgencias por pérdida de visión unilateral (movimiento de manos), de aparición brusca e indolora (defecto pupilar aferente).",
+        "Mujer de 70 años con antecedente de anorexia,pérdida de peso, molestias en la musculatura y articulaciones proximales más dolorimiento en la región temporo-mandibular que acude al servicio de urgencias por pérdida de visión unilateral (movimiento de manos), de aparición brusca e indolora (defecto pupilar aferente).",
         "Nos presentan el caso de una amaurosis monocular de perfil vascular, además en una mujer mayor con antecedentes de pérdida de peso y lo que parecen síntomas de claudicación mandibular y polimialgia reumática, por lo que la primera causa que hay que pensar es en una arteritis de células gigantes como causante de la NOIA, por lo que de las opciones la correcta sería la 2.",
         "La 4 nos la plantearíamos si nos contaran una NOIA pero de características no arteríticas (sin toda esa sintomatología acompañante)."
       ],
@@ -830,12 +813,11 @@
     "prediction": {
       "premises": [
         "Niño de 2 años.",
-        "Infecciones ORL.",
-        "Infecciones Pulmonares.",
-        "Ingresos Hospitalarios.",
-        "PTI.",
-        "Historia Familiar de infecciones con muertes por infecciones en Varones (familia materna).",
-        "Dermatitis Atópica."
+        "En sus antecedentes personales destacan: 3 episodios de otitis media aguda, 1 meningitis meningocócica y 2 neumonías (una de lóbulo medio y otra de lóbulo superior izquierdo).",
+        "Ha ingresado en 3 ocasiones por púrpura trombopénica (en tres ocasiones los anticuerpos antiplaquetas fueron negativos y en la médula óseas se observaban megacariocitos normales).",
+        "Varios varones de la familia materna habían fallecido en la infancia por procesos infecciosos.",
+        "En la exploración física presenta lesiones típicas de dermatitis atópica.",
+        "En el estudio inmunológico destaca una leve disminución de subpoblaciones de linfocitos T; elevación de IgA e IgE; disminución de IgM y IgG en el límite inferior de la normalidad."
       ],
       "claims": [
         "Síndrome de Wiskott-Aldrich.",
@@ -850,8 +832,11 @@
     "id": "62_119_es",
     "prediction": {
       "premises": [
-        "Médico traumatólogo de 40 años que en una serología rutinaria se le detecta niveles de antiHBs de 30 UI/l.",
-        "Refiere vacunación completa según pauta estándar frente a hepatitis B hace 4 años."
+        "Nos consultan para valorar una mujer de 83 años que ha ingresado en el servicio de Traumatología por una fractura de cadera hace 6 horas.",
+        "Tiene AP de HTA, DL, demencia moderada y vive en una residencia.",
+        "Su tratamiento habitual es tiazida, atorvastatina, donepezilo, Calcio y vitamina D.",
+        "EF: Paciente confusa, pulso 90 lpm, frec respiratoria 20 rpm, T art 170/88, presión venosa yugular normal.",
+        "La analítica y la Rx de tórax son normales y el ECG muestra un ritmo sinusal sin alteraciones isquémicas."
       ],
       "claims": [
         "Retrasar la cirugía hasta que haya desaparecido el cuadro confusional.",
@@ -867,16 +852,14 @@
     "prediction": {
       "premises": [
         "Mujer de 40 años que consulta porque desde hace un mes se nota un bulto en el cuadrante superoexterno de la mama derecha.",
-        "Aporta un informe de una mamografía que describe una lesión BIRADS 3.",
-        "Los hallazgos son de baja sospecha de cáncer (entre un 2 y un 10 %) pero es necesario hacer una biopsia."
+        "Aporta un informe de una mamografía que describe una lesión BIRADS 3."
       ],
       "claims": [
         "Tranquilizarle, puesto que ya se ha hecho una prueba de imagen y se ha descartado malignidad.",
         "Esa clasificación implica probablemente cirugía dado que la probabilidad de cáncer es mayor del 10 %. Se lo explica y le deriva de forma preferente a la Unidad de Mama.",
         "Se trata de un hallazgo probablemente benigno, dado que hay menos de un 2 % de probabilidad de cáncer. Le explica que requiere de un seguimiento cada 6-12 meses hasta los 24 meses o una biopsia.",
         "Los hallazgos son de baja sospecha de cáncer (entre un 2 y un 10 %) pero es necesario hacer una biopsia.",
-        "BI-RADS Breast Imaging Reporting and Data System.",
-        "BI-RADS 3 se define con la respuesta 3."
+        "Los hallazgos son de baja sospecha de cáncer (entre un 2 y un 10 %) pero es necesario hacer una biopsia."
       ]
     }
   },
@@ -903,16 +886,15 @@
         "Hombre de 45 años que consulta por tos productiva, dolor pleurítico en costado derecho y fiebre de 48 h de evolución.",
         "Se aprecia una saturación basal de O2 del 88% y estertores en base derecha.",
         "La RX de tórax muestra una consolidación basal derecha.",
-        "Tiene antecedentes de infección por VIH bien controlada con antirretrovirales linfocitos CD4 550 ce/uL y carga viral de VlH indetectable).",
-        "La primera opción parece ser la correcta, por la baja probabilidad de infección por P. jirovecii en paciente con más de 500 linfocitos CD4 y carga viral indetectable.",
-        "Lo más probable es que sea infección por neumococo que cubrimos con Ceftriaxona y con azitromicina cubrimos las llamadas “atípicas”.",
-        "Meropenem es un antibiótico de espectro demasiado amplio, que tendría opción en una neumonía intrahospitalaria por la P. aeruginosa, agente bacteriano que también puede causar neumonía a pacientes VIH, pero no es lo frecuente."
+        "Tiene antecedentes de infección por VIH bien controlada con antirretrovirales linfocitos CD4 550 ce/uL y carga viral de VlH indetectable)."
       ],
       "claims": [
         "Cefiriaxona 2 g y azitromicina 500 mg cada 24 horas.",
         "Cefiriaxona 2 g, azitromicina 500 mg cada 24 horas y trimetoprim-sulfametoxazol 5 mg/kg/8 h (basado en dosis de trimetoprim).",
-        "Metil-prednisolona 40 mgdía, cefiriaxona 2 g IV 124 h y trimetoprim-sulfametoxazol 5 mg/kg/8 h (basado en dosis de trimetoprim).",
-        "Meropenem I g/8 h y vancomicina I g/l2 h."
+        "Meropenem I g/8 h y vancomicina I g/l2 h.",
+        "Cefiriaxona 2 g, azitromicina 500 mg cada 24 horas y trimetoprim-sulfametoxazol 5 mg/kg/8 h (basado en dosis de trimetoprim).",
+        "Meropenem I g/8 h y vancomicina I g/l2 h.",
+        "Cefiriaxona 2 g y azitromicina 500 mg cada 24 horas."
       ]
     }
   },
@@ -926,15 +908,10 @@
         "A los 11 meses presenta una pseudoartrosis atrófica de tibia con supuración en la zona de la herida."
       ],
       "claims": [
-        "Retirada del clavo, desbridamiento, colocación de fijador externo y antibioterapia ajustada a los resultados de los cultivos.",
-        "Tratamiento antibiótico supresivo: indicado en pacientes de tipo C de Ciemy, consiste en antibioterapia oral prolongada durante al menos 6 meses para «enfriar» la reagudización del cuadro clínico.",
-        "Tratamiento curativo: incluye una primera cirugía con desbridamiento agresivo, de tipo tumoral, de todos los tejidos afectos, irrigación profusa, estabilización con fijador externo si la estabilidad está comprometida da y eventual relleno de las cavidades con sustancias liberadoras de antibióticos.",
-        "Estamos ante una infección asociada a implante (clavo intramedular) y pseudoartrosis de la fractura de tibia (ausencia de unió tras 11 meses).",
-        "La infección se entiende por la clínica (supuración, ausencia de unión) y el antecedente de diabetes y fractura abierta.",
-        "El manejo se solapa con el del manejo de una osteomielitis crónica.",
-        "La antibioterapia aislada (opción 2) está indicada sólo en pacientes con grave comorbilidad en los cuales el tratamiento quirúrgico sería más agresivo que continuar con la enfermedad.",
-        "La dinamización del clavo asociado a antibioterapia de amplio espectro (opción 1) tampoco, porque (a) no ha demostrado beneficio en pseudoartrosis establecidas y (b) tenemos el mismo tema que la opción 1, no eliminamos biofilm.",
-        "La opción 3, discutida, se plantearía sólo si no hubiera infección asociada."
+        "1- Triple antibioterapia (grampositivos, gramnegativos y anaerobios) y limpieza de la herida quirúrgica, retirando los cerrojos distales para favorecer la consolidación ósea.",
+        "2- Actitud expectante y tratamiento antibiótico con quinolonas.",
+        "3- Aporte de injerto autólogo y de factores de crecimiento (BMP 2 y 7) para estimular el proceso de consolidación ósea, que está retardando.",
+        "4- Retirada del clavo, desbridamiento, colocación de fijador externo y antibioterapia ajustada a los resultados de los cultivos."
       ]
     }
   },
@@ -951,10 +928,11 @@
         "5- Escabiosis."
       ],
       "claims": [
-        "Urticaria Aguda: se caracteriza por lesiones eritemato-edematosas, evanescentes pruriginosas, que duran menos de 24 horas, sin descamación. El estado general suele estar conservado. En los niños es más frecuente el patrón anular.",
-        "Tanto en la rubeola como en la toxicodermia, el estado general no esta conservado.",
-        "El Shock Estafilocócico, presenta afectación del estado general y además las lesiones son ampollosas.",
-        "Las lesiones de la Escabiosis son interdigitales preferentemente, en forma de papulocostras que pueden seguir trayectos lineales."
+        "Urticaria.",
+        "Rubeola.",
+        "Toxicodermia.",
+        "Shock tóxico estafilocócico.",
+        "Escabiosis."
       ]
     }
   },
@@ -972,9 +950,11 @@
         "Por tanto, la respuesta correcta es la opción 3."
       ],
       "claims": [
+        "Test de infusión de suero salino hipertonico para determinación seriada de hormona antidiurética.",
         "Test de deshidratación (test de Miller).",
         "Administración de desmopresina con control seriado de osmolalidad en orina.",
-        "Determinación de hormona antidiurética en plasma."
+        "Determinación de hormona antidiurética en plasma.",
+        "Test de vasopresina (administración intravenosa de ADH y medir de nuevo la osmolaridad urinaria)."
       ]
     }
   },
@@ -989,10 +969,11 @@
         "Resto de la anamnesis sin datos patológicos.",
         "En la exploración física se observan lesiones de rascado, ictericia conjuntival y hepatomegalia no dolorosa.",
         "Aporta analítica realizada en su empresa con los siguientes resultados patológicos: Bilirrubina 3 mg/dl, FA 400 UI/ VSG 40mm 1 hora.",
-        "Cuadro de libro de Cirrosis Biliar Primaria, de esos que no se presentan en la vida real.",
-        "El diagnóstico estaría prácticamente hecho con los AMA (1).",
-        "Con la 2 descartaríamos hemocromatosis, Con la 3 la enfermedad de Wilson.",
-        "Con la 4 podríamos descartar enfermedades raras tipo malformaciones de vía biliar o enf. de Caroli y con la 5 las hepatitis víricas."
+        "Indique cual sería la recomendación más acertada para establecer el diagnóstico etiológico del cuadro que presenta la paciente:",
+        "Anticuerpos antimitocondriales.",
+        "Estudio del metabolismo del Fe.",
+        "Estudio del metabolismo del cobre.",
+        "Serología de virus B y C."
       ],
       "claims": [
         "Anticuerpos antimitocondriales.",
@@ -1030,7 +1011,12 @@
         "Mujer de 73 años con antecedentes de obesidad, diabetes mellitus tipo 2, hipertensión arterial y dislipemia.",
         "Consulta por dolor insoportable en la rodilla derecha de 5 días de evolución, sin trauma previo.",
         "Exploración: rodilla globulosa, varo moderado, extensión y flexión limitadas por dolor, dolor difuso medial.",
-        "En la radiografía se aprecian osteofitos y pinzamiento leve de la interlínea medial.",
+        "En la radiografía se aprecian osteofitos y pinzamiento leve de la interlínea medial."
+      ],
+      "claims": [
+        "Explicación del diagnóstico, reposo relativo, paracetamol 1g/8h más metamizol 500 mg/ 8 h naproxeno de rescate.",
+        "Derivación preferente a consultas externas de Traumatología para valoración de prótesis total cementada.",
+        "Derivación preferente a consultas externas de Traumatología para valorar desbridamiento artroscópico.",
         "Nos están describiendo una crisis aguda de dolor en un paciente con gonartrosis.",
         "En esta situación lo primero es resolver la crisis de dolor y plantear un tratamiento adecuado conservador para dicha artrosis (1 correcta).",
         "No se plantea de entrada una artroplastia de rodilla por lo que 2 es falsa.",
@@ -1039,11 +1025,6 @@
         "El quiste de Baker solo nos interesaría en una crisis de dolor severa en el diagnóstico diferencial con una trombosis profunda y se valora con una ecodoppler, en el cuadro de gonartrosis no tiene ningún valor detectar un quiste de Baker.",
         "Las tendinitis se diagnostican mediante la exploración no con RMN.",
         "Por todo ello la 4 es falsa."
-      ],
-      "claims": [
-        "Explicación del diagnóstico, reposo relativo, paracetamol 1g/8h más metamizol 500 mg/ 8 h naproxeno de rescate.",
-        "Derivación preferente a consultas externas de Traumatología para valoración de prótesis total cementada.",
-        "Derivación preferente a consultas externas de Traumatología para valorar desbridamiento artroscópico."
       ]
     }
   },
@@ -1071,15 +1052,19 @@
         "Como antecedente, relata que tras cuadro gripal hace un mes, persiste tos, expectoración purulenta y ocasionalmente hemoptoica, febrícula, anorexia, astenia y pérdida de peso.",
         "A su llegada se aprecia la existencia de fiebre de 38.2ºC, abscesos cutáneos múltiples en manos, espalda y nalgas (algunos con trayectos fistulosos) y parálisis facial central derecha, infiltrados apicales con pequeño derrame pleural asociado en la radiografía de tórax y leucocitosis con neutrofilia.",
         "Entre los siguientes diagnósticos de sospecha consideraría MÁS probable:",
+        "1- Neoplasia pulmonar con metástasis cerebrales.",
+        "2- Tuberculosis diseminada.",
+        "3- Nocardiosis.",
+        "4- Aspergilosis.",
+        "La nocardia tipicamente puede afectar a inmunosuprimidos, en especial con alteración de la inmunidad celular como es la producida por los esteroides, y puede cursar con afectación pulmonar, abscesos cerebrales y cutáneos.",
+        "La Tuberculosis puede afectar a pulmón y cerebro pero no abscesos cutáneos.",
+        "Aspergillus tampoco afecta a piel."
+      ],
+      "claims": [
         "Neoplasia pulmonar con metástasis cerebrales.",
         "Tuberculosis diseminada.",
         "Nocardiosis.",
         "Aspergilosis."
-      ],
-      "claims": [
-        "La nocardia tipicamente puede afectar a inmunosuprimidos, en especial con alteración de la inmunidad celular como es la producida por los esteroides, y puede cursar con afectación pulmonar, abscesos cerebrales y cutáneos.",
-        "La Tuberculosis puede afectar a pulmón y cerebro pero no abscesos cutáneos.",
-        "Aspergillus tampoco afecta a piel."
       ]
     }
   },
@@ -1090,14 +1075,14 @@
         "Mujer de 68 años, con antecedentes de 2 episodios depresivos mayores a lo largo de su vida, que consulta por síntomas de tristeza, decaimiento, anhedonia, astenia y anorexia compatibles con un nuevo episodio depresivo.",
         "Se pautan 10 mg de escitalopram y se evalúa 2 semanas después.",
         "En esta revisión la paciente refiere estar muy bien, se despierta temprano muy hiperactiva y con ‘muchas ganas de hacer cosas’, dice tener mucha energía y está más habladora de lo que en ella es habitual.",
-        "No refiere estar irritable y es capaz de dormir 6 horas continuadamente."
+        "No refiere estar irritable y es capaz de dormir 6 horas continuadamente.",
+        "Ante esta situación, ¿qué pensaría que tiene la paciente?"
       ],
       "claims": [
         "Trastorno bipolar tipo I.",
         "Hipomanía inducida por fármacos.",
         "Respuesta normal al escitalopram.",
-        "Demencia frontal.",
-        "Mientras los niveles serológicos de antiHBs estén por encima de 10 UI/l no es necesario revacunar."
+        "Demencia frontal."
       ]
     }
   },
@@ -1111,7 +1096,10 @@
         "No se aprecia ninguna lesión cutánea en miembros inferiores, ano o periné."
       ],
       "claims": [
-        "Por las características clínicas parece tratarse de unos ganglios normales y no deben hacerse exploraciones complementarias."
+        "Una serología de lúes puesto que lo más probable es que se trate de una infección por Treponema pallidum.",
+        "Una exploración ginecológica a fin de descartar un cáncer de ovario.",
+        "Por las características clínicas parece tratarse de unos ganglios normales y no deben hacerse exploraciones complementarias.",
+        "Debe realizarse una prueba de Paul-Bunnell a ﬁn de descartar una mononucleosis infecciosa."
       ]
     }
   },
@@ -1120,8 +1108,7 @@
     "prediction": {
       "premises": [
         "Mujer de 71 años, con antecedentes de artritis reumatoide en tto con sulfasalazina, prednisona y etanercept.",
-        "Acude a URG por clínica de 72 horas compatible con Herpes Zóster facial afectando a a hemicara derecha, pabellón auricular, respetando frente y quemosis conjuntival.",
-        "Creo que esta pregunta no está claramente en el temario de Infecciosas, y puede que se solape con OFT y DERMA, pero según tengo entendido, en una paciente inmunodeprimida y además con datos de afectación ocular, estaría indicado el ingreso para tratamiento intravenoso por el alto riesgo de complicaciones posibles."
+        "Acude a URG por clínica de 72 horas compatible con Herpes Zóster facial afectando a a hemicara derecha, pabellón auricular, respetando frente y quemosis conjuntival."
       ],
       "claims": [
         "Tto sintomático del dolor únicamente.",
@@ -1139,19 +1126,17 @@
         "Varón de 58 años con antecedentes de hipertensión arterial de 6 años de evolución, que consulta por mal control de las cifras de presión arterial a pesar de recibir tratamiento con un inhibidor de la enzima convertidora en angiotensina, un diurético y un calcioantagonista.",
         "En consulta presenta cifras de 149/100 mmHg.",
         "Analítica: creatinina 1,2 mg/dl, potasio 2,2 mEq/l y alcalosis metabólica compensada; resto del estudio bioquímico, hemograma, coagulación y sedimento urinario normal.",
-        "Señale la afirmación correcta:",
-        "1- El origen de la hipertensión en este caso es la secreción excesiva de aldosterona causada por una hiperfunción autónoma de la médula suprarrenal.",
-        "2- En la mayoría de los casos el sustrato anatómico es una hiperplasia bilateral de la corteza suprarrenal.",
-        "3- La TC forma parte del estudio diagnóstico en caso de haber una confirmación bioquímica.",
-        "4- La espironolactona está contraindicada en el manejo de esta patología."
-      ],
-      "claims": [
-        "CORRECT ANSWER: 3",
         "Nos presentan un paciente con hipertensión arterial resistente, dando por hecho que tiene un hiperaldosteronismo primario por la alcalosis metabólica hipopotasémica.",
         "Cuando está bioquímicamente confirmado el diagnóstico, la siguiente prueba a realizar es una TC para determinar el subtipo y descartar la presencia de un carcinoma suprarrenal (opción 3 correcta).",
         "Por tanto, hay que esperar a la prueba de imagen para confirmar la etiología (opción 1 incorrecta).",
         "La causa más frecuente es el adenoma productor de aldosterona (opción 2 incorrecta).",
         "La espironolactona es el tratamiento médico de elección (opción 4 incorrecta)."
+      ],
+      "claims": [
+        "El origen de la hipertensión en este caso es la secreción excesiva de aldosterona causada por una hiperfunción autónoma de la médula suprarrenal.",
+        "En la mayoría de los casos el sustrato anatómico es una hiperplasia bilateral de la corteza suprarrenal.",
+        "La TC forma parte del estudio diagnóstico en caso de haber una confirmación bioquímica.",
+        "La espironolactona está contraindicada en el manejo de esta patología."
       ]
     }
   },
@@ -1162,11 +1147,15 @@
         "Gustavo acude a Urgencias con lesiones cutáneas y malestar general de varios días de evolución.",
         "Tiene lesiones psoriasiformes en tronco con afectación de palmas y plantas.",
         "También presenta una inflamación articular asimétrica no supurativa y enrojecimiento ocular bilateral así como erosiones en glande.",
-        "En la anamnesis posterior Gustavo reconoce un contacto sexual de riesgo 20 días antes."
-      ],
-      "claims": [
+        "En la anamnesis posterior Gustavo reconoce un contacto sexual de riesgo 20 días antes.",
         "Está describiendo un síndrome de Reiter de libro: queratodermia palmo-plantar, artritis y manifestaciones oculares, junto a seguramente una uretritis por clamidia, quizá asintomática (no explican exudado uretral).",
         "Naturalmente, además el paciente puede tener una infección por VIH o incluso una sífilis secundaria (además del Reiter)."
+      ],
+      "claims": [
+        "Infección por VIH.",
+        "Sífilis secundaria.",
+        "Síndrome de Reiter.",
+        "Eritema multiforme."
       ]
     }
   },
@@ -1176,14 +1165,18 @@
       "premises": [
         "Hombre de 35 años, ingresado por traumatismo torácico grave con múltiples fracturas costales.",
         "Tras responder favorablemente al tratamiento con analgésicos y oxígeno, comienza a presentar hipoxemia grave.",
+        "Señale cuál es la causa más probable de este deterioro:",
+        "1- La inestabilidad de la pared torácica por las fracturas múltiples.",
+        "2- La infección respiratoria por aspiración.",
+        "3- La alteración del intercambio gaseoso por la contusión pulmonar.",
+        "4- La hipovolemia postraumática."
+      ],
+      "claims": [
         "La contusión pulmonar es la lesión más grave y que condiciona peor pronóstico en un traumatismo torácico.",
         "También es la lesión que ocasiona más precozmente hipoxemia.",
         "En contra de lo que podemos pensar, el tórax inestable por fracturas costales múltiples (volet costal) ocasionaría una hipoventilación progresiva con atelectasias del parénquima pulmonar, que iría progresando por una parte en hipercapnia y acidosis respiratoria, y por otra, en hipoxemia más tardía por infección asociada a las atelectasias.",
         "La infección respiratoria por aspiración también se presentaría de forma más tardía, y en no aparece en todos los casos de traumatismo torácico grave, sólo si ha habido disminución de nivel de consciencia (TCE asociado, intubación no controlada con broncoaspiración…).",
         "La hipovolemia postraumática (en este caso, al haber fracturas costales múltiples podría deberse a un hemotórax) se produciría de forma más precoz y asociaría en primer lugar inestabilidad hemodinámica."
-      ],
-      "claims": [
-        "La contusión pulmonar es la causa más probable de este deterioro."
       ]
     }
   },
@@ -1193,16 +1186,71 @@
       "premises": [
         "Mujer de 66 años con diabetes mellitus tipo 2.",
         "Valorando su función renal presenta un estadio G3a/A1.",
-        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml."
-      ],
-      "claims": [
+        "¿A qué valores corresponde este estadio, el más frecuente en pacientes con nefropatía diabética?:",
         "1- Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
         "2- Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
         "3- Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
-        "4- Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
-        "El estadio G3a corresponde a un filtrado entre 45-59 ml/min.",
-        "El estadio A1 corresponde a una albuminuria inferior a 30 mg/ml.",
-        "Por tanto la opción correcta es la 1."
+        "4- Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml."
+      ],
+      "claims": [
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria 30-300 mg/ml.",
+        "Filtrado glomerular 15-29 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 45-59 ml/min/1,73 m² y albuminuria <30 mg/ml.",
+        "Filtrado glomerular 30-44 ml/min/1,73 m²"
       ]
     }
   },
@@ -1217,8 +1265,11 @@
         "Por tanto, nos inclinamos por el transplante alogénico de médula ósea si tiene un hermano HLA idéntico, ya que ése es el tratamiento de elección según marca el protocolo de la Sociedad Española de Hematología y Hemoterapia para pacientes con menos de 40 años y aplasia medular severa."
       ],
       "claims": [
-        "Transfundir a este paciente y hartarlo de antibióticos es darle pan para hoy y hambre para mañana.",
-        "La 3."
+        "Transfusiones periódicas y antibióticos.",
+        "Andrógenos y transfusiones de plaquetas.",
+        "Transplante alogénico de médula ósea si hermano HLA idéntico.",
+        "Transplante autólogo de médula ósea para evitar rechazo.",
+        "Ciclosporina A y globulina antitimocítica."
       ]
     }
   },
@@ -1230,7 +1281,11 @@
         "No se halla pulso arterial en la mano medido por doppler."
       ],
       "claims": [
-        "Escarotomia o incisiones de descompresión de urgencia."
+        "Curas con sulfadiacina argéntica oclusivas y evaluación de la profundidad a la semana.",
+        "Drenajes linfáticos y valorar un by-pass vascular.",
+        "Escarotomia o incisiones de descompresión de urgencia.",
+        "Conducta expectante.",
+        "Amputación de la extremidad."
       ]
     }
   },
@@ -1242,10 +1297,14 @@
         "Su estado clínico es crítico, con baja saturación de oxígeno e inestabilidad hemodinámica.",
         "Se realiza Rx urgente de tórax que muestra atelectasia de 2/3 del pulmón derecho.",
         "Se procede a intubación orotraqueal y ventilación en modo asistido, con Fi02 de 1,0.",
-        "En una gasometría arterial practicada posteriormente obtenemos estos valores: pH 7,23; Pa02 60 mmHg y PaC02 30 mmHg."
+        "En una gasometría arterial practicada posteriormente obtenemos estos valores: pH 7,23; Pa02 60 mmHg y PaC02 30 mmHg.",
+        "La FiO2 de 1 y la hiperventilación con la ventilación mecánica, demostrada por la baja PCO2, no consiguen remontar suficientemente la PO2, debido a un trastorno en la V/Q, con shunt probable en la zona de la atelectasia pulmonar, probablemente aguda, dado que el pulmón no ha podido crear mecanismos compensatorios de limitar la perfusión en las zonas mal ventiladas."
       ],
       "claims": [
-        "La FiO2 de 1 y la hiperventilación con la ventilación mecánica, demostrada por la baja PCO2, no consiguen remontar suficientemente la PO2, debido a un trastorno en la V/Q, con shunt probable en la zona de la atelectasia pulmonar, probablemente aguda, dado que el pulmón no ha podido crear mecanismos compensatorios de limitar la perfusión en las zonas mal ventiladas."
+        "Cortocircuito.",
+        "Hipoventilación.",
+        "Baja presión de 02 inspirado.",
+        "Enfermedad neuromuscular."
       ]
     }
   },
@@ -1254,11 +1313,15 @@
     "prediction": {
       "premises": [
         "Si en un paciente con insuficiencia cardiaca crónica detectamos unas ondas v prominentes en el pulso venoso yugular y en la auscultación cardiaca se ausculta un soplo holosistólico en el área del apéndice xifoides que se acentúa con la inspiración profunda.",
-        "soplo sistólico, algo que en sístole tenía que estar cerrado y no lo está, o tenía que abrirse, y no lo hace: opciones 1, 3 y 5.",
+        "Soplo sistólico, algo que en sístole tenía que estar cerrado y no lo está, o tenía que abrirse, y no lo hace: opciones 1, 3 y 5.",
         "Y si vemos repercusión en el pulso yugular, es que debe estar en cavidades derechas."
       ],
       "claims": [
-        "3"
+        "Insuficiencia mitral.",
+        "Insuficiencia pulmonar.",
+        "Insuficiencia tricúspide.",
+        "Insuficiencia aórtica.",
+        "Estenosis aórtica."
       ]
     }
   },
@@ -1277,12 +1340,7 @@
         "2- Mantener la actitud terapéutica tomada dado que sólo llevamos 6 meses y habría que esperar un mínimo de 9 meses para valorar respuesta terapéutica.",
         "3- Si no existe contraindicación médica, valorar asociar al tratamiento un anti-TNF alfa.",
         "4- Iniciar lo antes posible un segundo fármaco modificador de la enfermedad dado que no se podría iniciar tratamiento con terapia biológica sólo tras metotrexato.",
-        "5- Valorar iniciar tratamiento con terapia anti-CD20 asociada al metotrexato.",
-        "Se trata de una paciente afecta de artritis reumatoide.",
-        "En mi opinión, como en estos seis meses ha mostrado una clara mejoría clínica y biológica (dismininución de reactantes de fase aguda), mantendría la actitud terapéutica tomada y esperaría a una nueva valoración.",
-        "Eso sí, considero que esta pregunta podría tener otra respuesta válida, la 3.",
-        "Depende un poco de la actitud de cada reumatólogo.",
-        "Si lo que se busca es una remisión de la enfermedad lo"
+        "5- Valorar iniciar tratamiento con terapia anti-CD20 asociada al metotrexato."
       ]
     }
   },
@@ -1294,16 +1352,16 @@
         "Ingresada por neumonía en lóbulo medio con un pequeño derrame pleural metaneumónico asociado y en tratamiento con levofloxacino 500 mg/24h.",
         "Presenta buena evolución clínica salvo por persistencia de febrícula y leucocitosis al sexto día de tratamíento.",
         "No se dispone de estudios microbiológicos.",
-        "La conducta más adecuada es:",
-        "Mientras persista la fiebre en una neumonía en evolución, existe el riesgo de empiematización, máxime si ya ha presentado un pequeño derrame al inicio del cuadro.",
-        "El tratamiento antibiótico en principio es correcto y antes de plantear cambios de tratamiento, debe de evaluarse la posibilidad de empiematización."
+        "La conducta más adecuada es:"
       ],
       "claims": [
         "La evolución es normal, debe mantenerse tratamiento hasta completar los 10 días.",
         "Se considera un fracaso terapéutico y debe modificar el tratamiento antibiótico.",
         "Realizar toracocentesis para descartar empiema.",
         "Asociar corticoides a dosis de 0.5 mg/Kg/día al tratamiento antibiótico.",
-        "Realizar broncoscopia con biopsia, aspiración y lavado broncoalveolar."
+        "Realizar broncoscopia con biopsia, aspiración y lavado broncoalveolar.",
+        "Mientras persista la fiebre en una neumonía en evolución, existe el riesgo de empiematización, máxime si ya ha presentado un pequeño derrame al inicio del cuadro.",
+        "El tratamiento antibiótico en principio es correcto y antes de plantear cambios de tratamiento, debe de evaluarse la posibilidad de empiematización."
       ]
     }
   },
@@ -1315,20 +1373,38 @@
         "La clínica empeora con salidas nocturnas de fines de semana.",
         "Un EEG muestra descargar de polipuntas agudas a 6 ciclos/segundo.",
         "El diagnóstico más probable es:",
-        "Epilepsia mioclónica juvenil.",
-        "Entre otras características está la historia previa de crisis o ausencias, el empeoramiento con las salidas nocturnas, y el EEG con descargas de polipuntas generalizadas a una frecuencia mayor que el de las ausencias.",
-        "Del resto de respuestas, el Lennox Gastaut se desarrolla a una edad temprana con otra sintomatología, la 4 es lo mismo que ausencias, y la 3 suele cursar con crisis parciales complejas y de cualquier manera, el EEG es claramente distinto a un foco temporal."
+        "1- Gran mal epiléptico.",
+        "2- Síndrome de Lennox-Gastaut.",
+        "3- Epilepsia sintomática por esclerosis temporal mesial.",
+        "4- Pequeño mal atípico.",
+        "5- Epilepsia mioclónica juvenil."
       ],
       "claims": [
-        "Epilepsia mioclónica juvenil (respuesta 5 correcta)."
+        "1- Gran mal epiléptico.",
+        "2- Síndrome de Lennox-Gastaut.",
+        "3- Epilepsia sintomática por esclerosis temporal mesial.",
+        "4- Pequeño mal atípico.",
+        "5- Epilepsia mioclónica juvenil."
       ]
     }
   },
   {
     "id": "276_75_es",
     "prediction": {
-      "premises": [],
+      "premises": [
+        "Indique la situación clínica que, en relación con la infección por virus de la hepatitis B, presenta un paciente de 5 años procedente de Nigeria, con exploración física normal y con la siguiente serología frente a hepatitis B: HBsAg + / ANTI-HBs – / HbeAg – / ANTI-HBe + / ANTI-HBc IgM – / ANTI-HBc IgG + / DNA VHB +:",
+        "1- Infección aguda.",
+        "2- Infección crónica.",
+        "3- Paciente vacunado.",
+        "4- Portador asintomático.",
+        "CORRECT ANSWER: 4",
+        "Que tenga anticuerpos contra el core implica contacto natural, y que sea IgG, que no es agudo. La ausencia del antígeno e descarta la replicación activa. Y la persistencia del antígeno de superficie (HBsAg) y del ADN del virus indica que sigue presente. En conjunto, indican que se trata de un portador asintomático. Los portadores del mutante pre-core habitualmente tienen periodos sintomáticos recurrentes y mayor inflamación hepática. No habría datos suficientes para descartarlo por completo, pero no está entre las respuestas e indican la exploración física completamente normal."
+      ],
       "claims": [
+        "Infección aguda.",
+        "Infección crónica.",
+        "Paciente vacunado.",
+        "Portador asintomático.",
         "Que tenga anticuerpos contra el core implica contacto natural, y que sea IgG, que no es agudo.",
         "La ausencia del antígeno e descarta la replicación activa.",
         "Y la persistencia del antígeno de superficie (HBsAg) y del ADN del virus indica que sigue presente.",
@@ -1360,13 +1436,17 @@
     "prediction": {
       "premises": [
         "Mujer de 32 años con parálisis cerebral del parto que acude a Urgencias por cuadro de orinas oscuras de unos días de evolución en relación con episodio de fiebre alta y tos seca.",
-        "En hemograma 16900 leucocitos/mm3 (85% S, 11% L, 4% M), hemoglobina de 6.3 gr/dl; VCM 109 fl, 360000 plaquetas/mm3.",
+        "Al ingreso se objetiva en hemograma 16900 leucocitos/mm3 (85% S, 11% L, 4% M), hemoglobina de 6.3 gr/dl; VCM 109 fl, 360000 plaquetas/mm3.",
         "En la bioquímica LDH 2408; bilirrubina 6.8 mg/dl, (bilirrubina no conjugada 6.1 mg/dl), GOT y GPT normales.",
         "En el estudio morfológico de sangre se observa anisocitosis macrocítica con frecuentes formas esferocitadas y policromatofilia sin blastos.",
         "El estudio de anticuerpos irregulares es positivo en forma de panaglutinina, dificultando la prueba cruzada."
       ],
       "claims": [
-        "3- Anemia hemolítica autoinmune asociada a infección respiratoria y corticoides."
+        "Aplasia medular e inmunoterapia con timoglobulina y ciclosporina.",
+        "Esferocitosis hereditaria y esplenectomía.",
+        "Anemia hemolítica autoinmune asociada a infección respiratoria y corticoides.",
+        "Anemia perniciosa e inyecciones periódicas de vitamina B12.",
+        "Leucemia aguda y quimioterapia."
       ]
     }
   },
@@ -1381,6 +1461,10 @@
         "La oxigenoterapia no mejora la situación."
       ],
       "claims": [
+        "Neumonía nosocomial.",
+        "Insuficiencia cardiaca.",
+        "Linfangitis carcinomatosa.",
+        "Tromboembolismo pulmonar.",
         "Distress respiratorio."
       ]
     }
@@ -1391,16 +1475,16 @@
       "premises": [
         "Lactante de 13 meses que acude a urgencias por fiebre de hasta 39ºC de 48h de evolución sin otra sintomatología asociada.",
         "Exploración por órganos y aparatos sin hallazgos significativos, destacando buen estado general.",
-        "Usted le iba entregar el alta domiciliaria pero el adjunto de Pediatría que está de guardia le pide sistemático de orina y un urocultivo por sondaje.",
         "En la orina destaca leucocituria ++, hematuria + y nitritos ++ y en el Gram de orina se observan bacilos Gram negativos.",
         "En la analítica de sangre no existe leucocitosis y la proteína C reactiva es de 50 mg/l.",
         "El adjunto le dice ahora que no es preciso que el niño ingrese y que le paute un antibiótico oral."
       ],
       "claims": [
-        "El resto de fármacos son una buena elección en las infecciones de orina por bacilos gran negativos (el más probable: E. coli).",
-        "La presencia de leucocitos+ nitritos en a orina es muy sugestiva de ITU.",
-        "Y si el Gram de orina detecta bacterias G- probablemente se trate de una ITU por E Coli.",
-        "Muchos E Coli son resistentes a amoxicilina."
+        "Amoxicilina.",
+        "Amoxicilina-clavulánico.",
+        "Cefuroxima-axetilo.",
+        "Cotrimoxazol.",
+        "Cefixima."
       ]
     }
   },
@@ -1427,15 +1511,14 @@
       "premises": [
         "Mujer de 84 años que acude por pérdida de visión en el ojo izquierdo de 4 días de evolución acompañada de metamorfopsias.",
         "En la mácula se aprecian abundantes exudados duros, dos pequeñas hemorragias profundas y un desprendimiento de la retina neurosensorial localizado.",
-        "En el ojo contralateral presenta abundantes drusas blandas."
+        "En el ojo contralateral presenta abundantes drusas blandas.",
+        "La DMAE en su forma exudativa se presenta tanto con esa clínica (pérdida de visión y metamorfopsias) como el fondo de ojo característico descrito en la pregunta, además de que habitualmente se observan drusas en el ojo contralateral."
       ],
       "claims": [
         "Desprendimiento posterior de vítreo agudo.",
         "Degeneración macular asociada a la edad (DMAE) exudativa.",
         "Obstrucción de arteria central de la retina.",
-        "Neuropatía óptica isquémica anterior no arterítica.",
-        "Ninguna de las otras tres opciones da esa clínica (el DPV suele ser asintomático, la OACR produce pérdida brusca y total o casi total de la visión con la “mancha rojo cereza” típica en el fondo de ojo, y una NOIA tanto arterítica como no arterítica produciría edema de papila habitualmente con hemorragias peripapilares pero no maculares, y ninguna de estas 3 opciones tiene relación con drusas en el ojo contralateral).",
-        "La DMAE en su forma exudativa se presenta tanto con esa clínica (pérdida de visión y metamorfopsias) como el fondo de ojo característico descrito en la pregunta, además de que habitualmente se observan drusas en el ojo contralateral."
+        "Neuropatía óptica isquémica anterior no arterítica."
       ]
     }
   },
@@ -1445,12 +1528,14 @@
       "premises": [
         "Ante un traumatismo directo sobre el lado derecho de la cara tras el cual el paciente presenta hematoma palpebral unilateral, diplopia en la mirada vertical y dificultad para la apertura de la boca, ¿cuál de las siguientes afirmaciones es cierta?",
         "La diplopia en la mirada vertical es muy sugerente de que las paredes óseas de la órbita están afectadas.",
+        "Conociendo esta información, la única respuesta correcta es la 2.",
         "Si dudábamos acerca de si la fractura de Lefort tipo I afectaba la órbita o no, simplemente mirad las respuestas.",
         "Quien puso la pregunta quiso asegurarse de que la única respuesta válida fuera la número 2; por eso añadió la coletilla de «pero por si acaso lo comprobamos con una TAC»."
       ],
       "claims": [
         "Estamos con gran probabilidad ante una fractura de tercio medio facial tipo Lefort I.",
         "Se trata probablemente de una fractura órbitomalar unilateral.",
+        "El diagnóstico se comprobaría idealmente mediante TAC (tomografía axial computerizada).",
         "Se trata de una fractura de la base del cráneo a nivel del agujero carotídeo.",
         "El diagnóstico probable es la fractura con dislocación del cóndilo mandibular.",
         "Probablemente se asocia una fractura mandibular con una fractura del tercio medio facial tipo Lefort I."
@@ -1469,7 +1554,10 @@
         "Técnicamente, tanto la opción 2 como la 4 (un DPV agudo hemorrágico) podrían provocar estos síntomas, pero la opción más correcta es la 2 (y estoy segura de que es la que el examinador quiere que se conteste)."
       ],
       "claims": [
-        "Desprendimiento de retina."
+        "Endoftalmitis postquirúrgica.",
+        "Desprendimiento de retina.",
+        "Degeneración macular asociada a la edad, forma húmeda.",
+        "Desprendimiento posterior de vítreo."
       ]
     }
   },
@@ -1485,15 +1573,10 @@
         "También se apreció un claro incremento en la densidad de linfocitos intraepiteliales."
       ],
       "claims": [
-        "El diagnóstico de la lesión intestinal es?",
-        "1- Colitis ulcerosa cronificada.",
-        "2- Colitis pseudomembranosa.",
-        "3- Colitis colágena.",
-        "4- Enfermedad de Crohn fibrosante.",
-        "CORRECT ANSWER: 3",
-        "En este caso, la presencia de engrosamiento de la capa de colágeno subepitelial, más evidente con el tricrómico de Masson (tinción especial que permite diferenciar las fibras de colágeno), es patognomónica de la colitis colágena.",
-        "La atrofia junto con la denudación epitelial son características de esta enfermedad, la cual no suele causar alteraciones macroscópicas de la mucosa.",
-        "Un incremento de la densidad de linfocitos intraepiteliales y la ausencia de mención de alteraciones arquitecturales de las criptas (características de la colitis ulcerosa y la enfermedad de Crohn) nos apoyan en este diagnóstico."
+        "Colitis ulcerosa cronificada.",
+        "Colitis pseudomembranosa.",
+        "Colitis colágena.",
+        "Enfermedad de Crohn fibrosante."
       ]
     }
   },
@@ -1504,15 +1587,15 @@
         "Luis es un joven de 25 años que sufrió esplenectomia tras accidente de bicicleta hace 1 año.",
         "Tiene un perro que le mordió hace 24 horas y le ha producido una pequeña herida en la mano derecha.",
         "Acude a su centro de salud (situada a 3 horas del hospital mas cercano) por fiebre de 39ºC, dolor en la herida y malestar general.",
-        "A la exploración PA 100/60 mm Hg, FC 110 latidos por minuto, ligera inflamación en la herida sin pus."
+        "A la exploración PA 100/60 mm Hg, FC 110 latidos por minuto, ligera inflamación en la herida sin pus.",
+        "El perro es suyo (se debería preguntar si el animal está correctamente vacunado) y si el paciente está correctamente vacunado (5 dosis de tétanos, no requeriría antitetánica); realizar una notificación de Agresión por Animal, para observación de este y tomar medidas en caso de que esto sea necesario."
       ],
       "claims": [
         "Enviar al hospital para vacunar de rabia y tétanos y mantener en observación.",
         "Limpiar la herida y administrar ganunaglobulina inespecífica intramuscular.",
         "Dar 400 mg de moxifloxacino oral y enviar al hospital.",
         "Dar clindamicina 600 mg oral cada 8 horas y observación.",
-        "Al considerar un paciente “especial” a un esplenectomizado, este recibiría tratamiento antibiótico lo antes posible aunque la herida no aparezca infectada.",
-        "Hay que tener que el perro es suyo (se debería preguntar si el animal está correctamente vacunado) y si el paciente está correctamente vacunado (5 dosis de tétanos, no requeriría antitetánica); realizar una notificación de Agresión por Animal, para observación de este y tomar medidas en caso de que esto sea necesario."
+        "Al considerar un paciente “especial” a un esplenectomizado, este recibiría tratamiento antibiótico lo antes posible aunque la herida no aparezca infectada."
       ]
     }
   },
@@ -1525,7 +1608,12 @@
         "En la exploración ginecológica se aprecian unos genitales externos sin lesiones, un cérvix de aspecto atrófico, un útero y anejos normales a la palpación y un estudio citológico de cérvix normal.",
         "En el estudio ecográfico transvaginal se aprecia un endometrio hiperecogénico de 7mm."
       ],
-      "claims": []
+      "claims": [
+        "Conización de cèrvix.",
+        "Citología endometrial.",
+        "Histeroscopia y biopsia de endometrio.",
+        "Exploración bajo anestesia de aparato genital y biòpsia de cérvix y endometrio."
+      ]
     }
   },
   {
@@ -1543,7 +1631,7 @@
         "Lo más probable es que el LCR de este paciente nos muestre una pleocitosis de predominio linfocitario con glucorraquia normal.",
         "Sospecharíamos una encefalitis límbica.",
         "Se trata de un absceso cerebral en fase inicial.",
-        "Mientras los niveles serológicos de antiHBs estén por encima de 10 UI/l no es necesario revacunar."
+        "El cuadro que nos describen es típico de una meningoencefalitis vírica, más concretamente por VHZ, con importante tropismo por el lóbulo temporal, causando febrícula y en muchos casos afasia, por lo que la opción correcta sería la 2, ya que el líquido cefalorraquídeo normalmente muestra una pleocitosis linfocitaria moderada, con glucorraquia normal."
       ]
     }
   },
@@ -1551,14 +1639,9 @@
     "id": "116_101_es",
     "prediction": {
       "premises": [
-        "Mujer de 25 años de edad que desea quedarse embarazada y quiere saber qué tratamiento debe realizar durante el eventual embarazo, ya que es portadora del factor V Leiden en heterocigosis. Nunca ha tenido ningún fenómeno trombótico. Se realizó la determinación del mencionado factor como estudio familiar tras un episodio de embolia de pulmón en un hermano.",
-        "Dado que la gestación es un estado protrombótico, existiría un alto riesgo de tromboembolia venosa, por lo que se debe desaconsejar el embarazo.",
-        "Se debe realizar tratamiento con heparina de bajo peso molecular a dosis profilácticas en el puerperio inmediato, siendo opcional realizar igualmente seguimiento durante el embarazo.",
-        "El factor V Leiden en heterocigosis es una trombofilia de bajo riesgo y no hay necesidad de ningún tratamiento en el embarazo y puerperio.",
-        "Se debe aconsejar aspirina a bajas dosis durante embarazo y puerperio.",
-        "Se debe realizar tratamiento con fármacos antivitamina K (acenocumarol) durante el embarazo."
-      ],
-      "claims": [
+        "Mujer de 25 años de edad que desea quedarse embarazada y quiere saber qué tratamiento debe realizar durante el eventual embarazo, ya que es portadora del factor V Leiden en heterocigosis.",
+        "Nunca ha tenido ningún fenómeno trombótico.",
+        "Se realizó la determinación del mencionado factor como estudio familiar tras un episodio de embolia de pulmón en un hermano.",
         "Al leer las respuestas, lo primero que tenemos claro es que NO se debe administrar acenocumarol a una mujer embarazada por riesgo de teratogenicidad.",
         "Al que lo haga durante la residencia se le debe castigar con 100 fonendazos en la espalda.",
         "Descartamos respuesta 5.",
@@ -1566,7 +1649,15 @@
         "¿Aconsejar a una mujer que no se quede embarazada habiendo tratamientos que aseguren un bajísimo riesgo de trombosis y/o afectación fetal?",
         "Respuesta 1 descartada.",
         "Nos quedamos con la posibilidad de no dar ningún tratamiento por ser de bajo riesgo o administrar aspirina a bajas dosis.",
-        "Es cierto que el factor V Leiden en heterocigosis se cataloga como de bajo riesgo, que no ha presentado episodio trombótico previo ni hay combinación con otra trombofilia; si miramos la guía CHEST, VIII edición y repasam0s lo que se dijo en el último congreso de la Sociedad Española de Ginecología y Obstetricia, vemos que la aspirina se emplea en caso de síndrome fosfolípido y que en el caso de esta mujer, sin trombosis previa, sin abortos previos"
+        "Es cierto que el factor V Leiden en heterocigosis se cataloga como de bajo riesgo, que no ha presentado episodio trombótico previo ni hay combinación con otra trombofilia; si miramos la guía CHEST, VIII edición y repasam0s lo que se dijo en el último congreso de la Sociedad Española de Ginecología y Obstetricia, vemos que la aspirina se emplea en caso de síndrome fosfolípido y que en el caso de esta mujer, sin trombosis previa, sin abortos previos (se necesitan al menos dos) y además siendo heterocigota, no es necesario el tratamiento.",
+        "Respuesta correcta, la 3."
+      ],
+      "claims": [
+        "Dado que la gestación es un estado protrombótico, existiría un alto riesgo de tromboembolia venosa, por lo que se debe desaconsejar el embarazo.",
+        "Se debe realizar tratamiento con heparina de bajo peso molecular a dosis profilácticas en el puerperio inmediato, siendo opcional realizar igualmente seguimiento durante el embarazo.",
+        "El factor V Leiden en heterocigosis es una trombofilia de bajo riesgo y no hay necesidad de ningún tratamiento en el embarazo y puerperio.",
+        "Se debe aconsejar aspirina a bajas dosis durante embarazo y puerperio.",
+        "Se debe realizar tratamiento con fármacos antivitamina K (acenocumarol) durante el embarazo."
       ]
     }
   },
@@ -1617,12 +1708,10 @@
         "Es necesario que se realice controles periódicos ya que en el 40% de los casos desarrollará una neoplasia trofoblástica gestacional."
       ],
       "claims": [
-        "El riesgo de malignización, es decir, de desarrollar una neoplasia trofoblástica gestacional va de un 5 a un 20% según sea una mola parcial ó una mola completa, respectivamente.",
-        "Las pacientes serán controladas semanalmente con la dosificación de la hcg hasta que se convierta indetectable, por tres veces consecutivas.",
-        "Después el control será mensual, durante seis meses y luego cada dos meses otros seis meses más.",
-        "Basándose en los datos disponibles, se recomienda un seguimiento de tres a seis meses en el caso de la mola parcial y de 12 meses en el caso de la mola completa.",
-        "Por ello, los controles posteriores son estrictamente necesarios.",
-        "El riesgo de una nueva gestación molar, aunque aumentada respecto a la población normal, no es de un 50%."
+        "El riesgo de una nueva gestación molar en un futuro embarazo es del 50%.",
+        "No debe quedar embarazada hasta realizar controles periódicos y haber pasado un años con niveles de BHCG negativos.",
+        "No es necesario realizar controles posteriores si la evacuación del tejido trofoblástico fue completa.",
+        "Es necesario que se realice controles periódicos ya que en el 40% de los casos desarrollará una neoplasia trofoblástica gestacional."
       ]
     }
   },
@@ -1651,15 +1740,14 @@
     "prediction": {
       "premises": [
         "Mujer de 67 años diagnosticada de un carcinoma ductal infiltrante de mama y sin historia familiar de neoplasia.",
-        "¿Qué estudios adicionales deben realizarse en el tumor por sus implicaciones clínico-terapéuticas?:",
+        "Actualmente la clasificación molecular del cáncer de mama se basa en el estudio de los receptores hormonales, el HER2 y el índice de proliferación celular del tumor (Ki67).",
+        "Tenemos cuatro tipos fundamentales: Luminal (A: RRHH+, HER2- y Ki67 bajo y B: RRHH+, HER2+/ – y Ki67 alto), HER2 + (RRHH -, HER2 + y Ki67 alto) y Basal Like ó triple negativo (RRHH -, HER2 – y Ki67 alto)."
+      ],
+      "claims": [
         "Estudio fenotípico completo mediante citometría de flujo.",
         "Estudio de receptores hormonales y de HER2.",
         "Estudio de receptores hormonales, ecadherina y estudio de familiares de primer grado.",
         "Estudio de BRCA l-2 y estudio de familiares de primer grado."
-      ],
-      "claims": [
-        "Actualmente la clasificación molecular del cáncer de mama se basa en el estudio de los receptores hormonales, el HER2 y el índice de proliferación celular del tumor (Ki67).",
-        "Tenemos cuatro tipos fundamentales: Luminal (A: RRHH+, HER2- y Ki67 bajo y B: RRHH+, HER2+/ – y Ki67 alto), HER2 + (RRHH -, HER2 + y Ki67 alto) y Basal Like ó triple negativo (RRHH -, HER2 – y Ki67 alto)."
       ]
     }
   },
@@ -1672,11 +1760,10 @@
         "En la bibliografía, pacientes similares en tratamiento con warfarina tienen un riesgo de ictus del 2,2 % frente al 5,2 % en los pacientes sin warfarina."
       ],
       "claims": [
-        "El NNT (número necesario a tratar), significa cuántos pacientes necesitaríamos tratar con una intervención para obtener un beneficio; en esta pregunta cuántos pacientes necesitamos tratar con warfarina para prevenir un ictus.",
-        "Para calcularlo empleamos la siguiente fórmula: NNT= 1/RRA (RRA: reducción del riesgo absoluto).",
-        "RRA= Io – Ie (Io:Incidencia en no expuestos a warfarina; Ie: incidencia en expuestos a warfarina).",
-        "RRA: 5,2%- 2,2%= 3= 0,03.",
-        "NNT: 1/0,03= 33,3."
+        "3",
+        "19,2",
+        "33,3",
+        "49,5"
       ]
     }
   },
@@ -1685,13 +1772,15 @@
     "prediction": {
       "premises": [
         "Mujer de 75 años traída a consulta por su familia porque le encuentran desde hace meses deprimida y con fallos de memoria. Les preocupa que pueda tener una enfermedad de Alzheimer.",
-        "La paciente refiere que no cree que le pase nada y que está como siempre.",
-        "Existe heterogenicidad en el desarrollo de los síntomas de la enfermedad de Alzheimer.",
-        "Existen variantes conductuales, pero en el MIR suelen querer que penséis en otro tipo de demencias ante síntomas conductuales.",
-        "Por ello descartamos la 2 y la 4.",
-        "Entre la 1 y la 3 elijo la 3 por el mismo motivo y por el hincapié al declive de la independencia funcional que se produce en estos pacientes."
+        "La paciente refiere que no cree que le pase nada y que está como siempre."
       ],
-      "claims": []
+      "claims": [
+        "Cambios de humor, síntomas conductuales, déficit cognitivo.",
+        "Síntomas conductuales, síntomas motores, declive de la independencia funcional.",
+        "Cambios de humor, déficit cognitivo, declive de la independencia funcional.",
+        "Síntomas conductuales, cambios de humor, síntomas motores.",
+        "Cambios de humor, déficit cognitivo, declive de la independencia funcional."
+      ]
     }
   },
   {
@@ -1703,13 +1792,11 @@
         "En el ECG destacan ondas T picudas y elevadas, extrasístoles ventriculares y QT corto."
       ],
       "claims": [
-        "La respuesta correcta es: 2. Hiperpotasemia.",
-        "Les ha dado por el potasio en este examen…",
-        "La espironolactona, como diurético ahorrador de potasio, inhibe la acción de la aldosterona a nivel renal, siendo responsable de una disminución de la excreción de potasio.",
-        "La hiperpotasemia produce trastornos de la repolarización que se traducen en la instalación de una T grande, simétrica, de base estrecha, visible en las derivaciones precordiales.",
-        "El espacio QT acortado.",
-        "Estas anomalías aparecen con una kaliemia de alrededor de 5,5 a 6 mmol/l.",
-        "A partir de 6,5 mmol/l, las modificaciones electrocardiográficas son constantes, y están dominadas por los trastornos de la conducción (haciendo posibles las extrasístoles ventriculares)."
+        "Hipercalcemia.",
+        "Hiperpotasemia.",
+        "Hipomagnesemia.",
+        "Hipocalcemia.",
+        "Hipernatremia."
       ]
     }
   },
@@ -1722,7 +1809,11 @@
         "Resultado 7.22."
       ],
       "claims": [
-        "Valor prepatológico repetir microtoma 15-20 minutos."
+        "Acidosis grave. Cesárea urgente.",
+        "Valor prepatológico repetir microtoma 15-20 minutos.",
+        "Acidosis moderada. Repetir microtoma en 1-2 horas.",
+        "Valor en limites normales, dejar evolución natural de parto.",
+        "Repetir en el momento posible error en la obtención de la toma."
       ]
     }
   },
@@ -1752,10 +1843,20 @@
     "prediction": {
       "premises": [
         "Una mujer de 42 años con cáncer de mama presenta metástasis a nivel de los agujeros intervertebrales entre la 4ª y 5ª vértebras cervicales y entre la 4ª y 5ª vértebras torácicas.",
-        "El truco de esta pregunta es que hay 8 raíces cervicales para 7 vértebras, por tanto la raíz C1 sale POR ENCIMA del atlas, y así hasta C8 que sale ENTRE C7 y T1. Las raíces torácicas salen respectivamente por debajo de la vértebra con su misma numeración (nervio T1 bajo T1, T2 bajo T2, etc.). Por tanto, entre C4 y C5 sale el 5º nervio cervical, y entre T4 y T5 el 4º torácico. La respuesta correcta es la 4."
+        "¿Qué nervios espinales estarán lesionados?",
+        "1- Cuarto nervio cervical y cuarto torácico.",
+        "2- Quinto nervio cervical y quinto torácico.",
+        "3- Cuarto nervio cervical y quinto torácico.",
+        "4- Quinto nervio cervical y cuarto torácico.",
+        "5- Tercer nervio cervical y cuarto torácico."
       ],
       "claims": [
-        "Cuarto nervio cervical y cuarto torácico."
+        "Cuarto nervio cervical y cuarto torácico.",
+        "Quinto nervio cervical y quinto torácico.",
+        "Cuarto nervio cervical y quinto torácico.",
+        "Quinto nervio cervical y cuarto torácico.",
+        "Tercer nervio cervical y cuarto torácico.",
+        "El truco de esta pregunta es que hay 8 raíces cervicales para 7 vértebras, por tanto la raíz C1 sale POR ENCIMA del atlas, y así hasta C8 que sale ENTRE C7 y T1. Las raíces torácicas salen respectivamente por debajo de la vértebra con su misma numeración (nervio T1 bajo T1, T2 bajo T2, etc.). Por tanto, entre C4 y C5 sale el 5º nervio cervical, y entre T4 y T5 el 4º torácico. La respuesta correcta es la 4."
       ]
     }
   },
@@ -1771,12 +1872,10 @@
         "También se apreció un claro incremento en la densidad de linfocitos intraepiteliales."
       ],
       "claims": [
-        "El diagnóstico de la lesión intestinal es?",
-        "1- Colitis ulcerosa cronificada.",
-        "2- Colitis pseudomembranosa.",
-        "3- Colitis colágena.",
-        "4- Enfermedad de Crohn fibrosante.",
-        "CORRECT ANSWER: 3",
+        "Colitis ulcerosa cronificada.",
+        "Colitis pseudomembranosa.",
+        "Colitis colágena.",
+        "Enfermedad de Crohn fibrosante.",
         "Todo lo que nos cuentan en este caso es típico de la COLITIS COLÁGENA.",
         "En principio, la clínica y la endoscopia pueden dejarnos un poco como al principio, pero la histología es poco más que la definición de esta patología.",
         "El criterio específico para el diagnóstico de la colitis colágena es la presencia adicional de una banda irregular de colágeno justo debajo del epitelio de superficie de la mucosa del colon en continuidad con la membrana basal, visible con la tinción de tricrómico (tiñe las fibras de colágeno tipo I), que atrapa capilares superficiales produciendo lesiones en el epitelio de superficie.",
@@ -1790,14 +1889,18 @@
       "premises": [
         "En una paciente de 30 años se encuentra una cifra de calcio de 11 mg/dl (normal menos de 10,5 mg/dl) durante un examen de empresas rutinario.",
         "La determinación de PTH fue de 45 pg/ml (VN 10-55 pg/ml).",
-        "La historia es anodina, salvo por el hecho de que la madre y el abuelo paterno fueron diagnosticados de hiperparatiroidismo e intervenidos, aunque permanecieron hipercalcémicos."
-      ],
-      "claims": [
-        "Cociente calcio/creatinina orina.",
+        "La historia es anodina, salvo por el hecho de que la madre y el abuelo paterno fueron diagnosticados de hiperparatiroidismo e intervenidos, aunque permanecieron hipercalcémicos.",
         "Se trata de hipercalcemia hipocalciúrica familiar o hipercalcemia familiar benigna.",
         "Asintomático.",
         "No se curan tras tratamiento quirúrgico; se debe a mutación del receptor sensible al calcio.",
         "Pregunta difícil ya que hay conocer datos de una enfermedad que no se suele preguntar en el MIR."
+      ],
+      "claims": [
+        "25-OH D",
+        "1,25-OH 2D",
+        "Cociente calcio/creatinina en orina",
+        "Reabsorción tubular de fosfatos",
+        "PTHrP"
       ]
     }
   },
@@ -1809,16 +1912,10 @@
         "Una radiografía simple de caderas muestra estrechamiento del espacio articular femoro-acetabular, esclerosis y ostefitos"
       ],
       "claims": [
-        "1- Hago el diagnóstico de coxartrosis y envío al traumatólogo para colocar una prótesis de cadera.",
-        "2- Inicio tratamiento con opioides débiles que han demostrado evidencia en detener la progresión de la enfermedad.",
-        "3- Instauro tratamiento con paracetamol, explico que la evolución es muy variable y la indicación quirúrgica depende de la funcionalidad y control del dolor.",
-        "4- Por las características radiológicas descritas, necesito una RMN de cadera antes de tomar una decisión terapéutica.",
-        "CORRECT ANSWER: 3",
-        "Es una coxartrosis.",
-        "El criterios quirúrgico depende de la sintomatología del paciente y del fracaso a tratamiento médico.",
-        "Ninguna medicación frena ni modifica el curso de la enfermedad.",
-        "No es necesaria una RMN, no aporta nada.",
-        "El tratamiento es médico y secuencial empezando con el primer escalón analgésico de la OMS."
+        "Hago el diagnóstico de coxartrosis y envío al traumatólogo para colocar una prótesis de cadera.",
+        "Inicio tratamiento con opioides débiles que han demostrado evidencia en detener la progresión de la enfermedad.",
+        "Instauro tratamiento con paracetamol, explico que la evolución es muy variable y la indicación quirúrgica depende de la funcionalidad y control del dolor.",
+        "Por las características radiológicas descritas, necesito una RMN de cadera antes de tomar una decisión terapéutica."
       ]
     }
   },
@@ -1832,19 +1929,11 @@
         "No presenta fobia ponderal ni distorsión de la imagen corporal."
       ],
       "claims": [
-        "El diagnóstico más adecuado es: 1- Anorexia nerviosa.",
-        "2- Trastorno de ansiedad.",
-        "3- Trastorno límite de la personalidad.",
-        "4- Distimia.",
-        "5- Trastorno depresivo mayor.",
-        "CORRECT ANSWER: 5",
-        "En cuanto oímos lo de peso vamos hacia la anorexia nerviosa, pero la anorexia nerviosa tiene tres características: Pérdida significativa de peso originada por el propio enfermo, distorsión de la imagen corporal y amenorrea. Así que quitamos la 1.",
-        "Uno pierde peso cuando se pone triste, se preocupa, etc…",
-        "La 3 no tiene sentido en el MIR por la clínica -en la realidad la historia es otra y en psiquiatría todo es evolución-.",
-        "La 4 ha de cumplir criterios temporales que aquí no se cumplen.",
-        "Así que estamos entre la 2 y la 5. ¿Depresión o ansiedad? No hay clínica de ansiedad y además cumple citerios de depresión.",
-        "A la pobre chica le ha caido un diagnóstico de depresión.",
-        "La respuesta es la 5 (otra opción es que estuviese estudiando el MIR)."
+        "Anorexia nerviosa.",
+        "Trastorno de ansiedad.",
+        "Trastorno límite de la personalidad.",
+        "Distimia.",
+        "Trastorno depresivo mayor."
       ]
     }
   },
@@ -1875,7 +1964,10 @@
         "En la bioquímica: AST 30 UI/L, ALT 35 UI/L, GGT 59 UI/L, fosfatasa alcalina 105 UI/L, LDH 490 UI/L, urea 20 mg/dL, creatinina 0,8 mg/dL."
       ],
       "claims": [
-        "3 Test de Coombs directo."
+        "Vitamina B12.",
+        "Anticuerpos antinucleares.",
+        "Test de Coombs directo.",
+        "Anticuerpos anti-DNA."
       ]
     }
   },
@@ -1886,15 +1978,83 @@
         "Un varón de 64 años consulta por fiebre, tos, disnea y dolor pleurítico derecho de 1 semana de evolución.",
         "En la Rx de tórax se aprecia un derrame pleural derecho loculado que ocupa dos terceras partes del hemitórax.",
         "Durante la toracocentesis se extrae un líquido amarillento cuyo análisis muestra: leucocitos 15,000/uL, 92% de neutrófilos, glucosa 30 mg/dl, pH 7, lactato deshidrogenasa 3500 U/L, adenosina desaminasa 45 U/L y ausencia de gérmenes en la tinción de GRAM.",
-        "En esta pregunta no debe haber tampoco mucha duda (por cierto, que creo que es más de Neumología que mía, pero bueno, con esto de la fiebre mi amigo Emilienko se ha desviado), puesto que la clínica orienta a un Derrame pleural paraneumónico, las características macroscópicas del líquido así lo parecen y el análisis del mismo nos muestra que además el derrame está complicado, casi a pique de ser un empiema (LDH altísima, celularidad con predominio de PMN, consumo de glucosa).",
-        "Con ese pH además, (y sabiendo que el derrame ya está loculado) el tubo endotorácico está más que indicado."
+        "En esta pregunta no debe haber tampoco mucha duda (por cierto, que creo que es más de Neumología que mía, pero bueno, con esto de la fiebre mi amigo Emilienko se ha desviado), puesto que la clínica orienta a un Derrame pleural paraneumónico, las características macroscópicas del líquido así lo parecen y el análisis del mismo nos muestra que además el derrame está complicado, casi a pique de ser un empiema (LDH altísima, celularidad con predominio de PMN, consumo de glucosa). Con ese pH además, (y sabiendo que el derrame ya está loculado) el tubo endotorácico está más que indicado."
       ],
       "claims": [
-        "1- Antibioticoterapia intravenosa.",
-        "2- Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas.",
-        "3- Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas.",
-        "4- Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural.",
-        "5- Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural."
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (terapéutica) si se aísla algún gérmen en el cultivo del líquido pleural",
+        "Antibioticoterapia intravenosa y colocar un tubo o catéter torácico para drenar todo el líquido pleural",
+        "Antibioticoterapia intravenosa",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica en 24 horas",
+        "Antibioticoterapia intravenosa y repetir la toracocentesis diagnóstica si no hay mejoría en 48 horas",
+        "Antibioticoterapia intravenosa y realizar una toracocentesis evacuadora (ter"
       ]
     }
   },
@@ -1904,10 +2064,15 @@
       "premises": [
         "Un paciente de 52 años ingresa en el Hospital por neumonía grave.",
         "Con tratamiento antibiótico adecuado mejora del cuadro respiratorio.",
-        "Tras 4 días de estancia en planta se complica su evolución por la aparición de un proceso diarreico grave."
+        "Tras 4 días de estancia en planta se complica su evolución por la aparición de un proceso diarreico grave.",
+        "¿Cuál sería el microorganismo más frecuentemente responsable de este cuadro?"
       ],
       "claims": [
-        "Clostridium difficile."
+        "Salmonella entérica.",
+        "La propia bacteria causante de la neumonía que se ha hecho resistente al antibiótico.",
+        "Campylobacter jejuni.",
+        "Clostridium difficile.",
+        "Yersinia enterocolítica."
       ]
     }
   },
@@ -1917,14 +2082,19 @@
       "premises": [
         "Niño de 7 años traído a urgencias tras caerse de un columpio sobre la mano derecha. No tiene antecedentes de interés.",
         "Presenta deformidad en dorso de tenedor de la muñeca e impotencia funcional, con situación neurovascular distal normal.",
-        "¿Qué lesión espera encontrar en la radiografía urgente que solicita?"
+        "¿Qué lesión espera encontrar en la radiografía urgente que solicita?",
+        "1- Fractura – luxación de Monteggia.",
+        "2- Fractura de la cabeza radial.",
+        "3- Epifisiolisis distal del radio.",
+        "4- Fractura en tallo verde de cúbito.",
+        "CORRECT ANSWER: 3",
+        "Con la deformidad y dolor en radio distal esperamos una fractura a dicho nivel por lo que marcamos 3. Sin embargo, la veo impugnable dado que también podría tener de forma concomitante una fractura en tallo verde de cúbito aunque la lesión principal sea la del radio."
       ],
       "claims": [
         "Fractura – luxación de Monteggia.",
         "Fractura de la cabeza radial.",
         "Epifisiolisis distal del radio.",
-        "Fractura en tallo verde de cúbito.",
-        "Con la deformidad y dolor en radio distal esperamos una fractura a dicho nivel por lo que marcamos 3. Sin embargo, la veo impugnable dado que también podría tener de forma concomitante una fractura en tallo verde de cúbito aunque la lesión principal sea la del radio."
+        "Fractura en tallo verde de cúbito."
       ]
     }
   },
@@ -1954,6 +2124,9 @@
       ],
       "claims": [
         "Es un síndrome hemimedular.",
+        "Es un patrón de lesión medular transversa.",
+        "Es un patrón de lesión bulbar lateral.",
+        "Describen un cuadro de hemisección o Brown-Sequard típico.",
         "Afectación motora y cordonal posterior ipsilateral con afectación contralateral de dolor y temperatura."
       ]
     }
@@ -1964,6 +2137,11 @@
       "premises": [
         "Hombre de 65 años con antecedente de neoplasia de páncreas en curso de quimioterapia.",
         "¿Qué prueba diagnóstica es más coste-efectiva para confirmar la sospecha diagnóstica?",
+        "1- Dímero D.",
+        "3- Flebografía.",
+        "4- Ecografía doppler venosa.",
+        "5- TAC helicoidal.",
+        "CORRECT ANSWER: 4",
         "La ecografia dopler es la prueba mas precisa y que permite posteriormente controlar la evolucion de la enfermedad de forma no invasiva."
       ],
       "claims": [
@@ -2000,7 +2178,7 @@
         "La ultrasonografía endoscópica muestra una lesión poliquística formada por múltiples vesículas con calcificación central en cola de páncreas sin conexión con el conducto de Wirsung.",
         "El análisis del líquido es compatible con un cistoadenoma seroso.",
         "El cistoadenoma seroso de páncreas es una entidad benigna frecuentemente poliquística (también llamado adenoma microquístico) formado por células productoras de colágeno (no mucinosas).",
-        "Habitualmente es asintomático y se descubre como hallazgo incidental.",
+        "Habitualmente es asintomática y se descubre como hallazgo incidental.",
         "Dada su naturaleza benigna no se recomienda la cirugía, reservándose únicamente en aquellos sintomáticos o en los que la naturaleza de la lesión queda en entredicho después de un estudio completo con TC, RM y ecoendoscopia con biopsia.",
         "Frecuentemente es esporádico, pero se puede asociar con el síndrome de Von-Hippel-Lindau."
       ],
@@ -2017,12 +2195,15 @@
     "prediction": {
       "premises": [
         "Una paciente de 25 años con antecedentes de rash cutáneo tras exposición solar y poliartritis ocasionales en articulaciones de las manos que controla con antiiflamatorios no esteroideos presenta desde hace 15 días malestar general, sensación progresiva de debilidad generalizada y palidez.",
-        "En la analítica destaca una Hemoglobina de 7 g/dL, VCM de 108 mm/h, 150000 plaquetas/mm3, 3000 leucocitos/mm3, LDH elevada, haptoglobina indectectable."
+        "En la analítica destaca una Hemoglobina de 7 g/dL, VCM de 108 mm/h, 150000 plaquetas/mm3, 3000 leucocitos/mm3, LDH elevada, haptoglobina indectectable.",
+        "En el caso de elegir una sola prueba diagnóstica indique cuál de las siguientes determinaciones debe realizarse en primer lugar:"
       ],
       "claims": [
-        "El cuadro clínico y biológico de esta paciente hace sospechar una anemia hemolítica en el contexto de un lupus eritematoso sistémico.",
-        "Si hay que escoger una sola prueba diagnóstica, y que ésta sea la primera, nos interesa confirmar la presencia de una anemia hemolítica autoinmune con el test de Coombs directo para iniciar tratamiento.",
-        "El resto de pruebas pueden esperar..."
+        "Test de Coombs directo.",
+        "Anticuerpos antinucleares (ANA).",
+        "Vitamina B12.",
+        "Ferritina.",
+        "Ácido fólico."
       ]
     }
   },
@@ -2031,6 +2212,7 @@
     "prediction": {
       "premises": [
         "Mujer de 70 años con antecedentes de anorexia, pérdida de peso, molestias en la musculatura y articulaciones proximales más dolorimiento en la región temporo-mandibular que acude al servicio de urgencias por pérdida de visión unilateral (movimiento de manos), de aparición brusca e indolora (defecto pupilar aferente).",
+        "Se trata de una mujer con pérdida brusca y indolora y grave (sólo ve el movimiento de las manos) de la visión de un ojo.",
         "No nos da mucha información de la exploración ocular, sólo que hay un defecto pupilar aferente.",
         "Nos tenemos que ayudar de los síntomas sistémicos para diagnosticar el problema.",
         "Se trata de una mujer de edad avanzada con síntomas típicos de polimialgia reumática, y el dolor en la región temporomandibular es muy sugerente.",
@@ -2073,15 +2255,15 @@
         "Una mujer de 24 años es encontrada tirada en la calle por unos transeúntes.",
         "Al llegar el quipo de emergencias la encontraron con una saturación de oxígeno del 88% respirando aire ambiente y al examen pupilas puntiformes.",
         "Se la traslada a la urgencia del hospital más cercano, donde la gasometría arterial basal muestra: pH 7,25, PaC02 60 mmHg, Pa02 58 mmHg, bicarbonato de 26 mEq/1 y exceso de bases de -1.",
-        "En sangre el sodio es 137 mEq/1 y el cloruro 102 mEq/1.",
-        "La acidosis con PCO2 elevada, hipoxemia y bicarbonato normal, sugiere una acidosis respiratoria aguda de instauracion rápida probablemente por intoxicacion por drogas o farmacos."
+        "En sangre el sodio es 137 mEq/1 y el cloruro 100 mEq/1:"
       ],
       "claims": [
         "Insuficiencia respiratoria parcial.",
         "Acidosis metabólica.",
         "Acidosis respiratoria pura.",
         "Alcalosis respiratoria por falta de cloro.",
-        "La gasometría solo puede ser de sangre venosa."
+        "La gasometría solo puede ser de sangre venosa.",
+        "La acidosis con PCO2 elevada, hipoxemia y bicarbonato normal, sugiere una acidosis respiratoria aguda de instauracion rápida probablemente por intoxicacion por drogas o farmacos."
       ]
     }
   },
@@ -2091,10 +2273,14 @@
       "premises": [
         "Lactante de 2 meses de edad con catarro de vías altas de 3 días de evolución, que comienza con dificultad respiratoria moderada y auscultación pulmonar con sibilancias espiratorias. La saturación de oxígeno es de 89 %.",
         "Se aísla virus respiratorio sincitial en el exudado nasofaríngeo.",
-        "Nos presentan el caso de una bronquiolitis VRS positivo."
+        "Nos presentan el caso de una bronquiolitis VRS positivo.",
+        "Según las recomendaciones actuales, lo indicado sería iniciar oxigenoterapia suplementaria."
       ],
       "claims": [
-        "Oxígeno suplementario."
+        "Rivabirina oral.",
+        "Salbutamol nebulizado.",
+        "Oxígeno suplementario.",
+        "Corticoides intravenosos."
       ]
     }
   },
@@ -2109,6 +2295,11 @@
         "En la bioquímica destaca LDH 2700 UI/l y bilirrubina 2,6 mg/dl."
       ],
       "claims": [
+        "Purpura trombocitopénica autoinmune.",
+        "Purpura trombótica trombocitopénica.",
+        "Aplasia medular.",
+        "Trombopenia inducida por fármacos.",
+        "Coagulación intravascular diseminada.",
         "Típico de la ticlopidina.",
         "No solo trombocitopenia sino también cefalea, esquistocitos, LDH alta y bilirrubina alta."
       ]

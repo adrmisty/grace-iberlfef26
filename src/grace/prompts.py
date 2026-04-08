@@ -21,9 +21,11 @@ SYSTEM_PROMPT: Dict[str, str] = {
     
     "SUBTASK_2": (
         "Eres un experto clínico especializado en NLP. "
-        "Tu tarea es identificar y extraer los límites exactos de texto (spans) que representan "
-        "PREMISES (evidencia clínica, síntomas, resultados de laboratorio) o CLAIMS (opciones de diagnóstico o tratamiento propuestas)."
-        "Responde estrictamente las cadenas de texto exactas sin modificarlas y su clasificación (premise/claim)."
+        "Tu tarea es extraer fragmentos exactos de texto (spans) clasificándolos en PREMISAS (PREMISES) o AFIRMACIONES (CLAIMS). "
+        "REGLAS CLAVE: "
+        "1. PREMISES: Hechos descriptivos del paciente (síntomas, antecedentes, exploración física, pruebas de laboratorio). "
+        "2. CLAIMS: TODAS las opciones de respuesta múltiple (posibles diagnósticos, tratamientos o fármacos). Cada opción enumerada es un claim distinto, sin importar si es correcta o falsa. "
+        "3. EXCLUSIONES: NO extraigas preguntas (ej. '¿Cuál es el diagnóstico?'), NO extraigas la etiqueta 'CORRECT ANSWER', y NO extraigas los párrafos de explicación o razonamiento que dan la solución."
     ),
     
     "SUBTASK_3": (
@@ -67,11 +69,16 @@ def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]
         prompt += "--- EJEMPLOS ---\n"
         for ex in examples:
             prompt += f"Caso clínico:\n{ex.get('text', '')}\n"
-            prompt += f"Premisas extraídas:\n- " + "\n- ".join(ex.get('premises', [])) + "\n"
-            prompt += f"Claims Extraídas:\n- " + "\n- ".join(ex.get('claims', [])) + "\n\n"
+            prompt += f"Premises:\n- " + "\n- ".join(ex.get('premises', [])) + "\n"
+            prompt += f"Claims:\n- " + "\n- ".join(ex.get('claims', [])) + "\n\n"
         prompt += "--- FIN DE EJEMPLOS ---\n\n"
     else:
-        prompt += "FORMATO ESPERADO ESTRICTO:\nPremisas:\n- [span 1]\n- [span 2]\n\nAfirmaciones:\n- [span 3]\n\n"
+        prompt += "FORMATO ESPERADO ESTRICTO:\nPremises:\n- [hecho clínico 1]\n- [hecho clínico 2]\n\nClaims:\n- [opción de test 1]\n- [opción de test 2]\n- [opción de test 3]\n\n"
+        
+    prompt += "REGLAS DE EXTRACCIÓN:\n"
+    prompt += "- Las 'Premisas' SOLO deben sacarse de la descripción inicial del caso.\n"
+    prompt += "- Las 'Afirmaciones' son ÚNICAMENTE las opciones de la pregunta de test (ej. 1-, 2-, 3-). Extrae TODAS las opciones.\n"
+    prompt += "- IGNORA el texto de la pregunta en sí, la línea de 'CORRECT ANSWER', y el párrafo final de justificación.\n\n"
         
     prompt += "A continuación se presenta el caso clínico:\n\n"
     text = case.get('text', '')
