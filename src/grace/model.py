@@ -11,8 +11,8 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from transformers import AutoModelForCausalLM, AutoTokenizer
-import google.generativeai as genai
-from google.generativeai.types import HarmCategory, HarmBlockThreshold
+from google import genai
+from google.genai import types as genaitypes
 from openai import OpenAI
 import re
 import src.config as settings
@@ -189,10 +189,10 @@ class GeminiAPIModel(Model):
         prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}\n\n{instruction}"
         
         safety_settings = {
-            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
-            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+            genaitypes.HarmCategory.HARM_CATEGORY_HARASSMENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+            genaitypes.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+            genaitypes.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+            genaitypes.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
         }
         
         try:
@@ -255,12 +255,11 @@ class OpenAIModel(Model):
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=messages,
-                max_tokens=max_new_tokens,
+                max_completion_tokens=max_new_tokens,
                 temperature=0.0
             )
             
-            text = response.choices.message.content.strip()
-            
+            text = response.choices[0].message.content.strip()
             text = re.sub(r"^```json\s*", "", text, flags=re.IGNORECASE)
             text = re.sub(r"^```\s*", "", text)
             text = re.sub(r"\s*```$", "", text)

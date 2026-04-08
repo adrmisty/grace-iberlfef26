@@ -1,0 +1,144 @@
+
+> Evaluating Subtask 1 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S1.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 1009
+	 FP: 93
+	 TN: 456
+	 FN: 341
+	 -------------------------
+	 Precision: 0.9156
+	 Recall:    0.7474
+	 F1-score (Positive class): 0.8230
+	 Accuracy:  0.7715
+
+
+> Evaluating Subtask 2 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S2.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 832
+	 FP: 142
+	 FN: 676
+	 -------------------------
+	 Precision: 0.8542
+	 Recall:    0.5517
+	 Exact Match F1: 0.6704
+
+
+> Evaluating Subtask 3 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S3.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7812
+	 Macro F1-score: 0.7486
+
+
+> Evaluating Subtask 1 metrics for: OpenAI_gpt-5.4-mini_few_shot_S1.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 1093
+	 FP: 62
+	 TN: 487
+	 FN: 257
+	 -------------------------
+	 Precision: 0.9463
+	 Recall:    0.8096
+	 F1-score (Positive class): 0.8727
+	 Accuracy:  0.8320
+
+
+> Evaluating Subtask 2 metrics for: OpenAI_gpt-5.4-mini_few_shot_S2.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 852
+	 FP: 70
+	 FN: 656
+	 -------------------------
+	 Precision: 0.9241
+	 Recall:    0.5650
+	 Exact Match F1: 0.7012
+
+
+> Evaluating Subtask 3 metrics for: OpenAI_gpt-5.4-mini_few_shot_S3.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7798
+	 Macro F1-score: 0.7479
+
+
+> Evaluating Subtask 1 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S1.clean.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 1009
+	 FP: 93
+	 TN: 456
+	 FN: 341
+	 -------------------------
+	 Precision: 0.9156
+	 Recall:    0.7474
+	 F1-score (Positive class): 0.8230
+	 Accuracy:  0.7715
+
+
+> Evaluating Subtask 2 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S2.clean.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 820
+	 FP: 80
+	 FN: 688
+	 -------------------------
+	 Precision: 0.9111
+	 Recall:    0.5438
+	 Exact Match F1: 0.6811
+
+
+> Evaluating Subtask 3 metrics for: OpenAI_gpt-5.4-mini_zero_shot_S3.clean.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7812
+	 Macro F1-score: 0.7486
+
+
+> Evaluating Subtask 1 metrics for: OpenAI_gpt-5.4-mini_few_shot_S1.clean.json
+
+	 --- SUBTASK 1 RESULTS ---
+	 Total items evaluated: 1899
+	 TP: 1093
+	 FP: 62
+	 TN: 487
+	 FN: 257
+	 -------------------------
+	 Precision: 0.9463
+	 Recall:    0.8096
+	 F1-score (Positive class): 0.8727
+	 Accuracy:  0.8320
+
+
+> Evaluating Subtask 2 metrics for: OpenAI_gpt-5.4-mini_few_shot_S2.clean.json
+
+	 --- SUBTASK 2 RESULTS ---
+	 TP: 841
+	 FP: 42
+	 FN: 667
+	 -------------------------
+	 Precision: 0.9524
+	 Recall:    0.5577
+	 Exact Match F1: 0.7035
+
+
+> Evaluating Subtask 3 metrics for: OpenAI_gpt-5.4-mini_few_shot_S3.clean.json
+
+	 --- SUBTASK 3 RESULTS ---
+	 Total relations: 754
+	 -------------------------
+	 Accuracy:       0.7798
+	 Macro F1-score: 0.7479
+
