@@ -8,102 +8,102 @@
 import json
 from typing import Dict, Any, List, Optional
 
-# --- static prompt builders for GRACE subtasks -------------------------------------------------------------------------
+# --- static prompt builders -------------------------------------------------------------------------
 
 SYSTEM_PROMPT: Dict[str, str] = {
     "SUBTASK_1": (
-        "Eres un asistente médico experto."
-        "Tu tarea es clasificar si una oración "
-        "proporciona información clínica relevante (true) o no (false) "
-        "para apoyar o refutar un diagnóstico o tratamiento propuesto. "
-        "Responde estrictamente con un formato JSON donde las claves son el número de la oración y los valores son true o false."
+        "Eres un experto clínico. Tu tarea es evaluar una lista numerada de oraciones de un caso clínico. "
+        "Debes determinar si cada oración contiene evidencia médica RELEVANTE (síntomas, historial, pruebas) o "
+        "si es irrelevante (texto de relleno, saludos, la pregunta final).\n"
+        "REGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON donde las claves son los índices de las oraciones y los valores son booleanos (true/false)."
     ),
     
     "SUBTASK_2": (
-        "Eres un experto clínico especializado en NLP. "
-        "Tu tarea es extraer fragmentos exactos de texto (spans) clasificándolos en PREMISAS (PREMISES) o AFIRMACIONES (CLAIMS). "
-        "REGLAS CLAVE: "
-        "1. PREMISES: Hechos descriptivos del paciente (síntomas, antecedentes, exploración física, pruebas de laboratorio). "
-        "2. CLAIMS: TODAS las opciones de respuesta múltiple (posibles diagnósticos, tratamientos o fármacos). Cada opción enumerada es un claim distinto, sin importar si es correcta o falsa. "
-        "3. EXCLUSIONES: NO extraigas preguntas (ej. '¿Cuál es el diagnóstico?'), NO extraigas la etiqueta 'CORRECT ANSWER', y NO extraigas los párrafos de explicación o razonamiento que dan la solución."
+        "Eres un experto clínico especializado en NLP. Tu tarea es extraer fragmentos exactos de texto (spans). "
+        "REGLAS CLAVE:\n"
+        "1. Premise: Hechos descriptivos del paciente (síntomas, antecedentes, exploración física). "
+        "Extrae la frase exacta del texto.\n"
+        "2. Claim: TODAS las opciones de respuesta múltiple al final del caso. "
+        "Cada opción es un claim distinto. Debes extraer su ID (1, 2, 3, etc.) y su texto exacto.\n"
+        "3. EXCLUSIONES: NO extraigas la pregunta en sí (ej. '¿Qué diagnóstico...?').\n"
+        "REGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON válido con las claves 'premises' (lista de strings) y 'claims' (lista de objetos con 'id' y 'text')."
     ),
     
     "SUBTASK_3": (
-        "Eres un especialista en razonamiento clínico. "
-        "Dada una PREMISE (evidencia clínica) y una CLAIM (una opción de respuesta o diagnóstico), "
-        "tu tarea es clasificar la relación direccional entre ellas. "
-        "Responde únicamente con 'Support' (si la evidencia apoya la opción) "
-        "o 'Attack' (si la evidencia refuta o va en contra de la opción)."
-    ),
+        "Eres un razonador clínico. Se te dará una PREMISE (un hecho del paciente) y un CLAIM (una posible respuesta/diagnóstico). "
+        "Tu tarea es determinar la relación argumentativa entre ellos:\n"
+        "- 'Support': La premisa apoya, confirma o es consistente con el claim.\n"
+        "- 'Attack': La premisa contradice, descarta o hace improbable el claim.\n"
+        "REGLA ESTRICTA: Devuelve ÚNICAMENTE un JSON válido con la clave 'label'."
+    )
 }
 
-# --- dynamic prompt builders for GRACE subtasks -------------------------------------------------------------------------
+# --- dynamic prompt builders -------------------------------------------------------------------------
 
 def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
-    prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
+    prompt = ""
+    
     if examples:
         prompt += "--- EJEMPLOS ---\n"
         for ex in examples:
-            prompt += f"Caso clínico:\n{ex.get('text', '')}\n"
-            prompt += f"Output esperado (JSON):\n{json.dumps(ex.get('relevance_labels', {}), ensure_ascii=False)}\n\n"
+            prompt += "Oraciones:\n"
+            for i, sent in enumerate(ex.get('text', [])):
+                prompt += f"[{i}] {sent}\n"
+            prompt += f"Salida esperada:\n{{\n"
+            labels = ex.get('relevance_labels', {})
+            items = [f'  "{k}": {"true" if v else "false"}' for k, v in labels.items()]
+            prompt += ",\n".join(items) + "\n}\n\n"
         prompt += "--- FIN DE EJEMPLOS ---\n\n"
-    else:
-        prompt += "FORMATO ESPERADO: Un diccionario JSON estricto donde las claves son los índices de las oraciones y los valores son booleanos (true/false).\nEjemplo de formato:\n{\n  \"0\": true,\n  \"1\": false\n}\n\n"
         
-    prompt += "A continuación el caso clínico a clasificar:\n\n"
-    sentences = case.get('text', [])
-    if isinstance(sentences, list):
-        for i, sent in enumerate(sentences):
-            sent_str = " ".join(sent) if isinstance(sent, list) else sent
-            prompt += f"[{i}] {sent_str}\n"
-    else:
-        prompt += f"{sentences}\n"
+    prompt += "Evalúa el siguiente caso clínico:\nOraciones:\n"
+    for i, sent in enumerate(case.get('text', [])):
+        prompt += f"[{i}] {sent}\n"
         
-    prompt += "\nDevuelve el JSON con las clasificaciones (true/false) para cada oración."
-    prompt += "\nREGLA ESTRICTA: NO escribas 'Thinking Process'. NO des explicaciones. Devuelve ÚNICAMENTE un JSON válido que empiece con '{' y termine con '}'."
+    prompt += "\nGenera el JSON de salida:"
     return prompt
 
 def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
-    prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
+    prompt = ""
+    
     if examples:
         prompt += "--- EJEMPLOS ---\n"
         for ex in examples:
-            prompt += f"Caso clínico:\n{ex.get('text', '')}\n"
-            prompt += f"Premises:\n- " + "\n- ".join(ex.get('premises', [])) + "\n"
-            prompt += f"Claims:\n- " + "\n- ".join(ex.get('claims', [])) + "\n\n"
+            text = ex.get('text', [])
+            if isinstance(text, list):
+                text = " ".join(text)
+                
+            prompt += f"Caso clínico:\n{text}\n"
+            
+            expected_json = {
+                "premises": ex.get('premises', []),
+                "claims": ex.get('claims', [])
+            }
+            prompt += f"Salida esperada:\n{json.dumps(expected_json, ensure_ascii=False, indent=2)}\n\n"
         prompt += "--- FIN DE EJEMPLOS ---\n\n"
-    else:
-        prompt += "FORMATO ESPERADO ESTRICTO:\nPremises:\n- [hecho clínico 1]\n- [hecho clínico 2]\n\nClaims:\n- [opción de test 1]\n- [opción de test 2]\n- [opción de test 3]\n\n"
         
-    prompt += "REGLAS DE EXTRACCIÓN:\n"
-    prompt += "- Las 'Premisas' SOLO deben sacarse de la descripción inicial del caso.\n"
-    prompt += "- Las 'Afirmaciones' son ÚNICAMENTE las opciones de la pregunta de test (ej. 1-, 2-, 3-). Extrae TODAS las opciones.\n"
-    prompt += "- IGNORA el texto de la pregunta en sí, la línea de 'CORRECT ANSWER', y el párrafo final de justificación.\n\n"
-        
-    prompt += "A continuación se presenta el caso clínico:\n\n"
-    text = case.get('text', '')
+    text = case.get('text', [])
     if isinstance(text, list):
-        text = " ".join([" ".join(s) if isinstance(s, list) else s for s in text])
+        text = " ".join(text)
         
-    prompt += f"{text}\n\n"
-    prompt += "Extrae los límites exactos de texto. Devuelve el resultado con el siguiente formato:\nPremisas:\n- [span 1]\n- [span 2]\n\nAfirmaciones:\n- [span 3]"
-    prompt += "\nREGLA ESTRICTA: NO escribas 'Thinking Process'. NO des explicaciones. Devuelve ÚNICAMENTE las listas requeridas en el formato exacto empezando por 'Premisas:'."
+    prompt += f"Caso clínico a analizar:\n{text}\n\n"
+    prompt += "Genera la salida estructurada en formato JSON estricto:"
+    
     return prompt
 
 def build_s3_prompt(relation: Dict[str, Any], examples: Optional[List[Dict[str, Any]]]) -> str:
-    prompt = "AVISO IMPORTANTE: Eres un script de automatización. Genera ÚNICAMENTE la salida estructurada solicitada. Prohibido generar 'Thinking Process' o explicaciones.\n\n"
+    prompt = ""
+    
     if examples:
         prompt += "--- EJEMPLOS ---\n"
         for ex in examples:
-            prompt += f"Premise: \"{ex.get('head', '')}\"\n"
+            prompt += f"Premisa: \"{ex.get('head', '')}\"\n"
             prompt += f"Claim: \"{ex.get('tail', '')}\"\n"
-            prompt += f"Output esperado:\n{{\n  \"label\": \"{ex.get('label', '')}\"\n}}\n\n"
+            prompt += f"Salida esperada:\n{{\n  \"label\": \"{ex.get('label', '')}\"\n}}\n\n"
         prompt += "--- FIN DE EJEMPLOS ---\n\n"
-    else:
-        prompt += "FORMATO ESPERADO: Un JSON estricto con la clave 'label'.\nEjemplo:\n{\n  \"label\": \"Support\"\n}\n\n"
         
-    prompt += "Clasifica la siguiente relación:\n\n"
-    prompt += f"Premise: \"{relation.get('head', '')}\"\n"
-    prompt += f"Claim: \"{relation.get('tail', '')}\"\n"
-    prompt += "\nDevuelve el JSON con la clasificación ('Support' o 'Attack')."
+    prompt += "Determina la relación para el siguiente par:\n"
+    prompt += f"Premisa: \"{relation.get('head', '')}\"\n"
+    prompt += f"Claim: \"{relation.get('tail', '')}\"\n\n"
+    prompt += "Salida esperada (solo JSON):"
+    
     return prompt

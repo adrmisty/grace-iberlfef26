@@ -81,7 +81,6 @@ class Model:
         results = []
         for case in test_data:
             user_prompt = prompts.build_s1_prompt(case, few_shot_examples)
-            # FIX: Increased max_new_tokens to 2048 to prevent truncation
             response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_1"], user_prompt, max_new_tokens=2048, prefill="{\n")
             results.append({"id": case.get("id"), "prediction": response})
         return results
@@ -91,7 +90,6 @@ class Model:
         results = []
         for case in test_data:
             user_prompt = prompts.build_s2_prompt(case, few_shot_examples)
-            # FIX: Increased max_new_tokens to 2048 to prevent truncation
             response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_2"], user_prompt, max_new_tokens=2048, prefill="Premisas:\n-")
             results.append({"id": case.get("id"), "prediction": response})
         return results
@@ -101,7 +99,6 @@ class Model:
         results = []
         for relation in test_relations:
             user_prompt = prompts.build_s3_prompt(relation, few_shot_examples)
-            # FIX: Increased default token limit to 128 to give API models room to breathe
             response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_3"], user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
             results.append({"id": relation.get("id"), "prediction": response.strip()})
         return results

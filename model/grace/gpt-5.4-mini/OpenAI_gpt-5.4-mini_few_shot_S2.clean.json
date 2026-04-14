@@ -1,0 +1,746 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": {
+      "premises": [
+        "Hombre de 28 años",
+        "profesión violinista",
+        "en los últimos 3 meses crisis de pánico durante sus actuaciones públicas",
+        "intenso miedo a quedar bloqueado y no poder continuar con la actuación",
+        "algo que sería humillante para él",
+        "Este miedo le ha hecho cancelar sus próximas actuaciones",
+        "En el resto de sus actividades diarias no experimenta este temor",
+        "ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta"
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Trastorno de pánico."
+        },
+        {
+          "id": "2",
+          "text": "Fobia social (trastorno de ansiedad social)."
+        },
+        {
+          "id": "3",
+          "text": "Agorafobia."
+        },
+        {
+          "id": "4",
+          "text": "Trastorno de ansiedad generalizada."
+        },
+        {
+          "id": "5",
+          "text": "Trastorno de adaptación."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": {
+      "premises": [
+        "\"Mujer de 36 años\"",
+        "\"tres abortos espontáneos en el primer trimestre\"",
+        "\"No ha tenido ningún embarazo a término\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Estudio de trombofilias hereditarias."
+        },
+        {
+          "id": "2",
+          "text": "Determinación de anticuerpos antifosfolípido."
+        },
+        {
+          "id": "3",
+          "text": "Cariotipo de ambos progenitores."
+        },
+        {
+          "id": "4",
+          "text": "Histerosalpingografía."
+        },
+        {
+          "id": "5",
+          "text": "Biopsia endometrial."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": {
+      "premises": [
+        "\"Primigesta de 41 años\"",
+        "\"en la 38 semana\"",
+        "\"diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías\"",
+        "\"hipertensión arterial esencial\"",
+        "\"dolor hipogástrico de inicio brusco\"",
+        "\"afectación de su estado general\"",
+        "\"metrorragia escasa de sangre oscura\"",
+        "\"patrón de frecuencia cardiaca fetal no reactivo\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Placenta previa."
+        },
+        {
+          "id": "2",
+          "text": "Desprendimiento prematuro de placenta normoinserta."
+        },
+        {
+          "id": "3",
+          "text": "Rotura uterina."
+        },
+        {
+          "id": "4",
+          "text": "Vasa previa."
+        },
+        {
+          "id": "5",
+          "text": "Amenaza de parto pretérmino."
+        }
+      ]
+    }
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": {
+      "premises": [
+        "\"48 años de edad\"",
+        "\"cefalalgias resistentes al tratamiento analgésico habitual\"",
+        "\"desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores\"",
+        "\"fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal\""
+      ],
+      "claims": []
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": {
+      "premises": [
+        "Hombre de 32 años de edad",
+        "sin antecedentes de interés ni factores de riesgo cardiovascular",
+        "disnea al subir un piso de escaleras de 1 mes de evolución",
+        "síncope brusco precedido de esfuerzo",
+        "Antecedentes familiares de muerte no explicada de forma brusca en su hermano",
+        "soplo sistólico rudo más audible en foco aórtico",
+        "ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda",
+        "importante hipertrofia asimétrica de septo interventricular",
+        "gradiente dinámico subvalvular de 70 mmHg",
+        "insuficiencia mitral secundaria moderada",
+        "fracción de eyección de ventrículo izquierdo conservada"
+      ],
+      "claims": [
+        {
+          "id": "",
+          "text": "id: 1"
+        },
+        {
+          "id": "",
+          "text": "text: \"Betabloqueantes.\""
+        },
+        {
+          "id": "",
+          "text": "id: 2"
+        },
+        {
+          "id": "",
+          "text": "text: \"Verapamilo.\""
+        },
+        {
+          "id": "",
+          "text": "id: 3"
+        },
+        {
+          "id": "",
+          "text": "text: \"Disopiramida.\""
+        },
+        {
+          "id": "",
+          "text": "id: 4"
+        },
+        {
+          "id": "",
+          "text": "text: \"Digoxina.\""
+        },
+        {
+          "id": "",
+          "text": "id: 5"
+        },
+        {
+          "id": "",
+          "text": "text: \"Desfibrilador automático implantable.\""
+        }
+      ]
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": {
+      "premises": [
+        "demencia rápidamente progresiva",
+        "rigidez",
+        "ataxia",
+        "mioclonias, que persisten durante el sueño",
+        "descargas de alto voltaje en el EEG"
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Aumento de proteínas en el LCR con pleocitosis."
+        },
+        {
+          "id": "2",
+          "text": "Disminución de glucosa en el LCR."
+        },
+        {
+          "id": "3",
+          "text": "Presencia de bandas oligoclonales en el LCR."
+        },
+        {
+          "id": "4",
+          "text": "Aumento de la proteína 14-3-3 en el LCR."
+        },
+        {
+          "id": "5",
+          "text": "Aumento de lactato en el LCR."
+        }
+      ]
+    }
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": {
+      "premises": [
+        "\"71 años\"",
+        "\"artritis reumatoide\"",
+        "\"tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana\"",
+        "\"clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Aciclovir oral y suspender etanercept."
+        },
+        {
+          "id": "2",
+          "text": "Valaciclovir oral y mantener el tratamiento inmunosupresor."
+        },
+        {
+          "id": "3",
+          "text": "Aciclovir intravenoso y suspender etanercept."
+        },
+        {
+          "id": "4",
+          "text": "Corticoides sistémicos en monoterapia."
+        },
+        {
+          "id": "5",
+          "text": "Observación sin tratamiento específico."
+        }
+      ]
+    }
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": {
+      "premises": [
+        "\"76 años\"",
+        "\"hipertensión arterial\"",
+        "\"ictericia indolora\"",
+        "\"prurito\"",
+        "\"anorexia\"",
+        "\"bilirrubina total de 12 mg/dL\"",
+        "\"9.5 mg/dL de bilirrubina directa\"",
+        "\"dilatación biliar intra y extrahepática\"",
+        "\"un nódulo hepático único menor de 2 cm\"",
+        "\"localizado periféricamente, en la cara anterior del lóbulo izquierdo\"",
+        "\"una masa de 3.5 cm en la cabeza pancreática\"",
+        "\"La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Señale la mejor opción terapéutica:"
+        }
+      ]
+    }
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": {
+      "premises": [
+        "\"35 años\"",
+        "\"diagnosticada de Lupus Eritematoso Sistémico\"",
+        "\"en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses\"",
+        "\"con buen control de la actividad inflamatoria\"",
+        "\"dolor continuo en la rodilla de 3 semanas de evolución\"",
+        "\"de inicio brusco sin antecedente traumático\"",
+        "\"examen radiográfico dentro de la normalidad\""
+      ],
+      "claims": [
+        {
+          "id": "2",
+          "text": "Gammagrafía ósea."
+        },
+        {
+          "id": "3",
+          "text": "Ecografía de rodilla."
+        },
+        {
+          "id": "4",
+          "text": "Artrocentesis diagnóstica."
+        },
+        {
+          "id": "5",
+          "text": "TC de rodilla."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": {
+      "premises": [
+        "\"73 años\"",
+        "\"disfagia neurológica completa\"",
+        "\"secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda\"",
+        "\"Va a precisar apoyo nutricional a largo plazo\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Sonda nasogástrica"
+        },
+        {
+          "id": "2",
+          "text": "Gastrostomía endoscópica percutánea"
+        },
+        {
+          "id": "3",
+          "text": "Nutrición parenteral total"
+        },
+        {
+          "id": "4",
+          "text": "Yeyunostomía quirúrgica"
+        },
+        {
+          "id": "5",
+          "text": "Dieta triturada por vía oral"
+        }
+      ]
+    }
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": {
+      "premises": [
+        "\"58 años\"",
+        "\"no fumador\"",
+        "\"sin antecedentes personales relevantes\"",
+        "\"accidente cerebrovascular agudo isquémico\"",
+        "\"18.5 g/dl de hemoglobina\"",
+        "\"hematocrito de 60%\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno. Señálelo:"
+        }
+      ]
+    }
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "Premisas:\n- \"Niño de 28 días de vida\"\n- \"nacido a término\"\n- \"embarazo y parto normales\"\n- \"alimentado con lactancia materna desde el nacimiento\"\n- \"hace 8 días comenzó con vómitos\"\n- \"desde hace 5 días, después de todas las tomas\"\n- \"Está permanentemente hambriento\"\n- \"Los vómitos son de contenido alimentario \\\"a chorro\\\"\"\n- \"El abdomen, en la palpación, es blando y depresible, sin visceromoegalias\"\n- \"pH 7.49\"\n- \"bicarbonato 30 mEq/L\"\n- \"PC02 53 mmHg\"\n- \"exceso de base +8mEq/L\"\n- \"Na 137 mEq/L\"\n- \"K3.1 mEq/L\"\n- \"Cl 94 mEq/L\""
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": {
+      "premises": [
+        "\"35 años\"",
+        "\"citología vaginal tras 5 años sin control previo\"",
+        "\"diagnóstico es SIL (lesión intraepitelial) de alto grado\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Colposcopia con biopsia dirigida."
+        },
+        {
+          "id": "2",
+          "text": "Repetir citología en 6 meses."
+        },
+        {
+          "id": "3",
+          "text": "Histerectomía inmediata."
+        },
+        {
+          "id": "4",
+          "text": "Tratamiento con antibióticos."
+        },
+        {
+          "id": "5",
+          "text": "No requiere seguimiento."
+        }
+      ]
+    }
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": {
+      "premises": [
+        "\"adenocarcinoma con diferenciación mucinosa prominente de colon ascendente\"",
+        "\"hombre de 32 años\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Estudio de inestabilidad de microsatélites y/o inmunohistoquímica de proteínas reparadoras del ADN (MLH1, MSH2, MSH6, PMS2)."
+        },
+        {
+          "id": "2",
+          "text": "Determinación de mutación BRAF V600E en todos los casos, sin necesidad de más estudios."
+        },
+        {
+          "id": "3",
+          "text": "Estudio de mutación KRAS únicamente, sin valorar síndrome hereditario."
+        },
+        {
+          "id": "4",
+          "text": "Colonoscopia de control a los 10 años, sin otros estudios complementarios."
+        },
+        {
+          "id": "5",
+          "text": "Determinación de CEA como único estudio inicial."
+        }
+      ]
+    }
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": {
+      "premises": [
+        "\"Niño de 4 años de edad\"",
+        "\"aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos\"",
+        "\"infección de vías respiratorias superiores 10 días antes\"",
+        "\"en las últimas 12 horas presenta dolor abdominal intenso tipo cólico\"",
+        "\"ha realizado dos deposiciones diarréicas\"",
+        "\"Afebril\"",
+        "\"No pérdida de peso\"",
+        "\"numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores\"",
+        "\"Buen estado general aunque tiene dolor abdominal intenso\"",
+        "\"No visceromegalias\"",
+        "\"No otros hallazgos de interés a la exploración\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "La presencia de artritis."
+        },
+        {
+          "id": "2",
+          "text": "La afectación renal con hematuria."
+        },
+        {
+          "id": "3",
+          "text": "La púrpura palpable en extremidades inferiores."
+        },
+        {
+          "id": "4",
+          "text": "El antecedente de infección respiratoria previa."
+        },
+        {
+          "id": "5",
+          "text": "La trombocitopenia grave."
+        }
+      ]
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": {
+      "premises": [
+        "\"edemas en miembros inferiores de 3 semanas de evolución\"",
+        "\"creatinina 1.3 mg/dL\"",
+        "\"colesterol total 270 mg/dL\"",
+        "\"albúmina 2.4 g/dL\"",
+        "\"15-20 hematíes por campo\"",
+        "\"proteinuria 3.7 g/día\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Síndrome nefrótico."
+        },
+        {
+          "id": "2",
+          "text": "Síndrome nefrítico."
+        },
+        {
+          "id": "3",
+          "text": "Insuficiencia renal aguda."
+        },
+        {
+          "id": "4",
+          "text": "Glomerulonefritis rápidamente progresiva."
+        },
+        {
+          "id": "5",
+          "text": "Nefropatía diabética."
+        }
+      ]
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "Premisas:\n- antecedentes de hipertensión arterial esencial desde hace 4 años\n- bien controlada con Enalapril 20 mg cada 12 horas\n- desde hace dos meses está embarazada\n- es remitida por su médico de atención primaria para seguimiento"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": {
+      "premises": [
+        "\"Mujer de 34 años\"",
+        "\"poliuria y polidipsia\"",
+        "\"diuresis de 8,2 litros\"",
+        "\"glicemia de 96 mg/dL\"",
+        "\"natremia de 148 mEq/L\"",
+        "\"osmolalidad plasmática de 309 mOsm/kg\"",
+        "\"osmolalidad urinaria de 89 mOsm/kg\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Prueba de restricción hídrica."
+        },
+        {
+          "id": "2",
+          "text": "Determinación de HbA1c."
+        },
+        {
+          "id": "3",
+          "text": "Prueba de sobrecarga salina."
+        },
+        {
+          "id": "4",
+          "text": "Determinación de cortisol plasmático."
+        },
+        {
+          "id": "5",
+          "text": "Ecografía renal."
+        }
+      ]
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": {
+      "premises": [
+        "\"Paciente de 12 años\"",
+        "\"artralgia\"",
+        "\"dolor abdominal\"",
+        "\"hematuria macroscópica\"",
+        "\"dos días después de haber sido diagnosticado de amigdalitis pultácea\"",
+        "\"la creatinina sérica es de 2 mg/dl\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Nefropatía por IgA (enfermedad de Berger)."
+        },
+        {
+          "id": "2",
+          "text": "Glomerulonefritis postestreptocócica aguda."
+        },
+        {
+          "id": "3",
+          "text": "Síndrome nefrótico por cambios mínimos."
+        },
+        {
+          "id": "4",
+          "text": "Púrpura de Schönlein-Henoch."
+        },
+        {
+          "id": "5",
+          "text": "Nefritis intersticial aguda."
+        }
+      ]
+    }
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": {
+      "premises": [
+        "\"Niño de 1 año de edad\"",
+        "\"no pasó las pruebas de cribado auditivo al nacimiento\"",
+        "\"potenciales evocados auditivos del tronco cerebral\"",
+        "\"hipoacusia bilateral leve-moderada en el oído derecho\"",
+        "\"moderada-grave en el oido izquierdo\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Colocación de audífonos bilaterales y seguimiento estrecho del desarrollo del lenguaje."
+        },
+        {
+          "id": "2",
+          "text": "Implante coclear bilateral inmediato."
+        },
+        {
+          "id": "3",
+          "text": "Observación hasta los 3 años sin intervención."
+        },
+        {
+          "id": "4",
+          "text": "Timpanostomía con tubos de ventilación."
+        },
+        {
+          "id": "5",
+          "text": "Derivación a psiquiatría infantil."
+        }
+      ]
+    }
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": {
+      "premises": [
+        "\"embarazada de 33 semanas\"",
+        "\"prurito de una semana de evolución\"",
+        "\"leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L)\"",
+        "\"fosfatasa alcalina (155 UI/L)\"",
+        "\"gammaglutamiltranspeptidasa (125 UI/L)\"",
+        "\"bilirrubina total de 2,3 mg/dL\"",
+        "\"El hemograma y el estudio de coagulación son normales\"",
+        "\"la ecografía abdominal no muestra alteraciones hepáticas ni biliares\"",
+        "\"la serología de virus de hepatitis, así como los autoanticuerpos son negativos\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Iniciar tratamiento con ácido ursodesoxicólico y monitorizar la evolución materno-fetal."
+        },
+        {
+          "id": "2",
+          "text": "Realizar una biopsia hepática urgente."
+        },
+        {
+          "id": "3",
+          "text": "Indicar interrupción inmediata del embarazo."
+        },
+        {
+          "id": "4",
+          "text": "Tratar con corticoides sistémicos."
+        }
+      ]
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": {
+      "premises": [
+        "\"diagnosticado de epilepsia\"",
+        "\"episodios de falta de respuesta a estímulos externos\"",
+        "\"movimientos irregulares de las cuatro extremidades\"",
+        "\"ojos cerrados\"",
+        "\"emisión de llanto\"",
+        "\"movimientos pélvicos\"",
+        "\"de cinco a veinte minutos de duración\"",
+        "\"no responden al tratamiento con fármacos antiepilépticos\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Videoelectroencefalograma"
+        },
+        {
+          "id": "2",
+          "text": "Tomografía computarizada craneal"
+        },
+        {
+          "id": "4",
+          "text": "Punción lumbar"
+        },
+        {
+          "id": "5",
+          "text": "Electromiografía"
+        }
+      ]
+    }
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": {
+      "premises": [
+        "\"66 años de edad\"",
+        "\"cirrosis hepática de etiología alcohólica\"",
+        "\"aumento del perímetro abdominal\"",
+        "\"desorientación temporo-espacial\"",
+        "\"ascitis\"",
+        "\"\\\"flapping tremor\\\" o asterixis\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Paracentesis diagnóstica urgente."
+        },
+        {
+          "id": "2",
+          "text": "Endoscopia digestiva alta urgente."
+        },
+        {
+          "id": "3",
+          "text": "Ecografía abdominal urgente."
+        },
+        {
+          "id": "4",
+          "text": "TC abdominal urgente."
+        },
+        {
+          "id": "5",
+          "text": "Colonoscopia urgente."
+        }
+      ]
+    }
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": {
+      "premises": [
+        "\"32 años\"",
+        "\"adicto a drogas por vía parenteral\"",
+        "\"ha salido recientemente de la cárcel\"",
+        "\"prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración\"",
+        "\"Hace un año, el PPD fue negativo\"",
+        "\"actualmente está asintomático\"",
+        "\"la serología de VIH es negativa\"",
+        "\"su radiografía de tórax es normal\""
+      ],
+      "claims": [
+        {
+          "id": "1",
+          "text": "Iniciar tratamiento con isoniacida durante 6 meses."
+        },
+        {
+          "id": "2",
+          "text": "Iniciar tratamiento con isoniacida durante 9 meses."
+        },
+        {
+          "id": "3",
+          "text": "No realizar ninguna actuación, dado que el paciente está asintomático."
+        },
+        {
+          "id": "4",
+          "text": "Solicitar baciloscopia y cultivo de esputo antes de decidir tratamiento."
+        },
+        {
+          "id": "5",
+          "text": "Iniciar tratamiento con rifampicina y pirazinamida durante 2 meses."
+        }
+      ]
+    }
+  }
+]

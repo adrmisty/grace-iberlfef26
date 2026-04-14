@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": "Premisas:\n- Hombre de 28 años\n- profesión violinista\n- en los últimos 3 meses crisis de pánico durante sus actuaciones públicas\n- intenso miedo a quedar bloqueado y no poder continuar con la actuación\n- algo que sería humillante para él\n- Este miedo le ha hecho cancelar sus próximas actuaciones\n- En el resto de sus actividades diarias no experimenta este temor\n- ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta\n\nClaims:\n- {\"id\":\"1\",\"text\":\"Trastorno de pánico.\"}\n- {\"id\":\"2\",\"text\":\"Fobia social (trastorno de ansiedad social).\"}\n- {\"id\":\"3\",\"text\":\"Agorafobia.\"}\n- {\"id\":\"4\",\"text\":\"Trastorno de ansiedad generalizada.\"}\n- {\"id\":\"5\",\"text\":\"Trastorno de adaptación.\"}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": "Premisas:\n- \"Mujer de 36 años\"\n- \"tres abortos espontáneos en el primer trimestre\"\n- \"No ha tenido ningún embarazo a término\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Estudio de trombofilias hereditarias.\"}\n- {\"id\":\"2\",\"text\":\"Determinación de anticuerpos antifosfolípido.\"}\n- {\"id\":\"3\",\"text\":\"Cariotipo de ambos progenitores.\"}\n- {\"id\":\"4\",\"text\":\"Histerosalpingografía.\"}\n- {\"id\":\"5\",\"text\":\"Biopsia endometrial.\"}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": "Premisas:\n- \"Primigesta de 41 años\"\n- \"en la 38 semana\"\n- \"diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías\"\n- \"hipertensión arterial esencial\"\n- \"dolor hipogástrico de inicio brusco\"\n- \"afectación de su estado general\"\n- \"metrorragia escasa de sangre oscura\"\n- \"patrón de frecuencia cardiaca fetal no reactivo\"\n\nClaims:\n- {\"id\":\"1\",\"text\":\"Placenta previa.\"}\n- {\"id\":\"2\",\"text\":\"Desprendimiento prematuro de placenta normoinserta.\"}\n- {\"id\":\"3\",\"text\":\"Rotura uterina.\"}\n- {\"id\":\"4\",\"text\":\"Vasa previa.\"}\n- {\"id\":\"5\",\"text\":\"Amenaza de parto pretérmino.\"}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": "Premisas:\n- \"48 años de edad\"\n- \"cefalalgias resistentes al tratamiento analgésico habitual\"\n- \"desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores\"\n- \"fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal\"\nClaims:"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": "Premisas:\n- Hombre de 32 años de edad\n- sin antecedentes de interés ni factores de riesgo cardiovascular\n- disnea al subir un piso de escaleras de 1 mes de evolución\n- síncope brusco precedido de esfuerzo\n- Antecedentes familiares de muerte no explicada de forma brusca en su hermano\n- soplo sistólico rudo más audible en foco aórtico\n- ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda\n- importante hipertrofia asimétrica de septo interventricular\n- gradiente dinámico subvalvular de 70 mmHg\n- insuficiencia mitral secundaria moderada\n- fracción de eyección de ventrículo izquierdo conservada\nClaims:\n- id: 1\n  text: \"Betabloqueantes.\"\n- id: 2\n  text: \"Verapamilo.\"\n- id: 3\n  text: \"Disopiramida.\"\n- id: 4\n  text: \"Digoxina.\"\n- id: 5\n  text: \"Desfibrilador automático implantable.\""
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": "Premisas:\n- demencia rápidamente progresiva\n- rigidez\n- ataxia\n- mioclonias, que persisten durante el sueño\n- descargas de alto voltaje en el EEG\nClaims:\n- {\"id\":\"1\",\"text\":\"Aumento de proteínas en el LCR con pleocitosis.\"}\n- {\"id\":\"2\",\"text\":\"Disminución de glucosa en el LCR.\"}\n- {\"id\":\"3\",\"text\":\"Presencia de bandas oligoclonales en el LCR.\"}\n- {\"id\":\"4\",\"text\":\"Aumento de la proteína 14-3-3 en el LCR.\"}\n- {\"id\":\"5\",\"text\":\"Aumento de lactato en el LCR.\"}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": "Premisas:\n- \"71 años\"\n- \"artritis reumatoide\"\n- \"tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana\"\n- \"clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival\"\n\nClaims:\n- {\"id\":\"1\",\"text\":\"Aciclovir oral y suspender etanercept.\"}\n- {\"id\":\"2\",\"text\":\"Valaciclovir oral y mantener el tratamiento inmunosupresor.\"}\n- {\"id\":\"3\",\"text\":\"Aciclovir intravenoso y suspender etanercept.\"}\n- {\"id\":\"4\",\"text\":\"Corticoides sistémicos en monoterapia.\"}\n- {\"id\":\"5\",\"text\":\"Observación sin tratamiento específico.\"}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": "Premisas:\n- \"76 años\"\n- \"hipertensión arterial\"\n- \"ictericia indolora\"\n- \"prurito\"\n- \"anorexia\"\n- \"bilirrubina total de 12 mg/dL\"\n- \"9.5 mg/dL de bilirrubina directa\"\n- \"dilatación biliar intra y extrahepática\"\n- \"un nódulo hepático único menor de 2 cm\"\n- \"localizado periféricamente, en la cara anterior del lóbulo izquierdo\"\n- \"una masa de 3.5 cm en la cabeza pancreática\"\n- \"La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Señale la mejor opción terapéutica:\"}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": "Premisas:\n- \"35 años\"\n- \"diagnosticada de Lupus Eritematoso Sistémico\"\n- \"en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses\"\n- \"con buen control de la actividad inflamatoria\"\n- \"dolor continuo en la rodilla de 3 semanas de evolución\"\n- \"de inicio brusco sin antecedente traumático\"\n- \"examen radiográfico dentro de la normalidad\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Resonancia magnética de rodilla.\"}\n- {\"id\":\"2\",\"text\":\"Gammagrafía ósea.\"}\n- {\"id\":\"3\",\"text\":\"Ecografía de rodilla.\"}\n- {\"id\":\"4\",\"text\":\"Artrocentesis diagnóstica.\"}\n- {\"id\":\"5\",\"text\":\"TC de rodilla.\"}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": "Premisas:\n- \"73 años\"\n- \"disfagia neurológica completa\"\n- \"secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda\"\n- \"Va a precisar apoyo nutricional a largo plazo\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Sonda nasogástrica\"}\n- {\"id\":\"2\",\"text\":\"Gastrostomía endoscópica percutánea\"}\n- {\"id\":\"3\",\"text\":\"Nutrición parenteral total\"}\n- {\"id\":\"4\",\"text\":\"Yeyunostomía quirúrgica\"}\n- {\"id\":\"5\",\"text\":\"Dieta triturada por vía oral\"}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": "Premisas:\n- \"58 años\"\n- \"no fumador\"\n- \"sin antecedentes personales relevantes\"\n- \"accidente cerebrovascular agudo isquémico\"\n- \"18.5 g/dl de hemoglobina\"\n- \"hematocrito de 60%\"\n\nClaims:\n- {\"id\":\"1\",\"text\":\"Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno. Señálelo:\"}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "Premisas:\n- \"Niño de 28 días de vida\"\n- \"nacido a término\"\n- \"embarazo y parto normales\"\n- \"alimentado con lactancia materna desde el nacimiento\"\n- \"hace 8 días comenzó con vómitos\"\n- \"desde hace 5 días, después de todas las tomas\"\n- \"Está permanentemente hambriento\"\n- \"Los vómitos son de contenido alimentario \\\"a chorro\\\"\"\n- \"El abdomen, en la palpación, es blando y depresible, sin visceromoegalias\"\n- \"pH 7.49\"\n- \"bicarbonato 30 mEq/L\"\n- \"PC02 53 mmHg\"\n- \"exceso de base +8mEq/L\"\n- \"Na 137 mEq/L\"\n- \"K3.1 mEq/L\"\n- \"Cl 94 mEq/L\""
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": "Premisas:\n- \"35 años\"\n- \"citología vaginal tras 5 años sin control previo\"\n- \"diagnóstico es SIL (lesión intraepitelial) de alto grado\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Colposcopia con biopsia dirigida.\"}\n- {\"id\":\"2\",\"text\":\"Repetir citología en 6 meses.\"}\n- {\"id\":\"3\",\"text\":\"Histerectomía inmediata.\"}\n- {\"id\":\"4\",\"text\":\"Tratamiento con antibióticos.\"}\n- {\"id\":\"5\",\"text\":\"No requiere seguimiento.\"}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": "Premisas:\n- \"adenocarcinoma con diferenciación mucinosa prominente de colon ascendente\"\n- \"hombre de 32 años\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Estudio de inestabilidad de microsatélites y/o inmunohistoquímica de proteínas reparadoras del ADN (MLH1, MSH2, MSH6, PMS2).\"}\n- {\"id\":\"2\",\"text\":\"Determinación de mutación BRAF V600E en todos los casos, sin necesidad de más estudios.\"}\n- {\"id\":\"3\",\"text\":\"Estudio de mutación KRAS únicamente, sin valorar síndrome hereditario.\"}\n- {\"id\":\"4\",\"text\":\"Colonoscopia de control a los 10 años, sin otros estudios complementarios.\"}\n- {\"id\":\"5\",\"text\":\"Determinación de CEA como único estudio inicial.\"}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": "Premisas:\n- \"Niño de 4 años de edad\"\n- \"aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos\"\n- \"infección de vías respiratorias superiores 10 días antes\"\n- \"en las últimas 12 horas presenta dolor abdominal intenso tipo cólico\"\n- \"ha realizado dos deposiciones diarréicas\"\n- \"Afebril\"\n- \"No pérdida de peso\"\n- \"numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores\"\n- \"Buen estado general aunque tiene dolor abdominal intenso\"\n- \"No visceromegalias\"\n- \"No otros hallazgos de interés a la exploración\"\nClaims:\n- {\"id\":\"1\",\"text\":\"La presencia de artritis.\"}\n- {\"id\":\"2\",\"text\":\"La afectación renal con hematuria.\"}\n- {\"id\":\"3\",\"text\":\"La púrpura palpable en extremidades inferiores.\"}\n- {\"id\":\"4\",\"text\":\"El antecedente de infección respiratoria previa.\"}\n- {\"id\":\"5\",\"text\":\"La trombocitopenia grave.\"}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": "Premisas:\n- \"edemas en miembros inferiores de 3 semanas de evolución\"\n- \"creatinina 1.3 mg/dL\"\n- \"colesterol total 270 mg/dL\"\n- \"albúmina 2.4 g/dL\"\n- \"15-20 hematíes por campo\"\n- \"proteinuria 3.7 g/día\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Síndrome nefrótico.\"}\n- {\"id\":\"2\",\"text\":\"Síndrome nefrítico.\"}\n- {\"id\":\"3\",\"text\":\"Insuficiencia renal aguda.\"}\n- {\"id\":\"4\",\"text\":\"Glomerulonefritis rápidamente progresiva.\"}\n- {\"id\":\"5\",\"text\":\"Nefropatía diabética.\"}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "Premisas:\n- antecedentes de hipertensión arterial esencial desde hace 4 años\n- bien controlada con Enalapril 20 mg cada 12 horas\n- desde hace dos meses está embarazada\n- es remitida por su médico de atención primaria para seguimiento"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": "Premisas:\n- \"Mujer de 34 años\"\n- \"poliuria y polidipsia\"\n- \"diuresis de 8,2 litros\"\n- \"glicemia de 96 mg/dL\"\n- \"natremia de 148 mEq/L\"\n- \"osmolalidad plasmática de 309 mOsm/kg\"\n- \"osmolalidad urinaria de 89 mOsm/kg\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Prueba de restricción hídrica.\"}\n- {\"id\":\"2\",\"text\":\"Determinación de HbA1c.\"}\n- {\"id\":\"3\",\"text\":\"Prueba de sobrecarga salina.\"}\n- {\"id\":\"4\",\"text\":\"Determinación de cortisol plasmático.\"}\n- {\"id\":\"5\",\"text\":\"Ecografía renal.\"}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": "Premisas:\n- \"Paciente de 12 años\"\n- \"artralgia\"\n- \"dolor abdominal\"\n- \"hematuria macroscópica\"\n- \"dos días después de haber sido diagnosticado de amigdalitis pultácea\"\n- \"la creatinina sérica es de 2 mg/dl\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Nefropatía por IgA (enfermedad de Berger).\"}\n- {\"id\":\"2\",\"text\":\"Glomerulonefritis postestreptocócica aguda.\"}\n- {\"id\":\"3\",\"text\":\"Síndrome nefrótico por cambios mínimos.\"}\n- {\"id\":\"4\",\"text\":\"Púrpura de Schönlein-Henoch.\"}\n- {\"id\":\"5\",\"text\":\"Nefritis intersticial aguda.\"}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": "Premisas:\n- \"Niño de 1 año de edad\"\n- \"no pasó las pruebas de cribado auditivo al nacimiento\"\n- \"potenciales evocados auditivos del tronco cerebral\"\n- \"hipoacusia bilateral leve-moderada en el oído derecho\"\n- \"moderada-grave en el oido izquierdo\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Colocación de audífonos bilaterales y seguimiento estrecho del desarrollo del lenguaje.\"}\n- {\"id\":\"2\",\"text\":\"Implante coclear bilateral inmediato.\"}\n- {\"id\":\"3\",\"text\":\"Observación hasta los 3 años sin intervención.\"}\n- {\"id\":\"4\",\"text\":\"Timpanostomía con tubos de ventilación.\"}\n- {\"id\":\"5\",\"text\":\"Derivación a psiquiatría infantil.\"}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": "Premisas:\n- \"embarazada de 33 semanas\"\n- \"prurito de una semana de evolución\"\n- \"leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L)\"\n- \"fosfatasa alcalina (155 UI/L)\"\n- \"gammaglutamiltranspeptidasa (125 UI/L)\"\n- \"bilirrubina total de 2,3 mg/dL\"\n- \"El hemograma y el estudio de coagulación son normales\"\n- \"la ecografía abdominal no muestra alteraciones hepáticas ni biliares\"\n- \"la serología de virus de hepatitis, así como los autoanticuerpos son negativos\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Iniciar tratamiento con ácido ursodesoxicólico y monitorizar la evolución materno-fetal.\"}\n- {\"id\":\"2\",\"text\":\"Realizar una biopsia hepática urgente.\"}\n- {\"id\":\"3\",\"text\":\"Indicar interrupción inmediata del embarazo.\"}\n- {\"id\":\"4\",\"text\":\"Tratar con corticoides sistémicos.\"}\n- {\"id\":\"5\",\"text\":\"Solicitar una colangiorresonancia magnética de forma preferente.\"}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": "Premisas:\n- \"diagnosticado de epilepsia\"\n- \"episodios de falta de respuesta a estímulos externos\"\n- \"movimientos irregulares de las cuatro extremidades\"\n- \"ojos cerrados\"\n- \"emisión de llanto\"\n- \"movimientos pélvicos\"\n- \"de cinco a veinte minutos de duración\"\n- \"no responden al tratamiento con fármacos antiepilépticos\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Videoelectroencefalograma\"}\n- {\"id\":\"2\",\"text\":\"Tomografía computarizada craneal\"}\n- {\"id\":\"3\",\"text\":\"Resonancia magnética cerebral\"}\n- {\"id\":\"4\",\"text\":\"Punción lumbar\"}\n- {\"id\":\"5\",\"text\":\"Electromiografía\"}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": "Premisas:\n- \"66 años de edad\"\n- \"cirrosis hepática de etiología alcohólica\"\n- \"aumento del perímetro abdominal\"\n- \"desorientación temporo-espacial\"\n- \"ascitis\"\n- \"\\\"flapping tremor\\\" o asterixis\"\n\nClaims:\n- {\"id\":\"1\",\"text\":\"Paracentesis diagnóstica urgente.\"}\n- {\"id\":\"2\",\"text\":\"Endoscopia digestiva alta urgente.\"}\n- {\"id\":\"3\",\"text\":\"Ecografía abdominal urgente.\"}\n- {\"id\":\"4\",\"text\":\"TC abdominal urgente.\"}\n- {\"id\":\"5\",\"text\":\"Colonoscopia urgente.\"}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": "Premisas:\n- \"32 años\"\n- \"adicto a drogas por vía parenteral\"\n- \"ha salido recientemente de la cárcel\"\n- \"prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración\"\n- \"Hace un año, el PPD fue negativo\"\n- \"actualmente está asintomático\"\n- \"la serología de VIH es negativa\"\n- \"su radiografía de tórax es normal\"\nClaims:\n- {\"id\":\"1\",\"text\":\"Iniciar tratamiento con isoniacida durante 6 meses.\"}\n- {\"id\":\"2\",\"text\":\"Iniciar tratamiento con isoniacida durante 9 meses.\"}\n- {\"id\":\"3\",\"text\":\"No realizar ninguna actuación, dado que el paciente está asintomático.\"}\n- {\"id\":\"4\",\"text\":\"Solicitar baciloscopia y cultivo de esputo antes de decidir tratamiento.\"}\n- {\"id\":\"5\",\"text\":\"Iniciar tratamiento con rifampicina y pirazinamida durante 2 meses.\"}"
+  }
+]

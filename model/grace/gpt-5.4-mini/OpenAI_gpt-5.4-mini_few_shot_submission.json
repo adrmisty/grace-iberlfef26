@@ -1,0 +1,6376 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "raw_text": "Hombre de 28 años de profesión violinista, que consulta por haber presentado en los últimos 3 meses crisis de pánico durante sus actuaciones públicas. Las crisis se acompañan de intenso miedo a quedar bloqueado y no poder continuar con la actuación, algo que sería humillante para él. Este miedo le ha hecho cancelar sus próximas actuaciones. En el resto de sus actividades diarias no experimenta este temor, ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta. ¿Qué diagnóstico consideraría más probable para este caso?\n\na) Fobia simple.\n\nb) Trastorno de pánico.\n\nc) Fobia social de ejecución.\n\nd) Trastorno de ansiedad generalizada.\n\ne) Agorafobia.",
+    "metadata": {
+      "context": "Hombre de 28 años de profesión violinista, que consulta por haber presentado en los últimos 3 meses crisis de pánico durante sus actuaciones públicas. Las crisis se acompañan de intenso miedo a quedar bloqueado y no poder continuar con la actuación, algo que sería humillante para él. Este miedo le ha hecho cancelar sus próximas actuaciones. En el resto de sus actividades diarias no experimenta este temor, ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta. ¿Qué diagnóstico consideraría más probable para este caso?",
+      "context_sentences": [
+        {
+          "sentence": "Hombre de 28 años de profesión violinista, que consulta por haber presentado en los últimos 3 meses crisis de pánico durante sus actuaciones públicas.",
+          "start": 0,
+          "end": 150
+        },
+        {
+          "sentence": "Las crisis se acompañan de intenso miedo a quedar bloqueado y no poder continuar con la actuación, algo que sería humillante para él.",
+          "start": 151,
+          "end": 284
+        },
+        {
+          "sentence": "Este miedo le ha hecho cancelar sus próximas actuaciones.",
+          "start": 285,
+          "end": 342
+        },
+        {
+          "sentence": "En el resto de sus actividades diarias no experimenta este temor, ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta.",
+          "start": 343,
+          "end": 478
+        },
+        {
+          "sentence": "¿Qué diagnóstico consideraría más probable para este caso?",
+          "start": 479,
+          "end": 537
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Fobia simple.",
+          "start": 542,
+          "end": 555
+        },
+        {
+          "id": "2",
+          "text": "Trastorno de pánico.",
+          "start": 560,
+          "end": 580
+        },
+        {
+          "id": "3",
+          "text": "Fobia social de ejecución.",
+          "start": 585,
+          "end": 611
+        },
+        {
+          "id": "4",
+          "text": "Trastorno de ansiedad generalizada.",
+          "start": 616,
+          "end": 651
+        },
+        {
+          "id": "5",
+          "text": "Agorafobia.",
+          "start": 656,
+          "end": 667
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "ecBroD",
+          "text": "crisis de pánico durante sus actuaciones públicas",
+          "start": 100,
+          "end": 149,
+          "type": "Premise"
+        },
+        {
+          "id": "HRG9gR",
+          "text": "sería humillante",
+          "start": 259,
+          "end": 275,
+          "type": "Premise"
+        },
+        {
+          "id": "noJAoL",
+          "text": "En el resto de sus actividades diarias no experimenta este temor",
+          "start": 343,
+          "end": 407,
+          "type": "Premise"
+        },
+        {
+          "id": "SSYQtu",
+          "text": "en los últimos 3 meses",
+          "start": 77,
+          "end": 99,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Fobia simple.",
+          "start": 542,
+          "end": 555,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Trastorno de pánico.",
+          "start": 560,
+          "end": 580,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Fobia social de ejecución.",
+          "start": 585,
+          "end": 611,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Trastorno de ansiedad generalizada.",
+          "start": 616,
+          "end": 651,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Agorafobia.",
+          "start": 656,
+          "end": 667,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "UCk2Ag",
+          "relation_type": "Attack",
+          "arg1_id": "ecBroD",
+          "arg2_id": "1"
+        },
+        {
+          "id": "ocCdCt",
+          "relation_type": "Attack",
+          "arg1_id": "ecBroD",
+          "arg2_id": "2"
+        },
+        {
+          "id": "HUTUkY",
+          "relation_type": "Attack",
+          "arg1_id": "noJAoL",
+          "arg2_id": "2"
+        },
+        {
+          "id": "gFSEwA",
+          "relation_type": "Attack",
+          "arg1_id": "noJAoL",
+          "arg2_id": "4"
+        },
+        {
+          "id": "HiZe4v",
+          "relation_type": "Attack",
+          "arg1_id": "SSYQtu",
+          "arg2_id": "4"
+        },
+        {
+          "id": "8KXMMU",
+          "relation_type": "Attack",
+          "arg1_id": "HRG9gR",
+          "arg2_id": "5"
+        },
+        {
+          "id": "7kPJd4",
+          "relation_type": "Support",
+          "arg1_id": "ecBroD",
+          "arg2_id": "3"
+        },
+        {
+          "id": "8Wyov6",
+          "relation_type": "Support",
+          "arg1_id": "HRG9gR",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Hombre de 28 años",
+          "start": 0,
+          "end": 17,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "profesión violinista",
+          "start": 21,
+          "end": 41,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "en los últimos 3 meses crisis de pánico durante sus actuaciones públicas",
+          "start": 77,
+          "end": 149,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "intenso miedo a quedar bloqueado y no poder continuar con la actuación",
+          "start": 178,
+          "end": 248,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "algo que sería humillante para él",
+          "start": 250,
+          "end": 283,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "Este miedo le ha hecho cancelar sus próximas actuaciones",
+          "start": 285,
+          "end": 341,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "En el resto de sus actividades diarias no experimenta este temor",
+          "start": 343,
+          "end": 407,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta",
+          "start": 409,
+          "end": 477,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Trastorno de pánico.",
+          "start": 560,
+          "end": 580,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Agorafobia.",
+          "start": 656,
+          "end": 667,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Trastorno de ansiedad generalizada.",
+          "start": 616,
+          "end": 651,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "ocCdCt",
+          "arg1_id": "pred_e3",
+          "arg2_id": "1",
+          "relation_type": "Support"
+        },
+        {
+          "id": "HUTUkY",
+          "arg1_id": "pred_e7",
+          "arg2_id": "1",
+          "relation_type": "Attack"
+        },
+        {
+          "id": "gFSEwA",
+          "arg1_id": "pred_e7",
+          "arg2_id": "4",
+          "relation_type": "Attack"
+        },
+        {
+          "id": "HiZe4v",
+          "arg1_id": "pred_e3",
+          "arg2_id": "4",
+          "relation_type": "Support"
+        },
+        {
+          "id": "8KXMMU",
+          "arg1_id": "pred_e5",
+          "arg2_id": "3",
+          "relation_type": "Support"
+        }
+      ]
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "raw_text": "Mujer de 36 años que acude a la consulta por haber sufrido tres abortos espontáneos en el primer trimestre. No ha tenido ningún embarazo a término. Entre los estudios que solicitará en primer término NO se incluye:\n\na) Histerosalpingografía.\n\nb) Cariotipo en sangre periférica de ambos miembros de la pareja.\n\nc) Determinación de anticuerpos antifosfolípidos.\n\nd) Ecografía vaginal.",
+    "metadata": {
+      "context": "Mujer de 36 años que acude a la consulta por haber sufrido tres abortos espontáneos en el primer trimestre. No ha tenido ningún embarazo a término. Entre los estudios que solicitará en primer término NO se incluye:",
+      "context_sentences": [
+        {
+          "sentence": "Mujer de 36 años que acude a la consulta por haber sufrido tres abortos espontáneos en el primer trimestre.",
+          "start": 0,
+          "end": 107
+        },
+        {
+          "sentence": "No ha tenido ningún embarazo a término.",
+          "start": 108,
+          "end": 147
+        },
+        {
+          "sentence": "Entre los estudios que solicitará en primer término NO se incluye:",
+          "start": 148,
+          "end": 214
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Histerosalpingografía.",
+          "start": 219,
+          "end": 241
+        },
+        {
+          "id": "2",
+          "text": "Cariotipo en sangre periférica de ambos miembros de la pareja.",
+          "start": 246,
+          "end": 308
+        },
+        {
+          "id": "3",
+          "text": "Determinación de anticuerpos antifosfolípidos.",
+          "start": 313,
+          "end": 359
+        },
+        {
+          "id": "4",
+          "text": "Ecografía vaginal.",
+          "start": 364,
+          "end": 382
+        }
+      ],
+      "correct_choice_id": "1"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "Un9nG6",
+          "text": "tres abortos espontáneos",
+          "start": 59,
+          "end": 83,
+          "type": "Premise"
+        },
+        {
+          "id": "dftDz3",
+          "text": "No ha tenido ningún embarazo a término",
+          "start": 108,
+          "end": 146,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Histerosalpingografía.",
+          "start": 219,
+          "end": 241,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Cariotipo en sangre periférica de ambos miembros de la pareja.",
+          "start": 246,
+          "end": 308,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Determinación de anticuerpos antifosfolípidos.",
+          "start": 313,
+          "end": 359,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Ecografía vaginal.",
+          "start": 364,
+          "end": 382,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nvbA24",
+          "relation_type": "Support",
+          "arg1_id": "Un9nG6",
+          "arg2_id": "1"
+        },
+        {
+          "id": "7xzYU8",
+          "relation_type": "Support",
+          "arg1_id": "dftDz3",
+          "arg2_id": "1"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Mujer de 36 años",
+          "start": 0,
+          "end": 16,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "tres abortos espontáneos en el primer trimestre",
+          "start": 59,
+          "end": 106,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "No ha tenido ningún embarazo a término",
+          "start": 108,
+          "end": 146,
+          "type": "Premise"
+        },
+        {
+          "id": "4",
+          "text": "Histerosalpingografía.",
+          "start": 219,
+          "end": 241,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nvbA24",
+          "arg1_id": "pred_e2",
+          "arg2_id": "4",
+          "relation_type": "Support"
+        },
+        {
+          "id": "7xzYU8",
+          "arg1_id": "pred_e3",
+          "arg2_id": "4",
+          "relation_type": "Support"
+        }
+      ]
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "raw_text": "Primigesta de 41 años, en la 38 semana, con diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías e hipertensión arterial esencial. Acude a urgencias por dolor hipogástrico de inicio brusco, con afectación de su estado general, acompañado de una metrorragia escasa de sangre oscura. En la Monitorización No Estresante (MNS) detectamos un patrón de frecuencia cardiaca fetal no reactivo. La principal sospecha diagnóstica será:\n\na) Descompensación de su diabetes gestacional.\n\nb) Desprendimiento prematuro de la placenta.\n\nc) Preeclampsia grave.\n\nd) Rotura de \"vasa previa\".\n\ne) Placenta previa.",
+    "metadata": {
+      "context": "Primigesta de 41 años, en la 38 semana, con diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías e hipertensión arterial esencial. Acude a urgencias por dolor hipogástrico de inicio brusco, con afectación de su estado general, acompañado de una metrorragia escasa de sangre oscura. En la Monitorización No Estresante (MNS) detectamos un patrón de frecuencia cardiaca fetal no reactivo. La principal sospecha diagnóstica será:",
+      "context_sentences": [
+        {
+          "sentence": "Primigesta de 41 años, en la 38 semana, con diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías e hipertensión arterial esencial.",
+          "start": 0,
+          "end": 144
+        },
+        {
+          "sentence": "Acude a urgencias por dolor hipogástrico de inicio brusco, con afectación de su estado general, acompañado de una metrorragia escasa de sangre oscura.",
+          "start": 145,
+          "end": 295
+        },
+        {
+          "sentence": "En la Monitorización No Estresante (MNS) detectamos un patrón de frecuencia cardiaca fetal no reactivo.",
+          "start": 296,
+          "end": 399
+        },
+        {
+          "sentence": "La principal sospecha diagnóstica será:",
+          "start": 400,
+          "end": 439
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Descompensación de su diabetes gestacional.",
+          "start": 444,
+          "end": 487
+        },
+        {
+          "id": "2",
+          "text": "Desprendimiento prematuro de la placenta.",
+          "start": 492,
+          "end": 533
+        },
+        {
+          "id": "3",
+          "text": "Preeclampsia grave.",
+          "start": 538,
+          "end": 557
+        },
+        {
+          "id": "4",
+          "text": "Rotura de \"vasa previa\".",
+          "start": 562,
+          "end": 586
+        },
+        {
+          "id": "5",
+          "text": "Placenta previa.",
+          "start": 591,
+          "end": 607
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "bCh3HA",
+          "text": "hipertensión arterial",
+          "start": 113,
+          "end": 134,
+          "type": "Premise"
+        },
+        {
+          "id": "bapZg7",
+          "text": "dolor hipogástrico de inicio brusco",
+          "start": 167,
+          "end": 202,
+          "type": "Premise"
+        },
+        {
+          "id": "kV8GKQ",
+          "text": "sangre oscura",
+          "start": 281,
+          "end": 294,
+          "type": "Premise"
+        },
+        {
+          "id": "rkQeeU",
+          "text": "cardiaca fetal no reactivo",
+          "start": 372,
+          "end": 398,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Descompensación de su diabetes gestacional.",
+          "start": 444,
+          "end": 487,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Desprendimiento prematuro de la placenta.",
+          "start": 492,
+          "end": 533,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Preeclampsia grave.",
+          "start": 538,
+          "end": 557,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Rotura de \"vasa previa\".",
+          "start": 562,
+          "end": 586,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Placenta previa.",
+          "start": 591,
+          "end": 607,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "eiDHQJ",
+          "relation_type": "Support",
+          "arg1_id": "bCh3HA",
+          "arg2_id": "2"
+        },
+        {
+          "id": "5ESXAH",
+          "relation_type": "Support",
+          "arg1_id": "bapZg7",
+          "arg2_id": "2"
+        },
+        {
+          "id": "QLTs6b",
+          "relation_type": "Support",
+          "arg1_id": "kV8GKQ",
+          "arg2_id": "2"
+        },
+        {
+          "id": "k5jjx2",
+          "relation_type": "Support",
+          "arg1_id": "rkQeeU",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Primigesta de 41 años",
+          "start": 0,
+          "end": 21,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "en la 38 semana",
+          "start": 23,
+          "end": 38,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías",
+          "start": 44,
+          "end": 110,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "hipertensión arterial esencial",
+          "start": 113,
+          "end": 143,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "dolor hipogástrico de inicio brusco",
+          "start": 167,
+          "end": 202,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "afectación de su estado general",
+          "start": 208,
+          "end": 239,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "metrorragia escasa de sangre oscura",
+          "start": 259,
+          "end": 294,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "patrón de frecuencia cardiaca fetal no reactivo",
+          "start": 351,
+          "end": 398,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Placenta previa.",
+          "start": 591,
+          "end": 607,
+          "type": "Claim"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "raw_text": "Varón de 48 años de edad, conserje de un hotel, consulta por cefalalgias resistentes al tratamiento analgésico habitual. En la anamnesis se recoge que desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores. En el estudio analítico tiene una fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal. ¿Qué enfermedad es más probable?:\n\na) Tumor cerebral.\n\nb) Acromegalia.\n\nc) Vasculitis aislada del sistema nervioso central.\n\nd) Enfermedad de Paget.\n\ne) Arteritis de células gigantes.",
+    "metadata": {
+      "context": "Varón de 48 años de edad, conserje de un hotel, consulta por cefalalgias resistentes al tratamiento analgésico habitual. En la anamnesis se recoge que desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores. En el estudio analítico tiene una fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal. ¿Qué enfermedad es más probable?:",
+      "context_sentences": [
+        {
+          "sentence": "Varón de 48 años de edad, conserje de un hotel, consulta por cefalalgias resistentes al tratamiento analgésico habitual.",
+          "start": 0,
+          "end": 120
+        },
+        {
+          "sentence": "En la anamnesis se recoge que desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores.",
+          "start": 121,
+          "end": 251
+        },
+        {
+          "sentence": "En el estudio analítico tiene una fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal.",
+          "start": 252,
+          "end": 357
+        },
+        {
+          "sentence": "¿Qué enfermedad es más probable?:",
+          "start": 358,
+          "end": 391
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Tumor cerebral.",
+          "start": 396,
+          "end": 411
+        },
+        {
+          "id": "2",
+          "text": "Acromegalia.",
+          "start": 416,
+          "end": 428
+        },
+        {
+          "id": "3",
+          "text": "Vasculitis aislada del sistema nervioso central.",
+          "start": 433,
+          "end": 481
+        },
+        {
+          "id": "4",
+          "text": "Enfermedad de Paget.",
+          "start": 486,
+          "end": 506
+        },
+        {
+          "id": "5",
+          "text": "Arteritis de células gigantes.",
+          "start": 511,
+          "end": 541
+        }
+      ],
+      "correct_choice_id": "4"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "M5nepR",
+          "text": "Varón",
+          "start": 0,
+          "end": 5,
+          "type": "Premise"
+        },
+        {
+          "id": "i9fnny",
+          "text": "48 años",
+          "start": 9,
+          "end": 16,
+          "type": "Premise"
+        },
+        {
+          "id": "UYPUrF",
+          "text": "gorra de trabajo porque precisa cada vez tallas mayores",
+          "start": 195,
+          "end": 250,
+          "type": "Premise"
+        },
+        {
+          "id": "zasZ9q",
+          "text": "fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal",
+          "start": 286,
+          "end": 356,
+          "type": "Premise"
+        },
+        {
+          "id": "1Abax8WiGp",
+          "text": "cefalalgias",
+          "start": 61,
+          "end": 72,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Tumor cerebral.",
+          "start": 396,
+          "end": 411,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Acromegalia.",
+          "start": 416,
+          "end": 428,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Vasculitis aislada del sistema nervioso central.",
+          "start": 433,
+          "end": 481,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Enfermedad de Paget.",
+          "start": 486,
+          "end": 506,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Arteritis de células gigantes.",
+          "start": 511,
+          "end": 541,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "qQaFYC",
+          "relation_type": "Support",
+          "arg1_id": "M5nepR",
+          "arg2_id": "4"
+        },
+        {
+          "id": "Ahs3KX",
+          "relation_type": "Support",
+          "arg1_id": "i9fnny",
+          "arg2_id": "4"
+        },
+        {
+          "id": "s56LZt",
+          "relation_type": "Support",
+          "arg1_id": "zasZ9q",
+          "arg2_id": "4"
+        },
+        {
+          "id": "eXLg9u",
+          "relation_type": "Attack",
+          "arg1_id": "zasZ9q",
+          "arg2_id": "5"
+        },
+        {
+          "id": "CcPRtZ",
+          "relation_type": "Attack",
+          "arg1_id": "zasZ9q",
+          "arg2_id": "3"
+        },
+        {
+          "id": "4r5nnM",
+          "relation_type": "Attack",
+          "arg1_id": "zasZ9q",
+          "arg2_id": "1"
+        },
+        {
+          "id": "rGHihn",
+          "relation_type": "Attack",
+          "arg1_id": "zasZ9q",
+          "arg2_id": "2"
+        },
+        {
+          "id": "mmvybt",
+          "relation_type": "Support",
+          "arg1_id": "1Abax8WiGp",
+          "arg2_id": "2"
+        },
+        {
+          "id": "v7mzZK",
+          "relation_type": "Support",
+          "arg1_id": "1Abax8WiGp",
+          "arg2_id": "1"
+        },
+        {
+          "id": "btbL55",
+          "relation_type": "Support",
+          "arg1_id": "1Abax8WiGp",
+          "arg2_id": "3"
+        },
+        {
+          "id": "thsonh",
+          "relation_type": "Support",
+          "arg1_id": "1Abax8WiGp",
+          "arg2_id": "5"
+        },
+        {
+          "id": "XG3MNS",
+          "relation_type": "Attack",
+          "arg1_id": "UYPUrF",
+          "arg2_id": "1"
+        },
+        {
+          "id": "xTbZn7",
+          "relation_type": "Attack",
+          "arg1_id": "UYPUrF",
+          "arg2_id": "3"
+        },
+        {
+          "id": "fMov36",
+          "relation_type": "Attack",
+          "arg1_id": "UYPUrF",
+          "arg2_id": "5"
+        },
+        {
+          "id": "ZkiVUE",
+          "relation_type": "Support",
+          "arg1_id": "UYPUrF",
+          "arg2_id": "4"
+        },
+        {
+          "id": "9yiXhH",
+          "relation_type": "Support",
+          "arg1_id": "UYPUrF",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "48 años de edad",
+          "start": 9,
+          "end": 24,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "cefalalgias resistentes al tratamiento analgésico habitual",
+          "start": 61,
+          "end": 119,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores",
+          "start": 151,
+          "end": 250,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal",
+          "start": 286,
+          "end": 356,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "raw_text": "Hombre de 32 años de edad sin antecedentes de interés ni factores de riesgo cardiovascular. Clínica de disnea al subir un piso de escaleras de 1 mes de evolución. Consulta por síncope brusco precedido de esfuerzo. Antecedentes familiares de muerte no explicada de forma brusca en su hermano. En la exploración física destaca un soplo sistólico rudo más audible en foco aórtico. El electrocardiograma practicado en consulta muestra un ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda. Se realiza un ecocardiograma que documenta una importante hipertrofia asimétrica de septo interventricular con un gradiente dinámico subvalvular de 70 mmHg con insuficiencia mitral secundaria moderada y fracción de eyección de ventrículo izquierdo conservada. ¿Qué opción terapéutica es la MENOS indicada?\n\na) Beta-bloqueantcs.\n\nb) Digoxina.\n\nc) Calcio-antagonistas no dihidropiridínicos.\n\nd) Desfibrilador automático implantable.\n\ne) Miomectomía septal quirúrgica de Morrow.",
+    "metadata": {
+      "context": "Hombre de 32 años de edad sin antecedentes de interés ni factores de riesgo cardiovascular. Clínica de disnea al subir un piso de escaleras de 1 mes de evolución. Consulta por síncope brusco precedido de esfuerzo. Antecedentes familiares de muerte no explicada de forma brusca en su hermano. En la exploración física destaca un soplo sistólico rudo más audible en foco aórtico. El electrocardiograma practicado en consulta muestra un ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda. Se realiza un ecocardiograma que documenta una importante hipertrofia asimétrica de septo interventricular con un gradiente dinámico subvalvular de 70 mmHg con insuficiencia mitral secundaria moderada y fracción de eyección de ventrículo izquierdo conservada. ¿Qué opción terapéutica es la MENOS indicada?",
+      "context_sentences": [
+        {
+          "sentence": "Hombre de 32 años de edad sin antecedentes de interés ni factores de riesgo cardiovascular.",
+          "start": 0,
+          "end": 91
+        },
+        {
+          "sentence": "Clínica de disnea al subir un piso de escaleras de 1 mes de evolución.",
+          "start": 92,
+          "end": 162
+        },
+        {
+          "sentence": "Consulta por síncope brusco precedido de esfuerzo.",
+          "start": 163,
+          "end": 213
+        },
+        {
+          "sentence": "Antecedentes familiares de muerte no explicada de forma brusca en su hermano.",
+          "start": 214,
+          "end": 291
+        },
+        {
+          "sentence": "En la exploración física destaca un soplo sistólico rudo más audible en foco aórtico.",
+          "start": 292,
+          "end": 377
+        },
+        {
+          "sentence": "El electrocardiograma practicado en consulta muestra un ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda.",
+          "start": 378,
+          "end": 510
+        },
+        {
+          "sentence": "Se realiza un ecocardiograma que documenta una importante hipertrofia asimétrica de septo interventricular con un gradiente dinámico subvalvular de 70 mmHg con insuficiencia mitral secundaria moderada y fracción de eyección de ventrículo izquierdo conservada.",
+          "start": 511,
+          "end": 770
+        },
+        {
+          "sentence": "¿Qué opción terapéutica es la MENOS indicada?",
+          "start": 771,
+          "end": 816
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Beta-bloqueantcs.",
+          "start": 821,
+          "end": 838
+        },
+        {
+          "id": "2",
+          "text": "Digoxina.",
+          "start": 843,
+          "end": 852
+        },
+        {
+          "id": "3",
+          "text": "Calcio-antagonistas no dihidropiridínicos.",
+          "start": 857,
+          "end": 899
+        },
+        {
+          "id": "4",
+          "text": "Desfibrilador automático implantable.",
+          "start": 904,
+          "end": 941
+        },
+        {
+          "id": "5",
+          "text": "Miomectomía septal quirúrgica de Morrow.",
+          "start": 946,
+          "end": 986
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "not-relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "d49dqP",
+          "text": "hipertrofia de ventricular izquierda",
+          "start": 473,
+          "end": 509,
+          "type": "Premise"
+        },
+        {
+          "id": "sWHxCe",
+          "text": "disnea",
+          "start": 103,
+          "end": 109,
+          "type": "Premise"
+        },
+        {
+          "id": "sSgZWx",
+          "text": "síncope brusco precedido de esfuerzo",
+          "start": 176,
+          "end": 212,
+          "type": "Premise"
+        },
+        {
+          "id": "PVgzxs",
+          "text": "Antecedentes familiares de muerte no explicada de forma brusca",
+          "start": 214,
+          "end": 276,
+          "type": "Premise"
+        },
+        {
+          "id": "q5JvyW",
+          "text": "gradiente dinámico subvalvular de 70 mmHg",
+          "start": 625,
+          "end": 666,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Beta-bloqueantcs.",
+          "start": 821,
+          "end": 838,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Digoxina.",
+          "start": 843,
+          "end": 852,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Calcio-antagonistas no dihidropiridínicos.",
+          "start": 857,
+          "end": 899,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Desfibrilador automático implantable.",
+          "start": 904,
+          "end": 941,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Miomectomía septal quirúrgica de Morrow.",
+          "start": 946,
+          "end": 986,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "B2v7Hn",
+          "relation_type": "Support",
+          "arg1_id": "d49dqP",
+          "arg2_id": "1"
+        },
+        {
+          "id": "KAny6S",
+          "relation_type": "Support",
+          "arg1_id": "sWHxCe",
+          "arg2_id": "1"
+        },
+        {
+          "id": "EVewyK",
+          "relation_type": "Support",
+          "arg1_id": "sSgZWx",
+          "arg2_id": "1"
+        },
+        {
+          "id": "qW86f9",
+          "relation_type": "Support",
+          "arg1_id": "d49dqP",
+          "arg2_id": "3"
+        },
+        {
+          "id": "x8aaPH",
+          "relation_type": "Support",
+          "arg1_id": "sWHxCe",
+          "arg2_id": "3"
+        },
+        {
+          "id": "yW2r4w",
+          "relation_type": "Support",
+          "arg1_id": "sSgZWx",
+          "arg2_id": "3"
+        },
+        {
+          "id": "q262kr",
+          "relation_type": "Support",
+          "arg1_id": "d49dqP",
+          "arg2_id": "4"
+        },
+        {
+          "id": "LBiQV8",
+          "relation_type": "Support",
+          "arg1_id": "sWHxCe",
+          "arg2_id": "4"
+        },
+        {
+          "id": "GbSjzx",
+          "relation_type": "Support",
+          "arg1_id": "sSgZWx",
+          "arg2_id": "4"
+        },
+        {
+          "id": "FuhBZ4",
+          "relation_type": "Support",
+          "arg1_id": "PVgzxs",
+          "arg2_id": "4"
+        },
+        {
+          "id": "ZruJPu",
+          "relation_type": "Support",
+          "arg1_id": "d49dqP",
+          "arg2_id": "5"
+        },
+        {
+          "id": "CEqJqF",
+          "relation_type": "Support",
+          "arg1_id": "sWHxCe",
+          "arg2_id": "5"
+        },
+        {
+          "id": "SPQsnG",
+          "relation_type": "Support",
+          "arg1_id": "sSgZWx",
+          "arg2_id": "5"
+        },
+        {
+          "id": "tHUiEy",
+          "relation_type": "Support",
+          "arg1_id": "q5JvyW",
+          "arg2_id": "5"
+        },
+        {
+          "id": "HSLMZy",
+          "relation_type": "Attack",
+          "arg1_id": "d49dqP",
+          "arg2_id": "2"
+        },
+        {
+          "id": "w6jtRM",
+          "relation_type": "Attack",
+          "arg1_id": "sWHxCe",
+          "arg2_id": "2"
+        },
+        {
+          "id": "ZPZ3rs",
+          "relation_type": "Attack",
+          "arg1_id": "sSgZWx",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Hombre de 32 años de edad",
+          "start": 0,
+          "end": 25,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "sin antecedentes de interés ni factores de riesgo cardiovascular",
+          "start": 26,
+          "end": 90,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "disnea al subir un piso de escaleras de 1 mes de evolución",
+          "start": 103,
+          "end": 161,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "síncope brusco precedido de esfuerzo",
+          "start": 176,
+          "end": 212,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "Antecedentes familiares de muerte no explicada de forma brusca en su hermano",
+          "start": 214,
+          "end": 290,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "soplo sistólico rudo más audible en foco aórtico",
+          "start": 328,
+          "end": 376,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda",
+          "start": 434,
+          "end": 509,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "importante hipertrofia asimétrica de septo interventricular",
+          "start": 558,
+          "end": 617,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e9",
+          "text": "gradiente dinámico subvalvular de 70 mmHg",
+          "start": 625,
+          "end": 666,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e10",
+          "text": "insuficiencia mitral secundaria moderada",
+          "start": 671,
+          "end": 711,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e11",
+          "text": "fracción de eyección de ventrículo izquierdo conservada",
+          "start": 714,
+          "end": 769,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "raw_text": "Un hombre de 60 años de edad presenta un cuadro de demencia rápidamente progresiva, rigidez, ataxia, mioclonias, que persisten durante el sueño y descargas de alto voltaje en el EEG. ¿Qué alteración, entre las siguientes, es la que podremos encontrar en el LCR?\n\na) Hipoglucorraquia.\n\nb) Bandas oligoclonales positivas.\n\nc) Aumento del índice de IgG.\n\nd) Proteína 14-3-3 positiva.",
+    "metadata": {
+      "context": "Un hombre de 60 años de edad presenta un cuadro de demencia rápidamente progresiva, rigidez, ataxia, mioclonias, que persisten durante el sueño y descargas de alto voltaje en el EEG. ¿Qué alteración, entre las siguientes, es la que podremos encontrar en el LCR?",
+      "context_sentences": [
+        {
+          "sentence": "Un hombre de 60 años de edad presenta un cuadro de demencia rápidamente progresiva, rigidez, ataxia, mioclonias, que persisten durante el sueño y descargas de alto voltaje en el EEG.",
+          "start": 0,
+          "end": 182
+        },
+        {
+          "sentence": "¿Qué alteración, entre las siguientes, es la que podremos encontrar en el LCR?",
+          "start": 183,
+          "end": 261
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Hipoglucorraquia.",
+          "start": 266,
+          "end": 283
+        },
+        {
+          "id": "2",
+          "text": "Bandas oligoclonales positivas.",
+          "start": 288,
+          "end": 319
+        },
+        {
+          "id": "3",
+          "text": "Aumento del índice de IgG.",
+          "start": 324,
+          "end": 350
+        },
+        {
+          "id": "4",
+          "text": "Proteína 14-3-3 positiva.",
+          "start": 355,
+          "end": 380
+        }
+      ],
+      "correct_choice_id": "4"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "Z4FDnDQXIS",
+          "text": "demencia rápidamente progresiva",
+          "start": 51,
+          "end": 82,
+          "type": "Premise"
+        },
+        {
+          "id": "KQdukk4Hrs",
+          "text": "rigidez",
+          "start": 84,
+          "end": 91,
+          "type": "Premise"
+        },
+        {
+          "id": "CaYW9r7aHy",
+          "text": "ataxia",
+          "start": 93,
+          "end": 99,
+          "type": "Premise"
+        },
+        {
+          "id": "W4FHZDA1jI",
+          "text": "mioclonias, que persisten durante el sueño",
+          "start": 101,
+          "end": 143,
+          "type": "Premise"
+        },
+        {
+          "id": "Bte9kKEr9M",
+          "text": "descargas de alto voltaje en el EEG",
+          "start": 146,
+          "end": 181,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Hipoglucorraquia.",
+          "start": 266,
+          "end": 283,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Bandas oligoclonales positivas.",
+          "start": 288,
+          "end": 319,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Aumento del índice de IgG.",
+          "start": 324,
+          "end": 350,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Proteína 14-3-3 positiva.",
+          "start": 355,
+          "end": 380,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "t78hDi",
+          "relation_type": "Attack",
+          "arg1_id": "Z4FDnDQXIS",
+          "arg2_id": "1"
+        },
+        {
+          "id": "JNY5D7",
+          "relation_type": "Attack",
+          "arg1_id": "KQdukk4Hrs",
+          "arg2_id": "1"
+        },
+        {
+          "id": "DWGxhN",
+          "relation_type": "Attack",
+          "arg1_id": "CaYW9r7aHy",
+          "arg2_id": "1"
+        },
+        {
+          "id": "mUiyWm",
+          "relation_type": "Attack",
+          "arg1_id": "W4FHZDA1jI",
+          "arg2_id": "1"
+        },
+        {
+          "id": "Ztban6",
+          "relation_type": "Attack",
+          "arg1_id": "Bte9kKEr9M",
+          "arg2_id": "1"
+        },
+        {
+          "id": "uyF2JS",
+          "relation_type": "Attack",
+          "arg1_id": "Z4FDnDQXIS",
+          "arg2_id": "2"
+        },
+        {
+          "id": "ddJ6C4",
+          "relation_type": "Attack",
+          "arg1_id": "KQdukk4Hrs",
+          "arg2_id": "2"
+        },
+        {
+          "id": "TgrdMg",
+          "relation_type": "Attack",
+          "arg1_id": "CaYW9r7aHy",
+          "arg2_id": "2"
+        },
+        {
+          "id": "u67Fur",
+          "relation_type": "Attack",
+          "arg1_id": "W4FHZDA1jI",
+          "arg2_id": "2"
+        },
+        {
+          "id": "umHDiB",
+          "relation_type": "Attack",
+          "arg1_id": "Bte9kKEr9M",
+          "arg2_id": "2"
+        },
+        {
+          "id": "UmtrgU",
+          "relation_type": "Attack",
+          "arg1_id": "Z4FDnDQXIS",
+          "arg2_id": "3"
+        },
+        {
+          "id": "LYidgM",
+          "relation_type": "Attack",
+          "arg1_id": "KQdukk4Hrs",
+          "arg2_id": "3"
+        },
+        {
+          "id": "zoyNnw",
+          "relation_type": "Attack",
+          "arg1_id": "CaYW9r7aHy",
+          "arg2_id": "3"
+        },
+        {
+          "id": "vvNEtp",
+          "relation_type": "Attack",
+          "arg1_id": "W4FHZDA1jI",
+          "arg2_id": "3"
+        },
+        {
+          "id": "eiydap",
+          "relation_type": "Attack",
+          "arg1_id": "Bte9kKEr9M",
+          "arg2_id": "3"
+        },
+        {
+          "id": "vRNUBX",
+          "relation_type": "Support",
+          "arg1_id": "Z4FDnDQXIS",
+          "arg2_id": "4"
+        },
+        {
+          "id": "Ju8SKZ",
+          "relation_type": "Support",
+          "arg1_id": "KQdukk4Hrs",
+          "arg2_id": "4"
+        },
+        {
+          "id": "o4BYmW",
+          "relation_type": "Support",
+          "arg1_id": "CaYW9r7aHy",
+          "arg2_id": "4"
+        },
+        {
+          "id": "DPxV6P",
+          "relation_type": "Support",
+          "arg1_id": "W4FHZDA1jI",
+          "arg2_id": "4"
+        },
+        {
+          "id": "XBAYg6",
+          "relation_type": "Support",
+          "arg1_id": "Bte9kKEr9M",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "demencia rápidamente progresiva",
+          "start": 51,
+          "end": 82,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "rigidez",
+          "start": 84,
+          "end": 91,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "ataxia",
+          "start": 93,
+          "end": 99,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "mioclonias, que persisten durante el sueño",
+          "start": 101,
+          "end": 143,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "descargas de alto voltaje en el EEG",
+          "start": 146,
+          "end": 181,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "raw_text": "Mujer de 71 años con antecedentes de artritis reumatoide en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana. Acude a urgencias por clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival. ¿Cuál sería el tratamiento adecuado?:\n\na) Tratamiento sintomático del dolor únicamente.\n\nb) Tratamiento tópico con aciclovir.\n\nc) Tratamiento ambulatorio con aciclovir. valaciclovir o famciclovir oral.\n\nd) Ingreso hospitalario y tratamiento con aciclovir o famciclovir.\n\ne) Inmuglobulina parenteral y vacunación.",
+    "metadata": {
+      "context": "Mujer de 71 años con antecedentes de artritis reumatoide en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana. Acude a urgencias por clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival. ¿Cuál sería el tratamiento adecuado?:",
+      "context_sentences": [
+        {
+          "sentence": "Mujer de 71 años con antecedentes de artritis reumatoide en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana.",
+          "start": 0,
+          "end": 150
+        },
+        {
+          "sentence": "Acude a urgencias por clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival.",
+          "start": 151,
+          "end": 327
+        },
+        {
+          "sentence": "¿Cuál sería el tratamiento adecuado?",
+          "start": 328,
+          "end": 364
+        },
+        {
+          "sentence": ":",
+          "start": 364,
+          "end": 365
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Tratamiento sintomático del dolor únicamente.",
+          "start": 370,
+          "end": 415
+        },
+        {
+          "id": "2",
+          "text": "Tratamiento tópico con aciclovir.",
+          "start": 420,
+          "end": 453
+        },
+        {
+          "id": "3",
+          "text": "Tratamiento ambulatorio con aciclovir. valaciclovir o famciclovir oral.",
+          "start": 458,
+          "end": 529
+        },
+        {
+          "id": "4",
+          "text": "Ingreso hospitalario y tratamiento con aciclovir o famciclovir.",
+          "start": 534,
+          "end": 597
+        },
+        {
+          "id": "5",
+          "text": "Inmuglobulina parenteral y vacunación.",
+          "start": 602,
+          "end": 640
+        }
+      ],
+      "correct_choice_id": "4"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "57ksRS",
+          "text": "clínica de 72h",
+          "start": 173,
+          "end": 187,
+          "type": "Premise"
+        },
+        {
+          "id": "EQyQcH",
+          "text": "incluyendo pabellón auricular, respetando frente y quemosis conjuntival",
+          "start": 255,
+          "end": 326,
+          "type": "Premise"
+        },
+        {
+          "id": "s9tBFf",
+          "text": "en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana",
+          "start": 57,
+          "end": 149,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Tratamiento sintomático del dolor únicamente.",
+          "start": 370,
+          "end": 415,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Tratamiento tópico con aciclovir.",
+          "start": 420,
+          "end": 453,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Tratamiento ambulatorio con aciclovir. valaciclovir o famciclovir oral.",
+          "start": 458,
+          "end": 529,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Ingreso hospitalario y tratamiento con aciclovir o famciclovir.",
+          "start": 534,
+          "end": 597,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Inmuglobulina parenteral y vacunación.",
+          "start": 602,
+          "end": 640,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "FZTNTb",
+          "relation_type": "Support",
+          "arg1_id": "57ksRS",
+          "arg2_id": "4"
+        },
+        {
+          "id": "UyJnyM",
+          "relation_type": "Support",
+          "arg1_id": "EQyQcH",
+          "arg2_id": "4"
+        },
+        {
+          "id": "Zd2FgB",
+          "relation_type": "Support",
+          "arg1_id": "s9tBFf",
+          "arg2_id": "4"
+        },
+        {
+          "id": "hDzjsG",
+          "relation_type": "Attack",
+          "arg1_id": "57ksRS",
+          "arg2_id": "1"
+        },
+        {
+          "id": "PRZ6S3",
+          "relation_type": "Attack",
+          "arg1_id": "EQyQcH",
+          "arg2_id": "1"
+        },
+        {
+          "id": "6zSD25",
+          "relation_type": "Attack",
+          "arg1_id": "s9tBFf",
+          "arg2_id": "1"
+        },
+        {
+          "id": "7YDeQt",
+          "relation_type": "Attack",
+          "arg1_id": "EQyQcH",
+          "arg2_id": "3"
+        },
+        {
+          "id": "yXt4Q4",
+          "relation_type": "Attack",
+          "arg1_id": "EQyQcH",
+          "arg2_id": "2"
+        },
+        {
+          "id": "zk26qK",
+          "relation_type": "Attack",
+          "arg1_id": "s9tBFf",
+          "arg2_id": "3"
+        },
+        {
+          "id": "UiJD4j",
+          "relation_type": "Attack",
+          "arg1_id": "s9tBFf",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "71 años",
+          "start": 9,
+          "end": 16,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "artritis reumatoide",
+          "start": 37,
+          "end": 56,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana",
+          "start": 60,
+          "end": 149,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival",
+          "start": 173,
+          "end": 326,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "raw_text": "Una mujer de 76 años, sin otros antecedentes que hipertensión arterial, consulta por ictericia indolora y prurito, con anorexia. Analíticamente, destaca una bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa). La ecografía abdominal muestra dilatación biliar intra y extrahepática, junto con un nódulo hepático único menor de 2 cm, localizado periféricamente, en la cara anterior del lóbulo izquierdo. La TC confirma estos hallazgos, demostrando además la presencia de una masa de 3.5 cm en la cabeza pancreática. La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma. Señale la mejor opción terapéutica:\n\na) Quimio/radioterapia neoadyuvante condicionando la opción de cirugía radical a la respuesta inicial.\n\nb) Drenaje biliar externo percutáneo con carácter paliativo, con eventual reconversión a drenaje interno en caso de intolerancia o complicaciones.\n\nc) Derivación biliar quirúrgica paliativa, con o sin gastro-yeyunostomía profiláctica en función de los hallazgos intraoperatorios.\n\nd) Prótesis biliar metálica mediante colongio- pancralografía retrógrada endoscópica con opción a quimioterapia paliativa.\n\ne) Duodenopancreatectomía cefálica, con ablación percutánea mediante radriofrecuencia o alcoholización de la lesión hepática.",
+    "metadata": {
+      "context": "Una mujer de 76 años, sin otros antecedentes que hipertensión arterial, consulta por ictericia indolora y prurito, con anorexia. Analíticamente, destaca una bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa). La ecografía abdominal muestra dilatación biliar intra y extrahepática, junto con un nódulo hepático único menor de 2 cm, localizado periféricamente, en la cara anterior del lóbulo izquierdo. La TC confirma estos hallazgos, demostrando además la presencia de una masa de 3.5 cm en la cabeza pancreática. La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma. Señale la mejor opción terapéutica:",
+      "context_sentences": [
+        {
+          "sentence": "Una mujer de 76 años, sin otros antecedentes que hipertensión arterial, consulta por ictericia indolora y prurito, con anorexia.",
+          "start": 0,
+          "end": 128
+        },
+        {
+          "sentence": "Analíticamente, destaca una bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa).",
+          "start": 129,
+          "end": 226
+        },
+        {
+          "sentence": "La ecografía abdominal muestra dilatación biliar intra y extrahepática, junto con un nódulo hepático único menor de 2 cm, localizado periféricamente, en la cara anterior del lóbulo izquierdo.",
+          "start": 227,
+          "end": 418
+        },
+        {
+          "sentence": "La TC confirma estos hallazgos, demostrando además la presencia de una masa de 3.5 cm en la cabeza pancreática.",
+          "start": 419,
+          "end": 530
+        },
+        {
+          "sentence": "La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma.",
+          "start": 531,
+          "end": 628
+        },
+        {
+          "sentence": "Señale la mejor opción terapéutica:",
+          "start": 629,
+          "end": 664
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Quimio/radioterapia neoadyuvante condicionando la opción de cirugía radical a la respuesta inicial.",
+          "start": 669,
+          "end": 768
+        },
+        {
+          "id": "2",
+          "text": "Drenaje biliar externo percutáneo con carácter paliativo, con eventual reconversión a drenaje interno en caso de intolerancia o complicaciones.",
+          "start": 773,
+          "end": 916
+        },
+        {
+          "id": "3",
+          "text": "Derivación biliar quirúrgica paliativa, con o sin gastro-yeyunostomía profiláctica en función de los hallazgos intraoperatorios.",
+          "start": 921,
+          "end": 1049
+        },
+        {
+          "id": "4",
+          "text": "Prótesis biliar metálica mediante colongio- pancralografía retrógrada endoscópica con opción a quimioterapia paliativa.",
+          "start": 1054,
+          "end": 1173
+        },
+        {
+          "id": "5",
+          "text": "Duodenopancreatectomía cefálica, con ablación percutánea mediante radriofrecuencia o alcoholización de la lesión hepática.",
+          "start": 1178,
+          "end": 1300
+        }
+      ],
+      "correct_choice_id": "4"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant"
+      ],
+      "entities": [
+        {
+          "id": "bi2CAF",
+          "text": "presencia de una masa de 3.5 cm en la cabeza pancreática",
+          "start": 473,
+          "end": 529,
+          "type": "Premise"
+        },
+        {
+          "id": "Ectaes",
+          "text": "La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma",
+          "start": 531,
+          "end": 627,
+          "type": "Premise"
+        },
+        {
+          "id": "wUVVh9",
+          "text": "ictericia indolora",
+          "start": 85,
+          "end": 103,
+          "type": "Premise"
+        },
+        {
+          "id": "CAxEwf",
+          "text": "prurito",
+          "start": 106,
+          "end": 113,
+          "type": "Premise"
+        },
+        {
+          "id": "aLhBzR",
+          "text": "anorexia",
+          "start": 119,
+          "end": 127,
+          "type": "Premise"
+        },
+        {
+          "id": "YgrwWg",
+          "text": "bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa)",
+          "start": 157,
+          "end": 225,
+          "type": "Premise"
+        },
+        {
+          "id": "5M9fua",
+          "text": "La ecografía abdominal muestra dilatación biliar intra y extrahepática",
+          "start": 227,
+          "end": 297,
+          "type": "Premise"
+        },
+        {
+          "id": "kombr8",
+          "text": "la mejor opción terapéutica",
+          "start": 636,
+          "end": 663,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Quimio/radioterapia neoadyuvante condicionando la opción de cirugía radical a la respuesta inicial.",
+          "start": 669,
+          "end": 768,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Drenaje biliar externo percutáneo con carácter paliativo, con eventual reconversión a drenaje interno en caso de intolerancia o complicaciones.",
+          "start": 773,
+          "end": 916,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Derivación biliar quirúrgica paliativa, con o sin gastro-yeyunostomía profiláctica en función de los hallazgos intraoperatorios.",
+          "start": 921,
+          "end": 1049,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Prótesis biliar metálica mediante colongio- pancralografía retrógrada endoscópica con opción a quimioterapia paliativa.",
+          "start": 1054,
+          "end": 1173,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Duodenopancreatectomía cefálica, con ablación percutánea mediante radriofrecuencia o alcoholización de la lesión hepática.",
+          "start": 1178,
+          "end": 1300,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "Tzqdop",
+          "relation_type": "Support",
+          "arg1_id": "bi2CAF",
+          "arg2_id": "4"
+        },
+        {
+          "id": "6Q6wJj",
+          "relation_type": "Support",
+          "arg1_id": "Ectaes",
+          "arg2_id": "4"
+        },
+        {
+          "id": "nzaWzU",
+          "relation_type": "Support",
+          "arg1_id": "wUVVh9",
+          "arg2_id": "4"
+        },
+        {
+          "id": "2zFsfi",
+          "relation_type": "Support",
+          "arg1_id": "CAxEwf",
+          "arg2_id": "4"
+        },
+        {
+          "id": "bHHxjA",
+          "relation_type": "Support",
+          "arg1_id": "aLhBzR",
+          "arg2_id": "4"
+        },
+        {
+          "id": "z3UHEj",
+          "relation_type": "Support",
+          "arg1_id": "YgrwWg",
+          "arg2_id": "4"
+        },
+        {
+          "id": "YSoBUD",
+          "relation_type": "Support",
+          "arg1_id": "5M9fua",
+          "arg2_id": "4"
+        },
+        {
+          "id": "arRZSc",
+          "relation_type": "Support",
+          "arg1_id": "kombr8",
+          "arg2_id": "4"
+        },
+        {
+          "id": "2ttr6Y",
+          "relation_type": "Support",
+          "arg1_id": "bi2CAF",
+          "arg2_id": "1"
+        },
+        {
+          "id": "LfpPdu",
+          "relation_type": "Attack",
+          "arg1_id": "Ectaes",
+          "arg2_id": "1"
+        },
+        {
+          "id": "u5zs3V",
+          "relation_type": "Attack",
+          "arg1_id": "kombr8",
+          "arg2_id": "2"
+        },
+        {
+          "id": "nHGSVq",
+          "relation_type": "Attack",
+          "arg1_id": "kombr8",
+          "arg2_id": "3"
+        },
+        {
+          "id": "K2x8cz",
+          "relation_type": "Attack",
+          "arg1_id": "bi2CAF",
+          "arg2_id": "5"
+        },
+        {
+          "id": "xvnVNF",
+          "relation_type": "Attack",
+          "arg1_id": "Ectaes",
+          "arg2_id": "5"
+        },
+        {
+          "id": "wg8h3r",
+          "relation_type": "Support",
+          "arg1_id": "wUVVh9",
+          "arg2_id": "2"
+        },
+        {
+          "id": "QMfemS",
+          "relation_type": "Support",
+          "arg1_id": "wUVVh9",
+          "arg2_id": "3"
+        },
+        {
+          "id": "6qCoVv",
+          "relation_type": "Support",
+          "arg1_id": "CAxEwf",
+          "arg2_id": "2"
+        },
+        {
+          "id": "XnuNoF",
+          "relation_type": "Support",
+          "arg1_id": "CAxEwf",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Rhkb7G",
+          "relation_type": "Support",
+          "arg1_id": "aLhBzR",
+          "arg2_id": "2"
+        },
+        {
+          "id": "zYMNju",
+          "relation_type": "Support",
+          "arg1_id": "aLhBzR",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "76 años",
+          "start": 13,
+          "end": 20,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "hipertensión arterial",
+          "start": 49,
+          "end": 70,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "ictericia indolora",
+          "start": 85,
+          "end": 103,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "prurito",
+          "start": 106,
+          "end": 113,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "anorexia",
+          "start": 119,
+          "end": 127,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "bilirrubina total de 12 mg/dL",
+          "start": 157,
+          "end": 186,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "9.5 mg/dL de bilirrubina directa",
+          "start": 192,
+          "end": 224,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "dilatación biliar intra y extrahepática",
+          "start": 258,
+          "end": 297,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e9",
+          "text": "un nódulo hepático único menor de 2 cm",
+          "start": 309,
+          "end": 347,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e10",
+          "text": "localizado periféricamente, en la cara anterior del lóbulo izquierdo",
+          "start": 349,
+          "end": 417,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e11",
+          "text": "una masa de 3.5 cm en la cabeza pancreática",
+          "start": 486,
+          "end": 529,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e12",
+          "text": "La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma",
+          "start": 531,
+          "end": 627,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Señale la mejor opción terapéutica:",
+          "start": 629,
+          "end": 664,
+          "type": "Claim"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "raw_text": "Una mujer de 35 años diagnosticada de Lupus Eritematoso Sistémico en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses, con buen control de la actividad inflamatoria, acude a la consulta por dolor continuo en la rodilla de 3 semanas de evolución, de inicio brusco sin antecedente traumático. Aporta un examen radiográfico dentro de la normalidad. ¿Qué exploración complementaria entre los siguientes pediría a continuación?:\n\na) Tomografia de rodilla.\n\nb) Hemograma y formula leucocitaria, con Proteina C reactiva.\n\nc) Recuento celular y bioquímica del líquido articular.\n\nd) Cultivo del líquido articular.\n\ne) Resonancia magnética.",
+    "metadata": {
+      "context": "Una mujer de 35 años diagnosticada de Lupus Eritematoso Sistémico en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses, con buen control de la actividad inflamatoria, acude a la consulta por dolor continuo en la rodilla de 3 semanas de evolución, de inicio brusco sin antecedente traumático. Aporta un examen radiográfico dentro de la normalidad. ¿Qué exploración complementaria entre los siguientes pediría a continuación?:",
+      "context_sentences": [
+        {
+          "sentence": "Una mujer de 35 años diagnosticada de Lupus Eritematoso Sistémico en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses, con buen control de la actividad inflamatoria, acude a la consulta por dolor continuo en la rodilla de 3 semanas de evolución, de inicio brusco sin antecedente traumático.",
+          "start": 0,
+          "end": 319
+        },
+        {
+          "sentence": "Aporta un examen radiográfico dentro de la normalidad.",
+          "start": 320,
+          "end": 374
+        },
+        {
+          "sentence": "¿Qué exploración complementaria entre los siguientes pediría a continuación?",
+          "start": 375,
+          "end": 451
+        },
+        {
+          "sentence": ":",
+          "start": 451,
+          "end": 452
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Tomografia de rodilla.",
+          "start": 457,
+          "end": 479
+        },
+        {
+          "id": "2",
+          "text": "Hemograma y formula leucocitaria, con Proteina C reactiva.",
+          "start": 484,
+          "end": 542
+        },
+        {
+          "id": "3",
+          "text": "Recuento celular y bioquímica del líquido articular.",
+          "start": 547,
+          "end": 599
+        },
+        {
+          "id": "4",
+          "text": "Cultivo del líquido articular.",
+          "start": 604,
+          "end": 634
+        },
+        {
+          "id": "5",
+          "text": "Resonancia magnética.",
+          "start": 639,
+          "end": 660
+        }
+      ],
+      "correct_choice_id": "5"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "AueoAW",
+          "text": "corticoides a una dosis de 0.5 mg/kg/día durante varios meses",
+          "start": 85,
+          "end": 146,
+          "type": "Premise"
+        },
+        {
+          "id": "V8NDmn",
+          "text": "dolor continuo en la rodilla de 3 semanas",
+          "start": 219,
+          "end": 260,
+          "type": "Premise"
+        },
+        {
+          "id": "yufWhK",
+          "text": "de inicio brusco",
+          "start": 275,
+          "end": 291,
+          "type": "Premise"
+        },
+        {
+          "id": "zr3RhX",
+          "text": "sin antecedente traumático",
+          "start": 292,
+          "end": 318,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Tomografia de rodilla.",
+          "start": 457,
+          "end": 479,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Hemograma y formula leucocitaria, con Proteina C reactiva.",
+          "start": 484,
+          "end": 542,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Recuento celular y bioquímica del líquido articular.",
+          "start": 547,
+          "end": 599,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Cultivo del líquido articular.",
+          "start": 604,
+          "end": 634,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Resonancia magnética.",
+          "start": 639,
+          "end": 660,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nZJHnL",
+          "relation_type": "Support",
+          "arg1_id": "AueoAW",
+          "arg2_id": "5"
+        },
+        {
+          "id": "RbFCyj",
+          "relation_type": "Support",
+          "arg1_id": "V8NDmn",
+          "arg2_id": "5"
+        },
+        {
+          "id": "QgAWYw",
+          "relation_type": "Support",
+          "arg1_id": "yufWhK",
+          "arg2_id": "5"
+        },
+        {
+          "id": "rVdw65",
+          "relation_type": "Support",
+          "arg1_id": "zr3RhX",
+          "arg2_id": "5"
+        },
+        {
+          "id": "ghBWU3",
+          "relation_type": "Support",
+          "arg1_id": "V8NDmn",
+          "arg2_id": "2"
+        },
+        {
+          "id": "pGSKYC",
+          "relation_type": "Support",
+          "arg1_id": "V8NDmn",
+          "arg2_id": "3"
+        },
+        {
+          "id": "uTgdDn",
+          "relation_type": "Support",
+          "arg1_id": "V8NDmn",
+          "arg2_id": "4"
+        },
+        {
+          "id": "uDi8YK",
+          "relation_type": "Attack",
+          "arg1_id": "AueoAW",
+          "arg2_id": "1"
+        },
+        {
+          "id": "8keeto",
+          "relation_type": "Attack",
+          "arg1_id": "V8NDmn",
+          "arg2_id": "1"
+        },
+        {
+          "id": "qKsmnb",
+          "relation_type": "Attack",
+          "arg1_id": "yufWhK",
+          "arg2_id": "1"
+        },
+        {
+          "id": "t96BB4",
+          "relation_type": "Attack",
+          "arg1_id": "zr3RhX",
+          "arg2_id": "1"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "35 años",
+          "start": 13,
+          "end": 20,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "diagnosticada de Lupus Eritematoso Sistémico",
+          "start": 21,
+          "end": 65,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses",
+          "start": 66,
+          "end": 146,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "con buen control de la actividad inflamatoria",
+          "start": 148,
+          "end": 193,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "dolor continuo en la rodilla de 3 semanas de evolución",
+          "start": 219,
+          "end": 273,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "de inicio brusco sin antecedente traumático",
+          "start": 275,
+          "end": 318,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "examen radiográfico dentro de la normalidad",
+          "start": 330,
+          "end": 373,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "raw_text": "Un paciente de 73 años presenta en el test de deglución una disfagia neurológica completa, secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda. Va a precisar apoyo nutricional a largo plazo. De las siguientes modalidades de tratamiento, ¿cuál considera más indicada para este caso?\n\na) Nutrición enteral por sonda nasogástrica.\n\nb) Nutrición enteral por sonda nasoduodenal.\n\nc) Nutrición enteral por gastrostomía.\n\nd) Nutrición enteral por yeyunostomía.",
+    "metadata": {
+      "context": "Un paciente de 73 años presenta en el test de deglución una disfagia neurológica completa, secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda. Va a precisar apoyo nutricional a largo plazo. De las siguientes modalidades de tratamiento, ¿cuál considera más indicada para este caso?",
+      "context_sentences": [
+        {
+          "sentence": "Un paciente de 73 años presenta en el test de deglución una disfagia neurológica completa, secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda.",
+          "start": 0,
+          "end": 183
+        },
+        {
+          "sentence": "Va a precisar apoyo nutricional a largo plazo.",
+          "start": 184,
+          "end": 230
+        },
+        {
+          "sentence": "De las siguientes modalidades de tratamiento, ¿cuál considera más indicada para este caso?",
+          "start": 231,
+          "end": 321
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Nutrición enteral por sonda nasogástrica.",
+          "start": 326,
+          "end": 367
+        },
+        {
+          "id": "2",
+          "text": "Nutrición enteral por sonda nasoduodenal.",
+          "start": 372,
+          "end": 413
+        },
+        {
+          "id": "3",
+          "text": "Nutrición enteral por gastrostomía.",
+          "start": 418,
+          "end": 453
+        },
+        {
+          "id": "4",
+          "text": "Nutrición enteral por yeyunostomía.",
+          "start": 458,
+          "end": 493
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "HbFJEe",
+          "text": "disfagia neurológica completa",
+          "start": 60,
+          "end": 89,
+          "type": "Premise"
+        },
+        {
+          "id": "fD6ixX",
+          "text": "apoyo nutricional a largo plazo",
+          "start": 198,
+          "end": 229,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Nutrición enteral por sonda nasogástrica.",
+          "start": 326,
+          "end": 367,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Nutrición enteral por sonda nasoduodenal.",
+          "start": 372,
+          "end": 413,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Nutrición enteral por gastrostomía.",
+          "start": 418,
+          "end": 453,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Nutrición enteral por yeyunostomía.",
+          "start": 458,
+          "end": 493,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "i4kcAf",
+          "relation_type": "Support",
+          "arg1_id": "HbFJEe",
+          "arg2_id": "3"
+        },
+        {
+          "id": "d6UMPR",
+          "relation_type": "Support",
+          "arg1_id": "fD6ixX",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Wvmp7U",
+          "relation_type": "Attack",
+          "arg1_id": "fD6ixX",
+          "arg2_id": "1"
+        },
+        {
+          "id": "CuPsP5",
+          "relation_type": "Attack",
+          "arg1_id": "fD6ixX",
+          "arg2_id": "2"
+        },
+        {
+          "id": "uCoeiy",
+          "relation_type": "Attack",
+          "arg1_id": "HbFJEe",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "73 años",
+          "start": 15,
+          "end": 22,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "disfagia neurológica completa",
+          "start": 60,
+          "end": 89,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda",
+          "start": 91,
+          "end": 182,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "Va a precisar apoyo nutricional a largo plazo",
+          "start": 184,
+          "end": 229,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "raw_text": "Un hombre de 58 años, no fumador y sin antecedentes personales relevantes, es ingresado en la planta de neurología por un accidente cerebrovascular agudo isquémico. Su hemograma muestra 18.5 g/dl de hemoglobina con un hematocrito de 60%. Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno. Señálelo:\n\na) Niveles de eritropoyetina séricos elevados.\n\nb) Presencia de la mutación V617F del gen JAK-2.\n\nc) Esplenomegalia moderada.\n\nd) Presencia de prurito \"acuágeno\" y eritromelalgia.\n\ne) Presencia de leucocitosis neutrofílica y trombocitosis.",
+    "metadata": {
+      "context": "Un hombre de 58 años, no fumador y sin antecedentes personales relevantes, es ingresado en la planta de neurología por un accidente cerebrovascular agudo isquémico. Su hemograma muestra 18.5 g/dl de hemoglobina con un hematocrito de 60%. Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno. Señálelo:",
+      "context_sentences": [
+        {
+          "sentence": "Un hombre de 58 años, no fumador y sin antecedentes personales relevantes, es ingresado en la planta de neurología por un accidente cerebrovascular agudo isquémico.",
+          "start": 0,
+          "end": 164
+        },
+        {
+          "sentence": "Su hemograma muestra 18.5 g/dl de hemoglobina con un hematocrito de 60%.",
+          "start": 165,
+          "end": 237
+        },
+        {
+          "sentence": "Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno.",
+          "start": 238,
+          "end": 327
+        },
+        {
+          "sentence": "Señálelo:",
+          "start": 328,
+          "end": 337
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Niveles de eritropoyetina séricos elevados.",
+          "start": 342,
+          "end": 385
+        },
+        {
+          "id": "2",
+          "text": "Presencia de la mutación V617F del gen JAK-2.",
+          "start": 390,
+          "end": 435
+        },
+        {
+          "id": "3",
+          "text": "Esplenomegalia moderada.",
+          "start": 440,
+          "end": 464
+        },
+        {
+          "id": "4",
+          "text": "Presencia de prurito \"acuágeno\" y eritromelalgia.",
+          "start": 469,
+          "end": 518
+        },
+        {
+          "id": "5",
+          "text": "Presencia de leucocitosis neutrofílica y trombocitosis.",
+          "start": 523,
+          "end": 578
+        }
+      ],
+      "correct_choice_id": "1"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "not-relevant",
+        "not-relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "ZXwai42_2x",
+          "text": "diagnóstico de Policitemia Vera",
+          "start": 283,
+          "end": 314,
+          "type": "Claim"
+        },
+        {
+          "id": "1",
+          "text": "Niveles de eritropoyetina séricos elevados.",
+          "start": 342,
+          "end": 385,
+          "type": "Premise"
+        },
+        {
+          "id": "2",
+          "text": "Presencia de la mutación V617F del gen JAK-2.",
+          "start": 390,
+          "end": 435,
+          "type": "Premise"
+        },
+        {
+          "id": "3",
+          "text": "Esplenomegalia moderada.",
+          "start": 440,
+          "end": 464,
+          "type": "Premise"
+        },
+        {
+          "id": "4",
+          "text": "Presencia de prurito \"acuágeno\" y eritromelalgia.",
+          "start": 469,
+          "end": 518,
+          "type": "Premise"
+        },
+        {
+          "id": "5",
+          "text": "Presencia de leucocitosis neutrofílica y trombocitosis.",
+          "start": 523,
+          "end": 578,
+          "type": "Premise"
+        }
+      ],
+      "relations": [
+        {
+          "id": "5BNJeM",
+          "relation_type": "Attack",
+          "arg1_id": "1",
+          "arg2_id": "ZXwai42_2x"
+        },
+        {
+          "id": "kfpZ2W",
+          "relation_type": "Support",
+          "arg1_id": "2",
+          "arg2_id": "ZXwai42_2x"
+        },
+        {
+          "id": "6agary",
+          "relation_type": "Support",
+          "arg1_id": "3",
+          "arg2_id": "ZXwai42_2x"
+        },
+        {
+          "id": "CfS7uj",
+          "relation_type": "Support",
+          "arg1_id": "4",
+          "arg2_id": "ZXwai42_2x"
+        },
+        {
+          "id": "B952iz",
+          "relation_type": "Support",
+          "arg1_id": "5",
+          "arg2_id": "ZXwai42_2x"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "58 años",
+          "start": 13,
+          "end": 20,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "no fumador",
+          "start": 22,
+          "end": 32,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "sin antecedentes personales relevantes",
+          "start": 35,
+          "end": 73,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "accidente cerebrovascular agudo isquémico",
+          "start": 122,
+          "end": 163,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "18.5 g/dl de hemoglobina",
+          "start": 186,
+          "end": 210,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "hematocrito de 60%",
+          "start": 218,
+          "end": 236,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno. Señálelo:",
+          "start": 238,
+          "end": 337,
+          "type": "Claim"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "raw_text": "Niño de 28 días de vida, nacido a término. Antecedentes de embarazo y parto normales. Ha sido alimentado con lactancia materna desde el nacimiento. Consulta porque hace 8 días comenzó con vómitos, inicialmente esporádicos y desde hace 5 días, después de todas las tomas. Está permanentemente hambriento. Los vómitos son de contenido alimentario \"a chorro\". El abdomen, en la palpación, es blando y depresible, sin visceromoegalias. En los análisis destacaban, en la gasometría pH 7.49, bicarbonato 30 mEq/L, PC02 53 mmHg, exceso de base +8mEq/L. Iones: Na 137 mEq/L, K3.1 mEq/L, Cl 94 mEq/L. Teniendo en cuenta el diagnóstico más probable en el cuadro clínico descrito. ¿Cuál es la prueba complementaria de elección para continuar ese diagnóstico clínico?:\n\na) Radiografía simple de abdomen.\n\nb) pH metría.\n\nc) Ecografía abdominal.\n\nd) Determinación de electrolitos en el sudor.\n\ne) Esofagogastroscopia.",
+    "metadata": {
+      "context": "Niño de 28 días de vida, nacido a término. Antecedentes de embarazo y parto normales. Ha sido alimentado con lactancia materna desde el nacimiento. Consulta porque hace 8 días comenzó con vómitos, inicialmente esporádicos y desde hace 5 días, después de todas las tomas. Está permanentemente hambriento. Los vómitos son de contenido alimentario \"a chorro\". El abdomen, en la palpación, es blando y depresible, sin visceromoegalias. En los análisis destacaban, en la gasometría pH 7.49, bicarbonato 30 mEq/L, PC02 53 mmHg, exceso de base +8mEq/L. Iones: Na 137 mEq/L, K3.1 mEq/L, Cl 94 mEq/L. Teniendo en cuenta el diagnóstico más probable en el cuadro clínico descrito. ¿Cuál es la prueba complementaria de elección para continuar ese diagnóstico clínico?:",
+      "context_sentences": [
+        {
+          "sentence": "Niño de 28 días de vida, nacido a término.",
+          "start": 0,
+          "end": 42
+        },
+        {
+          "sentence": "Antecedentes de embarazo y parto normales.",
+          "start": 43,
+          "end": 85
+        },
+        {
+          "sentence": "Ha sido alimentado con lactancia materna desde el nacimiento.",
+          "start": 86,
+          "end": 147
+        },
+        {
+          "sentence": "Consulta porque hace 8 días comenzó con vómitos, inicialmente esporádicos y desde hace 5 días, después de todas las tomas.",
+          "start": 148,
+          "end": 270
+        },
+        {
+          "sentence": "Está permanentemente hambriento.",
+          "start": 271,
+          "end": 303
+        },
+        {
+          "sentence": "Los vómitos son de contenido alimentario \"a chorro\".",
+          "start": 304,
+          "end": 356
+        },
+        {
+          "sentence": "El abdomen, en la palpación, es blando y depresible, sin visceromoegalias.",
+          "start": 357,
+          "end": 431
+        },
+        {
+          "sentence": "En los análisis destacaban, en la gasometría pH 7.49, bicarbonato 30 mEq/L, PC02 53 mmHg, exceso de base +8mEq/L. Iones: Na 137 mEq/L, K3.1 mEq/L, Cl 94 mEq/L. Teniendo en cuenta el diagnóstico más probable en el cuadro clínico descrito.",
+          "start": 432,
+          "end": 669
+        },
+        {
+          "sentence": "¿Cuál es la prueba complementaria de elección para continuar ese diagnóstico clínico?",
+          "start": 670,
+          "end": 755
+        },
+        {
+          "sentence": ":",
+          "start": 755,
+          "end": 756
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Radiografía simple de abdomen.",
+          "start": 761,
+          "end": 791
+        },
+        {
+          "id": "2",
+          "text": "pH metría.",
+          "start": 796,
+          "end": 806
+        },
+        {
+          "id": "3",
+          "text": "Ecografía abdominal.",
+          "start": 811,
+          "end": 831
+        },
+        {
+          "id": "4",
+          "text": "Determinación de electrolitos en el sudor.",
+          "start": 836,
+          "end": 878
+        },
+        {
+          "id": "5",
+          "text": "Esofagogastroscopia.",
+          "start": 883,
+          "end": 903
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant",
+        "not-relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "qexquN",
+          "text": "a término",
+          "start": 32,
+          "end": 41,
+          "type": "Premise"
+        },
+        {
+          "id": "qTbNAj",
+          "text": "Niño de 28 días de vida",
+          "start": 0,
+          "end": 23,
+          "type": "Premise"
+        },
+        {
+          "id": "Q5RuM6",
+          "text": "hace 8 días",
+          "start": 164,
+          "end": 175,
+          "type": "Premise"
+        },
+        {
+          "id": "nBD95G",
+          "text": "vómitos",
+          "start": 188,
+          "end": 195,
+          "type": "Premise"
+        },
+        {
+          "id": "L7FFv8",
+          "text": "después de todas las tomas",
+          "start": 243,
+          "end": 269,
+          "type": "Premise"
+        },
+        {
+          "id": "SCjGL3",
+          "text": "de contenido alimentario \"a chorro\"",
+          "start": 320,
+          "end": 355,
+          "type": "Premise"
+        },
+        {
+          "id": "NMiKtG",
+          "text": "hambriento",
+          "start": 292,
+          "end": 302,
+          "type": "Premise"
+        },
+        {
+          "id": "XkvyCQ",
+          "text": "pH 7.49",
+          "start": 477,
+          "end": 484,
+          "type": "Premise"
+        },
+        {
+          "id": "MpH6Q4",
+          "text": "bicarbonato 30 mEq/L",
+          "start": 486,
+          "end": 506,
+          "type": "Premise"
+        },
+        {
+          "id": "LxHAEi",
+          "text": "PC02 53 mmHg",
+          "start": 508,
+          "end": 520,
+          "type": "Premise"
+        },
+        {
+          "id": "Y6teWr",
+          "text": "exceso de base +8mEq/L",
+          "start": 522,
+          "end": 544,
+          "type": "Premise"
+        },
+        {
+          "id": "VTfUpr",
+          "text": "Cl 94 mEq/L",
+          "start": 579,
+          "end": 590,
+          "type": "Premise"
+        },
+        {
+          "id": "5VeTLb",
+          "text": "K3.1 mEq/L",
+          "start": 567,
+          "end": 577,
+          "type": "Premise"
+        },
+        {
+          "id": "N53v9a",
+          "text": "El abdomen, en la palpación, es blando y depresible, sin visceromoegalias",
+          "start": 357,
+          "end": 430,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Radiografía simple de abdomen.",
+          "start": 761,
+          "end": 791,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "pH metría.",
+          "start": 796,
+          "end": 806,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Ecografía abdominal.",
+          "start": 811,
+          "end": 831,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Determinación de electrolitos en el sudor.",
+          "start": 836,
+          "end": 878,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Esofagogastroscopia.",
+          "start": 883,
+          "end": 903,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "cF8QLs",
+          "relation_type": "Support",
+          "arg1_id": "qexquN",
+          "arg2_id": "3"
+        },
+        {
+          "id": "ENScLU",
+          "relation_type": "Support",
+          "arg1_id": "qTbNAj",
+          "arg2_id": "3"
+        },
+        {
+          "id": "WimP5A",
+          "relation_type": "Support",
+          "arg1_id": "Q5RuM6",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Q4ZXFE",
+          "relation_type": "Support",
+          "arg1_id": "nBD95G",
+          "arg2_id": "3"
+        },
+        {
+          "id": "DHyFrL",
+          "relation_type": "Support",
+          "arg1_id": "L7FFv8",
+          "arg2_id": "3"
+        },
+        {
+          "id": "upD4HL",
+          "relation_type": "Support",
+          "arg1_id": "SCjGL3",
+          "arg2_id": "3"
+        },
+        {
+          "id": "LoftpW",
+          "relation_type": "Support",
+          "arg1_id": "NMiKtG",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Dbu8RN",
+          "relation_type": "Support",
+          "arg1_id": "XkvyCQ",
+          "arg2_id": "3"
+        },
+        {
+          "id": "X39pwT",
+          "relation_type": "Support",
+          "arg1_id": "MpH6Q4",
+          "arg2_id": "3"
+        },
+        {
+          "id": "tPmmjJ",
+          "relation_type": "Support",
+          "arg1_id": "LxHAEi",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Kp5aWz",
+          "relation_type": "Support",
+          "arg1_id": "Y6teWr",
+          "arg2_id": "3"
+        },
+        {
+          "id": "MaqNUV",
+          "relation_type": "Support",
+          "arg1_id": "VTfUpr",
+          "arg2_id": "3"
+        },
+        {
+          "id": "qkNQ7b",
+          "relation_type": "Support",
+          "arg1_id": "5VeTLb",
+          "arg2_id": "3"
+        },
+        {
+          "id": "MQMCUu",
+          "relation_type": "Support",
+          "arg1_id": "N53v9a",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [],
+      "relations": []
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "raw_text": "A una mujer de 35 años se realiza una citología vaginal tras 5 años sin control previo y el diagnóstico es SIL (lesión intraepitelial) de alto grado. La conducta correcta a seguir es:\n\na) Hacer colposcopia. Si es normal, programar una conización.\n\nb) Confirmar la citología con una biopsia de cérvix bajo control colposcópico.\n\nc) Repetir citología para confirmar diagnóstico.\n\nd) Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo.",
+    "metadata": {
+      "context": "A una mujer de 35 años se realiza una citología vaginal tras 5 años sin control previo y el diagnóstico es SIL (lesión intraepitelial) de alto grado. La conducta correcta a seguir es:",
+      "context_sentences": [
+        {
+          "sentence": "A una mujer de 35 años se realiza una citología vaginal tras 5 años sin control previo y el diagnóstico es SIL (lesión intraepitelial) de alto grado.",
+          "start": 0,
+          "end": 149
+        },
+        {
+          "sentence": "La conducta correcta a seguir es:",
+          "start": 150,
+          "end": 183
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Hacer colposcopia. Si es normal, programar una conización.",
+          "start": 188,
+          "end": 246
+        },
+        {
+          "id": "2",
+          "text": "Confirmar la citología con una biopsia de cérvix bajo control colposcópico.",
+          "start": 251,
+          "end": 326
+        },
+        {
+          "id": "3",
+          "text": "Repetir citología para confirmar diagnóstico.",
+          "start": 331,
+          "end": 376
+        },
+        {
+          "id": "4",
+          "text": "Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo.",
+          "start": 381,
+          "end": 481
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "2Q99pA",
+          "text": "SIL (lesión intraepitelial) de alto grado",
+          "start": 107,
+          "end": 148,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Hacer colposcopia. Si es normal, programar una conización.",
+          "start": 188,
+          "end": 246,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Confirmar la citología con una biopsia de cérvix bajo control colposcópico.",
+          "start": 251,
+          "end": 326,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Repetir citología para confirmar diagnóstico.",
+          "start": 331,
+          "end": 376,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Hacer tipaje de virus HPV. Realizar conización si el test de HPV es positivo a virus de alto riesgo.",
+          "start": 381,
+          "end": 481,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "XDD93i",
+          "relation_type": "Support",
+          "arg1_id": "2Q99pA",
+          "arg2_id": "2"
+        },
+        {
+          "id": "ATvAgo",
+          "relation_type": "Attack",
+          "arg1_id": "2Q99pA",
+          "arg2_id": "1"
+        },
+        {
+          "id": "G6zSVp",
+          "relation_type": "Attack",
+          "arg1_id": "2Q99pA",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "35 años",
+          "start": 15,
+          "end": 22,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "citología vaginal tras 5 años sin control previo",
+          "start": 38,
+          "end": 86,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "diagnóstico es SIL (lesión intraepitelial) de alto grado",
+          "start": 92,
+          "end": 148,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "raw_text": "¿Qué estudios se deben realizar en un adenocarcinoma con diferenciación mucinosa prominente de colon ascendente diagnosticado en un hombre de 32 años?\n\na) Reordenamiento del gen MYC.\n\nb) Análisis de inestabilidad de microsatélites.\n\nc) Estudio de mutaciones del gen RET.\n\nd) Estudio de mutaciones de BRCA1-2.\n\ne) Estudios de mutaciones de TP53.",
+    "metadata": {
+      "context": "¿Qué estudios se deben realizar en un adenocarcinoma con diferenciación mucinosa prominente de colon ascendente diagnosticado en un hombre de 32 años?",
+      "context_sentences": [
+        {
+          "sentence": "¿Qué estudios se deben realizar en un adenocarcinoma con diferenciación mucinosa prominente de colon ascendente diagnosticado en un hombre de 32 años?",
+          "start": 0,
+          "end": 150
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Reordenamiento del gen MYC.",
+          "start": 155,
+          "end": 182
+        },
+        {
+          "id": "2",
+          "text": "Análisis de inestabilidad de microsatélites.",
+          "start": 187,
+          "end": 231
+        },
+        {
+          "id": "3",
+          "text": "Estudio de mutaciones del gen RET.",
+          "start": 236,
+          "end": 270
+        },
+        {
+          "id": "4",
+          "text": "Estudio de mutaciones de BRCA1-2.",
+          "start": 275,
+          "end": 308
+        },
+        {
+          "id": "5",
+          "text": "Estudios de mutaciones de TP53.",
+          "start": 313,
+          "end": 344
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant"
+      ],
+      "entities": [
+        {
+          "id": "F6dfAR",
+          "text": "adenocarcinoma",
+          "start": 38,
+          "end": 52,
+          "type": "Premise"
+        },
+        {
+          "id": "jgTFeE",
+          "text": "mucinosa",
+          "start": 72,
+          "end": 80,
+          "type": "Premise"
+        },
+        {
+          "id": "vM9pLZ",
+          "text": "colon",
+          "start": 95,
+          "end": 100,
+          "type": "Premise"
+        },
+        {
+          "id": "dU6Lam",
+          "text": "32 años",
+          "start": 142,
+          "end": 149,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Reordenamiento del gen MYC.",
+          "start": 155,
+          "end": 182,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Análisis de inestabilidad de microsatélites.",
+          "start": 187,
+          "end": 231,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Estudio de mutaciones del gen RET.",
+          "start": 236,
+          "end": 270,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Estudio de mutaciones de BRCA1-2.",
+          "start": 275,
+          "end": 308,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Estudios de mutaciones de TP53.",
+          "start": 313,
+          "end": 344,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "DaY73J",
+          "relation_type": "Support",
+          "arg1_id": "F6dfAR",
+          "arg2_id": "2"
+        },
+        {
+          "id": "NyjqsT",
+          "relation_type": "Support",
+          "arg1_id": "jgTFeE",
+          "arg2_id": "2"
+        },
+        {
+          "id": "FEhFey",
+          "relation_type": "Support",
+          "arg1_id": "vM9pLZ",
+          "arg2_id": "2"
+        },
+        {
+          "id": "hfQn3n",
+          "relation_type": "Support",
+          "arg1_id": "dU6Lam",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "adenocarcinoma con diferenciación mucinosa prominente de colon ascendente",
+          "start": 38,
+          "end": 111,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "hombre de 32 años",
+          "start": 132,
+          "end": 149,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "raw_text": "Niño de 4 años de edad que consulta por aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos. Sus padres referían que su pediatra le había diagnosticado una infección de vías respiratorias superiores 10 días antes. En las últimas 12 horas presenta dolor abdominal intenso tipo cólico, y ha realizado dos deposiciones diarréicas. Afebril. No pérdida de peso. A la exploración presenta numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores. Buen estado general aunque tiene dolor abdominal intenso. La palpación abdominal es difícil de valorar por dolor difuso. No visceromegalias. No otros hallazgos de interés a la exploración. ¿Cual de los siguientes datos NO apoya su sospecha diagnóstica?:\n\na) Artritis de rodillas y tobillos.\n\nb) Hematuria.\n\nc) Plaquetopenia.\n\nd) Sangre oculta en heces.\n\ne) Edema escrotal.",
+    "metadata": {
+      "context": "Niño de 4 años de edad que consulta por aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos. Sus padres referían que su pediatra le había diagnosticado una infección de vías respiratorias superiores 10 días antes. En las últimas 12 horas presenta dolor abdominal intenso tipo cólico, y ha realizado dos deposiciones diarréicas. Afebril. No pérdida de peso. A la exploración presenta numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores. Buen estado general aunque tiene dolor abdominal intenso. La palpación abdominal es difícil de valorar por dolor difuso. No visceromegalias. No otros hallazgos de interés a la exploración. ¿Cual de los siguientes datos NO apoya su sospecha diagnóstica?:",
+      "context_sentences": [
+        {
+          "sentence": "Niño de 4 años de edad que consulta por aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos.",
+          "start": 0,
+          "end": 129
+        },
+        {
+          "sentence": "Sus padres referían que su pediatra le había diagnosticado una infección de vías respiratorias superiores 10 días antes.",
+          "start": 130,
+          "end": 250
+        },
+        {
+          "sentence": "En las últimas 12 horas presenta dolor abdominal intenso tipo cólico, y ha realizado dos deposiciones diarréicas.",
+          "start": 251,
+          "end": 364
+        },
+        {
+          "sentence": "Afebril.",
+          "start": 365,
+          "end": 373
+        },
+        {
+          "sentence": "No pérdida de peso.",
+          "start": 374,
+          "end": 393
+        },
+        {
+          "sentence": "A la exploración presenta numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores.",
+          "start": 394,
+          "end": 523
+        },
+        {
+          "sentence": "Buen estado general aunque tiene dolor abdominal intenso.",
+          "start": 524,
+          "end": 581
+        },
+        {
+          "sentence": "La palpación abdominal es difícil de valorar por dolor difuso.",
+          "start": 582,
+          "end": 644
+        },
+        {
+          "sentence": "No visceromegalias.",
+          "start": 645,
+          "end": 664
+        },
+        {
+          "sentence": "No otros hallazgos de interés a la exploración.",
+          "start": 665,
+          "end": 712
+        },
+        {
+          "sentence": "¿Cual de los siguientes datos NO apoya su sospecha diagnóstica?",
+          "start": 713,
+          "end": 776
+        },
+        {
+          "sentence": ":",
+          "start": 776,
+          "end": 777
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Artritis de rodillas y tobillos.",
+          "start": 782,
+          "end": 814
+        },
+        {
+          "id": "2",
+          "text": "Hematuria.",
+          "start": 819,
+          "end": 829
+        },
+        {
+          "id": "3",
+          "text": "Plaquetopenia.",
+          "start": 834,
+          "end": 848
+        },
+        {
+          "id": "4",
+          "text": "Sangre oculta en heces.",
+          "start": 853,
+          "end": 876
+        },
+        {
+          "id": "5",
+          "text": "Edema escrotal.",
+          "start": 881,
+          "end": 896
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant",
+        "not-relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pkbRRZ",
+          "text": "4 años",
+          "start": 8,
+          "end": 14,
+          "type": "Premise"
+        },
+        {
+          "id": "BQZkDr",
+          "text": "lesiones cutáneas en piernas y glúteos",
+          "start": 90,
+          "end": 128,
+          "type": "Premise"
+        },
+        {
+          "id": "HtpKyA",
+          "text": "infección de vías respiratorias superiores 10 días antes",
+          "start": 193,
+          "end": 249,
+          "type": "Premise"
+        },
+        {
+          "id": "TSyDbR",
+          "text": "dolor abdominal",
+          "start": 284,
+          "end": 299,
+          "type": "Premise"
+        },
+        {
+          "id": "A7SMZb",
+          "text": "deposiciones diarréicas",
+          "start": 340,
+          "end": 363,
+          "type": "Premise"
+        },
+        {
+          "id": "uNvBgi",
+          "text": "petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores",
+          "start": 430,
+          "end": 522,
+          "type": "Premise"
+        },
+        {
+          "id": "96kko4",
+          "text": "Buen estado general",
+          "start": 524,
+          "end": 543,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Artritis de rodillas y tobillos.",
+          "start": 782,
+          "end": 814,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Hematuria.",
+          "start": 819,
+          "end": 829,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Plaquetopenia.",
+          "start": 834,
+          "end": 848,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Sangre oculta en heces.",
+          "start": 853,
+          "end": 876,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Edema escrotal.",
+          "start": 881,
+          "end": 896,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "UbLDU3",
+          "relation_type": "Attack",
+          "arg1_id": "pkbRRZ",
+          "arg2_id": "3"
+        },
+        {
+          "id": "wRRQee",
+          "relation_type": "Attack",
+          "arg1_id": "BQZkDr",
+          "arg2_id": "3"
+        },
+        {
+          "id": "hsXTab",
+          "relation_type": "Attack",
+          "arg1_id": "HtpKyA",
+          "arg2_id": "3"
+        },
+        {
+          "id": "EVgnu4",
+          "relation_type": "Attack",
+          "arg1_id": "TSyDbR",
+          "arg2_id": "3"
+        },
+        {
+          "id": "my54qS",
+          "relation_type": "Attack",
+          "arg1_id": "A7SMZb",
+          "arg2_id": "3"
+        },
+        {
+          "id": "XPusUd",
+          "relation_type": "Attack",
+          "arg1_id": "uNvBgi",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Ku3aPi",
+          "relation_type": "Attack",
+          "arg1_id": "96kko4",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Niño de 4 años de edad",
+          "start": 0,
+          "end": 22,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos",
+          "start": 40,
+          "end": 128,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "infección de vías respiratorias superiores 10 días antes",
+          "start": 193,
+          "end": 249,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "ha realizado dos deposiciones diarréicas",
+          "start": 323,
+          "end": 363,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "Afebril",
+          "start": 365,
+          "end": 372,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "No pérdida de peso",
+          "start": 374,
+          "end": 392,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores",
+          "start": 420,
+          "end": 522,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "Buen estado general aunque tiene dolor abdominal intenso",
+          "start": 524,
+          "end": 580,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e9",
+          "text": "No visceromegalias",
+          "start": 645,
+          "end": 663,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e10",
+          "text": "No otros hallazgos de interés a la exploración",
+          "start": 665,
+          "end": 711,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "raw_text": "Hombre de 47 años de edad que consulta por edemas en miembros inferiores de 3 semanas de evolución. En la analítica sanguínea presenta creatinina 1.3 mg/dL, colesterol total 270 mg/dL y albúmina 2.4 g/dL. En el sedimento de orina presenta 15-20 hematíes por campo y en orina de 24 horas se detecta proteinuria 3.7 g/día. ¿Cuál es el diagnóstico más probable?\n\na) Enfermedad de cambios mínimos.\n\nb) Glomeruloesclerosis focal y segmentaria.\n\nc) Nefropatía membranosa.\n\nd) Glomerulonefritis membranoproliferativa tipo I.\n\ne) Glomerulonefritis proliferativa mesangial.",
+    "metadata": {
+      "context": "Hombre de 47 años de edad que consulta por edemas en miembros inferiores de 3 semanas de evolución. En la analítica sanguínea presenta creatinina 1.3 mg/dL, colesterol total 270 mg/dL y albúmina 2.4 g/dL. En el sedimento de orina presenta 15-20 hematíes por campo y en orina de 24 horas se detecta proteinuria 3.7 g/día. ¿Cuál es el diagnóstico más probable?",
+      "context_sentences": [
+        {
+          "sentence": "Hombre de 47 años de edad que consulta por edemas en miembros inferiores de 3 semanas de evolución.",
+          "start": 0,
+          "end": 99
+        },
+        {
+          "sentence": "En la analítica sanguínea presenta creatinina 1.3 mg/dL, colesterol total 270 mg/dL y albúmina 2.4 g/dL. En el sedimento de orina presenta 15-20 hematíes por campo y en orina de 24 horas se detecta proteinuria 3.7 g/día.",
+          "start": 100,
+          "end": 320
+        },
+        {
+          "sentence": "¿Cuál es el diagnóstico más probable?",
+          "start": 321,
+          "end": 358
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Enfermedad de cambios mínimos.",
+          "start": 363,
+          "end": 393
+        },
+        {
+          "id": "2",
+          "text": "Glomeruloesclerosis focal y segmentaria.",
+          "start": 398,
+          "end": 438
+        },
+        {
+          "id": "3",
+          "text": "Nefropatía membranosa.",
+          "start": 443,
+          "end": 465
+        },
+        {
+          "id": "4",
+          "text": "Glomerulonefritis membranoproliferativa tipo I.",
+          "start": 470,
+          "end": 517
+        },
+        {
+          "id": "5",
+          "text": "Glomerulonefritis proliferativa mesangial.",
+          "start": 522,
+          "end": 564
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "jGMMJt",
+          "text": "edemas",
+          "start": 43,
+          "end": 49,
+          "type": "Premise"
+        },
+        {
+          "id": "H2557e",
+          "text": "proteinuria 3.7 g/día",
+          "start": 298,
+          "end": 319,
+          "type": "Premise"
+        },
+        {
+          "id": "Fl3PAYX-Ax",
+          "text": "creatinina 1.3 mg/dL",
+          "start": 135,
+          "end": 155,
+          "type": "Premise"
+        },
+        {
+          "id": "9l64GSd2Gb",
+          "text": "colesterol total 270 mg/dL",
+          "start": 157,
+          "end": 183,
+          "type": "Premise"
+        },
+        {
+          "id": "QY1j4-3a0k",
+          "text": "albúmina 2.4 g/dL",
+          "start": 186,
+          "end": 203,
+          "type": "Premise"
+        },
+        {
+          "id": "uthUK5x0Jm",
+          "text": "Hombre",
+          "start": 0,
+          "end": 6,
+          "type": "Premise"
+        },
+        {
+          "id": "fCPoIHQ5_l",
+          "text": "47 años",
+          "start": 10,
+          "end": 17,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Enfermedad de cambios mínimos.",
+          "start": 363,
+          "end": 393,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Glomeruloesclerosis focal y segmentaria.",
+          "start": 398,
+          "end": 438,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Nefropatía membranosa.",
+          "start": 443,
+          "end": 465,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Glomerulonefritis membranoproliferativa tipo I.",
+          "start": 470,
+          "end": 517,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Glomerulonefritis proliferativa mesangial.",
+          "start": 522,
+          "end": 564,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "R57At8",
+          "relation_type": "Attack",
+          "arg1_id": "uthUK5x0Jm",
+          "arg2_id": "1"
+        },
+        {
+          "id": "BZsCaM",
+          "relation_type": "Attack",
+          "arg1_id": "fCPoIHQ5_l",
+          "arg2_id": "1"
+        },
+        {
+          "id": "7iXpnW",
+          "relation_type": "Attack",
+          "arg1_id": "uthUK5x0Jm",
+          "arg2_id": "4"
+        },
+        {
+          "id": "i78gpv",
+          "relation_type": "Attack",
+          "arg1_id": "fCPoIHQ5_l",
+          "arg2_id": "4"
+        },
+        {
+          "id": "FyxJ9c",
+          "relation_type": "Attack",
+          "arg1_id": "jGMMJt",
+          "arg2_id": "5"
+        },
+        {
+          "id": "oCzdEf",
+          "relation_type": "Attack",
+          "arg1_id": "Fl3PAYX-Ax",
+          "arg2_id": "5"
+        },
+        {
+          "id": "CxuZfm",
+          "relation_type": "Attack",
+          "arg1_id": "9l64GSd2Gb",
+          "arg2_id": "5"
+        },
+        {
+          "id": "6FF25P",
+          "relation_type": "Attack",
+          "arg1_id": "QY1j4-3a0k",
+          "arg2_id": "5"
+        },
+        {
+          "id": "Y4QTVJ",
+          "relation_type": "Attack",
+          "arg1_id": "H2557e",
+          "arg2_id": "5"
+        },
+        {
+          "id": "5QyGnD",
+          "relation_type": "Support",
+          "arg1_id": "uthUK5x0Jm",
+          "arg2_id": "3"
+        },
+        {
+          "id": "T5h4gU",
+          "relation_type": "Attack",
+          "arg1_id": "uthUK5x0Jm",
+          "arg2_id": "2"
+        },
+        {
+          "id": "cGuGkY",
+          "relation_type": "Support",
+          "arg1_id": "fCPoIHQ5_l",
+          "arg2_id": "3"
+        },
+        {
+          "id": "viErkq",
+          "relation_type": "Attack",
+          "arg1_id": "fCPoIHQ5_l",
+          "arg2_id": "2"
+        },
+        {
+          "id": "CCFwB2",
+          "relation_type": "Support",
+          "arg1_id": "jGMMJt",
+          "arg2_id": "3"
+        },
+        {
+          "id": "iX5fbc",
+          "relation_type": "Attack",
+          "arg1_id": "jGMMJt",
+          "arg2_id": "2"
+        },
+        {
+          "id": "fN9JNx",
+          "relation_type": "Support",
+          "arg1_id": "Fl3PAYX-Ax",
+          "arg2_id": "3"
+        },
+        {
+          "id": "Gsiejn",
+          "relation_type": "Attack",
+          "arg1_id": "Fl3PAYX-Ax",
+          "arg2_id": "2"
+        },
+        {
+          "id": "Quwzhk",
+          "relation_type": "Support",
+          "arg1_id": "9l64GSd2Gb",
+          "arg2_id": "3"
+        },
+        {
+          "id": "djWtMF",
+          "relation_type": "Attack",
+          "arg1_id": "9l64GSd2Gb",
+          "arg2_id": "2"
+        },
+        {
+          "id": "RmKj88",
+          "relation_type": "Support",
+          "arg1_id": "QY1j4-3a0k",
+          "arg2_id": "3"
+        },
+        {
+          "id": "NADqeK",
+          "relation_type": "Attack",
+          "arg1_id": "QY1j4-3a0k",
+          "arg2_id": "2"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "edemas en miembros inferiores de 3 semanas de evolución",
+          "start": 43,
+          "end": 98,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "creatinina 1.3 mg/dL",
+          "start": 135,
+          "end": 155,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "colesterol total 270 mg/dL",
+          "start": 157,
+          "end": 183,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "albúmina 2.4 g/dL",
+          "start": 186,
+          "end": 203,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "15-20 hematíes por campo",
+          "start": 239,
+          "end": 263,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "proteinuria 3.7 g/día",
+          "start": 298,
+          "end": 319,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "raw_text": "Acude a nuestra consulta una mujer de 35 años de edad con antecedentes de hipertensión arterial esencial desde hace 4 años. La paciente ha estado bien controlada con Enalapril 20 mg cada 12 horas. Desde hace dos meses está embarazada y es remitida por su médico de atención primaria para seguimiento. Tras el estudio pertinente decidimos hacer una serie de medidas ¿cuál es la correcta?:\n\na) Mantener el mismo tratamiento ya que está bien controlada.\n\nb) Reducir la dosis del comprimido ya que posiblemente necesite menos dosis.\n\nc) Cambiar a un Antagonista de los Receptores de la Angiotensina II porque producen menos tos y edemas en miembros inferiores.\n\nd) Retirar la medicación hipotensora ya que la tensión está bien controlada.\n\ne) Cambiar a alfametildopa.",
+    "metadata": {
+      "context": "Acude a nuestra consulta una mujer de 35 años de edad con antecedentes de hipertensión arterial esencial desde hace 4 años. La paciente ha estado bien controlada con Enalapril 20 mg cada 12 horas. Desde hace dos meses está embarazada y es remitida por su médico de atención primaria para seguimiento. Tras el estudio pertinente decidimos hacer una serie de medidas ¿cuál es la correcta?:",
+      "context_sentences": [
+        {
+          "sentence": "Acude a nuestra consulta una mujer de 35 años de edad con antecedentes de hipertensión arterial esencial desde hace 4 años.",
+          "start": 0,
+          "end": 123
+        },
+        {
+          "sentence": "La paciente ha estado bien controlada con Enalapril 20 mg cada 12 horas.",
+          "start": 124,
+          "end": 196
+        },
+        {
+          "sentence": "Desde hace dos meses está embarazada y es remitida por su médico de atención primaria para seguimiento.",
+          "start": 197,
+          "end": 300
+        },
+        {
+          "sentence": "Tras el estudio pertinente decidimos hacer una serie de medidas ¿cuál es la correcta?",
+          "start": 301,
+          "end": 386
+        },
+        {
+          "sentence": ":",
+          "start": 386,
+          "end": 387
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Mantener el mismo tratamiento ya que está bien controlada.",
+          "start": 392,
+          "end": 450
+        },
+        {
+          "id": "2",
+          "text": "Reducir la dosis del comprimido ya que posiblemente necesite menos dosis.",
+          "start": 455,
+          "end": 528
+        },
+        {
+          "id": "3",
+          "text": "Cambiar a un Antagonista de los Receptores de la Angiotensina II porque producen menos tos y edemas en miembros inferiores.",
+          "start": 533,
+          "end": 656
+        },
+        {
+          "id": "4",
+          "text": "Retirar la medicación hipotensora ya que la tensión está bien controlada.",
+          "start": 661,
+          "end": 734
+        },
+        {
+          "id": "5",
+          "text": "Cambiar a alfametildopa.",
+          "start": 739,
+          "end": 763
+        }
+      ],
+      "correct_choice_id": "5"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "kawpwG",
+          "text": "Enalapril",
+          "start": 166,
+          "end": 175,
+          "type": "Premise"
+        },
+        {
+          "id": "mAS38T",
+          "text": "Desde hace dos meses está embarazada",
+          "start": 197,
+          "end": 233,
+          "type": "Premise"
+        },
+        {
+          "id": "W7TNyf",
+          "text": "antecedentes de hipertensión arterial esencial desde hace 4 años",
+          "start": 58,
+          "end": 122,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Mantener el mismo tratamiento ya que está bien controlada.",
+          "start": 392,
+          "end": 450,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Reducir la dosis del comprimido ya que posiblemente necesite menos dosis.",
+          "start": 455,
+          "end": 528,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Cambiar a un Antagonista de los Receptores de la Angiotensina II porque producen menos tos y edemas en miembros inferiores.",
+          "start": 533,
+          "end": 656,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Retirar la medicación hipotensora ya que la tensión está bien controlada.",
+          "start": 661,
+          "end": 734,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Cambiar a alfametildopa.",
+          "start": 739,
+          "end": 763,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "sh4Spo",
+          "relation_type": "Support",
+          "arg1_id": "kawpwG",
+          "arg2_id": "5"
+        },
+        {
+          "id": "VSzkeT",
+          "relation_type": "Support",
+          "arg1_id": "mAS38T",
+          "arg2_id": "5"
+        },
+        {
+          "id": "o7nVmW",
+          "relation_type": "Attack",
+          "arg1_id": "kawpwG",
+          "arg2_id": "1"
+        },
+        {
+          "id": "xpFeg5",
+          "relation_type": "Attack",
+          "arg1_id": "kawpwG",
+          "arg2_id": "2"
+        },
+        {
+          "id": "QrZwZi",
+          "relation_type": "Attack",
+          "arg1_id": "W7TNyf",
+          "arg2_id": "4"
+        },
+        {
+          "id": "dYqB2s",
+          "relation_type": "Attack",
+          "arg1_id": "mAS38T",
+          "arg2_id": "1"
+        },
+        {
+          "id": "BVtNw5",
+          "relation_type": "Attack",
+          "arg1_id": "mAS38T",
+          "arg2_id": "2"
+        },
+        {
+          "id": "3xfGsw",
+          "relation_type": "Support",
+          "arg1_id": "W7TNyf",
+          "arg2_id": "1"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [],
+      "relations": []
+    }
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "raw_text": "Mujer de 34 años que ingresa para estudio de poliuria y polidipsia. En las primeras 24 horas de ingreso se constata una diuresis de 8,2 litros y se obtiene una analítica que muestra una glicemia de 96 mg/dL, natremia de 148 mEq/L y osmolalidad plasmática de 309 mOsm/kg con osmolalidad urinaria de 89 mOsm/kg. ¿Qué prueba diagnóstica debe realizarse a continuación?\n\na) Test de infusión de suero salino hipertónico para determinación seriada de hormona antidiurética.\n\nb) Test de deshidratación (test de Miller).\n\nc) Administración de desmopresina con control seriado de osmolalidad en orina.\n\nd) Determinación de hormona antidiurética en plasma.",
+    "metadata": {
+      "context": "Mujer de 34 años que ingresa para estudio de poliuria y polidipsia. En las primeras 24 horas de ingreso se constata una diuresis de 8,2 litros y se obtiene una analítica que muestra una glicemia de 96 mg/dL, natremia de 148 mEq/L y osmolalidad plasmática de 309 mOsm/kg con osmolalidad urinaria de 89 mOsm/kg. ¿Qué prueba diagnóstica debe realizarse a continuación?",
+      "context_sentences": [
+        {
+          "sentence": "Mujer de 34 años que ingresa para estudio de poliuria y polidipsia.",
+          "start": 0,
+          "end": 67
+        },
+        {
+          "sentence": "En las primeras 24 horas de ingreso se constata una diuresis de 8,2 litros y se obtiene una analítica que muestra una glicemia de 96 mg/dL, natremia de 148 mEq/L y osmolalidad plasmática de 309 mOsm/kg con osmolalidad urinaria de 89 mOsm/kg.",
+          "start": 68,
+          "end": 309
+        },
+        {
+          "sentence": "¿Qué prueba diagnóstica debe realizarse a continuación?",
+          "start": 310,
+          "end": 365
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Test de infusión de suero salino hipertónico para determinación seriada de hormona antidiurética.",
+          "start": 370,
+          "end": 467
+        },
+        {
+          "id": "2",
+          "text": "Test de deshidratación (test de Miller).",
+          "start": 472,
+          "end": 512
+        },
+        {
+          "id": "3",
+          "text": "Administración de desmopresina con control seriado de osmolalidad en orina.",
+          "start": 517,
+          "end": 592
+        },
+        {
+          "id": "4",
+          "text": "Determinación de hormona antidiurética en plasma.",
+          "start": 597,
+          "end": 646
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "relevant"
+      ],
+      "entities": [
+        {
+          "id": "r945Dt",
+          "text": "poliuria y polidipsia",
+          "start": 45,
+          "end": 66,
+          "type": "Premise"
+        },
+        {
+          "id": "xELxjk",
+          "text": "prueba diagnóstica",
+          "start": 315,
+          "end": 333,
+          "type": "Premise"
+        },
+        {
+          "id": "afgv035flv",
+          "text": "natremia de 148 mEq/L",
+          "start": 208,
+          "end": 229,
+          "type": "Premise"
+        },
+        {
+          "id": "P-zr8MCurm",
+          "text": "osmolalidad plasmática de 309 mOsm/kg",
+          "start": 232,
+          "end": 269,
+          "type": "Premise"
+        },
+        {
+          "id": "hh2eE3Du0B",
+          "text": "osmolalidad urinaria de 89 mOsm/kg",
+          "start": 274,
+          "end": 308,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Test de infusión de suero salino hipertónico para determinación seriada de hormona antidiurética.",
+          "start": 370,
+          "end": 467,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Test de deshidratación (test de Miller).",
+          "start": 472,
+          "end": 512,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Administración de desmopresina con control seriado de osmolalidad en orina.",
+          "start": 517,
+          "end": 592,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Determinación de hormona antidiurética en plasma.",
+          "start": 597,
+          "end": 646,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "8DXH8u",
+          "relation_type": "Support",
+          "arg1_id": "r945Dt",
+          "arg2_id": "3"
+        },
+        {
+          "id": "o8hDJd",
+          "relation_type": "Support",
+          "arg1_id": "afgv035flv",
+          "arg2_id": "3"
+        },
+        {
+          "id": "RomYFL",
+          "relation_type": "Support",
+          "arg1_id": "P-zr8MCurm",
+          "arg2_id": "3"
+        },
+        {
+          "id": "uPLT3W",
+          "relation_type": "Support",
+          "arg1_id": "hh2eE3Du0B",
+          "arg2_id": "3"
+        },
+        {
+          "id": "AQVKsV",
+          "relation_type": "Attack",
+          "arg1_id": "xELxjk",
+          "arg2_id": "1"
+        },
+        {
+          "id": "9rGPiC",
+          "relation_type": "Attack",
+          "arg1_id": "afgv035flv",
+          "arg2_id": "2"
+        },
+        {
+          "id": "Up3j3h",
+          "relation_type": "Attack",
+          "arg1_id": "P-zr8MCurm",
+          "arg2_id": "2"
+        },
+        {
+          "id": "7QNkHP",
+          "relation_type": "Attack",
+          "arg1_id": "hh2eE3Du0B",
+          "arg2_id": "2"
+        },
+        {
+          "id": "Y6fFkM",
+          "relation_type": "Attack",
+          "arg1_id": "afgv035flv",
+          "arg2_id": "4"
+        },
+        {
+          "id": "WRmEXg",
+          "relation_type": "Attack",
+          "arg1_id": "P-zr8MCurm",
+          "arg2_id": "4"
+        },
+        {
+          "id": "qcs2Q2",
+          "relation_type": "Attack",
+          "arg1_id": "hh2eE3Du0B",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Mujer de 34 años",
+          "start": 0,
+          "end": 16,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "poliuria y polidipsia",
+          "start": 45,
+          "end": 66,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "diuresis de 8,2 litros",
+          "start": 120,
+          "end": 142,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "glicemia de 96 mg/dL",
+          "start": 186,
+          "end": 206,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "natremia de 148 mEq/L",
+          "start": 208,
+          "end": 229,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "osmolalidad plasmática de 309 mOsm/kg",
+          "start": 232,
+          "end": 269,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "osmolalidad urinaria de 89 mOsm/kg",
+          "start": 274,
+          "end": 308,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "raw_text": "Paciente de 12 años que acude a urgencias por artralgia, dolor abdominal y hematuria macroscópica dos días después de haber sido diagnosticado de amigdalitis pultácea. A su ingreso la creatinina sérica es de 2 mg/dl. ¿Cuál es el diagnóstico más probable?:\n\na) Nefropatía IgA.\n\nb) Síndrome de Schoenlein Henoch.\n\nc) Glomerulonefritis postinfecciosa.\n\nd) Síndrome de Alport.\n\ne) Glomerulonefritis membranosa.",
+    "metadata": {
+      "context": "Paciente de 12 años que acude a urgencias por artralgia, dolor abdominal y hematuria macroscópica dos días después de haber sido diagnosticado de amigdalitis pultácea. A su ingreso la creatinina sérica es de 2 mg/dl. ¿Cuál es el diagnóstico más probable?:",
+      "context_sentences": [
+        {
+          "sentence": "Paciente de 12 años que acude a urgencias por artralgia, dolor abdominal y hematuria macroscópica dos días después de haber sido diagnosticado de amigdalitis pultácea.",
+          "start": 0,
+          "end": 167
+        },
+        {
+          "sentence": "A su ingreso la creatinina sérica es de 2 mg/dl.",
+          "start": 168,
+          "end": 216
+        },
+        {
+          "sentence": "¿Cuál es el diagnóstico más probable?",
+          "start": 217,
+          "end": 254
+        },
+        {
+          "sentence": ":",
+          "start": 254,
+          "end": 255
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Nefropatía IgA.",
+          "start": 260,
+          "end": 275
+        },
+        {
+          "id": "2",
+          "text": "Síndrome de Schoenlein Henoch.",
+          "start": 280,
+          "end": 310
+        },
+        {
+          "id": "3",
+          "text": "Glomerulonefritis postinfecciosa.",
+          "start": 315,
+          "end": 348
+        },
+        {
+          "id": "4",
+          "text": "Síndrome de Alport.",
+          "start": 353,
+          "end": 372
+        },
+        {
+          "id": "5",
+          "text": "Glomerulonefritis membranosa.",
+          "start": 377,
+          "end": 406
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "bF2NqB",
+          "text": "12 años",
+          "start": 12,
+          "end": 19,
+          "type": "Premise"
+        },
+        {
+          "id": "5Kyr6x",
+          "text": "artralgia",
+          "start": 46,
+          "end": 55,
+          "type": "Premise"
+        },
+        {
+          "id": "9Hq3oG",
+          "text": "dolor abdominal",
+          "start": 57,
+          "end": 72,
+          "type": "Premise"
+        },
+        {
+          "id": "dQKf6W",
+          "text": "hematuria macroscópica",
+          "start": 75,
+          "end": 97,
+          "type": "Premise"
+        },
+        {
+          "id": "9znwGE",
+          "text": "creatinina sérica es de 2 mg/dl",
+          "start": 184,
+          "end": 215,
+          "type": "Premise"
+        },
+        {
+          "id": "7hA2CE",
+          "text": "dos días después de haber sido diagnosticado de amigdalitis pultácea",
+          "start": 98,
+          "end": 166,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Nefropatía IgA.",
+          "start": 260,
+          "end": 275,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Síndrome de Schoenlein Henoch.",
+          "start": 280,
+          "end": 310,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Glomerulonefritis postinfecciosa.",
+          "start": 315,
+          "end": 348,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Síndrome de Alport.",
+          "start": 353,
+          "end": 372,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Glomerulonefritis membranosa.",
+          "start": 377,
+          "end": 406,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "sT6fgE",
+          "relation_type": "Support",
+          "arg1_id": "bF2NqB",
+          "arg2_id": "2"
+        },
+        {
+          "id": "kQsUbT",
+          "relation_type": "Support",
+          "arg1_id": "5Kyr6x",
+          "arg2_id": "2"
+        },
+        {
+          "id": "KXbbyB",
+          "relation_type": "Support",
+          "arg1_id": "9Hq3oG",
+          "arg2_id": "2"
+        },
+        {
+          "id": "T95hjg",
+          "relation_type": "Support",
+          "arg1_id": "dQKf6W",
+          "arg2_id": "2"
+        },
+        {
+          "id": "iGBYwA",
+          "relation_type": "Support",
+          "arg1_id": "9znwGE",
+          "arg2_id": "2"
+        },
+        {
+          "id": "TjRjkC",
+          "relation_type": "Support",
+          "arg1_id": "7hA2CE",
+          "arg2_id": "2"
+        },
+        {
+          "id": "gboiQn",
+          "relation_type": "Support",
+          "arg1_id": "7hA2CE",
+          "arg2_id": "1"
+        },
+        {
+          "id": "ut2FiT",
+          "relation_type": "Attack",
+          "arg1_id": "5Kyr6x",
+          "arg2_id": "1"
+        },
+        {
+          "id": "MhXXaR",
+          "relation_type": "Attack",
+          "arg1_id": "9Hq3oG",
+          "arg2_id": "1"
+        },
+        {
+          "id": "k3GknA",
+          "relation_type": "Attack",
+          "arg1_id": "7hA2CE",
+          "arg2_id": "3"
+        },
+        {
+          "id": "xsGjtG",
+          "relation_type": "Attack",
+          "arg1_id": "7hA2CE",
+          "arg2_id": "4"
+        },
+        {
+          "id": "CianNE",
+          "relation_type": "Support",
+          "arg1_id": "dQKf6W",
+          "arg2_id": "1"
+        },
+        {
+          "id": "4RQ7t7",
+          "relation_type": "Support",
+          "arg1_id": "dQKf6W",
+          "arg2_id": "3"
+        },
+        {
+          "id": "6GntYx",
+          "relation_type": "Support",
+          "arg1_id": "9znwGE",
+          "arg2_id": "1"
+        },
+        {
+          "id": "JNTUtT",
+          "relation_type": "Support",
+          "arg1_id": "9znwGE",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Paciente de 12 años",
+          "start": 0,
+          "end": 19,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "artralgia",
+          "start": 46,
+          "end": 55,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "dolor abdominal",
+          "start": 57,
+          "end": 72,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "hematuria macroscópica",
+          "start": 75,
+          "end": 97,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "dos días después de haber sido diagnosticado de amigdalitis pultácea",
+          "start": 98,
+          "end": 166,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "la creatinina sérica es de 2 mg/dl",
+          "start": 181,
+          "end": 215,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "raw_text": "Niño de 1 año de edad, que no pasó las pruebas de cribado auditivo al nacimiento y que presenta unos potenciales evocados auditivos del tronco cerebral que determinan una hipoacusia bilateral leve-moderada en el oído derecho y moderada-grave en el oido izquierdo. ¿Cuál es la actitud más correcta a seguir en el momento actual?\n\na) Realizar una audiometría en el plazo de 6 meses para confirmar el diagnóstico.\n\nb) Cirugía para adaptar mi implante coclear en el oido derecho.\n\nc) Esperar hasta los 3 años para comprobar si desarrolla el lenguaje.\n\nd) Adaptación de audioprótesis bilateral y rehabilitación logopédica.\n\ne) Cirugía para adaptar un implante coclear en el oído izquierdo.",
+    "metadata": {
+      "context": "Niño de 1 año de edad, que no pasó las pruebas de cribado auditivo al nacimiento y que presenta unos potenciales evocados auditivos del tronco cerebral que determinan una hipoacusia bilateral leve-moderada en el oído derecho y moderada-grave en el oido izquierdo. ¿Cuál es la actitud más correcta a seguir en el momento actual?",
+      "context_sentences": [
+        {
+          "sentence": "Niño de 1 año de edad, que no pasó las pruebas de cribado auditivo al nacimiento y que presenta unos potenciales evocados auditivos del tronco cerebral que determinan una hipoacusia bilateral leve-moderada en el oído derecho y moderada-grave en el oido izquierdo.",
+          "start": 0,
+          "end": 263
+        },
+        {
+          "sentence": "¿Cuál es la actitud más correcta a seguir en el momento actual?",
+          "start": 264,
+          "end": 327
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Realizar una audiometría en el plazo de 6 meses para confirmar el diagnóstico.",
+          "start": 332,
+          "end": 410
+        },
+        {
+          "id": "2",
+          "text": "Cirugía para adaptar mi implante coclear en el oido derecho.",
+          "start": 415,
+          "end": 475
+        },
+        {
+          "id": "3",
+          "text": "Esperar hasta los 3 años para comprobar si desarrolla el lenguaje.",
+          "start": 480,
+          "end": 546
+        },
+        {
+          "id": "4",
+          "text": "Adaptación de audioprótesis bilateral y rehabilitación logopédica.",
+          "start": 551,
+          "end": 617
+        },
+        {
+          "id": "5",
+          "text": "Cirugía para adaptar un implante coclear en el oído izquierdo.",
+          "start": 622,
+          "end": 684
+        }
+      ],
+      "correct_choice_id": "4"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant"
+      ],
+      "entities": [
+        {
+          "id": "UfsHYB",
+          "text": "Niño de 1 año",
+          "start": 0,
+          "end": 13,
+          "type": "Premise"
+        },
+        {
+          "id": "WzWNvT",
+          "text": "hipoacusia bilateral leve-moderada en el oído derecho y moderada-grave en el oido izquierdo",
+          "start": 171,
+          "end": 262,
+          "type": "Premise"
+        },
+        {
+          "id": "pF4y4u",
+          "text": "leve-moderada en el oído derecho",
+          "start": 192,
+          "end": 224,
+          "type": "Premise"
+        },
+        {
+          "id": "iZBJ82",
+          "text": "en el momento actual",
+          "start": 306,
+          "end": 326,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Realizar una audiometría en el plazo de 6 meses para confirmar el diagnóstico.",
+          "start": 332,
+          "end": 410,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Cirugía para adaptar mi implante coclear en el oido derecho.",
+          "start": 415,
+          "end": 475,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Esperar hasta los 3 años para comprobar si desarrolla el lenguaje.",
+          "start": 480,
+          "end": 546,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Adaptación de audioprótesis bilateral y rehabilitación logopédica.",
+          "start": 551,
+          "end": 617,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Cirugía para adaptar un implante coclear en el oído izquierdo.",
+          "start": 622,
+          "end": 684,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "u8SxNo",
+          "relation_type": "Support",
+          "arg1_id": "UfsHYB",
+          "arg2_id": "4"
+        },
+        {
+          "id": "UpLwL9",
+          "relation_type": "Support",
+          "arg1_id": "WzWNvT",
+          "arg2_id": "4"
+        },
+        {
+          "id": "uXUocc",
+          "relation_type": "Attack",
+          "arg1_id": "pF4y4u",
+          "arg2_id": "2"
+        },
+        {
+          "id": "huydub",
+          "relation_type": "Attack",
+          "arg1_id": "iZBJ82",
+          "arg2_id": "5"
+        },
+        {
+          "id": "JdQWsA",
+          "relation_type": "Attack",
+          "arg1_id": "UfsHYB",
+          "arg2_id": "1"
+        },
+        {
+          "id": "H6AnbY",
+          "relation_type": "Attack",
+          "arg1_id": "UfsHYB",
+          "arg2_id": "3"
+        },
+        {
+          "id": "ub4ekW",
+          "relation_type": "Attack",
+          "arg1_id": "WzWNvT",
+          "arg2_id": "1"
+        },
+        {
+          "id": "7vsg4W",
+          "relation_type": "Attack",
+          "arg1_id": "WzWNvT",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "Niño de 1 año de edad",
+          "start": 0,
+          "end": 21,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "no pasó las pruebas de cribado auditivo al nacimiento",
+          "start": 27,
+          "end": 80,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "potenciales evocados auditivos del tronco cerebral",
+          "start": 101,
+          "end": 151,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "hipoacusia bilateral leve-moderada en el oído derecho",
+          "start": 171,
+          "end": 224,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "moderada-grave en el oido izquierdo",
+          "start": 227,
+          "end": 262,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "raw_text": "Mujer de 30 años de edad, embarazada de 33 semanas, que consulta por prurito de una semana de evolución. Las pruebas hepáticas muestran un leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L), así como de fosfatasa alcalina (155 UI/L) y gammaglutamiltranspeptidasa (125 UI/L), con una cifra de bilirrubina total de 2,3 mg/dL. El hemograma y el estudio de coagulación son normales, la ecografía abdominal no muestra alteraciones hepáticas ni biliares y la serología de virus de hepatitis, así como los autoanticuerpos son negativos. ¿Cuál de las siguientes actitudes es la correcta?\n\na) Realizar una biopsia hepática para establecer el diagnóstico de la enfermedad hepática.\n\nb) Tratar a la paciente con ácido ursodesoxicólico, ya que probablemente se trata de una colestasis intrahepática benigna del embarazo.\n\nc) Interrumpir el embarazo ya que el diagnóstico más probable es el hígado graso agudo del embarazo.\n\nd) Realizar una resonancia magnética para descartar una colangitis esclerosante primaria.",
+    "metadata": {
+      "context": "Mujer de 30 años de edad, embarazada de 33 semanas, que consulta por prurito de una semana de evolución. Las pruebas hepáticas muestran un leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L), así como de fosfatasa alcalina (155 UI/L) y gammaglutamiltranspeptidasa (125 UI/L), con una cifra de bilirrubina total de 2,3 mg/dL. El hemograma y el estudio de coagulación son normales, la ecografía abdominal no muestra alteraciones hepáticas ni biliares y la serología de virus de hepatitis, así como los autoanticuerpos son negativos. ¿Cuál de las siguientes actitudes es la correcta?",
+      "context_sentences": [
+        {
+          "sentence": "Mujer de 30 años de edad, embarazada de 33 semanas, que consulta por prurito de una semana de evolución.",
+          "start": 0,
+          "end": 104
+        },
+        {
+          "sentence": "Las pruebas hepáticas muestran un leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L), así como de fosfatasa alcalina (155 UI/L) y gammaglutamiltranspeptidasa (125 UI/L), con una cifra de bilirrubina total de 2,3 mg/dL. El hemograma y el estudio de coagulación son normales, la ecografía abdominal no muestra alteraciones hepáticas ni biliares y la serología de virus de hepatitis, así como los autoanticuerpos son negativos.",
+          "start": 105,
+          "end": 554
+        },
+        {
+          "sentence": "¿Cuál de las siguientes actitudes es la correcta?",
+          "start": 555,
+          "end": 604
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Realizar una biopsia hepática para establecer el diagnóstico de la enfermedad hepática.",
+          "start": 609,
+          "end": 696
+        },
+        {
+          "id": "2",
+          "text": "Tratar a la paciente con ácido ursodesoxicólico, ya que probablemente se trata de una colestasis intrahepática benigna del embarazo.",
+          "start": 701,
+          "end": 833
+        },
+        {
+          "id": "3",
+          "text": "Interrumpir el embarazo ya que el diagnóstico más probable es el hígado graso agudo del embarazo.",
+          "start": 838,
+          "end": 935
+        },
+        {
+          "id": "4",
+          "text": "Realizar una resonancia magnética para descartar una colangitis esclerosante primaria.",
+          "start": 940,
+          "end": 1026
+        }
+      ],
+      "correct_choice_id": "2"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "94t7va",
+          "text": "embarazada de 33 semanas",
+          "start": 26,
+          "end": 50,
+          "type": "Premise"
+        },
+        {
+          "id": "zxyKpp",
+          "text": "leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L)",
+          "start": 139,
+          "end": 214,
+          "type": "Premise"
+        },
+        {
+          "id": "bP6ytj",
+          "text": "prurito de una semana de evolución",
+          "start": 69,
+          "end": 103,
+          "type": "Premise"
+        },
+        {
+          "id": "iigo_V0T9v",
+          "text": "fosfatasa alcalina (155 UI/L)",
+          "start": 228,
+          "end": 257,
+          "type": "Premise"
+        },
+        {
+          "id": "-mBKKIi5ez",
+          "text": "gammaglutamiltranspeptidasa (125 UI/L)",
+          "start": 260,
+          "end": 298,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Realizar una biopsia hepática para establecer el diagnóstico de la enfermedad hepática.",
+          "start": 609,
+          "end": 696,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Tratar a la paciente con ácido ursodesoxicólico, ya que probablemente se trata de una colestasis intrahepática benigna del embarazo.",
+          "start": 701,
+          "end": 833,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Interrumpir el embarazo ya que el diagnóstico más probable es el hígado graso agudo del embarazo.",
+          "start": 838,
+          "end": 935,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Realizar una resonancia magnética para descartar una colangitis esclerosante primaria.",
+          "start": 940,
+          "end": 1026,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "ynvG5r",
+          "relation_type": "Support",
+          "arg1_id": "94t7va",
+          "arg2_id": "2"
+        },
+        {
+          "id": "RqtnWd",
+          "relation_type": "Support",
+          "arg1_id": "zxyKpp",
+          "arg2_id": "2"
+        },
+        {
+          "id": "Pse6Et",
+          "relation_type": "Support",
+          "arg1_id": "iigo_V0T9v",
+          "arg2_id": "2"
+        },
+        {
+          "id": "cMZsWx",
+          "relation_type": "Support",
+          "arg1_id": "-mBKKIi5ez",
+          "arg2_id": "2"
+        },
+        {
+          "id": "DW4okw",
+          "relation_type": "Attack",
+          "arg1_id": "94t7va",
+          "arg2_id": "1"
+        },
+        {
+          "id": "JRRHDQ",
+          "relation_type": "Attack",
+          "arg1_id": "bP6ytj",
+          "arg2_id": "3"
+        },
+        {
+          "id": "6Nd3xh",
+          "relation_type": "Attack",
+          "arg1_id": "94t7va",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "embarazada de 33 semanas",
+          "start": 26,
+          "end": 50,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "prurito de una semana de evolución",
+          "start": 69,
+          "end": 103,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L)",
+          "start": 139,
+          "end": 214,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "fosfatasa alcalina (155 UI/L)",
+          "start": 228,
+          "end": 257,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "gammaglutamiltranspeptidasa (125 UI/L)",
+          "start": 260,
+          "end": 298,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "bilirrubina total de 2,3 mg/dL",
+          "start": 317,
+          "end": 347,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "El hemograma y el estudio de coagulación son normales",
+          "start": 349,
+          "end": 402,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "la ecografía abdominal no muestra alteraciones hepáticas ni biliares",
+          "start": 404,
+          "end": 472,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e9",
+          "text": "la serología de virus de hepatitis, así como los autoanticuerpos son negativos",
+          "start": 475,
+          "end": 553,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "raw_text": "En un paciente diagnosticado de epilepsia que presenta episodios de falta de respuesta a estímulos externos, movimientos irregulares de las cuatro extremidades, ojos cerrados, emisión de llanto y movimientos pélvicos, de cinco a veinte minutos de duración y que no responden al tratamiento con fármacos antiepilépticos. ¿Cual es el estudio complementario con mayor probabilidad de aclarar el diagnóstico?:\n\na) Monitorización vídeo-EEG para diagnóstico de pseudocrisis (crisis psicógenas).\n\nb) Holter ECG para diagnóstico de cardiopatia arrítmica.\n\nc) EEG de rutina para diagnóstico del tipo de epilepsia (generalizada o focal).\n\nd) Resonancia magnética cerebral para detectar lesiones epileptógenas (displasia cortical tumor, esclerosis temporal media).\n\ne) Determinación de glucemia capilar para diagnóstico de hipoglucemia.",
+    "metadata": {
+      "context": "En un paciente diagnosticado de epilepsia que presenta episodios de falta de respuesta a estímulos externos, movimientos irregulares de las cuatro extremidades, ojos cerrados, emisión de llanto y movimientos pélvicos, de cinco a veinte minutos de duración y que no responden al tratamiento con fármacos antiepilépticos. ¿Cual es el estudio complementario con mayor probabilidad de aclarar el diagnóstico?:",
+      "context_sentences": [
+        {
+          "sentence": "En un paciente diagnosticado de epilepsia que presenta episodios de falta de respuesta a estímulos externos, movimientos irregulares de las cuatro extremidades, ojos cerrados, emisión de llanto y movimientos pélvicos, de cinco a veinte minutos de duración y que no responden al tratamiento con fármacos antiepilépticos.",
+          "start": 0,
+          "end": 319
+        },
+        {
+          "sentence": "¿Cual es el estudio complementario con mayor probabilidad de aclarar el diagnóstico?",
+          "start": 320,
+          "end": 404
+        },
+        {
+          "sentence": ":",
+          "start": 404,
+          "end": 405
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Monitorización vídeo-EEG para diagnóstico de pseudocrisis (crisis psicógenas).",
+          "start": 410,
+          "end": 488
+        },
+        {
+          "id": "2",
+          "text": "Holter ECG para diagnóstico de cardiopatia arrítmica.",
+          "start": 493,
+          "end": 546
+        },
+        {
+          "id": "3",
+          "text": "EEG de rutina para diagnóstico del tipo de epilepsia (generalizada o focal).",
+          "start": 551,
+          "end": 627
+        },
+        {
+          "id": "4",
+          "text": "Resonancia magnética cerebral para detectar lesiones epileptógenas (displasia cortical tumor, esclerosis temporal media).",
+          "start": 632,
+          "end": 753
+        },
+        {
+          "id": "5",
+          "text": "Determinación de glucemia capilar para diagnóstico de hipoglucemia.",
+          "start": 758,
+          "end": 825
+        }
+      ],
+      "correct_choice_id": "1"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "xAwbpX",
+          "text": "movimientos irregulares de las cuatro extremidades",
+          "start": 109,
+          "end": 159,
+          "type": "Premise"
+        },
+        {
+          "id": "27zTVr",
+          "text": "ojos cerrados",
+          "start": 161,
+          "end": 174,
+          "type": "Premise"
+        },
+        {
+          "id": "Yc8WVt",
+          "text": "emisión de llanto",
+          "start": 176,
+          "end": 193,
+          "type": "Premise"
+        },
+        {
+          "id": "pDEjpg",
+          "text": "movimientos pélvicos",
+          "start": 196,
+          "end": 216,
+          "type": "Premise"
+        },
+        {
+          "id": "EaXSwD",
+          "text": "cinco a veinte minutos de duración",
+          "start": 221,
+          "end": 255,
+          "type": "Premise"
+        },
+        {
+          "id": "v2yS5B",
+          "text": "no responden al tratamiento con fármacos antiepilépticos",
+          "start": 262,
+          "end": 318,
+          "type": "Premise"
+        },
+        {
+          "id": "7eT6AJ",
+          "text": "diagnosticado de epilepsia",
+          "start": 15,
+          "end": 41,
+          "type": "Premise"
+        },
+        {
+          "id": "QPLNjU",
+          "text": "falta de respuesta a estímulos externos",
+          "start": 68,
+          "end": 107,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Monitorización vídeo-EEG para diagnóstico de pseudocrisis (crisis psicógenas).",
+          "start": 410,
+          "end": 488,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Holter ECG para diagnóstico de cardiopatia arrítmica.",
+          "start": 493,
+          "end": 546,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "EEG de rutina para diagnóstico del tipo de epilepsia (generalizada o focal).",
+          "start": 551,
+          "end": 627,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Resonancia magnética cerebral para detectar lesiones epileptógenas (displasia cortical tumor, esclerosis temporal media).",
+          "start": 632,
+          "end": 753,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Determinación de glucemia capilar para diagnóstico de hipoglucemia.",
+          "start": 758,
+          "end": 825,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "cgpFs8",
+          "relation_type": "Support",
+          "arg1_id": "xAwbpX",
+          "arg2_id": "1"
+        },
+        {
+          "id": "5M2VQA",
+          "relation_type": "Support",
+          "arg1_id": "27zTVr",
+          "arg2_id": "1"
+        },
+        {
+          "id": "tApaML",
+          "relation_type": "Support",
+          "arg1_id": "Yc8WVt",
+          "arg2_id": "1"
+        },
+        {
+          "id": "kfjB7G",
+          "relation_type": "Support",
+          "arg1_id": "pDEjpg",
+          "arg2_id": "1"
+        },
+        {
+          "id": "roVCoY",
+          "relation_type": "Support",
+          "arg1_id": "EaXSwD",
+          "arg2_id": "1"
+        },
+        {
+          "id": "mLtnTE",
+          "relation_type": "Support",
+          "arg1_id": "v2yS5B",
+          "arg2_id": "1"
+        },
+        {
+          "id": "2jBbDK",
+          "relation_type": "Support",
+          "arg1_id": "7eT6AJ",
+          "arg2_id": "1"
+        },
+        {
+          "id": "etBdWe",
+          "relation_type": "Attack",
+          "arg1_id": "27zTVr",
+          "arg2_id": "2"
+        },
+        {
+          "id": "ib6TCM",
+          "relation_type": "Attack",
+          "arg1_id": "Yc8WVt",
+          "arg2_id": "2"
+        },
+        {
+          "id": "Yq2niV",
+          "relation_type": "Attack",
+          "arg1_id": "pDEjpg",
+          "arg2_id": "2"
+        },
+        {
+          "id": "kfCWSd",
+          "relation_type": "Attack",
+          "arg1_id": "EaXSwD",
+          "arg2_id": "2"
+        },
+        {
+          "id": "tAZ6Vy",
+          "relation_type": "Attack",
+          "arg1_id": "QPLNjU",
+          "arg2_id": "3"
+        },
+        {
+          "id": "AbbHDx",
+          "relation_type": "Attack",
+          "arg1_id": "xAwbpX",
+          "arg2_id": "3"
+        },
+        {
+          "id": "eaABTE",
+          "relation_type": "Attack",
+          "arg1_id": "27zTVr",
+          "arg2_id": "3"
+        },
+        {
+          "id": "46v7XN",
+          "relation_type": "Attack",
+          "arg1_id": "Yc8WVt",
+          "arg2_id": "3"
+        },
+        {
+          "id": "TkQdny",
+          "relation_type": "Attack",
+          "arg1_id": "pDEjpg",
+          "arg2_id": "3"
+        },
+        {
+          "id": "HCRo2o",
+          "relation_type": "Attack",
+          "arg1_id": "EaXSwD",
+          "arg2_id": "3"
+        },
+        {
+          "id": "mzCMqa",
+          "relation_type": "Attack",
+          "arg1_id": "v2yS5B",
+          "arg2_id": "3"
+        },
+        {
+          "id": "GPytLA",
+          "relation_type": "Attack",
+          "arg1_id": "QPLNjU",
+          "arg2_id": "4"
+        },
+        {
+          "id": "Aow3Gi",
+          "relation_type": "Attack",
+          "arg1_id": "xAwbpX",
+          "arg2_id": "4"
+        },
+        {
+          "id": "TbnHiy",
+          "relation_type": "Attack",
+          "arg1_id": "27zTVr",
+          "arg2_id": "4"
+        },
+        {
+          "id": "QoDUHR",
+          "relation_type": "Attack",
+          "arg1_id": "Yc8WVt",
+          "arg2_id": "4"
+        },
+        {
+          "id": "3JVZUw",
+          "relation_type": "Attack",
+          "arg1_id": "pDEjpg",
+          "arg2_id": "4"
+        },
+        {
+          "id": "JCG7xY",
+          "relation_type": "Attack",
+          "arg1_id": "EaXSwD",
+          "arg2_id": "4"
+        },
+        {
+          "id": "zAkP73",
+          "relation_type": "Attack",
+          "arg1_id": "v2yS5B",
+          "arg2_id": "4"
+        },
+        {
+          "id": "wGvm5S",
+          "relation_type": "Attack",
+          "arg1_id": "Yc8WVt",
+          "arg2_id": "5"
+        },
+        {
+          "id": "DRJ5TJ",
+          "relation_type": "Attack",
+          "arg1_id": "pDEjpg",
+          "arg2_id": "5"
+        },
+        {
+          "id": "SMG7YZ",
+          "relation_type": "Support",
+          "arg1_id": "7eT6AJ",
+          "arg2_id": "3"
+        },
+        {
+          "id": "KrWkTw",
+          "relation_type": "Support",
+          "arg1_id": "7eT6AJ",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "diagnosticado de epilepsia",
+          "start": 15,
+          "end": 41,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "episodios de falta de respuesta a estímulos externos",
+          "start": 55,
+          "end": 107,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "movimientos irregulares de las cuatro extremidades",
+          "start": 109,
+          "end": 159,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "ojos cerrados",
+          "start": 161,
+          "end": 174,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "emisión de llanto",
+          "start": 176,
+          "end": 193,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "movimientos pélvicos",
+          "start": 196,
+          "end": 216,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "de cinco a veinte minutos de duración",
+          "start": 218,
+          "end": 255,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "no responden al tratamiento con fármacos antiepilépticos",
+          "start": 262,
+          "end": 318,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "raw_text": "Hombre de 66 años de edad, diagnosticado previamente de cirrosis hepática de etiología alcohólica, que es traído al servicio de Urgencias por aumento del perímetro abdominal y desorientación temporo-espacial. En la exploración física se constata la existencia de ascitis y de \"flapping tremor\" o asterixis. ¿Cuál de las siguientes exploraciones debe realizarse con carácter urgente?\n\na) Una tomografía computarizada craneal para descartar un accidente cerebro-vascular.\n\nb) Una ecografía abdominal para confirmar la presencia de ascitis.\n\nc) Una paracentesis exploradora para descartar una peritonitis bacteriana espontánea.\n\nd) Un electroencefalograma para confirmar la existencia de encefalopatía hepática.\n\ne) Una tomografía computarizada abdominal para descartar un carcinoma hepatocelular.",
+    "metadata": {
+      "context": "Hombre de 66 años de edad, diagnosticado previamente de cirrosis hepática de etiología alcohólica, que es traído al servicio de Urgencias por aumento del perímetro abdominal y desorientación temporo-espacial. En la exploración física se constata la existencia de ascitis y de \"flapping tremor\" o asterixis. ¿Cuál de las siguientes exploraciones debe realizarse con carácter urgente?",
+      "context_sentences": [
+        {
+          "sentence": "Hombre de 66 años de edad, diagnosticado previamente de cirrosis hepática de etiología alcohólica, que es traído al servicio de Urgencias por aumento del perímetro abdominal y desorientación temporo-espacial.",
+          "start": 0,
+          "end": 208
+        },
+        {
+          "sentence": "En la exploración física se constata la existencia de ascitis y de \"flapping tremor\" o asterixis.",
+          "start": 209,
+          "end": 306
+        },
+        {
+          "sentence": "¿Cuál de las siguientes exploraciones debe realizarse con carácter urgente?",
+          "start": 307,
+          "end": 382
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "Una tomografía computarizada craneal para descartar un accidente cerebro-vascular.",
+          "start": 387,
+          "end": 469
+        },
+        {
+          "id": "2",
+          "text": "Una ecografía abdominal para confirmar la presencia de ascitis.",
+          "start": 474,
+          "end": 537
+        },
+        {
+          "id": "3",
+          "text": "Una paracentesis exploradora para descartar una peritonitis bacteriana espontánea.",
+          "start": 542,
+          "end": 624
+        },
+        {
+          "id": "4",
+          "text": "Un electroencefalograma para confirmar la existencia de encefalopatía hepática.",
+          "start": 629,
+          "end": 708
+        },
+        {
+          "id": "5",
+          "text": "Una tomografía computarizada abdominal para descartar un carcinoma hepatocelular.",
+          "start": 713,
+          "end": 794
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "5mSVzz",
+          "text": "desorientación temporo-espacial",
+          "start": 176,
+          "end": 207,
+          "type": "Premise"
+        },
+        {
+          "id": "KSn3w9",
+          "text": "flapping tremor",
+          "start": 277,
+          "end": 292,
+          "type": "Premise"
+        },
+        {
+          "id": "ooM5SY",
+          "text": "cirrosis hepática",
+          "start": 56,
+          "end": 73,
+          "type": "Premise"
+        },
+        {
+          "id": "oBVV8a",
+          "text": "ascitis",
+          "start": 263,
+          "end": 270,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "Una tomografía computarizada craneal para descartar un accidente cerebro-vascular.",
+          "start": 387,
+          "end": 469,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Una ecografía abdominal para confirmar la presencia de ascitis.",
+          "start": 474,
+          "end": 537,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Una paracentesis exploradora para descartar una peritonitis bacteriana espontánea.",
+          "start": 542,
+          "end": 624,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Un electroencefalograma para confirmar la existencia de encefalopatía hepática.",
+          "start": 629,
+          "end": 708,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Una tomografía computarizada abdominal para descartar un carcinoma hepatocelular.",
+          "start": 713,
+          "end": 794,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "cXvW94",
+          "relation_type": "Attack",
+          "arg1_id": "ooM5SY",
+          "arg2_id": "1"
+        },
+        {
+          "id": "UnEFE4",
+          "relation_type": "Attack",
+          "arg1_id": "KSn3w9",
+          "arg2_id": "1"
+        },
+        {
+          "id": "9yp3od",
+          "relation_type": "Attack",
+          "arg1_id": "oBVV8a",
+          "arg2_id": "1"
+        },
+        {
+          "id": "xuuUTw",
+          "relation_type": "Attack",
+          "arg1_id": "oBVV8a",
+          "arg2_id": "2"
+        },
+        {
+          "id": "tqMyaj",
+          "relation_type": "Attack",
+          "arg1_id": "KSn3w9",
+          "arg2_id": "4"
+        },
+        {
+          "id": "D769LA",
+          "relation_type": "Attack",
+          "arg1_id": "oBVV8a",
+          "arg2_id": "4"
+        },
+        {
+          "id": "qCovk9",
+          "relation_type": "Support",
+          "arg1_id": "5mSVzz",
+          "arg2_id": "3"
+        },
+        {
+          "id": "HrqBkj",
+          "relation_type": "Support",
+          "arg1_id": "KSn3w9",
+          "arg2_id": "3"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "66 años de edad",
+          "start": 10,
+          "end": 25,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "cirrosis hepática de etiología alcohólica",
+          "start": 56,
+          "end": 97,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "aumento del perímetro abdominal",
+          "start": 142,
+          "end": 173,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "desorientación temporo-espacial",
+          "start": 176,
+          "end": 207,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "ascitis",
+          "start": 263,
+          "end": 270,
+          "type": "Premise"
+        }
+      ],
+      "relations": [
+        {
+          "id": "xuuUTw",
+          "arg1_id": "pred_e5",
+          "arg2_id": "pred_e5",
+          "relation_type": "Support"
+        }
+      ]
+    }
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "raw_text": "Un hombre de 32 años, adicto a drogas por vía parenteral y que ha salido recientemente de la cárcel, tiene una prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración. Hace un año, el PPD fue negativo, actualmente está asintomático, la serología de VIH es negativa y su radiografía de tórax es normal. ¿Qué actitud entre las siguientes le parece más adecuada?:\n\na) No realizar tratamiento y control anual de radiografía de tórax.\n\nb) Cultivos de esputo inducidos para micobacterias y tratar sólo si son positivos.\n\nc) Isoniazida diaria durante 9 meses.\n\nd) Tratamiento con 4 drogas durante 4 meses.\n\ne) Tratamiento con rifampicina y pirazinamida durante 2 meses.",
+    "metadata": {
+      "context": "Un hombre de 32 años, adicto a drogas por vía parenteral y que ha salido recientemente de la cárcel, tiene una prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración. Hace un año, el PPD fue negativo, actualmente está asintomático, la serología de VIH es negativa y su radiografía de tórax es normal. ¿Qué actitud entre las siguientes le parece más adecuada?:",
+      "context_sentences": [
+        {
+          "sentence": "Un hombre de 32 años, adicto a drogas por vía parenteral y que ha salido recientemente de la cárcel, tiene una prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración.",
+          "start": 0,
+          "end": 190
+        },
+        {
+          "sentence": "Hace un año, el PPD fue negativo, actualmente está asintomático, la serología de VIH es negativa y su radiografía de tórax es normal.",
+          "start": 191,
+          "end": 324
+        },
+        {
+          "sentence": "¿Qué actitud entre las siguientes le parece más adecuada?",
+          "start": 325,
+          "end": 382
+        },
+        {
+          "sentence": ":",
+          "start": 382,
+          "end": 383
+        }
+      ],
+      "choices": [
+        {
+          "id": "1",
+          "text": "No realizar tratamiento y control anual de radiografía de tórax.",
+          "start": 388,
+          "end": 452
+        },
+        {
+          "id": "2",
+          "text": "Cultivos de esputo inducidos para micobacterias y tratar sólo si son positivos.",
+          "start": 457,
+          "end": 536
+        },
+        {
+          "id": "3",
+          "text": "Isoniazida diaria durante 9 meses.",
+          "start": 541,
+          "end": 575
+        },
+        {
+          "id": "4",
+          "text": "Tratamiento con 4 drogas durante 4 meses.",
+          "start": 580,
+          "end": 621
+        },
+        {
+          "id": "5",
+          "text": "Tratamiento con rifampicina y pirazinamida durante 2 meses.",
+          "start": 626,
+          "end": 685
+        }
+      ],
+      "correct_choice_id": "3"
+    },
+    "annotations": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "NTnw2Y",
+          "text": "ha salido recientemente de la cárcel",
+          "start": 63,
+          "end": 99,
+          "type": "Premise"
+        },
+        {
+          "id": "SyfDkN",
+          "text": "prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración",
+          "start": 111,
+          "end": 189,
+          "type": "Premise"
+        },
+        {
+          "id": "V3zHpt",
+          "text": "Hace un año, el PPD fue negativo",
+          "start": 191,
+          "end": 223,
+          "type": "Premise"
+        },
+        {
+          "id": "uaUK58",
+          "text": "asintomático",
+          "start": 242,
+          "end": 254,
+          "type": "Premise"
+        },
+        {
+          "id": "wKsFm8",
+          "text": "radiografía de tórax es normal",
+          "start": 293,
+          "end": 323,
+          "type": "Premise"
+        },
+        {
+          "id": "SmgYnM",
+          "text": "32 años",
+          "start": 13,
+          "end": 20,
+          "type": "Premise"
+        },
+        {
+          "id": "1",
+          "text": "No realizar tratamiento y control anual de radiografía de tórax.",
+          "start": 388,
+          "end": 452,
+          "type": "Claim"
+        },
+        {
+          "id": "2",
+          "text": "Cultivos de esputo inducidos para micobacterias y tratar sólo si son positivos.",
+          "start": 457,
+          "end": 536,
+          "type": "Claim"
+        },
+        {
+          "id": "3",
+          "text": "Isoniazida diaria durante 9 meses.",
+          "start": 541,
+          "end": 575,
+          "type": "Claim"
+        },
+        {
+          "id": "4",
+          "text": "Tratamiento con 4 drogas durante 4 meses.",
+          "start": 580,
+          "end": 621,
+          "type": "Claim"
+        },
+        {
+          "id": "5",
+          "text": "Tratamiento con rifampicina y pirazinamida durante 2 meses.",
+          "start": 626,
+          "end": 685,
+          "type": "Claim"
+        }
+      ],
+      "relations": [
+        {
+          "id": "GsjPDo",
+          "relation_type": "Support",
+          "arg1_id": "NTnw2Y",
+          "arg2_id": "3"
+        },
+        {
+          "id": "6EGK6s",
+          "relation_type": "Support",
+          "arg1_id": "SyfDkN",
+          "arg2_id": "3"
+        },
+        {
+          "id": "mcoxtd",
+          "relation_type": "Support",
+          "arg1_id": "V3zHpt",
+          "arg2_id": "3"
+        },
+        {
+          "id": "yNvB8w",
+          "relation_type": "Support",
+          "arg1_id": "uaUK58",
+          "arg2_id": "3"
+        },
+        {
+          "id": "s2a8or",
+          "relation_type": "Support",
+          "arg1_id": "wKsFm8",
+          "arg2_id": "3"
+        },
+        {
+          "id": "4Ejo6u",
+          "relation_type": "Support",
+          "arg1_id": "SmgYnM",
+          "arg2_id": "3"
+        },
+        {
+          "id": "pdSYpX",
+          "relation_type": "Attack",
+          "arg1_id": "SmgYnM",
+          "arg2_id": "1"
+        },
+        {
+          "id": "MDYUCk",
+          "relation_type": "Attack",
+          "arg1_id": "SyfDkN",
+          "arg2_id": "1"
+        },
+        {
+          "id": "HfnYhG",
+          "relation_type": "Attack",
+          "arg1_id": "V3zHpt",
+          "arg2_id": "1"
+        },
+        {
+          "id": "5Vyvs9",
+          "relation_type": "Attack",
+          "arg1_id": "uaUK58",
+          "arg2_id": "2"
+        },
+        {
+          "id": "CoBb9d",
+          "relation_type": "Attack",
+          "arg1_id": "wKsFm8",
+          "arg2_id": "2"
+        },
+        {
+          "id": "QPgRow",
+          "relation_type": "Attack",
+          "arg1_id": "SmgYnM",
+          "arg2_id": "2"
+        },
+        {
+          "id": "oijQqk",
+          "relation_type": "Attack",
+          "arg1_id": "SyfDkN",
+          "arg2_id": "2"
+        },
+        {
+          "id": "yq7TWP",
+          "relation_type": "Attack",
+          "arg1_id": "V3zHpt",
+          "arg2_id": "2"
+        },
+        {
+          "id": "VWgUXE",
+          "relation_type": "Attack",
+          "arg1_id": "uaUK58",
+          "arg2_id": "5"
+        },
+        {
+          "id": "QczcGs",
+          "relation_type": "Attack",
+          "arg1_id": "uaUK58",
+          "arg2_id": "4"
+        },
+        {
+          "id": "Vbx4UB",
+          "relation_type": "Attack",
+          "arg1_id": "wKsFm8",
+          "arg2_id": "5"
+        },
+        {
+          "id": "aCS2aT",
+          "relation_type": "Attack",
+          "arg1_id": "wKsFm8",
+          "arg2_id": "4"
+        }
+      ]
+    },
+    "predictions": {
+      "sentence_relevancy": [
+        "relevant",
+        "relevant",
+        "not-relevant",
+        "not-relevant"
+      ],
+      "entities": [
+        {
+          "id": "pred_e1",
+          "text": "32 años",
+          "start": 13,
+          "end": 20,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e2",
+          "text": "adicto a drogas por vía parenteral",
+          "start": 22,
+          "end": 56,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e3",
+          "text": "ha salido recientemente de la cárcel",
+          "start": 63,
+          "end": 99,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e4",
+          "text": "prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración",
+          "start": 111,
+          "end": 189,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e5",
+          "text": "Hace un año, el PPD fue negativo",
+          "start": 191,
+          "end": 223,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e6",
+          "text": "actualmente está asintomático",
+          "start": 225,
+          "end": 254,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e7",
+          "text": "la serología de VIH es negativa",
+          "start": 256,
+          "end": 287,
+          "type": "Premise"
+        },
+        {
+          "id": "pred_e8",
+          "text": "su radiografía de tórax es normal",
+          "start": 290,
+          "end": 323,
+          "type": "Premise"
+        }
+      ],
+      "relations": []
+    }
+  }
+]

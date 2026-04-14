@@ -3,10 +3,12 @@
 # configurations and paths
 # ----------------------------------------------------------
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
-# mar-2026
+# apr-2026
 
 from typing import List, Dict
 from pathlib import Path
+
+# --- general paths and settings ---
 
 ROOT_DIR: Path = Path(__file__).resolve().parent.parent
 
@@ -14,8 +16,17 @@ HF_REPO: str = "HiTZ/casimedicos-arg"
 
 BASE_DATA_DIR: Path = ROOT_DIR / "data"
 SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
-MODEL_DIR: Path = ROOT_DIR / "model"
+GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
+MODEL_DIR: Path = ROOT_DIR / "model" / "grace"
 RELATIONS_DIR: Path = BASE_DATA_DIR / "relations"
+
+GRACE_SPLITS: Dict[str, Path] = {
+    "train": GRACE_DATA_DIR / "track_2_train.json",
+    "validation": GRACE_DATA_DIR / "track_2_dev.json",
+}
+
+
+# --- relation alignment settings ---
 
 SOURCE_LANG: str = "en"
 TARGET_LANGS: List[str] = ["es", "fr", "it"]
