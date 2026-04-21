@@ -30,7 +30,6 @@ class GraceEvaluator:
         with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"\n{header}\n")
 
-        # Dynamically select loader
         if dataset == "casimedicos":
             cases = load_cases_casiMedicos(ground_truth_path)
         else:
@@ -70,7 +69,6 @@ class GraceEvaluator:
         with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"\n{header}\n")
 
-        # Dynamically select loader
         if dataset == "casimedicos":
             cases = load_cases_casiMedicos(ground_truth_path)
         else:
@@ -88,7 +86,6 @@ class GraceEvaluator:
 
             pred_spans = set(self._extract_predicted_spans(record["prediction"]))
             
-            # Extract ground truth spans, safely handling dict vs string lists
             gt_spans_raw = gt_map[case_id].get("premises", []) + gt_map[case_id].get("claims", [])
             gt_spans_clean = [s.get("text", "") if isinstance(s, dict) else s for s in gt_spans_raw]
             gt_spans = set(self._normalize_span(s) for s in gt_spans_clean if s)
@@ -238,7 +235,6 @@ class GraceEvaluator:
             raw_spans = prediction.get("premises", []) + prediction.get("claims", []) + \
                         prediction.get("Premisas", []) + prediction.get("Afirmaciones", []) + prediction.get("Claims", [])
             
-            # Safely unpack dictionaries (like claims) vs strings (like premises)
             clean_spans = []
             for s in raw_spans:
                 if isinstance(s, dict):

@@ -1,4 +1,4 @@
-# src/config.py
+# src/grace/config.py
 # ----------------------------------------------------------
 # configurations and paths
 # ----------------------------------------------------------
@@ -8,48 +8,32 @@
 from typing import List, Dict
 from pathlib import Path
 
-# --- general paths and settings ---
-
-ROOT_DIR: Path = Path(__file__).resolve().parent.parent
-
-HF_REPO: str = "HiTZ/casimedicos-arg"
-
+# --- general path directories and settings ---
 LANG = "es"
-
+ROOT_DIR: Path = Path(__file__).resolve().parent.parent
 BASE_DATA_DIR: Path = ROOT_DIR / "data"
 SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
 GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
+UNIFIED_DATA_DIR: Path = BASE_DATA_DIR / "unified"
 CASIMEDICOS_DATA_DIR: Path = BASE_DATA_DIR / "casimedicos" / "splits"
-
 MODEL_DIR: Path = ROOT_DIR / "model" / "grace" / LANG
-RELATIONS_DIR: Path = BASE_DATA_DIR / "relations"
 
+
+# --- dataset splits ---
+HF_REPO: str = "HiTZ/casimedicos-arg"
 GRACE_SPLITS: Dict[str, Path] = {
     "train": GRACE_DATA_DIR / "track_2_train.json",
     "validation": GRACE_DATA_DIR / "track_2_dev.json",
 }
-
-#LANGS = "en-es"/multilingual
+UNIFIED_SPLITS: Dict[str, Path] = {
+    "train": UNIFIED_DATA_DIR / f"train_unified_{LANG}.json",
+    "validation": UNIFIED_DATA_DIR / f"dev_unified_{LANG}.json",
+}
 CASIMEDICOS_SPLITS: Dict[str, Path] = {
     "train": CASIMEDICOS_DATA_DIR / "train" / f"train_{LANG}_ordered.jsonl",
     "validation": CASIMEDICOS_DATA_DIR / "dev" / f"dev_{LANG}_ordered.jsonl",
     "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
 }
-
-
-# --- relation alignment settings ---
-
-SOURCE_LANG: str = "en"
-TARGET_LANGS: List[str] = ["es", "fr", "it"]
-
-SPLITS: Dict[str, Path] = {
-    "train": RELATIONS_DIR / SOURCE_LANG / "train_relations.jsonl",
-    "validation": RELATIONS_DIR / SOURCE_LANG / "validation_relations.jsonl",
-    "test": RELATIONS_DIR / SOURCE_LANG / "test_relations.jsonl"
-}
-
-OUTPUT_JSONL: str = "{lang}/{jsonl_split}_relations.jsonl"
-MANUAL_FIX_JSON: Path = RELATIONS_DIR / "fix_relations.json"
 
 def get_prediction_path(model_prefix: str, size: str, setting: str, task: str, cleaned: bool = False) -> Path:
     """Central source of truth for prediction file naming conventions."""
