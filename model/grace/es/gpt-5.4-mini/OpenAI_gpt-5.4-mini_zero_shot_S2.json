@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": "Premisas:\n- \"Hombre de 28 años de profesión violinista, que consulta por haber presentado en los últimos 3 meses crisis de pánico durante sus actuaciones públicas.\"\n- \"Las crisis se acompañan de intenso miedo a quedar bloqueado y no poder continuar con la actuación, algo que sería humillante para él.\"\n- \"Este miedo le ha hecho cancelar sus próximas actuaciones.\"\n- \"En el resto de sus actividades diarias no experimenta este temor, ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta.\"\nClaims:\n- id: 1\n  text: \"¿Qué diagnóstico consideraría más probable para este caso?\""
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": "{\"premises\":[\"Mujer de 36 años que acude a la consulta por haber sufrido tres abortos espontáneos en el primer trimestre.\",\"No ha tenido ningún embarazo a término.\"],\"claims\":[{\"id\":1,\"text\":\"Entre los estudios que solicitará en primer término NO se incluye:\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": "Premisas:\n- \"Primigesta de 41 años, en la 38 semana, con diabetes gestacional en tratamiento con dieta de 2200 Kilocalorías e hipertensión arterial esencial.\"\n- \"Acude a urgencias por dolor hipogástrico de inicio brusco, con afectación de su estado general, acompañado de una metrorragia escasa de sangre oscura.\"\n- \"En la Monitorización No Estresante (MNS) detectamos un patrón de frecuencia cardiaca fetal no reactivo.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"La principal sospecha diagnóstica será:\"}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": "{\"premises\":[\"Varón de 48 años de edad, conserje de un hotel, consulta por cefalalgias resistentes al tratamiento analgésico habitual.\",\"desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores.\",\"En el estudio analítico tiene una fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal.\"],\"claims\":[]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": "{\"premises\":[\"Hombre de 32 años de edad sin antecedentes de interés ni factores de riesgo cardiovascular.\",\"Clínica de disnea al subir un piso de escaleras de 1 mes de evolución.\",\"Consulta por síncope brusco precedido de esfuerzo.\",\"Antecedentes familiares de muerte no explicada de forma brusca en su hermano.\",\"En la exploración física destaca un soplo sistólico rudo más audible en foco aórtico.\",\"El electrocardiograma practicado en consulta muestra un ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda.\",\"Se realiza un ecocardiograma que documenta una importante hipertrofia asimétrica de septo interventricular con un gradiente dinámico subvalvular de 70 mmHg con insuficiencia mitral secundaria moderada y fracción de eyección de ventrículo izquierdo conservada.\"],\"claims\":[]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": "Premisas:\n- \"Un hombre de 60 años de edad presenta un cuadro de demencia rápidamente progresiva, rigidez, ataxia, mioclonias, que persisten durante el sueño y descargas de alto voltaje en el EEG.\"\nClaims:\n- {\"id\": 1, \"text\": \"¿Qué alteración, entre las siguientes, es la que podremos encontrar en el LCR?\"}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": "Premisas:\n- \"Mujer de 71 años con antecedentes de artritis reumatoide en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana.\"\n- \"Acude a urgencias por clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"¿Cuál sería el tratamiento adecuado?\"}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": "Premisas:\n- \"Una mujer de 76 años, sin otros antecedentes que hipertensión arterial, consulta por ictericia indolora y prurito, con anorexia.\"\n- \"Analíticamente, destaca una bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa).\"\n- \"La ecografía abdominal muestra dilatación biliar intra y extrahepática, junto con un nódulo hepático único menor de 2 cm, localizado periféricamente, en la cara anterior del lóbulo izquierdo.\"\n- \"La TC confirma estos hallazgos, demostrando además la presencia de una masa de 3.5 cm en la cabeza pancreática.\"\n- \"La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"Señale la mejor opción terapéutica:\"}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": "Premisas:\n- \"Una mujer de 35 años diagnosticada de Lupus Eritematoso Sistémico en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses, con buen control de la actividad inflamatoria, acude a la consulta por dolor continuo en la rodilla de 3 semanas de evolución, de inicio brusco sin antecedente traumático.\"\n- \"Aporta un examen radiográfico dentro de la normalidad.\"\n\nClaims:\n- No se proporcionaron opciones de respuesta múltiple al final del caso."
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": "Premisas:\n- \"Un paciente de 73 años presenta en el test de deglución una disfagia neurológica completa, secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda.\"\n- \"Va a precisar apoyo nutricional a largo plazo.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"De las siguientes modalidades de tratamiento, ¿cuál considera más indicada para este caso?\"}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": "{\"premises\":[\"Un hombre de 58 años, no fumador y sin antecedentes personales relevantes, es ingresado en la planta de neurología por un accidente cerebrovascular agudo isquémico.\",\"Su hemograma muestra 18.5 g/dl de hemoglobina con un hematocrito de 60%.\"],\"claims\":[]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "{\"premises\":[\"Niño de 28 días de vida, nacido a término.\",\"Antecedentes de embarazo y parto normales.\",\"Ha sido alimentado con lactancia materna desde el nacimiento.\",\"Consulta porque hace 8 días comenzó con vómitos, inicialmente esporádicos y desde hace 5 días, después de todas las tomas.\",\"Está permanentemente hambriento.\",\"Los vómitos son de contenido alimentario \\\"a chorro\\\".\",\"El abdomen, en la palpación, es blando y depresible, sin visceromoegalias.\",\"En los análisis destacaban, en la gasometría pH 7.49, bicarbonato 30 mEq/L, PC02 53 mmHg, exceso de base +8mEq/L.\",\"Iones: Na 137 mEq/L, K3.1 mEq/L, Cl 94 mEq/L.\"],\"claims\":[]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": "Premisas:\n- \"A una mujer de 35 años se realiza una citología vaginal tras 5 años sin control previo y el diagnóstico es SIL (lesión intraepitelial) de alto grado.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"La conducta correcta a seguir es:\"}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": "Premisas:\n- \"adenocarcinoma con diferenciación mucinosa prominente de colon ascendente diagnosticado en un hombre de 32 años\"\nClaims:\n- id: 1\n  text: \"estudios de inmunohistoquímica para síndrome de Lynch\"\n- id: 2\n  text: \"estudios de mutación de KRAS\"\n- id: 3\n  text: \"estudios de mutación de BRAF\"\n- id: 4\n  text: \"estudios de mutación de NRAS\""
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": "{\"premises\":[\"Niño de 4 años de edad que consulta por aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos.\",\"Sus padres referían que su pediatra le había diagnosticado una infección de vías respiratorias superiores 10 días antes.\",\"En las últimas 12 horas presenta dolor abdominal intenso tipo cólico, y ha realizado dos deposiciones diarréicas.\",\"Afebril.\",\"No pérdida de peso.\",\"A la exploración presenta numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores.\",\"Buen estado general aunque tiene dolor abdominal intenso.\",\"La palpación abdominal es difícil de valorar por dolor difuso.\",\"No visceromegalias.\",\"No otros hallazgos de interés a la exploración.\"],\"claims\":[]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": "Premisas:\n- \"Hombre de 47 años de edad que consulta por edemas en miembros inferiores de 3 semanas de evolución.\"\n- \"En la analítica sanguínea presenta creatinina 1.3 mg/dL, colesterol total 270 mg/dL y albúmina 2.4 g/dL.\"\n- \"En el sedimento de orina presenta 15-20 hematíes por campo y en orina de 24 horas se detecta proteinuria 3.7 g/día.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"¿Cuál es el diagnóstico más probable?\"}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "Premisas:\n- \"mujer de 35 años de edad\"\n- \"antecedentes de hipertensión arterial esencial desde hace 4 años\"\n- \"La paciente ha estado bien controlada con Enalapril 20 mg cada 12 horas\"\n- \"Desde hace dos meses está embarazada\"\n- \"es remitida por su médico de atención primaria para seguimiento\"\n\nClaims:\n- {\"id\": 1, \"text\": \"¿cuál es la correcta?\"}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": "Premisas:\n- \"Mujer de 34 años que ingresa para estudio de poliuria y polidipsia.\"\n- \"En las primeras 24 horas de ingreso se constata una diuresis de 8,2 litros y se obtiene una analítica que muestra una glicemia de 96 mg/dL, natremia de 148 mEq/L y osmolalidad plasmática de 309 mOsm/kg con osmolalidad urinaria de 89 mOsm/kg.\"\nClaims:\n- {\"id\": 1, \"text\": \"Prueba de restricción hídrica\"}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": "Premisas:\n- \"Paciente de 12 años que acude a urgencias por artralgia, dolor abdominal y hematuria macroscópica dos días después de haber sido diagnosticado de amigdalitis pultácea.\"\n- \"A su ingreso la creatinina sérica es de 2 mg/dl.\"\nClaims:\n- {\"id\": 1, \"text\": \"¿Cuál es el diagnóstico más probable?\"}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": "Premisas:\n- \"Niño de 1 año de edad, que no pasó las pruebas de cribado auditivo al nacimiento y que presenta unos potenciales evocados auditivos del tronco cerebral que determinan una hipoacusia bilateral leve-moderada en el oído derecho y moderada-grave en el oido izquierdo.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"Realizar una resonancia magnética cerebral y del conducto auditivo interno y, si es normal, colocar audífonos bilaterales y seguimiento estrecho\"}\n- {\"id\": 2, \"text\": \"Esperar hasta los 2 años para confirmar la estabilidad de la hipoacusia antes de iniciar tratamiento\"}\n- {\"id\": 3, \"text\": \"Indicar implante coclear bilateral de forma inmediata\"}\n- {\"id\": 4, \"text\": \"Solicitar únicamente una audiometría tonal liminar y reevaluar en 6 meses\"}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": "{\"premises\":[\"Mujer de 30 años de edad, embarazada de 33 semanas, que consulta por prurito de una semana de evolución.\",\"Las pruebas hepáticas muestran un leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L), así como de fosfatasa alcalina (155 UI/L) y gammaglutamiltranspeptidasa (125 UI/L), con una cifra de bilirrubina total de 2,3 mg/dL.\",\"El hemograma y el estudio de coagulación son normales, la ecografía abdominal no muestra alteraciones hepáticas ni biliares y la serología de virus de hepatitis, así como los autoanticuerpos son negativos.\"],\"claims\":[]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": "Premisas:\n- \"En un paciente diagnosticado de epilepsia que presenta episodios de falta de respuesta a estímulos externos, movimientos irregulares de las cuatro extremidades, ojos cerrados, emisión de llanto y movimientos pélvicos, de cinco a veinte minutos de duración y que no responden al tratamiento con fármacos antiepilépticos.\"\nClaims:\n- {\"id\": 1, \"text\": \"¿Cual es el estudio complementario con mayor probabilidad de aclarar el diagnóstico?\"}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": "Premisas:\n- \"Hombre de 66 años de edad, diagnosticado previamente de cirrosis hepática de etiología alcohólica\"\n- \"que es traído al servicio de Urgencias por aumento del perímetro abdominal y desorientación temporo-espacial\"\n- \"En la exploración física se constata la existencia de ascitis y de \\\"flapping tremor\\\" o asterixis\"\n\nClaims:\n- {\"id\": 1, \"text\": \"Paracentesis diagnóstica\"}\n- {\"id\": 2, \"text\": \"Ecografía abdominal\"}\n- {\"id\": 3, \"text\": \"TAC abdominal\"}\n- {\"id\": 4, \"text\": \"Endoscopia digestiva alta\"}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": "Premisas:\n- \"Un hombre de 32 años, adicto a drogas por vía parenteral y que ha salido recientemente de la cárcel, tiene una prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración.\"\n- \"Hace un año, el PPD fue negativo, actualmente está asintomático, la serología de VIH es negativa y su radiografía de tórax es normal.\"\n\nClaims:\n- {\"id\": 1, \"text\": \"¿Qué actitud entre las siguientes le parece más adecuada?\"}"
+  }
+]

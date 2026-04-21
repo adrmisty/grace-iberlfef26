@@ -11,8 +11,8 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from google import genai
-from google.genai import types as genaitypes
+import google.generativeai as genai
+from google.generativeai import types as genaitypes
 from openai import OpenAI
 import re
 import src.config as settings
@@ -76,33 +76,38 @@ class Model:
 
     # --- subtasks prompting -------------------------------------------------------------------------
 
-    def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None):
+# --- subtasks prompting -------------------------------------------------------------------------
+
+    def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 1 (relevance detection)...")
         results = []
         for case in test_data:
-            user_prompt = prompts.build_s1_prompt(case, few_shot_examples)
-            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_1"], user_prompt, max_new_tokens=2048, prefill="{\n")
+            user_prompt = prompts.build_s1_prompt(case, few_shot_examples, lang=lang)
+            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_1"]
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n")
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
-    def run_subtask_2(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None):
+    def run_subtask_2(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 2 (span detection)...")
         results = []
         for case in test_data:
-            user_prompt = prompts.build_s2_prompt(case, few_shot_examples)
-            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_2"], user_prompt, max_new_tokens=2048, prefill="Premisas:\n-")
+            user_prompt = prompts.build_s2_prompt(case, few_shot_examples, lang=lang)
+            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_2"]
+            #  prefill from "Premisas:\n-" to "{\n" to enforce the strict JSON output
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n")
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
-    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128):
+    def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128, lang: str = settings.LANG):
         logging.info(f"> Subtask 3 (relation detection)...")
         results = []
         for relation in test_relations:
-            user_prompt = prompts.build_s3_prompt(relation, few_shot_examples)
-            response = self._generate(prompts.SYSTEM_PROMPT["SUBTASK_3"], user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
+            user_prompt = prompts.build_s3_prompt(relation, few_shot_examples, lang=lang)
+            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_3"]
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
             results.append({"id": relation.get("id"), "prediction": response.strip()})
         return results
-
 
 # --- hugging face models -------------------------------------------------------------------------
 

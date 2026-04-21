@@ -5,15 +5,17 @@
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
 # mar-2026
 
+from collections import defaultdict
 import json
 import logging
 import re
 from pathlib import Path
+from src.case import load_cases_casiMedicos, load_relations_casiMedicos
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
 def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path, output_path: Path):
-    """Merges individual subtask predictions into the official IberLEF submission format."""
+    """Merges individual subtask predictions from+into the official IberLEF submission format."""
     logging.info(f"> Compiling final submission file...")
     
     if not original_json_path.exists():
@@ -32,17 +34,14 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
             return {item["id"]: item["prediction"] for item in json.load(f)}
 
     def find_span(raw_text, span):
-        # Strip trailing/leading punctuation and literal quotes hallucinated by the LLM
         span = span.strip().strip('"').strip("'")
         if not span:
             return -1, span
             
-        # 1. Try exact match
         start = raw_text.find(span)
         if start != -1:
             return start, span
 
-        # 2. Try regex match (handles weird spacing)
         pattern = re.escape(span).replace(r'\ ', r'\s+')
         match = re.search(pattern, raw_text)
         if match:
@@ -65,9 +64,7 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
                 "relations": []
             }
 
-        # ------------------------------------------------------------------
-        # Subtask 1: sentence relevancy
-        # ------------------------------------------------------------------
+        # --- SUBTASK 1 ---
         num_sentences = len(case.get("metadata", {}).get("context_sentences", []))
         relevancy_list = []
         
@@ -92,9 +89,7 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
             
         case["predictions"]["sentence_relevancy"] = relevancy_list
 
-        # ------------------------------------------------------------------
-        # Subtask 2: entities (SAFE STRATEGY)
-        # ------------------------------------------------------------------
+        # --- SUBTASK 2 ---
         pred_entities = []
         entity_text_to_id = {} # CRITICAL for S3 mapping
         ent_counter = 1
@@ -108,7 +103,7 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
 
         if isinstance(s2_dict, dict):
 
-            # ---- Premises ----
+            # * premises *
             for text_span in s2_dict.get("premises", []):
                 if not isinstance(text_span, str) or not text_span.strip():
                     continue
@@ -127,7 +122,7 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
                     entity_text_to_id[actual_span] = ent_id
                     ent_counter += 1
 
-            # ---- Claims ----
+            # * claims *
             for item in s2_dict.get("claims", []):
                 if isinstance(item, dict):
                     text_span = item.get("text", "").strip()
@@ -154,9 +149,7 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
 
         case["predictions"]["entities"] = pred_entities
         
-        # ------------------------------------------------------------------
-        # Subtask 3: relations
-        # ------------------------------------------------------------------
+        # * relations *
         pred_relations = []
         
         if s3_preds:
@@ -250,6 +243,159 @@ def clean(filepath: Path):
 
     logging.info(f">>> Cleaned {cleaned_count} entries in {filepath.name}")
     
+def submit_casiMedicos(cases_path: Path, rels_path: Path, s1_path: Path, s2_path: Path, s3_path: Path, output_path: Path):
+    logging.info(f"> Compiling GRACE submission from CasiMedicos sources...")
+    
+    cases = load_cases_casiMedicos(cases_path)
+    gold_rels = load_relations_casiMedicos(rels_path)
+
+    rels_by_case = defaultdict(list)
+    for r in gold_rels:
+        rels_by_case[r["case_id"]].append(r)
+
+    def _load_preds(path: Path):
+        if not path or not path.exists(): 
+            return {}
+        with open(path, 'r', encoding='utf-8') as f:
+            return {item["id"]: item["prediction"] for item in json.load(f)}
+
+    s1_preds = _load_preds(s1_path)
+    s2_preds = _load_preds(s2_path)
+    s3_preds = _load_preds(s3_path)
+
+    def find_span(raw_text, span):
+        span = span.strip().strip('"').strip("'")
+        if not span: return -1, span
+        start = raw_text.find(span)
+        if start != -1: return start, span
+
+        pattern = re.escape(span).replace(r'\ ', r'\s+')
+        match = re.search(pattern, raw_text)
+        if match: return match.start(), match.group()
+
+        return -1, span
+
+    submission = []
+
+    # casiMedicos predictions into grace schema
+    for case in cases:
+        case_id = case["id"]
+        raw_text = " ".join(case.get("text", []))
+
+        pred_case = {
+            "id": case_id,
+            "predictions": {
+                "sentence_relevancy": [],
+                "entities": [],
+                "relations": []
+            }
+        }
+        
+        entity_text_to_id = {}
+        ent_counter = 1
+
+        # --- SUBTASK 1 ---
+        num_sentences = len(case.get("text", []))
+        s1_dict = s1_preds.get(case_id, {})
+        
+        if isinstance(s1_dict, str):
+            try: s1_dict = json.loads(s1_dict)
+            except: s1_dict = {}
+
+        for i in range(num_sentences):
+            val = s1_dict.get(str(i), s1_dict.get(i, False))
+            if isinstance(val, str): 
+                val = val.lower() in ["true", "1", "yes"]
+            pred_case["predictions"]["sentence_relevancy"].append("relevant" if val else "not-relevant")
+
+        # --- SUBTASK 2 ---
+        ent_counter = 1
+        s2_dict = s2_preds.get(case_id, {})
+        
+        if isinstance(s2_dict, str):
+            try: s2_dict = json.loads(s2_dict)
+            except: s2_dict = {}
+
+        if isinstance(s2_dict, dict):
+            # * premises *
+            for p_text in s2_dict.get("premises", []):
+                if not isinstance(p_text, str) or not p_text.strip(): continue
+                start_idx, actual_span = find_span(raw_text, p_text)
+                if start_idx != -1:
+                    ent_id = f"pred_e{ent_counter}"
+                    pred_case["predictions"]["entities"].append({
+                        "id": ent_id, "text": actual_span,
+                        "start": start_idx, "end": start_idx + len(actual_span), "type": "Premise"
+                    })
+                    entity_text_to_id[actual_span] = ent_id
+                    ent_counter += 1
+
+            # * claims *
+            for c_obj in s2_dict.get("claims", []):
+                if isinstance(c_obj, dict):
+                    text_span = c_obj.get("text", "").strip()
+                    claim_id = str(c_obj.get("id", f"pred_c{ent_counter}"))
+                else:
+                    text_span = str(c_obj).strip()
+                    claim_id = f"pred_c{ent_counter}"
+
+                if not text_span or text_span.lower() == "nan": continue
+                start_idx, actual_span = find_span(raw_text, text_span)
+                if start_idx != -1:
+                    pred_case["predictions"]["entities"].append({
+                        "id": claim_id, "text": actual_span,
+                        "start": start_idx, "end": start_idx + len(actual_span), "type": "Claim"
+                    })
+                    entity_text_to_id[actual_span] = claim_id
+                    ent_counter += 1
+
+        # --- SUBTASK 3 ---
+        case_rels = rels_by_case.get(case_id, [])
+        for r in case_rels:
+            rel_id = r["id"]  # e.g., "274_73_en_0"
+            predicted_label = s3_preds.get(rel_id)
+
+            # Unwrap prediction
+            if isinstance(predicted_label, str):
+                try: predicted_label = json.loads(predicted_label).get("label", "")
+                except: pass
+            elif isinstance(predicted_label, dict):
+                predicted_label = predicted_label.get("label", "")
+
+            if not predicted_label: continue
+            predicted_label = predicted_label.strip().capitalize()
+            if predicted_label not in ["Support", "Attack"]: continue
+
+            # original relation text back to our newly predicted 'pred_eX' entity IDs
+            def find_pred_id(gold_text):
+                if not gold_text: return None
+                if gold_text in entity_text_to_id: return entity_text_to_id[gold_text]
+                for ent in pred_case["predictions"]["entities"]:
+                    if gold_text in ent["text"] or ent["text"] in gold_text:
+                        return ent["id"]
+                return None
+
+            p_arg1_id = find_pred_id(r["head"])
+            p_arg2_id = find_pred_id(r["tail"])
+
+            if p_arg1_id and p_arg2_id:
+                # relation ID clean (e.g. "0" instead of "274_73_en_0")
+                clean_rel_id = rel_id.split("_")[-1]
+                pred_case["predictions"]["relations"].append({
+                    "id": clean_rel_id,
+                    "arg1_id": p_arg1_id,
+                    "arg2_id": p_arg2_id,
+                    "relation_type": predicted_label
+                })
+
+        submission.append(pred_case)
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(submission, f, ensure_ascii=False, indent=2)
+
+    logging.info(f"\t>>> Successfully compiled submission file: {output_path.name}")
+        
 # --- aux -------------------------------------------------------------------------
 
 def _json_parse(text):

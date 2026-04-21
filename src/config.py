@@ -14,15 +14,26 @@ ROOT_DIR: Path = Path(__file__).resolve().parent.parent
 
 HF_REPO: str = "HiTZ/casimedicos-arg"
 
+LANG = "es"
+
 BASE_DATA_DIR: Path = ROOT_DIR / "data"
 SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
 GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
-MODEL_DIR: Path = ROOT_DIR / "model" / "grace"
+CASIMEDICOS_DATA_DIR: Path = BASE_DATA_DIR / "casimedicos" / "splits"
+
+MODEL_DIR: Path = ROOT_DIR / "model" / "grace" / LANG
 RELATIONS_DIR: Path = BASE_DATA_DIR / "relations"
 
 GRACE_SPLITS: Dict[str, Path] = {
     "train": GRACE_DATA_DIR / "track_2_train.json",
     "validation": GRACE_DATA_DIR / "track_2_dev.json",
+}
+
+#LANGS = "en-es"/multilingual
+CASIMEDICOS_SPLITS: Dict[str, Path] = {
+    "train": CASIMEDICOS_DATA_DIR / "train" / f"train_{LANG}_ordered.jsonl",
+    "validation": CASIMEDICOS_DATA_DIR / "dev" / f"dev_{LANG}_ordered.jsonl",
+    "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
 }
 
 

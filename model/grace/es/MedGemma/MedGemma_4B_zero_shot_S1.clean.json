@@ -1,0 +1,216 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": false
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": {
+      "0": false,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": false
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": {
+      "0": true,
+      "1": false
+    }
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": false
+    }
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": {
+      "0": true,
+      "1": false,
+      "2": false
+    }
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": {
+      "0": true,
+      "1": false,
+      "2": false
+    }
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false,
+      "3": false
+    }
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": false
+    }
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": {
+      "0": true,
+      "1": false
+    }
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": {
+      "0": false
+    }
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": false
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": false
+    }
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": {
+      "0": true,
+      "1": false
+    }
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": {
+      "0": true,
+      "1": false
+    }
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": {
+      "0": true,
+      "1": true,
+      "2": false
+    }
+  }
+]

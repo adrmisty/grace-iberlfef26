@@ -6,9 +6,9 @@
 # mar-2026
 
 import argparse
-from src.grace.task import run_subtasks, evaluate_subtasks
-from src.grace.post import clean, submit
-from src.grace.model import MODEL_FACTORY
+from .task import run_subtasks, evaluate_subtasks
+from .post import clean, submit, submit_casiMedicos
+from .model import MODEL_FACTORY
 import src.config as settings
 import logging
 
@@ -27,14 +27,16 @@ def main():
     parser.add_argument("--settings", nargs="+", default=["zero_shot", "few_shot"], help="Prompt settings")
     parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3"], help="Task numbers")
 
+    parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
+
     args = parser.parse_args()
     
     config_entry = MODEL_FACTORY.get(args.model.lower())
     model_prefix = config_entry["prefix"] if config_entry else "Qwen"
 
     if args.run:
-        run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks)
-
+        run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset)
+        
     if args.post:
         for size in args.sizes:
             for setting in args.settings:
@@ -43,7 +45,8 @@ def main():
                     clean(filepath=path)
 
     if args.submit:
-        test_data = settings.GRACE_SPLITS["validation"]
+        logging.info(f"> Compiling submissions for dataset format: {args.dataset.upper()}")
+        
         for size in args.sizes:
             for setting in args.settings:
                 s1_path = settings.get_prediction_path(model_prefix, size, setting, "S1", cleaned=True)
@@ -53,12 +56,29 @@ def main():
                 out_dir = settings.MODEL_DIR / size
                 output_path = out_dir / f"{model_prefix}_{size}_{setting}_submission.json"
                 
-                submit(test_data, s1_path, s2_path, s3_path, output_path)
+                # CASIMEDICOS
+                if args.dataset == "casimedicos":
+                    cases_path = settings.CASIMEDICOS_SPLITS["validation"]
+                    
+                    rels_name = cases_path.stem.replace("_ordered", "_relations") + ".jsonl"
+                    rels_path = cases_path.with_name(rels_name)
+                    
+                    submit_casiMedicos(cases_path, rels_path, s1_path, s2_path, s3_path, output_path)
+                    
+                else: # GRACE
+                    original_json_path = settings.GRACE_SPLITS["validation"]
+                    submit(original_json_path, s1_path, s2_path, s3_path, output_path)
 
     if args.eval:
         for size in args.sizes:
             for setting in args.settings:
-                evaluate_subtasks(model_type=args.model, model_size=size, setting=setting, tasks=args.tasks)
-
+                evaluate_subtasks(
+                    model_type=args.model, 
+                    model_size=size, 
+                    setting=setting, 
+                    tasks=args.tasks,
+                    dataset=args.dataset 
+                )
+                
 if __name__ == "__main__":
     main()

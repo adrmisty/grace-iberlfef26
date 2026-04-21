@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": "{\n\"0\": true,\n\"1\": true,\n\"2\": true,\n\"3\": true,\n\"4\": false\n}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": true,\n  \"3\": false\n}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": true,\n  \"3\": false\n}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": "{\n\"0\": true,\n\"1\": true,\n\"2\": true,\n\"3\": true,\n\"4\": true,\n\"5\": true,\n\"6\": true,\n\"7\": false\n}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": "{\n  \"0\": true,\n  \"1\": false\n}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": "{\n\"0\": true,\n\"1\": true,\n\"2\": false\n}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": true,\n  \"3\": true,\n  \"4\": true,\n  \"5\": false\n}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": "{\"0\": true, \"1\": true, \"2\": false, \"3\": false}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "{\n\"0\": true,\n\"1\": true,\n\"2\": true,\n\"3\": true,\n\"4\": true,\n\"5\": true,\n\"6\": true,\n\"7\": true,\n\"8\": false\n}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": "{\"0\": true, \"1\": false}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": "{\n  \"0\": true\n}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": true,\n  \"3\": true,\n  \"4\": true,\n  \"5\": true,\n  \"6\": true,\n  \"7\": true,\n  \"8\": true,\n  \"9\": false,\n  \"10\": false\n}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": true,\n  \"3\": false\n}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": "{\n  \"0\": true,\n  \"1\": false\n}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": "{\n\"0\": true,\n\"1\": false\n}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": "{\n  \"0\": true,\n  \"1\": true,\n  \"2\": false\n}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": "{\n\"0\": true,\n\"1\": true,\n\"2\": false\n}"
+  }
+]

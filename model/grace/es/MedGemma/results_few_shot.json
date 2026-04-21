@@ -1,0 +1,237 @@
+{
+  "Overall": 0.3211,
+  "Subtask 1: Relevant F1": 0.8527,
+  "Subtask 2: Scope A Strict Micro F1": 0.1107,
+  "Subtask 3: Strict Macro F1": 0.0,
+  "subtask1": {
+    "official_score": 0.8527,
+    "macro_avg": {
+      "f1": 0.7997,
+      "precision": 0.8162,
+      "recall": 0.7923
+    },
+    "micro_avg": {
+      "f1": 0.8137,
+      "precision": 0.8137,
+      "recall": 0.8137
+    },
+    "relevant": {
+      "f1": 0.8527,
+      "precision": 0.8088,
+      "recall": 0.9016
+    },
+    "not-relevant": {
+      "f1": 0.7467,
+      "precision": 0.8235,
+      "recall": 0.6829
+    }
+  },
+  "subtask2": {
+    "official_score": 0.1107,
+    "scope_A_end_to_end": {
+      "strict": {
+        "per_type": {
+          "Premise": {
+            "f1": 0.1809,
+            "precision": 0.2537,
+            "recall": 0.1405,
+            "tp": 17,
+            "fp": 50,
+            "fn": 104
+          },
+          "Claim": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tp": 0,
+            "fp": 9,
+            "fn": 110
+          }
+        },
+        "macro_avg": {
+          "f1": 0.0904,
+          "precision": 0.1269,
+          "recall": 0.0702
+        },
+        "micro_avg": {
+          "f1": 0.1107,
+          "precision": 0.2237,
+          "recall": 0.0736,
+          "tp": 17,
+          "fp": 59,
+          "fn": 214
+        }
+      },
+      "relaxed": {
+        "per_type": {
+          "Premise": {
+            "f1": 0.2872,
+            "precision": 0.403,
+            "recall": 0.2231,
+            "tp": 27,
+            "fp": 40,
+            "fn": 94
+          },
+          "Claim": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tp": 0,
+            "fp": 9,
+            "fn": 110
+          }
+        },
+        "macro_avg": {
+          "f1": 0.1436,
+          "precision": 0.2015,
+          "recall": 0.1116
+        },
+        "micro_avg": {
+          "f1": 0.1759,
+          "precision": 0.3553,
+          "recall": 0.1169,
+          "tp": 27,
+          "fp": 49,
+          "fn": 204
+        }
+      }
+    },
+    "scope_B_oracle": {
+      "strict": {
+        "per_type": {
+          "Premise": {
+            "f1": 0.1988,
+            "precision": 0.3091,
+            "recall": 0.1466,
+            "tp": 17,
+            "fp": 38,
+            "fn": 99
+          },
+          "Claim": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tp": 0,
+            "fp": 7,
+            "fn": 1
+          }
+        },
+        "macro_avg": {
+          "f1": 0.0994,
+          "precision": 0.1545,
+          "recall": 0.0733
+        },
+        "micro_avg": {
+          "f1": 0.1899,
+          "precision": 0.2742,
+          "recall": 0.1453,
+          "tp": 17,
+          "fp": 45,
+          "fn": 100
+        }
+      },
+      "relaxed": {
+        "per_type": {
+          "Premise": {
+            "f1": 0.3158,
+            "precision": 0.4909,
+            "recall": 0.2328,
+            "tp": 27,
+            "fp": 28,
+            "fn": 89
+          },
+          "Claim": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "tp": 0,
+            "fp": 7,
+            "fn": 1
+          }
+        },
+        "macro_avg": {
+          "f1": 0.1579,
+          "precision": 0.2455,
+          "recall": 0.1164
+        },
+        "micro_avg": {
+          "f1": 0.3017,
+          "precision": 0.4355,
+          "recall": 0.2308,
+          "tp": 27,
+          "fp": 35,
+          "fn": 90
+        }
+      }
+    }
+  },
+  "subtask3": {
+    "official_score": 0.0,
+    "strict": {
+      "per_type": {
+        "Support": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 133
+        },
+        "Attack": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 138
+        }
+      },
+      "macro_avg": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "micro_avg": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 7,
+        "fn": 271
+      }
+    },
+    "relaxed": {
+      "per_type": {
+        "Support": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 133
+        },
+        "Attack": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 138
+        }
+      },
+      "macro_avg": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "micro_avg": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "fp": 7,
+        "fn": 271
+      }
+    }
+  }
+}

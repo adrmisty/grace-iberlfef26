@@ -13,7 +13,7 @@ from typing import List, Dict, Any
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
-# --- casiMedicos-arg case parsing utilities ---
+# --- GRACE shared task parsing utilities ---
 
 def load_cases(file_path: Path) -> List[Dict[str, Any]]:
     """Loads and parses the official shared task JSON format for S1 and S2."""
@@ -109,7 +109,7 @@ def load_relations(file_path: Path) -> List[Dict[str, Any]]:
 # --- casiMedicos-arg case parsing utilities ---
 
 def load_cases_casiMedicos(file_path: Path) -> List[Dict[str, Any]]:
-    """Loads and parses BIO-tagged clinical cases."""
+    """Loads and parses BIO-tagged clinical cases, supporting both .json and .jsonl."""
     logging.info(f"> Loading cases from {file_path.name}")
     parsed_cases = []
 
@@ -117,23 +117,46 @@ def load_cases_casiMedicos(file_path: Path) -> List[Dict[str, Any]]:
         logging.error(f"\t (!) File not found: {file_path}")
         return parsed_cases
 
-    with open(file_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
+    # --- standard .json files ---
+    if file_path.suffix.lower() == ".json":
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            
+            if isinstance(data, dict):
+                data = [{"id": k, **v} if isinstance(v, dict) else v for k, v in data.items()]
+            elif not isinstance(data, list):
+                data = [data]
+                
+            for raw_record in data:
+                if "id" in raw_record or "case_id" in raw_record:
+                    case_id = str(raw_record.get("id", raw_record.get("case_id")))
+                    parsed_cases.append(parse_case_casiMedicos(case_id, raw_record))
+                else:
+                    for case_id, case_data in raw_record.items():
+                        if isinstance(case_data, dict):
+                            parsed_cases.append(parse_case_casiMedicos(str(case_id), case_data))
+                        elif isinstance(case_data, list) and not case_data:
+                            parsed_cases.append(parse_case_casiMedicos(str(case_id), {}))
+                            
+    # --- line-by-line .jsonl files ---
+    else:
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
 
-            raw_record = json.loads(line)
+                raw_record = json.loads(line)
 
-            if "id" in raw_record or "case_id" in raw_record:
-                case_id = str(raw_record.get("id", raw_record.get("case_id")))
-                parsed_cases.append(parse_case_casiMedicos(case_id, raw_record))
-            else:
-                for case_id, case_data in raw_record.items():
-                    if isinstance(case_data, dict):
-                        parsed_cases.append(parse_case_casiMedicos(str(case_id), case_data))
-                    elif isinstance(case_data, list) and not case_data:
-                        parsed_cases.append(parse_case_casiMedicos(str(case_id), {}))
+                if "id" in raw_record or "case_id" in raw_record:
+                    case_id = str(raw_record.get("id", raw_record.get("case_id")))
+                    parsed_cases.append(parse_case_casiMedicos(case_id, raw_record))
+                else:
+                    for case_id, case_data in raw_record.items():
+                        if isinstance(case_data, dict):
+                            parsed_cases.append(parse_case_casiMedicos(str(case_id), case_data))
+                        elif isinstance(case_data, list) and not case_data:
+                            parsed_cases.append(parse_case_casiMedicos(str(case_id), {}))
 
     return parsed_cases
 
@@ -144,7 +167,9 @@ def parse_case_casiMedicos(case_id: str, case_data: Dict[str, Any]) -> Dict[str,
 
     sentences = []
     relevance = {}
-    premises, claims = [], []
+    premises = []
+    claims = []
+    claim_counter = 1 # Counter to assign IDs to claims
 
     for i, (tokens, tags) in enumerate(zip(text_lists, label_lists)):
         sentence_str = " ".join(tokens).replace(" ,", ",").replace(" .", ".")
@@ -161,7 +186,8 @@ def parse_case_casiMedicos(case_id: str, case_data: Dict[str, Any]) -> Dict[str,
                     if current_type == "Premise":
                         premises.append(span)
                     elif current_type == "Claim":
-                        claims.append(span)
+                        claims.append({"id": str(claim_counter), "text": span})
+                        claim_counter += 1
 
                 current_span = [token]
                 current_type = tag.split("-")[1]
@@ -175,7 +201,8 @@ def parse_case_casiMedicos(case_id: str, case_data: Dict[str, Any]) -> Dict[str,
                     if current_type == "Premise":
                         premises.append(span)
                     elif current_type == "Claim":
-                        claims.append(span)
+                        claims.append({"id": str(claim_counter), "text": span})
+                        claim_counter += 1
                 current_span, current_type = [], None
 
         if current_span:
@@ -183,7 +210,8 @@ def parse_case_casiMedicos(case_id: str, case_data: Dict[str, Any]) -> Dict[str,
             if current_type == "Premise":
                 premises.append(span)
             elif current_type == "Claim":
-                claims.append(span)
+                claims.append({"id": str(claim_counter), "text": span})
+                claim_counter += 1
 
     return {
         "id": case_id,
@@ -193,29 +221,49 @@ def parse_case_casiMedicos(case_id: str, case_data: Dict[str, Any]) -> Dict[str,
         "claims": claims,
     }
 
+
 def load_relations_casiMedicos(file_path: Path) -> List[Dict[str, Any]]:
-    """Flattens the _relations.jsonl file into individual evaluation targets for Subtask 3."""
+    """Flattens the relations file into individual evaluation targets, supporting .json and .jsonl."""
     relations_list = []
     if not file_path.exists():
         logging.error(f"\t> (!) File not found: {file_path}")
         return relations_list
         
-    with open(file_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line: continue
-            
-            record = json.loads(line)
-            if isinstance(record, list): record = record[0]
-            
-            for case_id, rels in record.items():
-                for idx, (head, tail, label) in enumerate(rels):
-                    relations_list.append({
-                        "id": f"{case_id}_{idx}",
-                        "case_id": case_id,
-                        "head": head,
-                        "tail": tail,
-                        "label": label
-                    })
+    # --- standard .json files ---
+    if file_path.suffix.lower() == ".json":
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict): data = [data]
+            for record in data:
+                if isinstance(record, list): record = record
+                for case_id, rels in record.items():
+                    for idx, (head, tail, label) in enumerate(rels):
+                        relations_list.append({
+                            "id": f"{case_id}_{idx}",
+                            "case_id": case_id,
+                            "head": head.strip(),
+                            "tail": tail.strip(),
+                            "label": label
+                        })
+                        
+    # --- line-by-line .jsonl files ---
+    else:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line: continue
+                
+                record = json.loads(line)
+                if isinstance(record, list): record = record
+                
+                for case_id, rels in record.items():
+                    for idx, (head, tail, label) in enumerate(rels):
+                        relations_list.append({
+                            "id": f"{case_id}_{idx}",
+                            "case_id": case_id,
+                            "head": head.strip(),
+                            "tail": tail.strip(),
+                            "label": label
+                        })
                     
     return relations_list

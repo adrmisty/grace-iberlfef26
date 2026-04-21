@@ -10,7 +10,7 @@ import json
 import logging
 from pathlib import Path
 from typing import List, Dict, Any
-from src.case import load_cases, load_relations
+from src.case import load_cases, load_relations, load_cases_casiMedicos, load_relations_casiMedicos
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 EVAL_PATH = "eval.txt"
@@ -21,7 +21,7 @@ class GraceEvaluator:
 
     # --- SUBTASK 1 -------------------------------------------------------------------------
 
-    def evaluate_subtask_1(self, predictions_path: Path, ground_truth_path: Path):
+    def evaluate_subtask_1(self, predictions_path: Path, ground_truth_path: Path, dataset: str = "grace"):
         """SUBTASK 1: Sentence relevance detection (F1-score positive class)."""
         header = f"> Evaluating Subtask 1 metrics for: {predictions_path.name}"
         logging.info(header)
@@ -30,7 +30,13 @@ class GraceEvaluator:
         with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"\n{header}\n")
 
-        gt_map = {case["id"]: case["relevance_labels"] for case in load_cases(ground_truth_path)}
+        # Dynamically select loader
+        if dataset == "casimedicos":
+            cases = load_cases_casiMedicos(ground_truth_path)
+        else:
+            cases = load_cases(ground_truth_path)
+
+        gt_map = {case["id"]: case["relevance_labels"] for case in cases}
         raw_predictions = self._load_json(predictions_path)
 
         tp, fp, tn, fn = 0, 0, 0, 0
@@ -55,7 +61,7 @@ class GraceEvaluator:
 
     # --- SUBTASK 2 -------------------------------------------------------------------------
     
-    def evaluate_subtask_2(self, predictions_path: Path, ground_truth_path: Path):
+    def evaluate_subtask_2(self, predictions_path: Path, ground_truth_path: Path, dataset: str = "grace"):
         """SUBTASK 2: Span detection (exact match F1)."""
         header = f"> Evaluating Subtask 2 metrics for: {predictions_path.name}"
         logging.info(header)
@@ -64,7 +70,13 @@ class GraceEvaluator:
         with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"\n{header}\n")
 
-        gt_map = {c["id"]: c for c in load_cases(ground_truth_path)}
+        # Dynamically select loader
+        if dataset == "casimedicos":
+            cases = load_cases_casiMedicos(ground_truth_path)
+        else:
+            cases = load_cases(ground_truth_path)
+
+        gt_map = {c["id"]: c for c in cases}
         preds = self._load_json(predictions_path)
 
         tp, fp, fn = 0, 0, 0
@@ -76,8 +88,10 @@ class GraceEvaluator:
 
             pred_spans = set(self._extract_predicted_spans(record["prediction"]))
             
+            # Extract ground truth spans, safely handling dict vs string lists
             gt_spans_raw = gt_map[case_id].get("premises", []) + gt_map[case_id].get("claims", [])
-            gt_spans = set(self._normalize_span(s) for s in gt_spans_raw)
+            gt_spans_clean = [s.get("text", "") if isinstance(s, dict) else s for s in gt_spans_raw]
+            gt_spans = set(self._normalize_span(s) for s in gt_spans_clean if s)
 
             tp += len(pred_spans & gt_spans)
             fp += len(pred_spans - gt_spans)
@@ -87,7 +101,7 @@ class GraceEvaluator:
 
     # --- SUBTASK 3 -------------------------------------------------------------------------
 
-    def evaluate_subtask_3(self, predictions_path: Path, ground_truth_path: Path):
+    def evaluate_subtask_3(self, predictions_path: Path, ground_truth_path: Path, dataset: str = "grace"):
         """SUBTASK 3: Relation detection (Macro F1-score)."""
         header = f"> Evaluating Subtask 3 metrics for: {predictions_path.name}"
         logging.info(header)
@@ -96,8 +110,16 @@ class GraceEvaluator:
         with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"\n{header}\n")
 
+        # Dynamically derive relations file if using CasiMedicos
+        if dataset == "casimedicos":
+            rel_name = ground_truth_path.stem.replace("_ordered", "_relations") + ".jsonl"
+            rel_path = ground_truth_path.with_name(rel_name)
+            relations = load_relations_casiMedicos(rel_path)
+        else:
+            relations = load_relations(ground_truth_path)
+
         preds = self._load_json(predictions_path)
-        gt_map = {x["id"]: x["label"] for x in load_relations(ground_truth_path)}
+        gt_map = {x["id"]: x["label"] for x in relations}
 
         y_true, y_pred = [], []
 
@@ -200,7 +222,6 @@ class GraceEvaluator:
             try:
                 prediction = json.loads(prediction)
             except json.JSONDecodeError:
-                logging.warning("\t> (!) Failed to parse prediction JSON.")
                 return {}
 
         normalized = {}
@@ -214,9 +235,18 @@ class GraceEvaluator:
 
     def _extract_predicted_spans(self, prediction: Any) -> List[str]:
         if isinstance(prediction, dict):
-            spans = prediction.get("premises", []) + prediction.get("claims", []) + \
-                    prediction.get("Premisas", []) + prediction.get("Afirmaciones", []) + prediction.get("Claims", [])
-            return [self._normalize_span(s) for s in spans if s.strip()]
+            raw_spans = prediction.get("premises", []) + prediction.get("claims", []) + \
+                        prediction.get("Premisas", []) + prediction.get("Afirmaciones", []) + prediction.get("Claims", [])
+            
+            # Safely unpack dictionaries (like claims) vs strings (like premises)
+            clean_spans = []
+            for s in raw_spans:
+                if isinstance(s, dict):
+                    clean_spans.append(s.get("text", ""))
+                elif isinstance(s, str):
+                    clean_spans.append(s)
+            
+            return [self._normalize_span(s) for s in clean_spans if s.strip()]
             
         prediction = self._clean_think_tags(str(prediction))
         spans = re.findall(r"\[(.*?)\]", prediction, re.DOTALL)
