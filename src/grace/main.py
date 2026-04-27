@@ -7,7 +7,7 @@
 
 import argparse
 from .task import run_subtasks, evaluate_subtasks
-from .post import clean, submit, submit_casiMedicos
+from .post import clean, submit
 from .model import MODEL_FACTORY
 import src.config as settings
 import logging
@@ -53,10 +53,11 @@ def main():
                 s2_path = settings.get_prediction_path(model_prefix, size, setting, "S2", cleaned=True)
                 s3_path = settings.get_prediction_path(model_prefix, size, setting, "S3", cleaned=True)
                 
-                out_dir = settings.MODEL_DIR / size
+                out_dir = settings.MODEL_DIR
                 output_path = out_dir / f"{model_prefix}_{size}_{setting}_submission.json"
                 
                 # CASIMEDICOS
+                """
                 if args.dataset == "casimedicos":
                     cases_path = settings.CASIMEDICOS_SPLITS["validation"]
                     
@@ -64,10 +65,10 @@ def main():
                     rels_path = cases_path.with_name(rels_name)
                     
                     submit_casiMedicos(cases_path, rels_path, s1_path, s2_path, s3_path, output_path)
-                    
-                else: # GRACE
+                """
+                if args.dataset == "grace": # GRACE
                     original_json_path = settings.GRACE_SPLITS["validation"]
-                    submit(original_json_path, s1_path, s2_path, s3_path, output_path)
+                    submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
 
     if args.eval:
         for size in args.sizes:
