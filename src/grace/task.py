@@ -89,12 +89,16 @@ def _save(data: List[Dict[str, Any]], out_file: Path):
         json.dump(data, f, ensure_ascii=False, indent=2)
     logging.info(f"\t >>> Saved results to {out_file.name}")
     
-def _load(n: int = 4, dataset: str = "grace") -> tuple:
-    """Loads cases and relations dynamically based on the dataset toggle."""
+    
+def _load(n: int = 4, dataset: str = "grace", balanced_split: bool = True) -> tuple:
+    """Loads cases and relations dynamically based on the dataset, with optional unified 50/50 split or randomized examples."""
     
     if dataset == "casimedicos":
         split = settings.CASIMEDICOS_SPLITS
         is_IOB = True
+    elif dataset == "unified":
+        split = settings.UNIFIED_SPLITS
+        is_IOB = False
     else:
         split = settings.GRACE_SPLITS
         is_IOB = False
@@ -124,11 +128,35 @@ def _load(n: int = 4, dataset: str = "grace") -> tuple:
     train_cases.sort(key=lambda x: str(x.get("id", "")))
     train_relations.sort(key=lambda x: str(x.get("id", "")))
     
-    import random
     random.seed(42)
-    fs_cases = random.sample(train_cases, n) if len(train_cases) >= n else train_cases
-    fs_relations = random.sample(train_relations, n) if len(train_relations) >= n else train_relations
+    
+    # ** EXTENSION: 50/50 split for the unified examples **
+    if balanced_split and dataset == "unified":
+        logging.info(f"> Enforcing 50/50 GRACE/CASIMEDICOS split for few-shot examples...")
+        grace_cases = [c for c in train_cases if c.get("origin", "").upper() == "GRACE"]
+        casi_cases = [c for c in train_cases if c.get("origin", "").upper() == "CASIMEDICOS"]
+        
+        half_n = n // 2
+        n_grace = half_n
+        n_casi = n - half_n
+        
+        fs_cases = []
+        fs_cases.extend(random.sample(grace_cases, min(n_grace, len(grace_cases))))
+        fs_cases.extend(random.sample(casi_cases, min(n_casi, len(casi_cases))))
+        
+        grace_rels = [r for r in train_relations if r.get("origin", "").upper() == "GRACE"]
+        casi_rels = [r for r in train_relations if r.get("origin", "").upper() == "CASIMEDICOS"]
+        
+        fs_relations = []
+        fs_relations.extend(random.sample(grace_rels, min(n_grace, len(grace_rels))))
+        fs_relations.extend(random.sample(casi_rels, min(n_casi, len(casi_rels))))
+        
+        random.shuffle(fs_cases)
+        random.shuffle(fs_relations)
+    
+    # ** RANDOM EXAMPLES **
+    else:
+        fs_cases = random.sample(train_cases, n) if len(train_cases) >= n else train_cases
+        fs_relations = random.sample(train_relations, n) if len(train_relations) >= n else train_relations
     
     return fs_cases, fs_relations, test_cases, test_relations
-
-
