@@ -128,7 +128,7 @@ def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]
     return prompt
 
 
-def build_s3_prompt(relation: Dict[str, Any], case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
+def build_s3_prompt(relation: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
     ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
     prompt = f"{SYSTEM_PROMPTS_alvaro_alex[lang]['SUBTASK_3']}\n\n"
     
@@ -140,7 +140,7 @@ def build_s3_prompt(relation: Dict[str, Any], case: Dict[str, Any], examples: Op
             prompt += f"{ui['expected']}\n{{\n  \"label\": \"{ex.get('label', '')}\"\n}}\n\n"
         prompt += f"{ui['ex_end']}\n\n"
     
-    case_text = case.get('text', [])
+    case_text = relation.get('text', [])
     if isinstance(case_text, list): case_text = " ".join(case_text)
     
     prompt += f"{ui['case']}\n{case_text}\n\n"
