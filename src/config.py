@@ -35,9 +35,9 @@ CASIMEDICOS_SPLITS: Dict[str, Path] = {
     "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
 }
 
-def get_prediction_path(model_prefix: str, size: str, setting: str, task: str, cleaned: bool = False) -> Path:
+def get_prediction_path(model_prefix: str, size: str, setting: str, task: str, dataset: str, cleaned: bool = False) -> Path:
     """Central source of truth for prediction file naming conventions."""
-    base_name = f"{model_prefix}_{size}_{setting}_{task}"
+    base_name = f"{model_prefix}_{size}_{setting}_{task}_{dataset}"
     ext = ".clean.json" if cleaned else ".json"
     output_dir = MODEL_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
