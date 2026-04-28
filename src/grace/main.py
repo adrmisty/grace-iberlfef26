@@ -27,7 +27,7 @@ def main():
     parser.add_argument("--settings", nargs="+", default=["zero_shot", "few_shot"], help="Prompt settings")
     parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3"], help="Task numbers")
 
-    parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
+    parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos", "unified"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
 
     args = parser.parse_args()
     
@@ -69,6 +69,11 @@ def main():
                 if args.dataset == "grace": # GRACE
                     original_json_path = settings.GRACE_SPLITS["validation"]
                     submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
+
+                if args.dataset == "unified": # UNIFIED GRACE+CASIMEDICOS
+                    original_json_path = settings.UNIFIED_SPLITS["validation"]
+                    submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
+
 
     if args.eval:
         for size in args.sizes:

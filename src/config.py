@@ -16,7 +16,7 @@ SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
 GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
 UNIFIED_DATA_DIR: Path = BASE_DATA_DIR / "unified"
 CASIMEDICOS_DATA_DIR: Path = BASE_DATA_DIR / "casimedicos" / "splits"
-MODEL_DIR: Path = ROOT_DIR / "model" / "grace" / LANG
+MODEL_DIR: Path = ROOT_DIR / "model" / "unified" / LANG
 
 
 # --- dataset splits ---
@@ -39,7 +39,7 @@ def get_prediction_path(model_prefix: str, size: str, setting: str, task: str, c
     """Central source of truth for prediction file naming conventions."""
     base_name = f"{model_prefix}_{size}_{setting}_{task}"
     ext = ".clean.json" if cleaned else ".json"
-    output_dir = MODEL_DIR / size
+    output_dir = MODEL_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    return output_dir / f"{base_name}{ext}"
+    return output_dir / model_prefix.capitalize() / size / f"{base_name}{ext}"

@@ -34,6 +34,15 @@ SYSTEM_PROMPTS: Dict[str, Dict[str, str]] = {
     }
 }
 
+SYSTEM_PROMPTS_alvaro_alex: Dict[str, Dict[str, str]] = {
+    "es": {
+        "SUBTASK_1": "Eres un experto clínico. Tu tarea es evaluar una lista numerada de oraciones de un caso clínico. Debes determinar si cada oración contiene evidencia médica RELEVANTE (síntomas, historial, pruebas) o si es irrelevante (texto de relleno, saludos, la pregunta final).\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON donde las claves son los índices de las oraciones y los valores son booleanos (true/false).",
+        "SUBTASK_2": "Eres un experto clínico especializado en NLP. Tu tarea es extraer fragmentos exactos de texto (spans). REGLAS CLAVE:\n1. PREMISAS: Hechos descriptivos del paciente (síntomas, antecedentes, exploración física). Extrae la frase exacta del texto sin alterar una sola coma.\n2. AFIRMACIONES (CLAIMS): TODAS las opciones de respuesta múltiple al final del caso. Cada opción es un claim distinto. Debes extraer su ID (1, 2, 3, etc.) y su texto exacto.\n3. EXCLUSIONES: NO extraigas la pregunta en sí (ej. '¿Qué diagnóstico...?').\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON válido con las claves 'premises' (lista de strings) y 'claims' (lista de objetos con 'id' e 'text').",
+        "SUBTASK_3": "Eres un razonador clínico. Se te dará una PREMISA (un hecho del paciente) y un CLAIM (una posible respuesta/diagnóstico). Tu tarea es determinar la relación argumentativa entre ellos:\n- 'Support': La premisa apoya, confirma o es consistente con el claim.\n- 'Attack': La premisa contradice, descarta o hace improbable el claim.\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un JSON válido con la clave 'label'."
+    },
+}
+
+
 EX_STRINGS = {
     "es": {"ex_start": "--- EJEMPLOS ---", "ex_end": "--- FIN DE EJEMPLOS ---", "case": "Caso clínico:", "sentences": "Oraciones:", "expected": "Salida esperada:", "analyze": "Caso clínico a analizar:", "premise": "Premisa:", "generate": "Genera el JSON de salida:"},
     "en": {"ex_start": "--- EXAMPLES ---", "ex_end": "--- END OF EXAMPLES ---", "case": "Clinical case:", "sentences": "Sentences:", "expected": "Expected output:", "analyze": "Clinical case to analyze:", "premise": "Premise:", "generate": "Generate the output JSON:"},
