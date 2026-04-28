@@ -34,14 +34,44 @@ SYSTEM_PROMPTS: Dict[str, Dict[str, str]] = {
     }
 }
 
+from typing import Dict
+
 SYSTEM_PROMPTS_alvaro_alex: Dict[str, Dict[str, str]] = {
     "es": {
-        "SUBTASK_1": "Eres un experto clínico. Tu tarea es evaluar una lista numerada de oraciones de un caso clínico. Debes determinar si cada oración contiene evidencia médica RELEVANTE (síntomas, historial, pruebas) o si es irrelevante (texto de relleno, saludos, la pregunta final).\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON donde las claves son los índices de las oraciones y los valores son booleanos (true/false).",
-        "SUBTASK_2": "Eres un experto clínico especializado en NLP. Tu tarea es extraer fragmentos exactos de texto (spans). REGLAS CLAVE:\n1. PREMISAS: Hechos descriptivos del paciente (síntomas, antecedentes, exploración física). Extrae la frase exacta del texto sin alterar una sola coma.\n2. AFIRMACIONES (CLAIMS): TODAS las opciones de respuesta múltiple al final del caso. Cada opción es un claim distinto. Debes extraer su ID (1, 2, 3, etc.) y su texto exacto.\n3. EXCLUSIONES: NO extraigas la pregunta en sí (ej. '¿Qué diagnóstico...?').\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un objeto JSON válido con las claves 'premises' (lista de strings) y 'claims' (lista de objetos con 'id' e 'text').",
-        "SUBTASK_3": "Eres un razonador clínico. Se te dará una PREMISA (un hecho del paciente) y un CLAIM (una posible respuesta/diagnóstico). Tu tarea es determinar la relación argumentativa entre ellos:\n- 'Support': La premisa apoya, confirma o es consistente con el claim.\n- 'Attack': La premisa contradice, descarta o hace improbable el claim.\nREGLA ESTRICTA: Devuelve ÚNICAMENTE un JSON válido con la clave 'label'."
-    },
+        "SUBTASK_1": (
+            "Eres un experto médico. Tu tarea es la Detección de Oraciones de Evidencia.\n"
+            "Analiza la siguiente oración dentro del caso clínico y determina si es \"relevant\" o \"not-relevant\" para apoyar o refutar las opciones de respuesta.\n\n"
+            "Caso Clínico:\n{AQUI SE INSERTA EL CONTEXTO}\n\n"
+            "Opciones:\n{AQUI SE INSERTAN LAS OPCIONES}\n\n"
+            "Oración a evaluar:\n{AQUÍ SE INSERTA LA ORACIÓN A EVALUAR}\n\n"
+            "Responde únicamente con \"relevant\" o \"not-relevant\"."
+        ),
+        "SUBTASK_2": (
+            "Eres un experto en razonamiento clínico y extracción de información. Tu tarea es identificar y "
+            "extraer fragmentos de texto exactos que representen 'Premises' o 'Claims' dentro de una oración "
+            "específica, utilizando el caso clínico completo solo como contexto de fondo.\n\n"
+            "Definiciones:\n"
+            "- Premise: Evidencia clínica objetiva (hechos, mediciones, síntomas, observaciones o antecedentes médicos del paciente).\n"
+            "- Claim: Opciones de respuesta o hipótesis (diagnósticos candidatos, propuestas de tratamiento o pronósticos).\n\n"
+            "Reglas de extracción:\n"
+            "1. Evalúa ÚNICAMENTE la \"Oración a analizar\".\n"
+            "2. El fragmento extraído debe ser una copia EXACTA (respetando mayúsculas, puntuación y espacios) de cómo aparece en la oración. Una 'Claim' puede abarcar la oración completa.\n"
+            "3. Si la oración no contiene ninguna 'Premise' ni 'Claim' (ej. texto de relleno o preguntas genéricas), debes devolver un array vacío: []\n"
+            "4. Responde ÚNICAMENTE con un array JSON válido, sin introducciones ni explicaciones previas.\n"
+            "5. Formato de salida: [{{\"text\": fragmento de texto, \"type\": Premise/Claim}}]\n"
+            "Contexto:\n{AQUI SE INSERTA EL CONTEXTO}\n"
+            "Oración a analizar:\n{AQUÍ SE INSERTA LA ORACIÓN A ANALIZAR}\n\n"
+        ),
+        "SUBTASK_3": (
+            "Eres un experto clínico. Tu tarea es evaluar la relación argumentativa entre una evidencia (Premise) y una opción candidata (Claim) basándote en el caso clínico proporcionado.\n\n"
+            "Caso Clínico:\n{AQUI SE INSERTA EL CONTEXTO}\n\n"
+            "Evidencia (Premise):\n{AQUI SE INSERTA LA PREMISE}\n\n"
+            "Opción (Claim):\n{AQUI SE INSERTA LA CLAIM}\n\n"
+            "Las posibles relaciones entre 'premise' y 'claim' son:\n- Support: Si la premise apoya, confirma o es consistente con la claim.\n- Attack: Si la premise contradice, refuta, descarta o hace improbable la claim.\n- Nothing: Si la premise y la claim no tienen relación.\n"
+            "Responde únicamente con 'Support', 'Attack' o 'Nothing'."
+        )
+    }
 }
-
 
 EX_STRINGS = {
     "es": {"ex_start": "--- EJEMPLOS ---", "ex_end": "--- FIN DE EJEMPLOS ---", "case": "Caso clínico:", "sentences": "Oraciones:", "expected": "Salida esperada:", "analyze": "Caso clínico a analizar:", "premise": "Premisa:", "generate": "Genera el JSON de salida:"},
@@ -52,9 +82,9 @@ EX_STRINGS = {
 
 # --- dynamic prompt builders ---
 
-def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = LANG) -> str:
-    ui = EX_STRINGS.get(lang, EX_STRINGS[lang])
-    prompt = ""
+def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
+    ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
+    prompt = f"{SYSTEM_PROMPTS_alvaro_alex[lang]['SUBTASK_1']}\n\n"
     
     if examples:
         prompt += f"{ui['ex_start']}\n"
@@ -62,7 +92,7 @@ def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]
             prompt += f"{ui['sentences']}\n"
             for i, sent in enumerate(ex.get('text', [])):
                 prompt += f"[{i}] {sent}\n"
-            prompt += f"{ui['expected']}\n\{{\n"
+            prompt += f"{ui['expected']}\n{{\n"
             labels = ex.get('relevance_labels', {})
             items = [f'  "{k}": {"true" if v else "false"}' for k, v in labels.items()]
             prompt += ",\n".join(items) + "\n}\n\n"
@@ -75,9 +105,10 @@ def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]
     prompt += f"\n{ui['generate']}"
     return prompt
 
-def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = LANG) -> str:
-    ui = EX_STRINGS.get(lang, EX_STRINGS[lang])
-    prompt = ""
+
+def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
+    ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
+    prompt = f"{SYSTEM_PROMPTS_alvaro_alex[lang]['SUBTASK_2']}\n\n"
     
     if examples:
         prompt += f"{ui['ex_start']}\n"
@@ -96,9 +127,10 @@ def build_s2_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]
     prompt += f"{ui['generate']}"
     return prompt
 
-def build_s3_prompt(relation: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = LANG) -> str:
-    ui = EX_STRINGS.get(lang, EX_STRINGS[lang])
-    prompt = ""
+
+def build_s3_prompt(relation: Dict[str, Any], case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
+    ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
+    prompt = f"{SYSTEM_PROMPTS_alvaro_alex[lang]['SUBTASK_3']}\n\n"
     
     if examples:
         prompt += f"{ui['ex_start']}\n"
@@ -107,7 +139,11 @@ def build_s3_prompt(relation: Dict[str, Any], examples: Optional[List[Dict[str, 
             prompt += f"Claim: \"{ex.get('tail', '')}\"\n"
             prompt += f"{ui['expected']}\n{{\n  \"label\": \"{ex.get('label', '')}\"\n}}\n\n"
         prompt += f"{ui['ex_end']}\n\n"
-        
+    
+    case_text = case.get('text', [])
+    if isinstance(case_text, list): case_text = " ".join(case_text)
+    
+    prompt += f"{ui['case']}\n{case_text}\n\n"
     prompt += f"{ui['premise']} \"{relation.get('head', '')}\"\n"
     prompt += f"Claim: \"{relation.get('tail', '')}\"\n\n"
     prompt += f"{ui['expected']} (JSON):"

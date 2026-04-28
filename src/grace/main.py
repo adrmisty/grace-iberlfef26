@@ -41,7 +41,7 @@ def main():
         for size in args.sizes:
             for setting in args.settings:
                 for task in args.tasks:
-                    path = settings.get_prediction_path(model_prefix, size, setting, task)
+                    path = settings.get_prediction_path(model_prefix, size, setting, task, dataset=args.dataset)
                     clean(filepath=path)
 
     if args.submit:
@@ -49,9 +49,9 @@ def main():
         
         for size in args.sizes:
             for setting in args.settings:
-                s1_path = settings.get_prediction_path(model_prefix, size, setting, "S1", cleaned=True)
-                s2_path = settings.get_prediction_path(model_prefix, size, setting, "S2", cleaned=True)
-                s3_path = settings.get_prediction_path(model_prefix, size, setting, "S3", cleaned=True)
+                s1_path = settings.get_prediction_path(model_prefix, size, setting, "S1", dataset=args.dataset, cleaned=True)
+                s2_path = settings.get_prediction_path(model_prefix, size, setting, "S2", dataset=args.dataset, cleaned=True)
+                s3_path = settings.get_prediction_path(model_prefix, size, setting, "S3", dataset=args.dataset, cleaned=True)
                 
                 out_dir = settings.MODEL_DIR
                 output_path = out_dir / f"{model_prefix}_{size}_{setting}_submission.json"
