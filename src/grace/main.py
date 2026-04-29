@@ -63,13 +63,13 @@ def main():
 
                 if "global" in args.tasks:
                     submit_global(original_json_path,
-                                settings.get_prediction_path(output_dir=out_dir, model_prefix=model_prefix, size=size, setting=setting, task="GLOBAL", dataset=args.dataset, cleaned=False),
+                                settings.get_prediction_path(output_dir=out_dir, model_prefix=model_prefix, size=size, setting=setting, task="global", dataset=args.dataset, cleaned=False),
                                 output_path)
                     continue
                 else:
-                    s1_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, task="S1", dataset=args.dataset, cleaned=True)
-                    s2_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, "S2", dataset=args.dataset, cleaned=True)
-                    s3_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, "S3", dataset=args.dataset, cleaned=True)
+                    s1_path = settings.get_prediction_path(model_prefix, size, setting, task="S1", dataset=args.dataset, output_dir=out_dir, cleaned=True)
+                    s2_path = settings.get_prediction_path(model_prefix, size, setting, task="S2", dataset=args.dataset, output_dir=out_dir, cleaned=True)
+                    s3_path = settings.get_prediction_path(model_prefix, size, setting, task="S3", dataset=args.dataset, output_dir=out_dir, cleaned=True)
                                         
                     submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
 
