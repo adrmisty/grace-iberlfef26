@@ -16,7 +16,7 @@ SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
 GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
 UNIFIED_DATA_DIR: Path = BASE_DATA_DIR / "unified"
 CASIMEDICOS_DATA_DIR: Path = BASE_DATA_DIR / "casimedicos" / "splits"
-MODEL_DIR: Path = ROOT_DIR / "model" / "unified" / LANG
+MODEL_DIR: Path = ROOT_DIR / "model"
 
 
 # --- dataset splits ---
@@ -35,11 +35,10 @@ CASIMEDICOS_SPLITS: Dict[str, Path] = {
     "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
 }
 
-def get_prediction_path(model_prefix: str, size: str, setting: str, task: str, dataset: str, cleaned: bool = False) -> Path:
+def get_prediction_path(output_dir : str, model_prefix: str, size: str, setting: str, task: str, dataset: str, cleaned: bool = False) -> Path:
     """Central source of truth for prediction file naming conventions."""
     base_name = f"{model_prefix}_{size}_{setting}_{task}_{dataset}"
     ext = ".clean.json" if cleaned else ".json"
-    output_dir = MODEL_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    return output_dir / model_prefix.capitalize() / size / f"{base_name}{ext}"
+    return output_dir / f"{base_name}{ext}"
