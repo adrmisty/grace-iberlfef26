@@ -11,7 +11,7 @@ import logging
 from pathlib import Path
 from typing import List, Dict, Any
 
-logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
+logging.basicConfig(level=logging.INFO, format="INFO: %(message)s", datefmt='%H:%M:%S')
 
 # --- GRACE shared task parsing utilities ---
 
@@ -99,6 +99,7 @@ def load_relations(file_path: Path) -> List[Dict[str, Any]]:
                 relations_list.append({
                     "id": f"{case_id}_{rel.get('id')}",
                     "case_id": case_id,
+                    "text": item.get('text', []),
                     "head": entity_map[arg1_id],
                     "tail": entity_map[arg2_id],
                     "label": rel.get("relation_type")
