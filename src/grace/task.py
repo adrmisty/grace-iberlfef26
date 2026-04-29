@@ -18,7 +18,7 @@ import src.config as settings
 from pathlib import Path
 from typing import List, Dict, Any
 
-logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s", datefmt='%H:%M:%S')
 
 def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], tasks: list[str] = ["S1", "S2", "S3"], dataset: str = "grace"):
     """Runs the prompting pipeline for all specified subtasks and settings for a given model."""    
@@ -30,7 +30,7 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
         model = MODEL_FACTORY[model_type.lower()]["class"](size)
             
         logging.info(f"\n========================================================")
-        logging.info(f"{model_prefix.upper()}-{size} / EVALUATION ({dataset.upper()})")
+        logging.info(f"{model_prefix.upper()}-{size} / EVALUATION ({dataset.upper()}) / ")
         logging.info(f"========================================================")
         
         for setting in prompt_settings:
@@ -49,8 +49,8 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
                 lang_code = "en" if dataset == "casimedicos" else "es"
                 results = run_func(data, few_shot_examples=examples, lang=lang_code)
                 
-                out_path = settings.get_prediction_path(model_prefix, size, setting, task_id)
-                out_path = out_path.with_name(out_path.name.replace(".json", f"_{dataset}.json")) 
+                out_path = settings.get_prediction_path(model_prefix, size, setting, task_id, dataset)
+                #out_path = out_path.with_name(out_path.name.replace(".json", f"_{dataset}.json")) 
                 
                 _save(results, out_path)
             
@@ -72,7 +72,7 @@ def evaluate_subtasks(model_type: str, model_size: str, setting: str, tasks: lis
         gold_path = settings.GRACE_SPLITS["validation"]
 
     for task_id in tasks:
-        pred_path = settings.get_prediction_path(model_prefix, model_size, setting, task_id, cleaned=True)
+        pred_path = settings.get_prediction_path(model_prefix, model_size, setting, task_id, dataset, cleaned=True)
         
         if task_id == "S1":
             evaluator.evaluate_subtask_1(pred_path, gold_path, dataset)

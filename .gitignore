@@ -1,3 +1,6 @@
 __pycache__/
 .vscode
-/model/
+/model/*
+.python-version
+pyproject.toml
+uv.lock
