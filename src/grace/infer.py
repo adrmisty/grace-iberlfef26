@@ -142,9 +142,9 @@ EX_STRINGS = {
 # --- dynamic prompt builders ---
 
 
-def build_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = "es") -> str:
+def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = "es") -> str:
     ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
-    prompt = f"{GLOBAL_SYSTEM_PROMPT}\n\n"
+    prompt = ""
 
     if examples:
         prompt += f"{ui['ex_start']}\n"

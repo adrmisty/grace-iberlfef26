@@ -82,12 +82,13 @@ class Model:
         logging.info(f"> GLOBAL PROMPT (S1+S2+S3)...")
         results = []
         for case in test_data:
-            user_prompt = infer.build_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
+            user_prompt = infer.build_usr_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
             sys_prompt = infer.GLOBAL_SYSTEM_PROMPT
             
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n")
             results.append({"id": case.get("id"), "predictions": response})
-
+        return results
+    
     # --- subtasks prompting -------------------------------------------------------------------------
 
 

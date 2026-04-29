@@ -7,7 +7,8 @@
 
 import argparse
 from .task import run_subtasks, run_global_subtasks, evaluate_subtasks
-from .post import clean, submit
+from .post import clean
+from .submit import submit, submit_global
 from .model import MODEL_FACTORY
 import src.config as settings
 import logging
@@ -50,33 +51,38 @@ def main():
     if args.submit:
         logging.info(f"> Compiling submissions for dataset format: {args.dataset.upper()}")
         
+        if args.dataset == "grace":
+            original_json_path = settings.GRACE_SPLITS["validation"]
+        else:
+            original_json_path = settings.UNIFIED_SPLITS["validation"]
+
         for size in args.sizes:
             for setting in args.settings:
-                s1_path = settings.get_prediction_path(model_prefix, size, setting, "S1", dataset=args.dataset, cleaned=True)
-                s2_path = settings.get_prediction_path(model_prefix, size, setting, "S2", dataset=args.dataset, cleaned=True)
-                s3_path = settings.get_prediction_path(model_prefix, size, setting, "S3", dataset=args.dataset, cleaned=True)
-                
-                out_dir = settings.MODEL_DIR
+                out_dir = settings.MODEL_DIR / args.dataset / model_prefix / size
                 output_path = out_dir / f"{model_prefix}_{size}_{setting}_submission.json"
-                
-                # CASIMEDICOS
-                """
-                if args.dataset == "casimedicos":
-                    cases_path = settings.CASIMEDICOS_SPLITS["validation"]
-                    
-                    rels_name = cases_path.stem.replace("_ordered", "_relations") + ".jsonl"
-                    rels_path = cases_path.with_name(rels_name)
-                    
-                    submit_casiMedicos(cases_path, rels_path, s1_path, s2_path, s3_path, output_path)
-                """
-                if args.dataset == "grace": # GRACE
-                    original_json_path = settings.GRACE_SPLITS["validation"]
+
+                if "global" in args.tasks:
+                    submit_global(original_json_path,
+                                settings.get_prediction_path(output_dir=out_dir, model_prefix=model_prefix, size=size, setting=setting, task="GLOBAL", dataset=args.dataset, cleaned=False),
+                                output_path)
+                    continue
+                else:
+                    s1_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, task="S1", dataset=args.dataset, cleaned=True)
+                    s2_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, "S2", dataset=args.dataset, cleaned=True)
+                    s3_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, "S3", dataset=args.dataset, cleaned=True)
+                                        
                     submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
 
-                if args.dataset == "unified": # UNIFIED GRACE+CASIMEDICOS
-                    original_json_path = settings.UNIFIED_SPLITS["validation"]
-                    submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
-
+                    # CASIMEDICOS
+                    """
+                    if args.dataset == "casimedicos":
+                        cases_path = settings.CASIMEDICOS_SPLITS["validation"]
+                        
+                        rels_name = cases_path.stem.replace("_ordered", "_relations") + ".jsonl"
+                        rels_path = cases_path.with_name(rels_name)
+                        
+                        submit_casiMedicos(cases_path, rels_path, s1_path, s2_path, s3_path, output_path)
+                    """
 
     if args.eval:
         for size in args.sizes:

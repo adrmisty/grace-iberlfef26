@@ -103,8 +103,8 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
                 lang_code = "en" if dataset == "casimedicos" else "es"
                 results = run_func(data, few_shot_examples=examples, lang=lang_code)
                 
-                out_path = settings.get_prediction_path(model_prefix, size, setting, task_id, dataset)
-                #out_path = out_path.with_name(out_path.name.replace(".json", f"_{dataset}.json")) 
+                out_dir = f"{model_prefix}_{size}_{setting}_{task_id}_{dataset}"
+                out_path = settings.get_prediction_path(out_dir, model_prefix, size, setting, task_id, dataset)
                 
                 _save(results, out_path)
             
