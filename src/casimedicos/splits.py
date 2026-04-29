@@ -39,47 +39,108 @@ class SplitGenerator:
 
     def _generate_mono(self):
         """Transfers source files from raw/ and relations/ into the unified splits/ directory."""
+        import json
         for lang in self.all_langs:
             for split in self.splits:
                 split_target_dir = self.splits_dir / split
-                
                 split_name = "validation" if split == "dev" else split
 
-                ordered_src = self.raw_dir / lang / f"{split_name}_{lang}_ordered.jsonl"
-                relations_src = self.relations_dir / lang / f"{split_name}_relations.jsonl"                
                 ordered_tgt = split_target_dir / f"{split}_{lang}_ordered.jsonl"
                 relations_tgt = split_target_dir / f"{split}_{lang}_relations.jsonl"
                 
-                # ** _ordered.jsonl formatting **
-                if ordered_src.exists():
+                # ** path resolution > jsonl or json **
+                ordered_src_options = [
+                    self.raw_dir / lang / f"{split_name}_{lang}_ordered.jsonl",
+                    self.raw_dir / f"{split_name}_{lang}_ordered.jsonl",
+                    self.raw_dir / lang / f"{split_name}_ordered.jsonl",
+                    self.raw_dir / lang / f"{split_name}_{lang}_ordered.json",
+                    self.raw_dir / f"{split_name}_{lang}_ordered.json",
+                    self.raw_dir / lang / f"{split_name}_ordered.json"
+                ]
+                ordered_src = next((path for path in ordered_src_options if path.exists()), None)
+
+                if ordered_src:
                     valid_lines = []
                     with open(ordered_src, "r", encoding="utf-8") as f:
-                        for line_num, line in enumerate(f, 1):
-                            normalized_line = self._normalize_ordered(line, lang, ordered_src.name, line_num)
-                            if normalized_line:
-                                valid_lines.append(normalized_line)
+                        if ordered_src.suffix == ".json":
+                            # [ json format ]
+                            try:
+                                data = json.load(f)
+                                if isinstance(data, dict):
+                                    if "id" in data: data = [data]
+                                    else: data = [{k: v} for k, v in data.items()]
+                                elif not isinstance(data, list):
+                                    data = []
+                                
+                                # [ normalize > jsonl]
+                                for line_num, record in enumerate(data, 1):
+                                    line_str = json.dumps(record, ensure_ascii=False)
+                                    normalized_line = self._normalize_ordered(line_str, lang, ordered_src.name, line_num)
+                                    if normalized_line:
+                                        valid_lines.append(normalized_line)
+                            except json.JSONDecodeError:
+                                logging.warning(f"\t(!) > Failed to parse JSON file: {ordered_src.name}")
+                        else:
+                            # [ jsonl format ]
+                            for line_num, line in enumerate(f, 1):
+                                normalized_line = self._normalize_ordered(line, lang, ordered_src.name, line_num)
+                                if normalized_line:
+                                    valid_lines.append(normalized_line)
                     
                     if valid_lines:
                         with open(ordered_tgt, "w", encoding="utf-8") as f:
                             f.writelines(valid_lines)
                     else:
                         logging.warning(f"\t(!) > All records dropped in {ordered_src.name}")
+                else:
+                    logging.warning(f"\t(!) > Missing monolingual ordered source for: {lang} ({split})")
                 
-                # ** _relations.jsonl formatting **
-                if relations_src.exists():
+                # ** path resolution > jsonl or json [relations] **
+                relations_src_options = [
+                    self.relations_dir / f"{split_name}_{lang}_relations.jsonl",
+                    self.relations_dir / lang / f"{split_name}_relations.jsonl",
+                    self.relations_dir / lang / f"{split_name}_{lang}_relations.jsonl",
+                    self.relations_dir / f"{split_name}_{lang}_relations.json",
+                    self.relations_dir / lang / f"{split_name}_relations.json",
+                    self.relations_dir / lang / f"{split_name}_{lang}_relations.json"
+                ]
+                relations_src = next((path for path in relations_src_options if path.exists()), None)
+
+                if relations_src:
                     valid_rels = []
                     with open(relations_src, "r", encoding="utf-8") as f:
-                        for line_num, line in enumerate(f, 1):
-                            normalized_rel = self._normalize_relations(line, lang, relations_src.name, line_num)
-                            if normalized_rel:
-                                valid_rels.append(normalized_rel)
+                        if relations_src.suffix == ".json":
+                            try:
+                                data = json.load(f)
+                                if isinstance(data, dict):
+                                    # {"case_id": [rels]}
+                                    for line_num, (k, v) in enumerate(data.items(), 1):
+                                        line_str = json.dumps({k: v}, ensure_ascii=False)
+                                        normalized_rel = self._normalize_relations(line_str, lang, relations_src.name, line_num)
+                                        if normalized_rel:
+                                            valid_rels.append(normalized_rel)
+                                elif isinstance(data, list):
+                                    for line_num, record in enumerate(data, 1):
+                                        line_str = json.dumps(record, ensure_ascii=False)
+                                        normalized_rel = self._normalize_relations(line_str, lang, relations_src.name, line_num)
+                                        if normalized_rel:
+                                            valid_rels.append(normalized_rel)
+                            except json.JSONDecodeError:
+                                logging.warning(f"\t(!) > Failed to parse JSON file: {relations_src.name}")
+                        else:
+                            for line_num, line in enumerate(f, 1):
+                                normalized_rel = self._normalize_relations(line, lang, relations_src.name, line_num)
+                                if normalized_rel:
+                                    valid_rels.append(normalized_rel)
                                 
                     if valid_rels:
                         with open(relations_tgt, "w", encoding="utf-8") as f:
                             f.writelines(valid_rels)
                     else:
                         logging.warning(f"\t(!) > All records dropped in {relations_src.name}")
-
+                else:
+                    logging.warning(f"\t(!) > Missing monolingual relations source for: {lang} ({split})")
+                    
     # --- multilingual permutations of raw CasiMedicos data [both _ordered.jsonl and _relations.jsonl] into splits/ ---
 
     def _generate_multi(self):
