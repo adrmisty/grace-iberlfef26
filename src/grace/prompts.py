@@ -8,7 +8,7 @@
 
 import json
 from typing import Dict, Any, List, Optional
-from ..config import LANG
+
 # --- static prompt builders -------------------------------------------------------------------------
 
 SYSTEM_PROMPTS: Dict[str, Dict[str, str]] = {
@@ -34,9 +34,8 @@ SYSTEM_PROMPTS: Dict[str, Dict[str, str]] = {
     }
 }
 
-from typing import Dict
 
-SYSTEM_PROMPTS_alvaro_alex: Dict[str, Dict[str, str]] = {
+SYSTEM_PROMPTS_AA: Dict[str, Dict[str, str]] = {
     "es": {
         "SUBTASK_1": (
             "Eres un experto médico. Tu tarea es la Detección de Oraciones de Evidencia.\n"
@@ -80,8 +79,6 @@ EX_STRINGS = {
     "it": {"ex_start": "--- ESEMPI ---", "ex_end": "--- FINE DEGLI ESEMPI ---", "case": "Caso clinico:", "sentences": "Frasi:", "expected": "Uscita attesa:", "analyze": "Caso clinico da analizzare:", "premise": "Premessa:", "generate": "Genera il JSON di output:"},
     "fr": {"ex_start": "--- EXEMPLES ---", "ex_end": "--- FIN DES EXEMPLES ---", "case": "Cas clinique :", "sentences": "Phrases :", "expected": "Sortie attendue :", "analyze": "Cas clinique à analyser :", "premise": "Prémisse :", "generate": "Générez le JSON de sortie :"}
 }
-
-# --- dynamic prompt builders ---
 
 def build_s1_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]], lang: str = "es") -> str:
     ui = EX_STRINGS.get(lang, EX_STRINGS["es"])

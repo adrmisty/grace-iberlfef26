@@ -17,6 +17,7 @@ from openai import OpenAI
 import re
 import src.config as settings
 import src.grace.prompts as prompts
+import src.grace.infer as infer
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
@@ -74,9 +75,21 @@ class Model:
     def _build_messages(self, system_prompt: str, user_prompt: str) -> List[Dict[str, str]]:
         raise NotImplementedError("> impl. in model subclass")
 
+    # --- global prompting -------------------------------------------------------------------------
+
+    def run_global(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
+        """One-step global inference for S1, S2, and S3 simultaneously."""
+        logging.info(f"> GLOBAL PROMPT (S1+S2+S3)...")
+        results = []
+        for case in test_data:
+            user_prompt = infer.build_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
+            sys_prompt = infer.GLOBAL_SYSTEM_PROMPT
+            
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n")
+            results.append({"id": case.get("id"), "predictions": response})
+
     # --- subtasks prompting -------------------------------------------------------------------------
 
-# --- subtasks prompting -------------------------------------------------------------------------
 
     def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 1 (relevance detection)...")

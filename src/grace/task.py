@@ -1,9 +1,11 @@
 # task.py
 # ---------------------------------------------------------------------------------------------
-# zero-shot and few-shot prompting and pipeline run for all 3 GRACE subtasks on CasiMedicos-Arg
+# zero-shot and few-shot prompting and pipeline run for all 3 GRACE subtasks
+# extension for dataset splits
+# extension2 for global inference
 # ---------------------------------------------------------------------------------------------
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
-# mar-2026
+# apr-2026
 
 from src.grace.eval import GraceEvaluator
 from src.grace.model import get_model, MODEL_FACTORY
@@ -19,6 +21,58 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s", datefmt='%H:%M:%S')
+
+def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], dataset: str = "grace", balanced_split: bool = False, lang_code: str = "es"):
+    """Runs the prompting pipeline for ALL subtasks in a single one-step inference."""    
+    
+    train_cases, train_relations, test_cases, test_relations = _load(dataset=dataset, balanced_split=balanced_split)
+    
+    for size in sizes:
+        config_entry = MODEL_FACTORY.get(model_type.lower())
+        model_prefix = config_entry["prefix"] if config_entry else model_type
+        model = MODEL_FACTORY[model_type.lower()]["class"](size)
+            
+        logging.info(f"\n========================================================")
+        logging.info(f"{model_prefix.upper()}-{size} / GLOBAL ONE-STEP EVALUATION ({dataset.upper()}) / ")
+        logging.info(f"========================================================")
+        
+        for setting in prompt_settings:
+            logging.info(f"\n\t >>> [{setting.upper()}] ---")
+            
+            # ** setting: few/zero **
+            if setting == "few_shot":
+                examples = train_cases
+                example_rels = train_relations
+            else:
+                examples = None
+                example_rels = None
+
+            
+            # Asumimos que tu clase de modelo tiene un método 'run_global' o similar
+            # que internamente llama a 'build_global_prompt'.
+            run_func = getattr(model, "run_global", None) or getattr(model, "run_subtask_global", None)
+            
+            if not run_func:
+                raise NotImplementedError(f"\t> (!) Model {model_type} has not implemented global inference yet")
+
+            # (S1+S2+S3)
+            results = run_func(
+                test_cases, 
+                few_shot_examples=examples, 
+                example_relations=example_rels, 
+                lang=lang_code
+            )
+            
+            # ** global save **
+            out_path = settings.get_prediction_path(model_prefix, size, setting, "GLOBAL", dataset)
+            
+            _save(results, out_path)
+            logging.info(f"\t> Resultados guardados en: {out_path.name}")
+            
+        logging.info(f"\t> Clearing {model_prefix}-{size}...")
+        del model
+        torch.cuda.empty_cache()
+        gc.collect()
 
 def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], tasks: list[str] = ["S1", "S2", "S3"], dataset: str = "grace"):
     """Runs the prompting pipeline for all specified subtasks and settings for a given model."""    

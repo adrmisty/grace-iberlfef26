@@ -6,7 +6,7 @@
 # mar-2026
 
 import argparse
-from .task import run_subtasks, evaluate_subtasks
+from .task import run_subtasks, run_global_subtasks, evaluate_subtasks
 from .post import clean, submit
 from .model import MODEL_FACTORY
 import src.config as settings
@@ -25,7 +25,7 @@ def main():
     parser.add_argument("--model", type=str, default="Qwen", help="Model type: Qwen, MedGemma, Gemini, OpenAI")
     parser.add_argument("--sizes", nargs="+", default=["2B", "4B", "27B"], help="Model sizes")
     parser.add_argument("--settings", nargs="+", default=["zero_shot", "few_shot"], help="Prompt settings")
-    parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3"], help="Task numbers")
+    parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3", "global"], help="Task numbers")
 
     parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos", "unified"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
 
@@ -35,7 +35,10 @@ def main():
     model_prefix = config_entry["prefix"] if config_entry else "Qwen"
 
     if args.run:
-        run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset)
+        if "global" in args.tasks:
+            run_global_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, dataset=args.dataset)
+        else:
+            run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset)
         
     if args.post:
         for size in args.sizes:
