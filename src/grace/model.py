@@ -47,7 +47,7 @@ class Model:
             text += prefill
             
         model_inputs = self.tokenizer([text], return_tensors="pt").to(self.model.device)
-        
+        # TODO: different infer config to AA
         with torch.no_grad():
             generated_ids = self.model.generate(
                 model_inputs.input_ids,
@@ -80,13 +80,14 @@ class Model:
     def run_global(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         """One-step global inference for S1, S2, and S3 simultaneously."""
         logging.info(f"> GLOBAL PROMPT (S1+S2+S3)...")
+        logging.info(f">>> Example user prompt: {infer.build_usr_global_prompt(test_data[0], examples=few_shot_examples, example_relations=example_relations, lang=lang)}")
         results = []
         for case in test_data:
             user_prompt = infer.build_usr_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
             sys_prompt = infer.GLOBAL_SYSTEM_PROMPT
             
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n")
-            results.append({"id": case.get("id"), "predictions": response})
+            results.append({"id": case.get("id"), "prediction": response})
         return results
     
     # --- subtasks prompting -------------------------------------------------------------------------
@@ -94,6 +95,7 @@ class Model:
 
     def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 1 (relevance detection)...")
+        logging.info(f">>> Example user prompt: {prompts.build_s1_prompt(test_data[0], few_shot_examples, lang=lang)}")
         results = []
         for case in test_data:
             user_prompt = prompts.build_s1_prompt(case, few_shot_examples, lang=lang)
@@ -104,6 +106,7 @@ class Model:
 
     def run_subtask_2(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 2 (span detection)...")
+        logging.info(f">>> Example user prompt: {prompts.build_s2_prompt(test_data[0], few_shot_examples, lang=lang)}")
         results = []
         for case in test_data:
             user_prompt = prompts.build_s2_prompt(case, few_shot_examples, lang=lang)
@@ -115,6 +118,7 @@ class Model:
 
     def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128, lang: str = settings.LANG):
         logging.info(f"> Subtask 3 (relation detection)...")
+        logging.info(f">>> Example user prompt: {prompts.build_s3_prompt(test_relations[0], few_shot_examples, lang=lang)}")
         results = []
         for relation in test_relations:
             user_prompt = prompts.build_s3_prompt(relation, few_shot_examples, lang=lang)
