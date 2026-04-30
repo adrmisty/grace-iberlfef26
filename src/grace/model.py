@@ -9,7 +9,7 @@ import os
 import torch
 import logging
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Type
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import google.generativeai as genai
 from google.generativeai import types as genaitypes
@@ -19,6 +19,7 @@ import src.config as settings
 import src.grace.prompts as prompts
 import src.grace.infer as infer
 from src.grace.schema import SchemaS1, SchemaS2, SchemaS3, SchemaGlobal
+from pydantic import BaseModel
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
@@ -189,43 +190,73 @@ class GeminiAPIModel(Model):
     def _build_messages(self, system_prompt: str, user_prompt: str):
         pass
 
-    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "", schema: Optional[Dict] = None) -> str:
-        prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}"
-        
-        safety_settings = {
-            genaitypes.HarmCategory.HARM_CATEGORY_HARASSMENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
-            genaitypes.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genaitypes.HarmBlockThreshold.BLOCK_NONE,
-            genaitypes.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
-            genaitypes.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
-        }
-        
-        gen_config = genai.types.GenerationConfig(
-            max_output_tokens=max_new_tokens,
-            temperature=0.0,
-            response_mime_type="application/json",
-        )
-        
-        if schema:
-            gen_config.response_schema = schema.model_json_schema()
-        
-        try:
-            response = self.model.generate_content(
-                prompt,
-                safety_settings=safety_settings,
-                generation_config=gen_config
-            )
-
-            try:
-                text = response.text.strip()
-            except ValueError:
-                return ""
-
-            return text.strip()
+    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "", schema: Optional[Type[BaseModel]] = None) -> str:
+            prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}"
             
-        except Exception as e:
-            logging.error(f"\t> (!) Gemini API error during generation: {e}")
-            return ""
-                    
+            safety_settings = {
+                genaitypes.HarmCategory.HARM_CATEGORY_HARASSMENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+                genaitypes.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+                genaitypes.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+                genaitypes.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
+            }
+            
+            gen_config = genai.types.GenerationConfig(
+                max_output_tokens=max_new_tokens,
+                temperature=0.0,
+                response_mime_type="application/json",
+            )
+            
+            if schema:
+                gemini_schema = schema.model_json_schema()
+                
+                # ** eliminate defs/refs **                
+                def resolve_defs(obj, defs):
+                    if isinstance(obj, dict):
+                        if "$ref" in obj:
+                            ref_name = obj["$ref"].split("/")[-1]
+                            return resolve_defs(defs[ref_name].copy(), defs)
+                        return {k: resolve_defs(v, defs) for k, v in obj.items() if k != "$defs"}
+                    elif isinstance(obj, list):
+                        return [resolve_defs(item, defs) for item in obj]
+                    return obj
+
+                if "$defs" in gemini_schema:
+                    gemini_schema = resolve_defs(gemini_schema, gemini_schema["$defs"])
+                    gemini_schema.pop("$defs", None)
+                
+                # ** eliminate titles **
+                def scrub_schema(obj):
+                    if isinstance(obj, dict):
+                        obj.pop("title", None)
+                        obj.pop("default", None)
+                        for key, value in obj.items():
+                            scrub_schema(value)
+                    elif isinstance(obj, list):
+                        for item in obj:
+                            scrub_schema(item)
+
+                scrub_schema(gemini_schema)
+
+                gen_config.response_schema = gemini_schema
+        
+            try:
+                response = self.model.generate_content(
+                    prompt,
+                    safety_settings=safety_settings,
+                    generation_config=gen_config
+                )
+
+                try:
+                    text = response.text.strip()
+                except ValueError:
+                    return ""
+
+                return text.strip()
+            
+            except Exception as e:
+                logging.error(f"\t> (!) Gemini API error during generation: {e}")
+                return ""
+                            
 class OpenAIModel(Model):
     def __init__(self, model_version: str = "gpt-4o-mini", data_dir: str = settings.BASE_DATA_DIR):
         super().__init__(model_version, data_dir)
