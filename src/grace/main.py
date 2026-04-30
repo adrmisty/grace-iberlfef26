@@ -29,6 +29,7 @@ def main():
     parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3", "global"], help="Task numbers")
 
     parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos", "unified"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
+    parser.add_argument("--n_examples", type=int, default=4, help="Number of examples to use in few shot learning")
 
     args = parser.parse_args()
     
@@ -37,15 +38,15 @@ def main():
 
     if args.run:
         if "global" in args.tasks:
-            run_global_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, dataset=args.dataset)
+            run_global_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, dataset=args.dataset, n_examples=args.n_examples)
         else:
-            run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset)
+            run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset, n_examples=args.n_examples)
         
     if args.post:
         for size in args.sizes:
             for setting in args.settings:
                 for task in args.tasks:
-                    path = settings.get_prediction_path(model_prefix, size, setting, task, dataset=args.dataset)
+                    path = settings.get_prediction_path(model_prefix, size, setting, task, dataset=args.dataset, n_examples=args.n_examples)
                     clean(filepath=path)
 
     if args.submit:
@@ -63,13 +64,13 @@ def main():
 
                 if "global" in args.tasks:
                     submit_global(original_json_path,
-                                settings.get_prediction_path(output_dir=out_dir, model_prefix=model_prefix, size=size, setting=setting, task="global", dataset=args.dataset, cleaned=False),
+                                settings.get_prediction_path(output_dir=out_dir, model_prefix=model_prefix, size=size, setting=setting, task="global", dataset=args.dataset, n_examples=args.n_examples, cleaned=False),
                                 output_path)
                     continue
                 else:
-                    s1_path = settings.get_prediction_path(model_prefix, size, setting, task="S1", dataset=args.dataset, output_dir=out_dir, cleaned=True)
-                    s2_path = settings.get_prediction_path(model_prefix, size, setting, task="S2", dataset=args.dataset, output_dir=out_dir, cleaned=True)
-                    s3_path = settings.get_prediction_path(model_prefix, size, setting, task="S3", dataset=args.dataset, output_dir=out_dir, cleaned=True)
+                    s1_path = settings.get_prediction_path(model_prefix, size, setting, task="S1", dataset=args.dataset, n_examples=args.n_examples, output_dir=out_dir, cleaned=True)
+                    s2_path = settings.get_prediction_path(model_prefix, size, setting, task="S2", dataset=args.dataset, n_examples=args.n_examples, output_dir=out_dir, cleaned=True)
+                    s3_path = settings.get_prediction_path(model_prefix, size, setting, task="S3", dataset=args.dataset, n_examples=args.n_examples, output_dir=out_dir, cleaned=True)
                                         
                     submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
 
@@ -92,7 +93,8 @@ def main():
                     model_size=size, 
                     setting=setting, 
                     tasks=args.tasks,
-                    dataset=args.dataset 
+                    dataset=args.dataset, 
+                    n_examples=args.n_examples, 
                 )
                 
 if __name__ == "__main__":
