@@ -18,9 +18,9 @@ import re
 import src.config as settings
 import src.grace.prompts as prompts
 import src.grace.infer as infer
+from src.grace.schema import SchemaS1, SchemaS2, SchemaS3, SchemaGlobal
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
-
 
 class Model:
     def __init__(self, model_size: str, data_dir: str):
@@ -33,8 +33,8 @@ class Model:
         self.model_size = model_size
         self.tokenizer = None
 
-    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 512, prefill: str = "") -> str:
-        """Generates model's response to the zero/few-shot prompt for local HuggingFace models."""
+    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 512, prefill: str = "", schema: Optional[Dict] = None) -> str:
+        """Generates model's response for local HuggingFace models. Schema is ignored here."""
         messages = self._build_messages(system_prompt, user_prompt)
         
         text = self.tokenizer.apply_chat_template(
@@ -75,22 +75,17 @@ class Model:
     def _build_messages(self, system_prompt: str, user_prompt: str) -> List[Dict[str, str]]:
         raise NotImplementedError("> impl. in model subclass")
 
-    # --- global prompting -------------------------------------------------------------------------
+    # --- subtasks prompting -------------------------------------------------------------------------
 
     def run_global(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
-        """One-step global inference for S1, S2, and S3 simultaneously."""
-        logging.info(f"> GLOBAL PROMPT (S1+S2+S3)...")
+        logging.info(f"> Global One-Step Inference (S1+S2+S3)...")
         results = []
         for case in test_data:
             user_prompt = infer.build_usr_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
             sys_prompt = infer.GLOBAL_SYSTEM_PROMPT
-            
-            response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n")
-            results.append({"id": case.get("id"), "predictions": response})
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n", schema=SchemaGlobal)
+            results.append({"id": case.get("id"), "prediction": response})
         return results
-    
-    # --- subtasks prompting -------------------------------------------------------------------------
-
 
     def run_subtask_1(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 1 (relevance detection)...")
@@ -98,7 +93,7 @@ class Model:
         for case in test_data:
             user_prompt = prompts.build_s1_prompt(case, few_shot_examples, lang=lang)
             sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_1"]
-            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n")
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n", schema=SchemaS1)
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
@@ -108,8 +103,7 @@ class Model:
         for case in test_data:
             user_prompt = prompts.build_s2_prompt(case, few_shot_examples, lang=lang)
             sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_2"]
-            #  prefill from "Premisas:\n-" to "{\n" to enforce the strict JSON output
-            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n")
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n", schema=SchemaS2)
             results.append({"id": case.get("id"), "prediction": response})
         return results
 
@@ -119,10 +113,10 @@ class Model:
         for relation in test_relations:
             user_prompt = prompts.build_s3_prompt(relation, few_shot_examples, lang=lang)
             sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_3"]
-            response = self._generate(sys_prompt, user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "')
+            response = self._generate(sys_prompt, user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "', schema=SchemaS3)
             results.append({"id": relation.get("id"), "prediction": response.strip()})
         return results
-
+    
 # --- hugging face models -------------------------------------------------------------------------
 
 class GraceModel(Model):
@@ -175,10 +169,9 @@ class MedGemmaModel(Model):
 
 
 # --- gemini/openai APIs -------------------------------------------------------------------------
-# for this, do not use the prefill trick
 
 class GeminiAPIModel(Model):
-    def __init__(self, model_version: str = "gemini-1.5-flash", data_dir: str = settings.BASE_DATA_DIR):
+    def __init__(self, model_version: str = "gemini-3-flash-preview", data_dir: str = settings.BASE_DATA_DIR):
         super().__init__(model_version, data_dir)
         self.model_id = model_version
         self._load_model()
@@ -196,13 +189,8 @@ class GeminiAPIModel(Model):
     def _build_messages(self, system_prompt: str, user_prompt: str):
         pass
 
-    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "") -> str:
-        if "{" in prefill:
-            instruction = "REGLA ABSOLUTA: Tu respuesta debe ser ÚNICAMENTE un JSON válido. NINGUNA palabra antes o después. NO uses formato Markdown, solo el JSON puro."
-        else:
-            instruction = "REGLA ABSOLUTA: Tu respuesta debe comenzar directamente con la palabra 'Premisas:'. NINGUNA palabra antes o después. NO uses formato JSON, usa estrictamente listas con guiones (-)."
-            
-        prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}\n\n{instruction}"
+    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "", schema: Optional[Dict] = None) -> str:
+        prompt = f"INSTRUCCIONES DEL SISTEMA:\n{system_prompt}\n\nENTRADA DEL USUARIO:\n{user_prompt}"
         
         safety_settings = {
             genaitypes.HarmCategory.HARM_CATEGORY_HARASSMENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
@@ -211,14 +199,20 @@ class GeminiAPIModel(Model):
             genaitypes.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genaitypes.HarmBlockThreshold.BLOCK_NONE,
         }
         
+        gen_config = genai.types.GenerationConfig(
+            max_output_tokens=max_new_tokens,
+            temperature=0.0,
+            response_mime_type="application/json",
+        )
+        
+        if schema:
+            gen_config.response_schema = schema.model_json_schema()
+        
         try:
             response = self.model.generate_content(
                 prompt,
                 safety_settings=safety_settings,
-                generation_config=genai.types.GenerationConfig(
-                    max_output_tokens=max_new_tokens,
-                    temperature=0.0,
-                )
+                generation_config=gen_config
             )
 
             try:
@@ -226,10 +220,6 @@ class GeminiAPIModel(Model):
             except ValueError:
                 return ""
 
-            text = re.sub(r"^```json\s*", "", text, flags=re.IGNORECASE)
-            text = re.sub(r"^```\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-            
             return text.strip()
             
         except Exception as e:
@@ -237,7 +227,7 @@ class GeminiAPIModel(Model):
             return ""
                     
 class OpenAIModel(Model):
-    def __init__(self, model_version: str = "gpt-5.4-mini", data_dir: str = settings.BASE_DATA_DIR):
+    def __init__(self, model_version: str = "gpt-4o-mini", data_dir: str = settings.BASE_DATA_DIR):
         super().__init__(model_version, data_dir)
         self.model_id = model_version
         self._load_model()
@@ -254,38 +244,69 @@ class OpenAIModel(Model):
     def _build_messages(self, system_prompt: str, user_prompt: str):
         pass 
 
-    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 512, prefill: str = "") -> str:
-        if "{" in prefill:
-            instruction = "Tu respuesta debe ser ÚNICAMENTE un JSON válido. NINGUNA palabra antes o después. NO uses comillas invertidas de markdown (```)."
-        else:
-            instruction = "Tu respuesta debe comenzar directamente con la palabra 'Premisas:'. NINGUNA palabra antes o después. NO uses formato JSON, usa estrictamente listas con guiones (-)."
-
-        system_prompt += f"\n\n{instruction}"
-            
+    def _generate(self, system_prompt: str, user_prompt: str, max_new_tokens: int = 2048, prefill: str = "", schema: Optional[Dict] = None) -> str:
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ]
+        
+        response_format = {"type": "json_object"}
+        if schema:
+            json_schema = schema.model_json_schema()
+            
+            # ** enforce additionalProperties = False on all nested objects **
+            def enforce_strict(schema_obj):
+                if isinstance(schema_obj, dict):
+                    if schema_obj.get("type") == "object":
+                        schema_obj["additionalProperties"] = False
+                    for key, value in schema_obj.items():
+                        enforce_strict(value)
+                elif isinstance(schema_obj, list):
+                    for item in schema_obj:
+                        enforce_strict(item)
+
+            enforce_strict(json_schema)
+            
+            if "title" in json_schema:
+                 del json_schema["title"]
+            def remove_titles(schema_obj):
+                """recursive removal of pydantic titles which might cause conflict"""
+                if isinstance(schema_obj, dict):
+                    if "title" in schema_obj:
+                         del schema_obj["title"]
+                    for key, value in schema_obj.items():
+                        remove_titles(value)
+                elif isinstance(schema_obj, list):
+                    for item in schema_obj:
+                        remove_titles(item)
+
+            remove_titles(json_schema)
+
+            response_format = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": schema.__name__, 
+                    "strict": True,
+                    "schema": json_schema
+                }
+            }
         
         try:
             response = self.client.chat.completions.create(
                 model=self.model_id,
                 messages=messages,
                 max_completion_tokens=max_new_tokens,
-                temperature=0.0
+                temperature=0.0,
+                response_format=response_format
             )
             
             text = response.choices[0].message.content.strip()
-            text = re.sub(r"^```json\s*", "", text, flags=re.IGNORECASE)
-            text = re.sub(r"^```\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-            
             return text.strip()
             
         except Exception as e:
             logging.error(f"\t> (!) OpenAI API error during generation: {e}")
-            return ""
-
+            return ""     
+           
 # --- model factory -------------------------------------------------------------------------
 
 MODEL_FACTORY = {
