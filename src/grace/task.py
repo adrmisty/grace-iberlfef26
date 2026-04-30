@@ -22,10 +22,10 @@ from typing import List, Dict, Any
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s", datefmt='%H:%M:%S')
 
-def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], dataset: str = "grace", balanced_split: bool = False, lang_code: str = "es"):
+def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], dataset: str = "grace", balanced_split: bool = True, n_examples: int = 4, lang_code: str = "es"):
     """Runs the prompting pipeline for ALL subtasks in a single one-step inference."""    
     
-    train_cases, train_relations, test_cases, test_relations = _load(dataset=dataset, balanced_split=balanced_split)
+    train_cases, train_relations, test_cases, test_relations = _load(dataset=dataset, balanced_split=balanced_split, n=n_examples)
     
     for size in sizes:
         config_entry = MODEL_FACTORY.get(model_type.lower())
@@ -50,7 +50,7 @@ def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list
             
             # Asumimos que tu clase de modelo tiene un método 'run_global' o similar
             # que internamente llama a 'build_global_prompt'.
-            run_func = getattr(model, "run_global", None) or getattr(model, "run_subtask_global", None)
+            run_func = getattr(model, "run_global")
             
             if not run_func:
                 raise NotImplementedError(f"\t> (!) Model {model_type} has not implemented global inference yet")
@@ -64,7 +64,7 @@ def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list
             )
             
             # ** global save **
-            out_path = settings.get_prediction_path(model_prefix, size, setting, "GLOBAL", dataset)
+            out_path = settings.get_prediction_path(model_prefix, size, setting, "global", dataset, n_examples)
             
             _save(results, out_path)
             logging.info(f"\t> Resultados guardados en: {out_path.name}")
@@ -74,9 +74,9 @@ def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list
         torch.cuda.empty_cache()
         gc.collect()
 
-def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], tasks: list[str] = ["S1", "S2", "S3"], dataset: str = "grace"):
+def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], tasks: list[str] = ["S1", "S2", "S3"], dataset: str = "grace", balanced_split: bool = True, n_examples: int = 4):
     """Runs the prompting pipeline for all specified subtasks and settings for a given model."""    
-    train_cases, train_relations, test_cases, test_relations = _load(dataset=dataset)
+    train_cases, train_relations, test_cases, test_relations = _load(dataset=dataset, balanced_split=balanced_split)
     
     for size in sizes:
         config_entry = MODEL_FACTORY.get(model_type.lower())
@@ -103,7 +103,7 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
                 lang_code = "en" if dataset == "casimedicos" else "es"
                 results = run_func(data, few_shot_examples=examples, lang=lang_code)
                 
-                out_path = settings.get_prediction_path(model_prefix, size, setting, task_id, dataset)
+                out_path = settings.get_prediction_path(model_prefix, size, setting, task_id, dataset, n_examples)
                 
                 _save(results, out_path)
             
@@ -112,7 +112,7 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
         torch.cuda.empty_cache()
         gc.collect()
                 
-def evaluate_subtasks(model_type: str, model_size: str, setting: str, tasks: list[str], dataset: str = "grace"):
+def evaluate_subtasks(model_type: str, model_size: str, setting: str, tasks: list[str], dataset: str = "grace", n_examples: int = 4):
     config_entry = MODEL_FACTORY.get(model_type.lower())
     model_prefix = config_entry["prefix"] if config_entry else model_type
 
@@ -125,7 +125,7 @@ def evaluate_subtasks(model_type: str, model_size: str, setting: str, tasks: lis
         gold_path = settings.GRACE_SPLITS["validation"]
 
     for task_id in tasks:
-        pred_path = settings.get_prediction_path(model_prefix, model_size, setting, task_id, dataset, cleaned=True)
+        pred_path = settings.get_prediction_path(model_prefix, model_size, setting, task_id, dataset, n_examples, cleaned=True)
         
         if task_id == "S1":
             evaluator.evaluate_subtask_1(pred_path, gold_path, dataset)
