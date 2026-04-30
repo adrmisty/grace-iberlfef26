@@ -26,10 +26,13 @@ GRACE_SPLITS: Dict[str, Path] = {
     "validation": GRACE_DATA_DIR / "track_2_dev.json",
 }
 UNIFIED_SPLITS: Dict[str, Path] = {
+    # for few-shots only
     "train": UNIFIED_DATA_DIR / f"train_unified_{LANG}.json",
+    # test on Grace
     "validation": GRACE_DATA_DIR / "track_2_dev.json",
 }
 CASIMEDICOS_SPLITS: Dict[str, Path] = {
+    # language-depenedent casimedicos [es, en, fr, it]
     "train": CASIMEDICOS_DATA_DIR / "train" / f"train_{LANG}_ordered.jsonl",
     "validation": CASIMEDICOS_DATA_DIR / "dev" / f"dev_{LANG}_ordered.jsonl",
     "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
