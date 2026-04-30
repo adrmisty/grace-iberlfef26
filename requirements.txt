@@ -1,5 +1,6 @@
 python
 pytorch
+pydantic
 torch
 transformers
 accelerate
