@@ -10,7 +10,7 @@ import json
 import logging
 from pathlib import Path
 from typing import List, Dict, Any
-from src.case import load_cases, load_relations, load_cases_casiMedicos, load_relations_casiMedicos
+from src.grace.case import load_cases_GRACE, load_relations_GRACE, load_cases_casiMedicos, load_relations_casiMedicos
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 EVAL_PATH = "eval.txt"
@@ -33,7 +33,7 @@ class GraceEvaluator:
         if dataset == "casimedicos":
             cases = load_cases_casiMedicos(ground_truth_path)
         else:
-            cases = load_cases(ground_truth_path)
+            cases = load_cases_GRACE(ground_truth_path)
 
         gt_map = {case["id"]: case["relevance_labels"] for case in cases}
         raw_predictions = self._load_json(predictions_path)
@@ -72,7 +72,7 @@ class GraceEvaluator:
         if dataset == "casimedicos":
             cases = load_cases_casiMedicos(ground_truth_path)
         else:
-            cases = load_cases(ground_truth_path)
+            cases = load_cases_GRACE(ground_truth_path)
 
         gt_map = {c["id"]: c for c in cases}
         preds = self._load_json(predictions_path)
@@ -113,7 +113,7 @@ class GraceEvaluator:
             rel_path = ground_truth_path.with_name(rel_name)
             relations = load_relations_casiMedicos(rel_path)
         else:
-            relations = load_relations(ground_truth_path)
+            relations = load_relations_GRACE(ground_truth_path)
 
         preds = self._load_json(predictions_path)
         gt_map = {x["id"]: x["label"] for x in relations}

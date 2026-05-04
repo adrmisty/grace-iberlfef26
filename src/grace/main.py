@@ -3,14 +3,14 @@
 # (GRACE / IBERLEF26): few-shot & zero-shot prompting on different models on the CasiMedicos-Arg
 # ---------------------------------------------------------------------------------------------------------------
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
-# mar-2026
+# # may-2026
 
 import argparse
-from .task import run_subtasks, run_global_subtasks, evaluate_subtasks
-from .post import clean
-from .submit import submit, submit_global
-from .model import MODEL_FACTORY
-import src.config as settings
+from src.grace.task import run_subtasks, run_global_subtasks, evaluate_subtasks
+from src.grace.post.clean import clean
+from src.grace.post.submit import submit, submit_global
+from  src.grace.model import MODEL_FACTORY
+import src.grace.config as settings
 import logging
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
@@ -36,12 +36,14 @@ def main():
     config_entry = MODEL_FACTORY.get(args.model.lower())
     model_prefix = config_entry["prefix"] if config_entry else "Qwen"
 
+    # *** run global inference/split subtasks ***
     if args.run:
         if "global" in args.tasks:
             run_global_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, dataset=args.dataset, n_examples=args.n_examples)
-        else:
-            run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset, n_examples=args.n_examples)
-        
+        run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=args.tasks, dataset=args.dataset, n_examples=args.n_examples)
+    
+    
+    # *** post-processing ***
     if args.post:
         for size in args.sizes:
             for setting in args.settings:
@@ -49,8 +51,9 @@ def main():
                     path = settings.get_prediction_path(model_prefix, size, setting, task, dataset=args.dataset, n_examples=args.n_examples)
                     clean(filepath=path)
 
+    # *** submission format **
     if args.submit:
-        logging.info(f"> Compiling submissions for dataset format: {args.dataset.upper()}")
+        logging.info(f"> Compiling submissions for the GRACE-IBERLEF26 shared task...")
         
         if args.dataset == "grace":
             original_json_path = settings.GRACE_SPLITS["validation"]
@@ -74,28 +77,11 @@ def main():
                                         
                     submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
 
-                    # CASIMEDICOS
-                    """
-                    if args.dataset == "casimedicos":
-                        cases_path = settings.CASIMEDICOS_SPLITS["validation"]
-                        
-                        rels_name = cases_path.stem.replace("_ordered", "_relations") + ".jsonl"
-                        rels_path = cases_path.with_name(rels_name)
-                        
-                        submit_casiMedicos(cases_path, rels_path, s1_path, s2_path, s3_path, output_path)
-                    """
-
+    # ** specific evaluation **
     if args.eval:
         for size in args.sizes:
             for setting in args.settings:
-                evaluate_subtasks(
-                    model_type=args.model, 
-                    model_size=size, 
-                    setting=setting, 
-                    tasks=args.tasks,
-                    dataset=args.dataset, 
-                    n_examples=args.n_examples, 
-                )
+                evaluate_subtasks(model_type=args.model, model_size=size, setting=setting, tasks=args.tasks,dataset=args.dataset, n_examples=args.n_examples, )
                 
 if __name__ == "__main__":
     main()

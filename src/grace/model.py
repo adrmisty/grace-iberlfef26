@@ -10,16 +10,17 @@ import torch
 import logging
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Type
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import google.generativeai as genai
 from google.generativeai import types as genaitypes
 from openai import OpenAI
-import re
-import src.config as settings
-import src.grace.prompts as prompts
-import src.grace.infer as infer
-from src.grace.schema import SchemaS1, SchemaS2, SchemaS3, SchemaGlobal
 from pydantic import BaseModel
+
+import src.grace.config as settings
+import src.grace.prompt.subtask_prompt as subtask_prompt
+import src.grace.prompt.global_prompt as global_prompt
+from src.grace.prompt.schema import SchemaS1, SchemaS2, SchemaS3, SchemaGlobal
 
 logging.basicConfig(level=logging.INFO, format="INFO: %(message)s")
 
@@ -82,8 +83,8 @@ class Model:
         logging.info(f"> Global One-Step Inference (S1+S2+S3)...")
         results = []
         for case in test_data:
-            user_prompt = infer.build_usr_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
-            sys_prompt = infer.GLOBAL_SYSTEM_PROMPT
+            user_prompt = global_prompt.build_usr_global_prompt(case, examples=few_shot_examples, example_relations=example_relations, lang=lang)
+            sys_prompt = global_prompt.GLOBAL_SYSTEM_PROMPT
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=4096, prefill="{\n", schema=SchemaGlobal)
             results.append({"id": case.get("id"), "prediction": response})
         return results
@@ -92,8 +93,8 @@ class Model:
         logging.info(f"> Subtask 1 (relevance detection)...")
         results = []
         for case in test_data:
-            user_prompt = prompts.build_s1_prompt(case, few_shot_examples, lang=lang)
-            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_1"]
+            user_prompt = subtask_prompt.build_s1_usr_prompt(case, few_shot_examples, lang=lang)
+            sys_prompt = subtask_prompt.SYSTEM_PROMPTS_v1[lang]["SUBTASK_1"]
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n", schema=SchemaS1)
             results.append({"id": case.get("id"), "prediction": response})
         return results
@@ -102,8 +103,8 @@ class Model:
         logging.info(f"> Subtask 2 (span detection)...")
         results = []
         for case in test_data:
-            user_prompt = prompts.build_s2_prompt(case, few_shot_examples, lang=lang)
-            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_2"]
+            user_prompt = subtask_prompt.build_s2_usr_prompt(case, few_shot_examples, lang=lang)
+            sys_prompt = subtask_prompt.SYSTEM_PROMPTS_v1[lang]["SUBTASK_2"]
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=2048, prefill="{\n", schema=SchemaS2)
             results.append({"id": case.get("id"), "prediction": response})
         return results
@@ -112,8 +113,8 @@ class Model:
         logging.info(f"> Subtask 3 (relation detection)...")
         results = []
         for relation in test_relations:
-            user_prompt = prompts.build_s3_prompt(relation, few_shot_examples, lang=lang)
-            sys_prompt = prompts.SYSTEM_PROMPTS[lang]["SUBTASK_3"]
+            user_prompt = subtask_prompt.build_s3_usr_prompt(relation, few_shot_examples, lang=lang)
+            sys_prompt = subtask_prompt.SYSTEM_PROMPTS_v1[lang]["SUBTASK_3"]
             response = self._generate(sys_prompt, user_prompt, max_new_tokens=max_new_tokens, prefill='{\n  "label": "', schema=SchemaS3)
             results.append({"id": relation.get("id"), "prediction": response.strip()})
         return results
@@ -346,10 +347,3 @@ MODEL_FACTORY = {
     "gemini": {"class": GeminiAPIModel, "prefix": "Gemini"},
     "openai": {"class": OpenAIModel, "prefix": "OpenAI"},
 }
-
-def get_model(model_type: str, model_size: str, data_dir: str):
-    """Factory to instantiate the correct model dynamically."""
-    config = MODEL_FACTORY.get(model_type.lower())
-    if not config:
-        raise ValueError(f"Model '{model_type}' not supported.")
-    return config["class"](model_size, data_dir), config["prefix"]

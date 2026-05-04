@@ -3,7 +3,7 @@
 # configurations for one-step inference global prompt
 # ----------------------------------------------------------
 # adriana r.f. (@adrmisty:github, arodriguezf@vicomtech.org)
-# apr-2026
+# may-2026
 
 import json
 from typing import Dict, Any, List, Optional
@@ -134,17 +134,36 @@ Restricciones obligatorias:
 - Devuelve únicamente JSON válido.
 """.strip()
 
-
 EX_STRINGS = {
-    "es": {"ex_start": "--- EJEMPLOS ---", "ex_end": "--- FIN DE EJEMPLOS ---", "case": "Caso clínico:", "sentences": "Oraciones:", "options": "Opciones (Claims):", "expected": "Salida esperada:", "analyze": "Caso clínico a analizar:", "premise": "Premisa:", "generate": "Genera el JSON de salida:"},
+    "es": {
+        "ex_start": "--- Ejemplos:", 
+        "ex_end": "Fin de ejemplos. ---", 
+        "case": "Caso clínico:", 
+        "sentences": "Oraciones:", 
+        "options": "Opciones:",
+        "expected": "Salida esperada:", 
+        "analyze": "Caso clínico a analizar:", 
+        "premise": "Premisa:", 
+        "generate": "Genera el JSON de salida:"
+    },
 }
 
 # --- dynamic prompt builders ---
 
-
 def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[str, Any]]] = None, example_relations: Optional[List[Dict[str, Any]]] = None, lang: str = "es") -> str:
     ui = EX_STRINGS.get(lang, EX_STRINGS["es"])
     prompt = ""
+
+    def _norm(s: str) -> str:
+        return " ".join(str(s).split()).lower()
+        
+    def _find_id(target: str, id_map: dict) -> str:
+        if not target: return None
+        t_norm = _norm(target)
+        if t_norm in id_map: return id_map[t_norm]
+        for k, v in id_map.items():
+            if t_norm in k or k in t_norm: return v
+        return None
 
     if examples:
         prompt += f"{ui['ex_start']}\n"
@@ -163,9 +182,6 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
             for c in claims:
                 prompt += f"- id: {c.get('id', '')}, text: \"{c.get('text', '')}\"\n"
 
-            # -----------------------
-            # GLOBAL TARGET EXAMPLES
-            # -----------------------
             global_target = {
                 "sentence_relevancy": [],
                 "premises": [],
@@ -174,20 +190,22 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
             
             # ** S1: sentence relevancy **
             labels = ex.get('relevance_labels', {})
-            for i in range(len(ex.get('text', []))):
+            num_sentences = len(ex.get('text', []))
+            for i in range(num_sentences):
                 is_rel = labels.get(str(i), labels.get(i, False))
                 global_target["sentence_relevancy"].append("relevant" if is_rel else "not-relevant")
                 
             # ** S2: premises/claims + their offset **
             premises = ex.get('premises', [])
-            premise_text_to_id = {}
+            norm_premise_to_id = {} 
+            
             for idx, p_text in enumerate(premises):
                 p_id = f"p{idx+1}"
-                premise_text_to_id[p_text] = p_id
+                norm_premise_to_id[_norm(p_text)] = p_id
                 
                 s_idx = 0
                 for i, sent in enumerate(ex.get('text', [])):
-                    if p_text in sent:
+                    if p_text in sent or _norm(p_text) in _norm(sent):
                         s_idx = i
                         break
                         
@@ -198,29 +216,32 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
                 })
             
             # ** S3: relations **
-            claim_text_to_id = {c.get('text', ''): str(c.get('id', '')) for c in claims}
+            norm_claim_to_id = {_norm(c.get('text', '')): str(c.get('id', '')) for c in claims}
+            
             case_rels = []
             if example_relations:
-                case_rels = [r for r in example_relations if r.get("case_id") == ex.get("id")]
+                case_rels = [r for r in example_relations if str(r.get("case_id")) == str(ex.get("id"))]
             else:
                 case_rels = ex.get("annotations", {}).get("relations", [])
                 
             for r in case_rels:
-                # unified/CasiMedicos (head/tail) o GRACE estandar
-                p_text = r.get("head")
-                c_text = r.get("tail")
-                label = r.get("label", r.get("relation_type", "")).capitalize()
+                label = str(r.get("label", r.get("relation_type", ""))).capitalize()
                 
-                if p_text and c_text:
-                    p_id = premise_text_to_id.get(p_text)
-                    c_id = claim_text_to_id.get(c_text)
+                # ** substring match **
+                p_id = _find_id(r.get("head"), norm_premise_to_id)
+                c_id = _find_id(r.get("tail"), norm_claim_to_id)
+                
+                # ** fallback: inverted head & tail **
+                if not p_id or not c_id:
+                    p_id = _find_id(r.get("tail"), norm_premise_to_id)
+                    c_id = _find_id(r.get("head"), norm_claim_to_id)
                     
-                    if p_id and c_id and label in ["Support", "Attack"]:
-                        global_target["relations"].append({
-                            "premise_id": p_id,
-                            "claim_id": c_id,
-                            "relation_type": label
-                        })
+                if p_id and c_id and p_id != c_id and label in ["Support", "Attack"]:
+                    global_target["relations"].append({
+                        "premise_id": p_id,
+                        "claim_id": c_id,
+                        "relation_type": label
+                    })
 
             prompt += f"\n{ui['expected']}\n{json.dumps(global_target, ensure_ascii=False, indent=2)}\n\n"
         prompt += f"{ui['ex_end']}\n\n"

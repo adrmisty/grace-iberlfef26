@@ -10,7 +10,7 @@ from pathlib import Path
 
 # --- general path directories and settings ---
 LANG = "es"
-ROOT_DIR: Path = Path(__file__).resolve().parent.parent
+ROOT_DIR: Path = Path(__file__).resolve().parent.parent.parent
 BASE_DATA_DIR: Path = ROOT_DIR / "data"
 SPLITS_DATA_DIR: Path = BASE_DATA_DIR / "splits"
 GRACE_DATA_DIR: Path = BASE_DATA_DIR / "grace"
