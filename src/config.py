@@ -34,7 +34,7 @@ UNIFIED_SPLITS: Dict[str, Path] = {
 CASIMEDICOS_SPLITS: Dict[str, Path] = {
     # language-depenedent casimedicos [es, en, fr, it]
     "train": CASIMEDICOS_DATA_DIR / "train" / f"train_{LANG}_ordered.jsonl",
-    "validation": CASIMEDICOS_DATA_DIR / "dev" / f"dev_{LANG}_ordered.jsonl",
+    "validation": GRACE_DATA_DIR / "track_2_dev.json",
     "test": CASIMEDICOS_DATA_DIR / "test" / f"test_{LANG}_ordered.jsonl"
 }
 

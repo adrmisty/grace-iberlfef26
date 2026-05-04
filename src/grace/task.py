@@ -37,7 +37,7 @@ def run_global_subtasks(model_type: str, sizes: list[str], prompt_settings: list
         logging.info(f"========================================================")
         
         for setting in prompt_settings:
-            logging.info(f"\n\t >>> [{setting.upper()}] ---")
+            logging.info(f"\n\t >>> [{setting.upper()} ({n_examples} EXAMPLES)] ---")
             
             # ** setting: few/zero **
             if setting == "few_shot":
@@ -88,7 +88,7 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
         logging.info(f"========================================================")
         
         for setting in prompt_settings:
-            logging.info(f"\n\t >>> [{setting.upper()}] ---")
+            logging.info(f"\n\t >>> [{setting.upper()} ({n_examples} EXAMPLES)] ---")
             
             for task_id in tasks:
                 run_func = getattr(model, f"run_subtask_{task_id[-1]}")
@@ -185,7 +185,7 @@ def _load(n: int = 4, dataset: str = "grace", balanced_split: bool = True) -> tu
     
     # ** EXTENSION: 50/50 split for the unified examples **
     if balanced_split and dataset == "unified":
-        logging.info(f"> Enforcing 50/50 GRACE/CASIMEDICOS split for few-shot examples...")
+        logging.info(f"> Enforcing 50/50 GRACE/CASIMEDICOS {n} split for few-shot examples...")
         grace_cases = [c for c in train_cases if c.get("origin", "").upper() == "GRACE"]
         casi_cases = [c for c in train_cases if c.get("origin", "").upper() == "CASIMEDICOS"]
         

@@ -28,6 +28,9 @@ def submit_global(original_json_path: Path, global_preds_path: Path, output_path
             data = json.load(f)
             for item in data:
                 preds[str(item["id"])] = item.get("predictions", item.get("prediction", ""))
+    else:
+        logging.info(f">>> Not able to compile submission file from: {global_preds_path}")
+        return
                 
     for case in cases:
         case_id = str(case["id"])
