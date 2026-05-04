@@ -105,7 +105,7 @@ class Model:
 
     def run_subtask_2(self, test_data: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, lang: str = settings.LANG):
         logging.info(f"> Subtask 2 (span detection)...")
-        logging.info(f">>> Example user prompt: {subtask_prompt.build_s2_prompt(test_data[0], few_shot_examples, lang=lang)}")
+        logging.info(f">>> Example user prompt: {subtask_prompt.build_s2_usr_prompt(test_data[0], few_shot_examples, lang=lang)}")
         
         results = []
         for case in test_data:

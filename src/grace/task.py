@@ -88,6 +88,9 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
                 fs_cases, fs_rels = None, None
             
             for task_id in tasks:
+                if task_id == "global":
+                    continue
+                
                 run_func = getattr(model, f"run_subtask_{task_id[-1]}")
                 
                 if task_id == "S3":
