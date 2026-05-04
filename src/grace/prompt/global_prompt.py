@@ -21,35 +21,34 @@ Recibirás:
 
 IMPORTANTE:
 Tu tarea consiste en:
-1. Clasificar cada oración (separadas por ".") del contexto como "relevant" o "not-relevant".
-2. Extraer únicamente Premises mínimas desde las oraciones clasificadas como "relevant".
+1. Clasificar cada oración del contexto como "relevant" o "not-relevant".
+2. Extraer únicamente Premises mínimas desde las oraciones relevantes.
 3. Relacionar las Premises extraídas con las Claims/opciones usando el id de la opción.
 
-Subtarea 1 (Evidence Sentence Detection)
+Subtarea 1 — Evidence Sentence Detection:
 Clasifica cada oración del contexto clínico como:
-- "relevant": contiene evidencia clínica útil para apoyar o refutar alguna opción (derivar un tratamiento o diagnóstico).
-- "not-relevant": no aporta evidencia clínica útil para decidir entre las opciones/claims (derivar un tratamiento o diagnóstico).
+- "relevant": contiene evidencia clínica útil para apoyar o refutar alguna opción.
+- "not-relevant": no aporta evidencia clínica útil para decidir entre las opciones.
 
-Reglas para la Subtarea 1:
+Reglas para relevancia:
 - Las oraciones con síntomas, signos, antecedentes, resultados de pruebas, evolución temporal, factores de riesgo, negaciones clínicas o hallazgos clínicos suelen ser "relevant".
-- Las preguntas genéricas como:"¿Cuál es el diagnóstico más probable?", "¿Cuál es el tratamiento indicado?" o frases que solo introducen la pregunta, son "not-relevant".
+- Las preguntas genéricas como "¿Cuál es el diagnóstico más probable?", "¿Cuál es el tratamiento indicado?" o frases que solo introducen la pregunta suelen ser "not-relevant".
 - Una oración no debe ser "relevant" solo por introducir la pregunta.
 
-Subtarea 2 (Minimal Premise Span Detection):
+Subtarea 2 — Minimal Premise Span Detection:
 Extrae fragmentos exactos de texto que sean Premises.
 
-Una Premise es una unidad mínima de evidencia clínica objetiva del caso relativo al paciente:
-- síntomas
-- signos
-- antecedentes clínicos
-- medicación que tome
+Una Premise es una unidad mínima de evidencia clínica objetiva del caso:
+- síntoma
+- signo
+- antecedente
 - edad o sexo si son clínicamente relevantes
 - duración o evolución temporal
 - resultado de prueba
 - hallazgo de exploración
 - factor de riesgo
 - ausencia o negación clínica relevante
-- datos médicos que apoyen o refute una opción
+- dato que apoye o refute una opción
 
 Reglas estrictas para Premises:
 1. Extrae Premises solo desde oraciones clasificadas como "relevant".
@@ -60,8 +59,8 @@ Reglas estrictas para Premises:
 7. No extraigas la pregunta final como Premise.
 8. No devuelvas una oración completa si contiene varias unidades clínicas.
 9. Si una oración contiene varias evidencias clínicas, divide la oración en varias Premises mínimas.
-10. Cada Premise debe expresar una sola unidad o idea clínica.
-11. Prefiere el span más corto que conserve el significado clínico, sin reformular o inventar estos sub-span.
+10. Cada Premise debe expresar una sola unidad clínica.
+11. Prefiere el span más corto que conserve el significado clínico.
 13. Mantén modificadores clínicamente importantes, por ejemplo duración, localización, severidad o resultado de prueba.
 14. No incluyas introducciones, conectores ni relleno, solo la evidencia clínica concreta.
 
@@ -88,7 +87,7 @@ Ejemplos de malas Premises:
 - Texto reformulado.
 - Un resumen en vez de una copia exacta.
 
-Subtarea 3 (Argumentative Relation Detection):
+Subtarea 3 — Argumentative Relation Detection:
 Relaciona cada Premise con una o varias Claims cuando exista una relación clara.
 
 Las Claims son las opciones de respuesta recibidas.
@@ -98,7 +97,7 @@ Tipos de relación:
 - "Support": la Premise apoya, favorece, confirma o es consistente con esa opción.
 - "Attack": la Premise contradice, descarta, debilita o hace improbable esa opción.
 
-No incluyas relaciones dudosas, o falta de relación.
+No incluyas relaciones dudosas.
 
 Formato obligatorio de salida:
 
@@ -124,7 +123,8 @@ Formato obligatorio de salida:
 }
 
 Restricciones obligatorias:
-- "sentence_relevancy" debe tener exactamente una etiqueta por cada oración recibida, y usa solo "relevant" o "not-relevant".
+- "sentence_relevancy" debe tener exactamente una etiqueta por cada oración recibida.
+- Usa solo "relevant" o "not-relevant".
 - Cada "source_index" debe ser el índice de la oración de la que sale la Premise.
 - Cada "text" debe aparecer literalmente dentro de la oración indicada.
 - Cada "text" debe ser el menor fragmento clínicamente suficiente, no la oración completa.
@@ -135,17 +135,14 @@ Restricciones obligatorias:
 """.strip()
 
 EX_STRINGS = {
-    "es": {
-        "ex_start": "--- Ejemplos:", 
-        "ex_end": "Fin de ejemplos. ---", 
-        "case": "Caso clínico:", 
-        "sentences": "Oraciones:", 
-        "options": "Opciones:",
-        "expected": "Salida esperada:", 
-        "analyze": "Caso clínico a analizar:", 
-        "premise": "Premisa:", 
-        "generate": "Genera el JSON de salida:"
-    },
+    "es": {"ex_start": "--- EJEMPLOS ---", 
+           "ex_end": "--- FIN DE EJEMPLOS ---", 
+           "case": "Caso clínico completo:", 
+           "sentences": "Oraciones del contexto clínico:", 
+           "options": "Claims predefinidas, una por cada opción de respuesta:", 
+           "expected": "JSON válido de salida:", 
+           "premise": "Premisa:", 
+           "generate": "Genera el JSON de salida:"},
 }
 
 # --- dynamic prompt builders ---
@@ -225,23 +222,23 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
                 case_rels = ex.get("annotations", {}).get("relations", [])
                 
             for r in case_rels:
-                label = str(r.get("label", r.get("relation_type", ""))).capitalize()
+                # unified/CasiMedicos (head/tail) o GRACE estandar
+                p_text = r.get("head")
+                c_text = r.get("tail")
+                label = r.get("label", r.get("relation_type", "")).capitalize()
                 
-                # ** substring match **
-                p_id = _find_id(r.get("head"), norm_premise_to_id)
-                c_id = _find_id(r.get("tail"), norm_claim_to_id)
-                
-                # ** fallback: inverted head & tail **
-                if not p_id or not c_id:
-                    p_id = _find_id(r.get("tail"), norm_premise_to_id)
-                    c_id = _find_id(r.get("head"), norm_claim_to_id)
-                    
-                if p_id and c_id and p_id != c_id and label in ["Support", "Attack"]:
-                    global_target["relations"].append({
-                        "premise_id": p_id,
-                        "claim_id": c_id,
-                        "relation_type": label
-                    })
+                if p_text and c_text:
+                    p_id = premise_text_to_id.get(p_text)
+                    c_id = claim_text_to_id.get(c_text)
+                    # TODO: igual incluir solo los que c_id sea una opcion
+                    # TODO: las claims son subspan de la opcion? tienen ID? - el c id no es c_id (igual necesitamos subtarea intermedia / dos subtareas)
+                    # TODO: Opciones de respuesta, que contienen claims predefinidas
+                    if p_id and c_id and label in ["Support", "Attack"]:
+                        global_target["relations"].append({
+                            "premise_id": p_id,
+                            "claim_id": c_id,
+                            "relation_type": label
+                        })
 
             prompt += f"\n{ui['expected']}\n{json.dumps(global_target, ensure_ascii=False, indent=2)}\n\n"
         prompt += f"{ui['ex_end']}\n\n"
@@ -250,7 +247,7 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
     case_text = case.get('text', [])
     if isinstance(case_text, list): case_text = " ".join(case_text)
     
-    prompt += f"{ui['analyze']}\n{ui['case']}\n{case_text}\n\n"
+    prompt += f"{ui['case']}\n{case_text}\n\n"
     
     prompt += f"{ui['sentences']}\n"
     for i, sent in enumerate(case.get('text', [])):
