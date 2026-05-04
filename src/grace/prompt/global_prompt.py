@@ -135,14 +135,17 @@ Restricciones obligatorias:
 """.strip()
 
 EX_STRINGS = {
-    "es": {"ex_start": "--- EJEMPLOS ---", 
-           "ex_end": "--- FIN DE EJEMPLOS ---", 
-           "case": "Caso clínico completo:", 
-           "sentences": "Oraciones del contexto clínico:", 
-           "options": "Claims predefinidas, una por cada opción de respuesta:", 
-           "expected": "JSON válido de salida:", 
-           "premise": "Premisa:", 
-           "generate": "Genera el JSON de salida:"},
+    "es": {
+        "ex_start": "Ejemplos:", 
+        "ex_end": "Fin de ejemplos.", 
+        "case": "Caso clínico:", 
+        "sentences": "Oraciones:", 
+        "options": "Opciones:", 
+        "expected": "Salida esperada:", 
+        "analyze": "Caso clínico a analizar:", 
+        "premise": "Premisa:", 
+        "generate": "Genera el JSON de salida:"
+    },
 }
 
 # --- dynamic prompt builders ---
@@ -185,14 +188,14 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
                 "relations": []
             }
             
-            # ** S1: sentence relevancy **
+            # ** S1 target **
             labels = ex.get('relevance_labels', {})
             num_sentences = len(ex.get('text', []))
             for i in range(num_sentences):
                 is_rel = labels.get(str(i), labels.get(i, False))
                 global_target["sentence_relevancy"].append("relevant" if is_rel else "not-relevant")
                 
-            # ** S2: premises/claims + their offset **
+            # ** S2 target **
             premises = ex.get('premises', [])
             norm_premise_to_id = {} 
             
@@ -212,7 +215,7 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
                     "text": p_text
                 })
             
-            # ** S3: relations **
+            # ** S3 target **
             norm_claim_to_id = {_norm(c.get('text', '')): str(c.get('id', '')) for c in claims}
             
             case_rels = []
@@ -222,32 +225,30 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
                 case_rels = ex.get("annotations", {}).get("relations", [])
                 
             for r in case_rels:
-                # unified/CasiMedicos (head/tail) o GRACE estandar
-                p_text = r.get("head")
-                c_text = r.get("tail")
-                label = r.get("label", r.get("relation_type", "")).capitalize()
+                label = str(r.get("label", r.get("relation_type", ""))).capitalize()
                 
-                if p_text and c_text:
-                    p_id = premise_text_to_id.get(p_text)
-                    c_id = claim_text_to_id.get(c_text)
-                    # TODO: igual incluir solo los que c_id sea una opcion
-                    # TODO: las claims son subspan de la opcion? tienen ID? - el c id no es c_id (igual necesitamos subtarea intermedia / dos subtareas)
-                    # TODO: Opciones de respuesta, que contienen claims predefinidas
-                    if p_id and c_id and label in ["Support", "Attack"]:
-                        global_target["relations"].append({
-                            "premise_id": p_id,
-                            "claim_id": c_id,
-                            "relation_type": label
-                        })
+                p_id = _find_id(r.get("head"), norm_premise_to_id)
+                c_id = _find_id(r.get("tail"), norm_claim_to_id)
+                
+                if not p_id or not c_id:
+                    p_id = _find_id(r.get("tail"), norm_premise_to_id)
+                    c_id = _find_id(r.get("head"), norm_claim_to_id)
+                    
+                if p_id and c_id and p_id != c_id and label in ["Support", "Attack"]:
+                    global_target["relations"].append({
+                        "premise_id": p_id,
+                        "claim_id": c_id,
+                        "relation_type": label
+                    })
 
             prompt += f"\n{ui['expected']}\n{json.dumps(global_target, ensure_ascii=False, indent=2)}\n\n"
         prompt += f"{ui['ex_end']}\n\n"
 
-    # ** current case **
+    # ** current case (inference mode) **
     case_text = case.get('text', [])
     if isinstance(case_text, list): case_text = " ".join(case_text)
     
-    prompt += f"{ui['case']}\n{case_text}\n\n"
+    prompt += f"{ui['analyze']}\n{ui['case']}\n{case_text}\n\n"
     
     prompt += f"{ui['sentences']}\n"
     for i, sent in enumerate(case.get('text', [])):
@@ -258,4 +259,8 @@ def build_usr_global_prompt(case: Dict[str, Any], examples: Optional[List[Dict[s
         prompt += f"- id: {c.get('id', '')}, text: \"{c.get('text', '')}\"\n"
 
     prompt += f"\n{ui['generate']}"
+    
+    with open("prompt_fix.txt", "w", encoding="utf-8") as f:
+        f.write(prompt)
+    f.close()
     return prompt

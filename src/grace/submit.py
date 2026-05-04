@@ -48,8 +48,7 @@ def submit_global(original_json_path: Path, global_preds_path: Path, output_path
         if not raw_pred:
             raw_pred = ""
         
-        # [Robust String JSON Unpacking]
-        # Bucle para desempaquetar JSONs dentro de JSONs o bloques markdown
+        # [robust string JSON unpacking]
         while isinstance(raw_pred, str):
             raw_pred = raw_pred.strip()
             if not raw_pred: 
@@ -61,7 +60,6 @@ def submit_global(original_json_path: Path, global_preds_path: Path, output_path
             try: 
                 raw_pred = json.loads(to_parse)
             except Exception:
-                # Si falla, salimos del bucle con lo que tengamos
                 break
                 
         pred_dict = raw_pred if isinstance(raw_pred, dict) else {}
