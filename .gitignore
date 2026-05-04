@@ -1,6 +1,7 @@
 __pycache__/
 .vscode
 /model/*
+/tmp/*
 .python-version
 pyproject.toml
 uv.lock
