@@ -60,12 +60,13 @@ def main():
         for size in args.sizes:
             for setting in args.settings:
                 out_dir = settings.MODEL_DIR / args.dataset / model_prefix / size
+                out_dir.mkdir(parents=True, exist_ok=True)
 
                 if "global" in args.tasks:
                     output_path = out_dir / f"{model_prefix}_{size}_{setting}_global_{args.dataset}_{args.n_examples}_submission.json"
-                    submit_global(original_json_path,
-                                settings.get_prediction_path(model_prefix, size, setting, "global", dataset=args.dataset, n_examples=args.n_examples, cleaned=False),
-                                output_path)
+                    submit_global(original_json_path=original_json_path,
+                                global_preds_path=settings.get_prediction_path(model_prefix, size, setting, "global", dataset=args.dataset, n_examples=args.n_examples, cleaned=False),
+                                output_path=output_path)
                     continue
                 else:
                     output_path = out_dir / f"{model_prefix}_{size}_{setting}_s1s2s3_{args.dataset}_{args.n_examples}_submission.json"
@@ -73,7 +74,7 @@ def main():
                     s2_path = settings.get_prediction_path(model_prefix, size, setting, task="S2", dataset=args.dataset, n_examples=args.n_examples, cleaned=True)
                     s3_path = settings.get_prediction_path(model_prefix, size, setting, task="S3", dataset=args.dataset, n_examples=args.n_examples, cleaned=True)
                                         
-                    submit(original_json_path, s1_path, s2_path, s3_path, output_path=output_path)
+                    submit(original_json_path=original_json_path, s1_path=s1_path, s2_path=s2_path, s3_path=s3_path, output_path=output_path)
 
                     # CASIMEDICOS
                     """
