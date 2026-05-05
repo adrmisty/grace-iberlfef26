@@ -284,7 +284,23 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
                 
                 pred_entities.append({"id": e_id, "text": actual_span if start_idx != -1 else txt, "start": start_idx, "end": start_idx + len(actual_span) if start_idx != -1 else -1, "type": ent_type})
                 ent_counter += 1
-                
+        
+        # (multiple choice options >>> claims)
+        raw_claims = case.get("claims", [])
+        if not raw_claims and "annotations" in case:
+            raw_claims = [e for e in case["annotations"].get("entities", []) if e.get("type") == "Claim"]
+            
+        existing_claim_texts = [e["text"].lower() for e in pred_entities if e["type"] == "Claim"]
+
+        for c in raw_claims:
+            c_text = c.get("text", "")
+            c_id = str(c.get("id"))
+            
+            # (avoid duplicates)
+            if c_text.lower() not in existing_claim_texts:
+                start_idx, actual_span = find_span(raw_text, c_text)
+                pred_entities.append({"id": c_id, "text": actual_span if start_idx != -1 else c_text, "start": start_idx, "end": start_idx + len(actual_span) if start_idx != -1 else -1, "type": "Claim"})
+
         case["predictions"]["entities"] = pred_entities
         
         # ** S3: relations **
