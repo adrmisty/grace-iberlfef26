@@ -117,7 +117,7 @@ class Model:
 
     def run_subtask_3(self, test_relations: List[Dict[str, Any]], few_shot_examples: Optional[List[Dict[str, Any]]] = None, max_new_tokens: int = 128, lang: str = settings.LANG):
         logging.info(f"> Subtask 3 (relation detection)...")
-        logging.info(f">>> Example user prompt: {subtask_prompt.build_s3_prompt(test_relations[0], few_shot_examples, lang=lang)}")
+        logging.info(f">>> Example user prompt: {subtask_prompt.build_s3_usr_prompt(test_relations[0], few_shot_examples, lang=lang)}")
         results = []
         for relation in test_relations:
             user_prompt = subtask_prompt.build_s3_usr_prompt(relation, few_shot_examples, lang=lang)
