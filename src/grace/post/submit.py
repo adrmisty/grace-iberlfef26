@@ -236,8 +236,9 @@ def submit_global(original_json_path: Path, global_preds_path: Path, output_path
 
 # --------------- SPLIT (PER-TASK) submission compilation
 
+
 def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path, output_path: Path):
-    logging.info(f"> Compiling final submission file...")
+    
     with open(original_json_path, 'r', encoding='utf-8') as f:
         gold_data = json.load(f)
         if isinstance(gold_data, dict): gold_data = [gold_data]
@@ -253,27 +254,31 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
         case["predictions"] = {"sentence_relevancy": [], "entities": [], "relations": []}
 
         # ** S1: relevance **
-        raw_s1 = next((v for k, v in s1_preds.items() if case_id in str(k) or str(k) in case_id), {})
+        raw_s1 = s1_preds.get(case_id, {})
         s1_dict = _parse_json(raw_s1)
+        
         num_sentences = len(case.get("metadata", {}).get("context_sentences", []))
         if num_sentences == 0: num_sentences = len(case.get("text", []))
         
-        if "sentence_relevancy" in s1_dict:
-            case["predictions"]["sentence_relevancy"] = ["relevant" if r == "relevant" else "not-relevant" for r in s1_dict["sentence_relevancy"]][:num_sentences]
-        else:
-            case["predictions"]["sentence_relevancy"] = ["relevant" if str(s1_dict.get(str(i), s1_dict.get(i, False))).lower() in ["true", "1", "yes"] else "not-relevant" for i in range(num_sentences)]
-
+        rel_list = s1_dict.get("sentence_relevancy", [])
+        
+        if rel_list:
+            # pad with not-relevant to avoid sentence mismatch
+            # e.g. INFECCIOSAS_gdGMoi only predicted 3 relevance labels
+            # but the fourth (punctuation mark) was ignored
+            case["predictions"]["sentence_relevancy"] = [
+                "relevant" if str(r).lower() == "relevant" else "not-relevant" 
+                for r in (rel_list + ["not-relevant"] * num_sentences)[:num_sentences]
+            ]
+        
         # ** S2: entities **
-        raw_s2 = next((v for k, v in s2_preds.items() if case_id in str(k) or str(k) in case_id), {})
+        raw_s2 = s2_preds.get(case_id, {})
         s2_dict = _parse_json(raw_s2)
-
-        if not isinstance(s2_dict, dict) or ("premises" not in s2_dict and "claims" not in s2_dict):
-            parsed = _list_parse(raw_s2 if isinstance(raw_s2, str) else "")
-            if isinstance(parsed, dict): s2_dict = parsed
 
         pred_entities = []
         ent_counter = 1
         
+        # predicted premises + injected claims
         for ent_type, key in [("Premise", "premises"), ("Claim", "claims")]:
             for item in s2_dict.get(key, s2_dict.get(key.capitalize(), [])):
                 txt = item.get("text", "").strip() if isinstance(item, dict) else str(item).strip()
@@ -282,45 +287,59 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
                 e_id = str(item.get("id")) if isinstance(item, dict) and "id" in item else f"pred_{ent_type[0].lower()}_{ent_counter}"
                 start_idx, actual_span = find_span(raw_text, txt)
                 
-                pred_entities.append({"id": e_id, "text": actual_span if start_idx != -1 else txt, "start": start_idx, "end": start_idx + len(actual_span) if start_idx != -1 else -1, "type": ent_type})
+                pred_entities.append({
+                    "id": e_id, 
+                    "text": actual_span if start_idx != -1 else txt, 
+                    "start": start_idx, 
+                    "end": start_idx + len(actual_span) if start_idx != -1 else -1, 
+                    "type": ent_type
+                })
                 ent_counter += 1
-        
-        # (multiple choice options >>> claims)
+                
         raw_claims = case.get("claims", [])
         if not raw_claims and "annotations" in case:
             raw_claims = [e for e in case["annotations"].get("entities", []) if e.get("type") == "Claim"]
             
-        existing_claim_texts = [e["text"].lower() for e in pred_entities if e["type"] == "Claim"]
+        existing_claim_texts = [" ".join(e["text"].strip().split()).lower() for e in pred_entities if e["type"] == "Claim"]
 
         for c in raw_claims:
             c_text = c.get("text", "")
             c_id = str(c.get("id"))
             
-            # (avoid duplicates)
-            if c_text.lower() not in existing_claim_texts:
+            c_norm = " ".join(c_text.strip().split()).lower()
+            if c_norm not in existing_claim_texts:
                 start_idx, actual_span = find_span(raw_text, c_text)
-                pred_entities.append({"id": c_id, "text": actual_span if start_idx != -1 else c_text, "start": start_idx, "end": start_idx + len(actual_span) if start_idx != -1 else -1, "type": "Claim"})
-
+                pred_entities.append({
+                    "id": c_id, 
+                    "text": actual_span if start_idx != -1 else c_text, 
+                    "start": start_idx, 
+                    "end": start_idx + len(actual_span) if start_idx != -1 else -1, 
+                    "type": "Claim"
+                })
+                
         case["predictions"]["entities"] = pred_entities
         
-        # ** S3: relations **
+        # ** S3 relations **
         pred_relations = []
         gold_ents = {str(e["id"]): e["text"] for e in case.get("annotations", {}).get("entities", [])}
 
         for gold_rel in case.get("annotations", {}).get("relations", []):
             rel_id = str(gold_rel["id"])
-            raw_s3 = next((v for k, v in s3_preds.items() if rel_id in str(k) or str(k) in rel_id), None)
+            
+            # rel_id ('INFECCIOSAS_[gdGMoi]_[FZTNTb]')
+            raw_s3 = next((v for k, v in s3_preds.items() if rel_id in str(k)), None)
             if not raw_s3: continue
             
             p_obj = _parse_json(raw_s3)
             label = _extract_s3_label(p_obj).strip().capitalize()
+            
             if label not in ["Support", "Attack"]: continue
 
             def find_pred_id(gold_txt):
                 if not gold_txt: return None
-                t_norm = gold_txt.strip().lower()
+                t_norm = " ".join(gold_txt.strip().split()).lower()
                 for ent in pred_entities:
-                    e_norm = ent["text"].strip().lower()
+                    e_norm = " ".join(ent["text"].strip().split()).lower()
                     if e_norm == t_norm or t_norm in e_norm or e_norm in t_norm:
                         return ent["id"]
                 return None
@@ -329,17 +348,26 @@ def submit(original_json_path: Path, s1_path: Path, s2_path: Path, s3_path: Path
             p2_id = find_pred_id(gold_ents.get(str(gold_rel["arg2_id"])))
 
             if p1_id and p2_id and p1_id != p2_id:
-                pred_relations.append({"id": rel_id, "arg1_id": p1_id, "arg2_id": p2_id, "relation_type": label})
+                pred_relations.append({
+                    "id": rel_id, 
+                    "arg1_id": p1_id, 
+                    "arg2_id": p2_id, 
+                    "relation_type": label
+                })
                 
         case["predictions"]["relations"] = pred_relations
 
-    with open(output_path, 'w', encoding='utf-8') as f: json.dump(cases, f, ensure_ascii=False, indent=2)
+    with open(output_path, 'w', encoding='utf-8') as f: 
+        json.dump(cases, f, ensure_ascii=False, indent=2)
+        
     logging.info(f"\t>>> [S1->S2->S3] submission to {output_path.name}")
     patch_s3_gold(output_path, original_json_path, s3_preds)
 
 
 def patch_s3_gold(submission_path: Path, gold_path: Path, s3_preds: dict):
-    with open(submission_path, "r", encoding="utf-8") as f: sub_data = json.load(f)
+    """Patches S3 predictions with gold entities from S2 and S3 labels for isolated evaluation."""
+    with open(submission_path, "r", encoding="utf-8") as f: 
+        sub_data = json.load(f)
     with open(gold_path, "r", encoding="utf-8") as f:
         gold_cases = json.load(f)
         if isinstance(gold_cases, dict): gold_cases = [gold_cases]
@@ -354,17 +382,24 @@ def patch_s3_gold(submission_path: Path, gold_path: Path, s3_preds: dict):
         patched_rels = []
         for grel in g_case.get("annotations", {}).get("relations", []):
             rel_id = str(grel["id"])
-            raw_s3 = next((v for k, v in s3_preds.items() if rel_id in str(k) or str(k) in rel_id), None)
+            
+            raw_s3 = next((v for k, v in s3_preds.items() if rel_id in str(k)), None)
             if not raw_s3: continue
             
             p_obj = _parse_json(raw_s3)
             lbl = _extract_s3_label(p_obj).strip().capitalize()
             
             if lbl in ["Support", "Attack"]:
-                patched_rels.append({"id": rel_id, "arg1_id": grel["arg1_id"], "arg2_id": grel["arg2_id"], "relation_type": lbl})
+                patched_rels.append({
+                    "id": rel_id, 
+                    "arg1_id": grel["arg1_id"], 
+                    "arg2_id": grel["arg2_id"], 
+                    "relation_type": lbl
+                })
                 
         item["predictions"]["relations"] = patched_rels
 
     out_path = submission_path.with_name(submission_path.stem + "_s3_gold.json")
-    with open(out_path, "w", encoding="utf-8") as f: json.dump(sub_data, f, ensure_ascii=False, indent=2)
+    with open(out_path, "w", encoding="utf-8") as f: 
+        json.dump(sub_data, f, ensure_ascii=False, indent=2)
     logging.info(f"\t\t>>> [S2-GOLD-patched S3] submission to {out_path.name}")
