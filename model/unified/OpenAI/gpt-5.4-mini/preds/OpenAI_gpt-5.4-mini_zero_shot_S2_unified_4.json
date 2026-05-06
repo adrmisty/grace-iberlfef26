@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Hombre de 28 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"de profesión violinista\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"en los últimos 3 meses crisis de pánico durante sus actuaciones públicas\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"intenso miedo a quedar bloqueado y no poder continuar con la actuación\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"algo que sería humillante para él\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"Este miedo le ha hecho cancelar sus próximas actuaciones\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"En el resto de sus actividades diarias no experimenta este temor\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"ni tampoco le sucede cuando ensaya con sus compañeros de la orquesta\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Qué diagnóstico consideraría más probable para este caso?\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Mujer de 36 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"haber sufrido tres abortos espontáneos en el primer trimestre\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"No ha tenido ningún embarazo a término\"}],\"claims\":[{\"id\":\"1\",\"text\":\"Entre los estudios que solicitará en primer término NO se incluye:\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Primigesta de 41 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"en la 38 semana\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"diabetes gestacional\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"hipertensión arterial esencial\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"dolor hipogástrico de inicio brusco\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"afectación de su estado general\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"metrorragia escasa de sangre oscura\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"patrón de frecuencia cardiaca fetal no reactivo\"}],\"claims\":[{\"id\":\"1\",\"text\":\"La principal sospecha diagnóstica será:\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Varón de 48 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"cefalgias resistentes al tratamiento analgésico habitual\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"desde hace varios años tiene que cambiar su gorra de trabajo porque precisa cada vez tallas mayores\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"una fosfatasa alcalina con niveles séricos cuatro veces mayor de lo normal\"}],\"claims\":[]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Hombre de 32 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"sin antecedentes de interés ni factores de riesgo cardiovascular\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"Clínica de disnea al subir un piso de escaleras de 1 mes de evolución\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"Consulta por síncope brusco precedido de esfuerzo\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"Antecedentes familiares de muerte no explicada de forma brusca en su hermano\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"un soplo sistólico rudo más audible en foco aórtico\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"ritmo sinusal con patrón compatible de hipertrofia de ventricular izquierda\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"importante hipertrofia asimétrica de septo interventricular\"},{\"local_id\":\"p9\",\"source_index\":0,\"text\":\"un gradiente dinámico subvalvular de 70 mmHg\"},{\"local_id\":\"p10\",\"source_index\":0,\"text\":\"insuficiencia mitral secundaria moderada\"},{\"local_id\":\"p11\",\"source_index\":0,\"text\":\"fracción de eyección de ventrículo izquierdo conservada\"}],\"claims\":[]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Un hombre de 60 años de edad presenta un cuadro de demencia rápidamente progresiva, rigidez, ataxia, mioclonias, que persisten durante el sueño y descargas de alto voltaje en el EEG.\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Qué alteración, entre las siguientes, es la que podremos encontrar en el LCR?\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Mujer de 71 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"antecedentes de artritis reumatoide en tratamiento con sulfasalazina 1 gr/8h, prednisona 15 mg/d y etanercept 25 mg veces/semana\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"Acude a urgencias por clínica de 72h compatible con herpes zoster facial afectando a hemifacies derecha incluyendo pabellón auricular, respetando frente y quemosis conjuntival\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál sería el tratamiento adecuado?\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Una mujer de 76 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"sin otros antecedentes que hipertensión arterial\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"consulta por ictericia indolora y prurito, con anorexia\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"una bilirrubina total de 12 mg/dL (con 9.5 mg/dL de bilirrubina directa)\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"La ecografía abdominal muestra dilatación biliar intra y extrahepática\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"un nódulo hepático único menor de 2 cm, localizado periféricamente, en la cara anterior del lóbulo izquierdo\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"la presencia de una masa de 3.5 cm en la cabeza pancreática\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"La punción aspirativa con aguja fina del nódulo hepático resulta concluyente para adenocarcinoma\"}],\"claims\":[{\"id\":\"1\",\"text\":\"Señale la mejor opción terapéutica:\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Una mujer de 35 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"diagnosticada de Lupus Eritematoso Sistémico\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"en tratamiento con corticoides a una dosis de 0.5 mg/kg/día durante varios meses\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"con buen control de la actividad inflamatoria\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"acude a la consulta por dolor continuo en la rodilla de 3 semanas de evolución\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"de inicio brusco sin antecedente traumático\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"Aporta un examen radiográfico dentro de la normalidad\"}],\"claims\":[]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Un paciente de 73 años presenta en el test de deglución una disfagia neurológica completa\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"secundaria a un ictus cadioembólico en el territorio de la arteria cerebral media izquierda\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"Va a precisar apoyo nutricional a largo plazo\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿cuál considera más indicada para este caso?\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Un hombre de 58 años, no fumador y sin antecedentes personales relevantes, es ingresado en la planta de neurología por un accidente cerebrovascular agudo isquémico.\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"Su hemograma muestra 18.5 g/dl de hemoglobina con un hematocrito de 60%.\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"Todos los siguientes datos concuerdan con el diagnóstico de Policitemia Vera EXCEPTO uno.\"}],\"claims\":[]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Niño de 28 días de vida, nacido a término.\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"Ha sido alimentado con lactancia materna desde el nacimiento.\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"hace 8 días comenzó con vómitos\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"desde hace 5 días, después de todas las tomas.\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"Está permanentemente hambriento.\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"Los vómitos son de contenido alimentario \\\"a chorro\\\".\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"El abdomen, en la palpación, es blando y depresible, sin visceromoegalias.\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"pH 7.49\"},{\"local_id\":\"p9\",\"source_index\":0,\"text\":\"bicarbonato 30 mEq/L\"},{\"local_id\":\"p10\",\"source_index\":0,\"text\":\"PC02 53 mmHg\"},{\"local_id\":\"p11\",\"source_index\":0,\"text\":\"exceso de base +8mEq/L\"},{\"local_id\":\"p12\",\"source_index\":0,\"text\":\"Na 137 mEq/L\"},{\"local_id\":\"p13\",\"source_index\":0,\"text\":\"K3.1 mEq/L\"},{\"local_id\":\"p14\",\"source_index\":0,\"text\":\"Cl 94 mEq/L\"}],\"claims\":[]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"mujer de 35 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"citología vaginal tras 5 años sin control previo\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"el diagnóstico es SIL (lesión intraepitelial) de alto grado\"}],\"claims\":[{\"id\":\"1\",\"text\":\"La conducta correcta a seguir es:\"}]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"adenocarcinoma con diferenciación mucinosa prominente de colon ascendente\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"diagnosticado en un hombre de 32 años\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Qué estudios se deben realizar en un adenocarcinoma con diferenciación mucinosa prominente de colon ascendente diagnosticado en un hombre de 32 años?\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Niño de 4 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"aparición a lo largo de los últimos tres días, de lesiones cutáneas en piernas y glúteos\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"su pediatra le había diagnosticado una infección de vías respiratorias superiores 10 días antes\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"En las últimas 12 horas presenta dolor abdominal intenso tipo cólico\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"ha realizado dos deposiciones diarréicas\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"Afebril\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"No pérdida de peso\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"numerosas petequias y lesiones purpúricas palpables de predominio en glúteos y extremidades inferiores\"},{\"local_id\":\"p9\",\"source_index\":0,\"text\":\"Buen estado general aunque tiene dolor abdominal intenso\"},{\"local_id\":\"p10\",\"source_index\":0,\"text\":\"La palpación abdominal es difícil de valorar por dolor difuso\"},{\"local_id\":\"p11\",\"source_index\":0,\"text\":\"No visceromegalias\"},{\"local_id\":\"p12\",\"source_index\":0,\"text\":\"No otros hallazgos de interés a la exploración\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cual de los siguientes datos NO apoya su sospecha diagnóstica?\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Hombre de 47 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"edemas en miembros inferiores de 3 semanas de evolución\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"creatinina 1.3 mg/dL\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"colesterol total 270 mg/dL\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"albúmina 2.4 g/dL\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"15-20 hematíes por campo\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"proteinuria 3.7 g/día\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál es el diagnóstico más probable?\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"mujer de 35 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"antecedentes de hipertensión arterial esencial desde hace 4 años\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"La paciente ha estado bien controlada con Enalapril 20 mg cada 12 horas\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"Desde hace dos meses está embarazada\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"es remitida por su médico de atención primaria para seguimiento\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿cuál es la correcta?\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Mujer de 34 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"ingresa para estudio de poliuria y polidipsia\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"se constata una diuresis de 8,2 litros\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"una glicemia de 96 mg/dL\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"natremia de 148 mEq/L\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"osmolalidad plasmática de 309 mOsm/kg\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"osmolalidad urinaria de 89 mOsm/kg\"}],\"claims\":[]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Paciente de 12 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"acude a urgencias por artralgia, dolor abdominal y hematuria macroscópica\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"dos días después de haber sido diagnosticado de amigdalitis pultácea\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"A su ingreso la creatinina sérica es de 2 mg/dl\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál es el diagnóstico más probable?\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Niño de 1 año de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"no pasó las pruebas de cribado auditivo al nacimiento\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"potenciales evocados auditivos del tronco cerebral\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"hipoacusia bilateral leve-moderada en el oído derecho\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"moderada-grave en el oido izquierdo\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál es la actitud más correcta a seguir en el momento actual?\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Mujer de 30 años de edad, embarazada de 33 semanas, que consulta por prurito de una semana de evolución.\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"Las pruebas hepáticas muestran un leve incremento en los valores de transaminasas (AST 77 UI/L y ALT 84 UI/L), así como de fosfatasa alcalina (155 UI/L) y gammaglutamiltranspeptidasa (125 UI/L), con una cifra de bilirrubina total de 2,3 mg/dL.\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"El hemograma y el estudio de coagulación son normales\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"la ecografía abdominal no muestra alteraciones hepáticas ni biliares\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"la serología de virus de hepatitis, así como los autoanticuerpos son negativos\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál de las siguientes actitudes es la correcta?\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"diagnosticado de epilepsia\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"episodios de falta de respuesta a estímulos externos\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"movimientos irregulares de las cuatro extremidades\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"ojos cerrados\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"emisión de llanto\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"movimientos pélvicos\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"de cinco a veinte minutos de duración\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"no responden al tratamiento con fármacos antiepilépticos\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cual es el estudio complementario con mayor probabilidad de aclarar el diagnóstico?\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Hombre de 66 años de edad\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"diagnosticado previamente de cirrosis hepática de etiología alcohólica\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"aumento del perímetro abdominal\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"desorientación temporo-espacial\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"se constata la existencia de ascitis\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"\\\"flapping tremor\\\" o asterixis\"}],\"claims\":[{\"id\":\"1\",\"text\":\"¿Cuál de las siguientes exploraciones debe realizarse con carácter urgente?\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": "{\"premises\":[{\"local_id\":\"p1\",\"source_index\":0,\"text\":\"Un hombre de 32 años\"},{\"local_id\":\"p2\",\"source_index\":0,\"text\":\"adicto a drogas por vía parenteral\"},{\"local_id\":\"p3\",\"source_index\":0,\"text\":\"ha salido recientemente de la cárcel\"},{\"local_id\":\"p4\",\"source_index\":0,\"text\":\"tiene una prueba cutánea con derivado proteico purificado (PPD), con 10 mm de induración\"},{\"local_id\":\"p5\",\"source_index\":0,\"text\":\"Hace un año, el PPD fue negativo\"},{\"local_id\":\"p6\",\"source_index\":0,\"text\":\"actualmente está asintomático\"},{\"local_id\":\"p7\",\"source_index\":0,\"text\":\"la serología de VIH es negativa\"},{\"local_id\":\"p8\",\"source_index\":0,\"text\":\"su radiografía de tórax es normal\"}],\"claims\":[]}"
+  }
+]

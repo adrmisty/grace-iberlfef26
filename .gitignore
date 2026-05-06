@@ -1,6 +1,7 @@
 __pycache__/
 .vscode
-/model/*
+/model/not_global/*
+/model/unified/Gemini/*
 /tmp/*
 .python-version
 pyproject.toml

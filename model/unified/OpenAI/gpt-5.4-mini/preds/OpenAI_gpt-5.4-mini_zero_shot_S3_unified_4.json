@@ -1,0 +1,1086 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_UCk2Ag",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_ocCdCt",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_HUTUkY",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_gFSEwA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_HiZe4v",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_8KXMMU",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_7kPJd4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_XnEVeV_8Wyov6",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw_nvbA24",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw_7xzYU8",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ_eiDHQJ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ_5ESXAH",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ_QLTs6b",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ_k5jjx2",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_qQaFYC",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_Ahs3KX",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_s56LZt",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_eXLg9u",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_CcPRtZ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_4r5nnM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_rGHihn",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_mmvybt",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_v7mzZK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_btbL55",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_thsonh",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_XG3MNS",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_xTbZn7",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_fMov36",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_ZkiVUE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn_9yiXhH",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_B2v7Hn",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_KAny6S",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_EVewyK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_qW86f9",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_x8aaPH",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_yW2r4w",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_q262kr",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_LBiQV8",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_GbSjzx",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_FuhBZ4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_ZruJPu",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_CEqJqF",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_SPQsnG",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_tHUiEy",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_HSLMZy",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_w6jtRM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J_ZPZ3rs",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_t78hDi",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_JNY5D7",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_DWGxhN",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_mUiyWm",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_Ztban6",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_uyF2JS",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_ddJ6C4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_TgrdMg",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_u67Fur",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_umHDiB",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_UmtrgU",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_LYidgM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_zoyNnw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_vvNEtp",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_eiydap",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_vRNUBX",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_Ju8SKZ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_o4BYmW",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_DPxV6P",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8_XBAYg6",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_FZTNTb",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_UyJnyM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_Zd2FgB",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_hDzjsG",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_PRZ6S3",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_6zSD25",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_7YDeQt",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_yXt4Q4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_zk26qK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi_UiJD4j",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_Tzqdop",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_6Q6wJj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_nzaWzU",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_2zFsfi",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_bHHxjA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_z3UHEj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_YSoBUD",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_arRZSc",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_2ttr6Y",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_LfpPdu",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_u5zs3V",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_nHGSVq",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_K2x8cz",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_xvnVNF",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_wg8h3r",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_QMfemS",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_6qCoVv",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_XnuNoF",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_Rhkb7G",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr_zYMNju",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_nZJHnL",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_RbFCyj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_QgAWYw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_rVdw65",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_ghBWU3",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_pGSKYC",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_uTgdDn",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_uDi8YK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_8keeto",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_qKsmnb",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN_t96BB4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM_i4kcAf",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM_d6UMPR",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM_Wvmp7U",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM_CuPsP5",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM_uCoeiy",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw_5BNJeM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw_kfpZ2W",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw_6agary",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw_CfS7uj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw_B952iz",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_cF8QLs",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_ENScLU",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_WimP5A",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_Q4ZXFE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_DHyFrL",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_upD4HL",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_LoftpW",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_Dbu8RN",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_X39pwT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_tPmmjJ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_Kp5aWz",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_MaqNUV",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_qkNQ7b",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG_MQMCUu",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp_XDD93i",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp_ATvAgo",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp_G6zSVp",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq_DaY73J",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq_NyjqsT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq_FEhFey",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq_hfQn3n",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_UbLDU3",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_wRRQee",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_hsXTab",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_EVgnu4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_my54qS",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_XPusUd",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq_Ku3aPi",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_R57At8",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_BZsCaM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_7iXpnW",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_i78gpv",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_FyxJ9c",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_oCzdEf",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_CxuZfm",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_6FF25P",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_Y4QTVJ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_5QyGnD",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_T5h4gU",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_cGuGkY",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_viErkq",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_CCFwB2",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_iX5fbc",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_fN9JNx",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_Gsiejn",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_Quwzhk",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_djWtMF",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_RmKj88",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw_NADqeK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_sh4Spo",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_VSzkeT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_o7nVmW",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_xpFeg5",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_QrZwZi",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_dYqB2s",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_BVtNw5",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN_3xfGsw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_8DXH8u",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_o8hDJd",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_RomYFL",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_uPLT3W",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_AQVKsV",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_9rGPiC",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_Up3j3h",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_7QNkHP",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_Y6fFkM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_WRmEXg",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL_qcs2Q2",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_sT6fgE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_kQsUbT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_KXbbyB",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_T95hjg",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_iGBYwA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_TjRjkC",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_gboiQn",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_ut2FiT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_MhXXaR",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_k3GknA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_xsGjtG",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_CianNE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_4RQ7t7",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_6GntYx",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw_JNTUtT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_u8SxNo",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_UpLwL9",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_uXUocc",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_huydub",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_JdQWsA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_H6AnbY",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_ub4ekW",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu_7vsg4W",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_ynvG5r",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_RqtnWd",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_Pse6Et",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_cMZsWx",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_DW4okw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_JRRHDQ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m_6Nd3xh",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_cgpFs8",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_5M2VQA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_tApaML",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_kfjB7G",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_roVCoY",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_mLtnTE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_2jBbDK",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_etBdWe",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_ib6TCM",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_Yq2niV",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_kfCWSd",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_tAZ6Vy",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_AbbHDx",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_eaABTE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_46v7XN",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_TkQdny",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_HCRo2o",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_mzCMqa",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_GPytLA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_Aow3Gi",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_TbnHiy",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_QoDUHR",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_3JVZUw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_JCG7xY",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_zAkP73",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_wGvm5S",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_DRJ5TJ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_SMG7YZ",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs_KrWkTw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_cXvW94",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_UnEFE4",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_9yp3od",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_xuuUTw",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_tqMyaj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_D769LA",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_qCovk9",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu_HrqBkj",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_GsjPDo",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_6EGK6s",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_mcoxtd",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_yNvB8w",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_s2a8or",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Support\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_4Ejo6u",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_pdSYpX",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_MDYUCk",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_HfnYhG",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_5Vyvs9",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_CoBb9d",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_QPgRow",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_oijQqk",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_yq7TWP",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_VWgUXE",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_QczcGs",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_Vbx4UB",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU_aCS2aT",
+    "prediction": "{\"relations\":[{\"premise_id\":\"p1\",\"claim_id\":\"c1\",\"relation_type\":\"Attack\"}]}"
+  }
+]

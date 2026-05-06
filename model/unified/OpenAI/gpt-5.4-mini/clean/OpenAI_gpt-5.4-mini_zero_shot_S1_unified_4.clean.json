@@ -1,0 +1,98 @@
+[
+  {
+    "id": "PSIQUIATRÍA_XnEVeV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8c3wrw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FqwzAQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_rExSEn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dLcN2J",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fsyMJ8",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_gdGMoi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_rLyGqr",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_2cyLhN",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_ezLtUM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_L2bGHw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_AdNeFG",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ayo5Fp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_K2Xbwq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ANoq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_3SGqdw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ds2HQN",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_d3YhLL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GvGBvw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_nSMSiu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_T7Bs8m",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_GQjtVs",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_37pdMu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_q5gNTU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  }
+]
