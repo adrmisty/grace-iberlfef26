@@ -158,6 +158,7 @@ def _get_raw_text(case):
         raw = " ".join(text_data) if isinstance(text_data, list) else str(text_data)
     return raw
 
+
 def _extract_s3_label(p_obj):
     """Extracts the relation label supporting Pydantic Strict schemas and legacy formats."""
     if isinstance(p_obj, list) and len(p_obj) > 0: p_obj = p_obj[0]
