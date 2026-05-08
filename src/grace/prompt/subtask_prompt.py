@@ -58,18 +58,15 @@ SYSTEM_PROMPTS_v0: Dict[str, Dict[str, str]] = {
             "  ]"
             "}"
         ),
-        
-        # ** fix: include 'None' as valid relation **
         "SUBTASK_3": (
             "Eres un razonador clínico. Se te dará una PREMISA (un hecho del paciente) y un CLAIM (una posible respuesta/diagnóstico). "
             "Tu tarea es determinar la relación argumentativa entre ellos:\n"
             "- 'Support': La premisa apoya, confirma o es consistente con el claim.\n"
-            "- 'Attack': La premisa contradice, descarta o hace improbable el claim.\n"
-            "- 'None': La premisa no tiene una relación argumentativa directa o clínicamente relevante con el claim.\n\n"
+            "- 'Attack': La premisa contradice, descarta o hace improbable el claim.\n\n"
             "Restricciones obligatorias:\n"
             "- Cada \"premise_id\" debe ser el ID proporcionado para la Premise analizada.\n"
             "- Cada \"claim_id\" debe corresponder a la opción recibida.\n"
-            "- Usa solo \"Support\", \"Attack\" o \"None\".\n"
+            "- Usa solo \"Support\" o \"Attack\".\n"
             "- Devuelve únicamente JSON válido.\n\n"
             "Formato obligatorio de salida:\n"
             "{"
@@ -80,8 +77,8 @@ SYSTEM_PROMPTS_v0: Dict[str, Dict[str, str]] = {
             "      \"relation_type\": \"Support\""
             "    }"
             "  ]"
-            "}"  
-        )  
+            "}"
+        )
     }
 }
 

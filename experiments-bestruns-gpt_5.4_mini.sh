@@ -12,7 +12,7 @@
 CUDA_VISIBLE_DEVICES=3 python -m src.grace.main --bestrun --other_predictions model/best_runs/grace-qwen3.54B-few-global.json 
     --model OpenAI --sizes gpt-5.4-mini --settings few_shot zero_shot --dataset unified --n_examples 4
 
-python -m src.grace.eval.score --predictions model/best_runs/best_runs/bestrun_mT5-ft-s1-s2_OpenAI-gpt-5.4-mini_few_shot_grace.json --gold data/grace/track_2_dev.json
+python -m src.grace.eval.score --predictions model/best_runs/ensemble/bestrun_mT5-ft-s1-s2_OpenAI-gpt-5.4-mini_few_shot_grace.json --gold data/grace/track_2_dev.json
 
 # 2) MedGemma 4B (ICL global)
 CUDA_VISIBLE_DEVICES=3 python -m src.grace.main --bestrun --other_predictions model/best_runs/grace-medgemma4B-few-global.json 
