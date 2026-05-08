@@ -1,14 +1,83 @@
-Traceback (most recent call last):
-  File "/mnt/data/arodriguezf_data/miniconda3/envs/grace-task/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/mnt/data/arodriguezf_data/miniconda3/envs/grace-task/lib/python3.10/runpy.py", line 86, in _run_code
-    exec(code, run_globals)
-  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 746, in <module>
-    main()
-  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 723, in main
-    results = evaluate(args.predictions, args.gold, args.iou)
-  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 690, in evaluate
-    cases = _enrich_cases(_prepare_cases(predictions_path, gold_path))
-  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 558, in _prepare_cases
-    raise ValueError(
-ValueError: Case 'PSIQUIATRÍA_XnEVeV' is in the gold file but missing from the predictions file.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUBTASK 1 – Evidence Sentence Detection
+  Official Score  (F1 'relevant'): 0.6667
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Class                         F1     Precision      Recall
+  --------------------------------------------------------
+  relevant                  0.6667        0.7955      0.5738
+  not-relevant              0.6465        0.5517      0.7805
+  macro_avg                 0.6566        0.6736      0.6771
+  micro_avg                 0.6569        0.6569      0.6569
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUBTASK 2 – Fine-Grained Evidence Span Detection
+  Official Score  (Scope A, Strict Micro F1): 0.6906
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Scope A – End-to-End  [official]
+
+    Strict (char-exact)
+  Entity Type                   F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Premise                 F1=0.4054  P=0.4455  R=0.3719  TP=  45  FP=  56  FN=  76
+  Claim                   F1=0.9732  P=0.9561  R=0.9909  TP= 109  FP=   5  FN=   1
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.6893  P=0.7008  R=0.6814
+  Micro Avg               F1=0.6906  P=0.7163  R=0.6667  TP= 154  FP=  61  FN=  77
+
+    Relaxed (token IoU≥τ)
+  Entity Type                   F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Premise                 F1=0.5045  P=0.5545  R=0.4628  TP=  56  FP=  45  FN=  65
+  Claim                   F1=0.9732  P=0.9561  R=0.9909  TP= 109  FP=   5  FN=   1
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.7389  P=0.7553  R=0.7269
+  Micro Avg               F1=0.7399  P=0.7674  R=0.7143  TP= 165  FP=  50  FN=  66
+
+  Scope B – Oracle       [complementary]
+
+    Strict (char-exact)
+  Entity Type                   F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Premise                 F1=0.4265  P=0.4737  R=0.3879  TP=  45  FP=  50  FN=  71
+  Claim                   F1=0.0000  P=0.0000  R=0.0000  TP=   0  FP=   0  FN=   1
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.2133  P=0.2368  R=0.1940
+  Micro Avg               F1=0.4245  P=0.4737  R=0.3846  TP=  45  FP=  50  FN=  72
+
+    Relaxed (token IoU≥τ)
+  Entity Type                   F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Premise                 F1=0.5308  P=0.5895  R=0.4828  TP=  56  FP=  39  FN=  60
+  Claim                   F1=0.0000  P=0.0000  R=0.0000  TP=   0  FP=   0  FN=   1
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.2654  P=0.2947  R=0.2414
+  Micro Avg               F1=0.5283  P=0.5895  R=0.4786  TP=  56  FP=  39  FN=  61
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUBTASK 3 – Argumentative Relation Detection
+  Official Score  (Strict Macro F1): 0.2775
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Strict (char-exact)  [official]
+  Relation Type                 F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Support                 F1=0.2421  P=0.1963  R=0.3158  TP=  42  FP= 172  FN=  91
+  Attack                  F1=0.3130  P=0.2362  R=0.4638  TP=  64  FP= 207  FN=  74
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.2775  P=0.2162  R=0.3898
+  Micro Avg               F1=0.2804  P=0.2186  R=0.3911  TP= 106  FP= 379  FN= 165
+
+  Relaxed (token IoU≥τ)  [complementary]
+  Relation Type                 F1     Precision      Recall      TP      FP      FN
+  ------------------------------------------------------------------------
+  Support                 F1=0.2997  P=0.2430  R=0.3910  TP=  52  FP= 162  FN=  81
+  Attack                  F1=0.3570  P=0.2694  R=0.5290  TP=  73  FP= 198  FN=  65
+  ------------------------------------------------------------------------
+  Macro Avg               F1=0.3283  P=0.2562  R=0.4600
+  Micro Avg               F1=0.3307  P=0.2577  R=0.4613  TP= 125  FP= 360  FN= 146
+
+────────────────────────────────────────────────────────────────────
+
