@@ -22,7 +22,7 @@ def main():
     parser.add_argument("--eval", action="store_true", help="Run metrics calculation")
     parser.add_argument("--clean", action="store_true", help="Run post-processing (clean predictions)")
     parser.add_argument("--submit", action="store_true", help="Run post-processing (compile task submission file)")
-    parser.add_argument("--ensemble", action="store_true", help="Run S3 ensemble using another model's submission")
+    parser.add_argument("--bestrun", action="store_true", help="Run S3 ensemble using another (best-run) model's submission")
     
     parser.add_argument("--model", type=str, default="Qwen", help="Model type: Qwen, MedGemma, Gemini, OpenAI")
     parser.add_argument("--sizes", nargs="+", default=["2B", "4B", "27B"], help="Model sizes")
@@ -48,9 +48,9 @@ def main():
             run_subtasks(model_type=args.model, sizes=args.sizes, prompt_settings=args.settings, tasks=[t for t in args.tasks if t != "global"], dataset=args.dataset, n_examples=args.n_examples)
     
     # *** run ensemble ***
-    if args.ensemble:
-        if not args.other_predictions or not args.other_model:
-            logging.error("\t> (!) You must provide both --other_predictions and --other_model to extract predictions")
+    if args.bestrun:
+        if not args.other_predictions:
+            logging.error("\t> (!) You must provide both --other_predictions (and --other_model to extract predictions, not required)")
         else:
             best_runs_for_s3(
                 other_predictions=Path(args.other_predictions),

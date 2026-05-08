@@ -19,7 +19,7 @@ import src.grace.config as settings
 from src.grace import case
 from src.grace.eval.metric import GraceEvaluator
 from src.grace.model import MODEL_FACTORY
-from src.grace.post import _parse_json, _extract_s3_label, _get_raw_text
+from src.grace.post.submit import _parse_json, _extract_s3_label, _get_raw_text
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s", datefmt='%H:%M:%S')
 
@@ -114,12 +114,23 @@ def run_subtasks(model_type: str, sizes: list[str], prompt_settings: list[str], 
 # --------------------------------------- best runs (S3 generation)
 
 
-def best_runs_for_s3(other_predictions: Path, other_model: str, model_type: str, sizes: list[str], prompt_settings: list[str], dataset: str = "grace", balanced_split: bool = True, n_examples: int = 4, lang_code: str = "es"):
+def best_runs_for_s3(other_predictions: Path, other_model: str = "", model_type: str = "OpenAI", sizes: list[str] = ["gpt-4o-mini"], prompt_settings: list[str] = ["few_shot"], dataset: str = "grace", balanced_split: bool = True, n_examples: int = 4, lang_code: str = "es"):
     """Takes an existing submission file [off of the best-runs list], pairs its predicted Premises and Claims, and feeds them to another model to gather S3 predictions.
     """
     if not other_predictions.exists():
         logging.error(f"\t> (!) Submission file not found: {other_predictions}")
         return
+
+    # ** source model
+    dataset = None
+    if not other_model:
+        filename = other_predictions.stem # Removes .json
+        if "-" in filename:
+            name = filename.split("-", 1)
+            dataset = name[0]
+            other_model = name[-1]
+        else:
+            other_model = filename
 
     with open(other_predictions, 'r', encoding='utf-8') as f:
         other_cases = json.load(f)
@@ -145,8 +156,6 @@ def best_runs_for_s3(other_predictions: Path, other_model: str, model_type: str,
             candidate_relations = []
             case_to_candidates = {str(c["id"]): [] for c in cases}
             
-            #logging.info(f"\t> Extracting Premise-Claim pairs from {other_model}'s S2 predictions...")
-            # bc my subtask3 prompt requires one pair per prompt
             for c_case in cases:
                 case_id = str(c_case["id"])
                 raw_text = _get_raw_text(c_case)
@@ -189,10 +198,17 @@ def best_runs_for_s3(other_predictions: Path, other_model: str, model_type: str,
                     c_case["predictions"] = {"sentence_relevancy": [], "entities": [], "relations": []}
                     
                 # > enrich with model of origin metadata
-                c_case["predictions"]["ORIGIN"] = {
-                    "S1_S2": other_model,
-                    "S3": f"{model_prefix}-{size}"
-                }
+                if dataset:
+                    c_case["predictions"]["ORIGIN"] = {
+                        "S1_S2": other_model,
+                        "S3": f"{model_prefix}-{size}",
+                        "dataset": f"{dataset.upper()}"
+                    }
+                else:
+                    c_case["predictions"]["ORIGIN"] = {
+                        "S1_S2": other_model,
+                        "S3": f"{model_prefix}-{size}"
+                    }
 
                 new_relations = []
                 for cand in case_to_candidates.get(case_id, []):
@@ -211,22 +227,21 @@ def best_runs_for_s3(other_predictions: Path, other_model: str, model_type: str,
 
                 c_case["predictions"]["relations"] = new_relations
 
-            out_dir = other_predictions.parent / "best_runs"
+            out_dir = other_predictions.parent / "ensemble"
             out_dir.mkdir(parents=True, exist_ok=True)
             
-            out_filename = f"ensemble_{other_model}_{model_prefix}-{size}_{setting}_{dataset}.json"
+            out_filename = f"bestrun_{other_model}_{model_prefix}-{size}_{setting}_{dataset}.json"
             out_path = out_dir / out_filename
 
             with open(out_path, 'w', encoding='utf-8') as f:
                 json.dump(cases, f, ensure_ascii=False, indent=2)
 
-            logging.info(f"\t>>> Successfully saved [S3 ensemble] to: {out_path.name}")
+            logging.info(f"\t>>> Successfully saved [S3 best run ensemble] to: {out_path.name}")
 
         logging.info(f"\t> Clearing {model_prefix}-{size}...")
         del model
         torch.cuda.empty_cache()
         gc.collect()
-
 
 # --------------------------------------- specific evaluation (not GRACE TASK)
 
