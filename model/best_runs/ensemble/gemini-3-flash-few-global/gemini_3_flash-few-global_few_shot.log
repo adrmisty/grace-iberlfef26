@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/mnt/data/arodriguezf_data/miniconda3/envs/grace-task/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/mnt/data/arodriguezf_data/miniconda3/envs/grace-task/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 746, in <module>
+    main()
+  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 723, in main
+    results = evaluate(args.predictions, args.gold, args.iou)
+  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 690, in evaluate
+    cases = _enrich_cases(_prepare_cases(predictions_path, gold_path))
+  File "/mnt/data/arodriguezf_data/grace/grace-iberlfef26/src/grace/eval/score.py", line 558, in _prepare_cases
+    raise ValueError(
+ValueError: Case 'PSIQUIATRÍA_XnEVeV' is in the gold file but missing from the predictions file.
