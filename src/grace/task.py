@@ -196,7 +196,17 @@ def best_runs_for_s3(other_predictions: Path, other_model: str = "", model_type:
                 case_id = str(c_case["id"])
                 if "predictions" not in c_case:
                     c_case["predictions"] = {"sentence_relevancy": [], "entities": [], "relations": []}
-                    
+                    if not c_case["predictions"].get("sentence_relevancy"):
+                        gold_s1 = c_case.get("annotations", {}).get("sentence_relevancy", [])
+                        
+                        if gold_s1: # gold annotations
+                            c_case["predictions"]["sentence_relevancy"] = copy.deepcopy(gold_s1)
+                        else: # context sentence number with not-relevant 
+                            num_sentences = len(c_case.get("metadata", {}).get("context_sentences", []))
+                            if num_sentences == 0: 
+                                num_sentences = len(c_case.get("text", []))
+                            c_case["predictions"]["sentence_relevancy"] = ["not-relevant"] * num_sentences           
+                                     
                 # > enrich with model of origin metadata
                 if dataset:
                     c_case["predictions"]["ORIGIN"] = {
