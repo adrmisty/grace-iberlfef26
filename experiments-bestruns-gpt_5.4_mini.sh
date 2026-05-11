@@ -73,8 +73,8 @@ CUDA_VISIBLE_DEVICES=3 python -m src.grace.main \
   --dataset unified \
   --n_examples 4
 
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/medgemma-4b-ft/bestrun_medgemma_4b-ft-s2_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> medgemma_4b-ft-s2_few_shot.log
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/medgemma-4b-ft/bestrun_medgemma_4b-ft-s2_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> medgemma_4b-ft-s2_zero_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/medgemma-4b-ft/bestrun_medgemma_4b-ft-s2_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> medgemma_4b-ft-s2_few_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/medgemma-4b-ft/bestrun_medgemma_4b-ft-s2_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> medgemma_4b-ft-s2_zero_shot.log
 
 # ----------------------------------------------- ensembles
 
@@ -88,8 +88,8 @@ CUDA_VISIBLE_DEVICES=3 python -m src.grace.main \
   --dataset unified \
   --n_examples 4
 
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/ens_top5_nocommercial_weighted_iou7/bestrun_ens_top5_nocommercial_weighted_iou7_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_nocommercial_weighted_iou7_few_shot.log
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/ens_top5_nocommercial_weighted_iou7/bestrun_ens_top5_nocommercial_weighted_iou7_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_nocommercial_weighted_iou7_zero_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/ens_top5_nocommercial_weighted_iou7/bestrun_ens_s2_top5_nocommercial_weighted_iou7_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_nocommercial_weighted_iou7_few_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/ens_top5_nocommercial_weighted_iou7/bestrun_ens_s2_top5_nocommercial_weighted_iou7_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_nocommercial_weighted_iou7_zero_shot.log
 
 # 2) Ensemble top 5 weighted iou7
 CUDA_VISIBLE_DEVICES=3 python -m src.grace.main \
@@ -101,5 +101,5 @@ CUDA_VISIBLE_DEVICES=3 python -m src.grace.main \
   --dataset unified \
   --n_examples 4
 
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/ens_top5_weighted_iou7/bestrun_ens_top5_weighted_iou7_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_weighted_iou7_few_shot.log
-python -m src.grace.eval.score --predictions model/best_runs/ensemble/ens_top5_weighted_iou7/bestrun_ens_top5_weighted_iou7_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_weighted_iou7_zero_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/ens_top5_weighted_iou7/bestrun_ens_s2_top5_weighted_iou7_OpenAI-gpt-5.4-mini_few_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_weighted_iou7_few_shot.log
+python -m src.grace.eval.score2 --task 3 --predictions model/best_runs/ensemble/ens_top5_weighted_iou7/bestrun_ens_s2_top5_weighted_iou7_OpenAI-gpt-5.4-mini_zero_shot_grace_cm.json --gold data/grace/track_2_dev.json &> ens_top5_weighted_iou7_zero_shot.log
