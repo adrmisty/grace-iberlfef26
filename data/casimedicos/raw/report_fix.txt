@@ -10,7 +10,7 @@ INFO:       + After (injected):    – Dolor abdominal agudo, SIRS, fracaso rena
 INFO:     - Case 40_136:
 INFO:       - Before (skipped): You have already passed the Pneumology and Digesti... /// Lung
 ...
-INFO:       + After (injected):    Ya has pasado el bloque de Neumología y el de Dige... -> 4- Esófago.... [Attack]
+INFO:       + After (injected):    Ya has pasado el bloque de Neumología y el de Dige... -> 3- Pulmón.... [Attack]
 INFO:     - Case 524_54:
 INFO:       - Before (skipped): the NNT is 33.3
 ... /// 33,3
