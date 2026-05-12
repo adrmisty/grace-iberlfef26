@@ -29,7 +29,7 @@ def main():
     parser.add_argument("--settings", nargs="+", default=["zero_shot", "few_shot"], help="Prompt settings")
     parser.add_argument("--tasks", nargs="+", default=["S1", "S2", "S3", "global"], help="Task numbers")
 
-    parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos", "unified"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
+    parser.add_argument("--dataset", type=str, choices=["grace", "casimedicos", "unified", "blind_grace"], default="grace", help="Specify the dataset format for submission compilation (default: grace).")
     parser.add_argument("--n_examples", type=int, default=0, help="Number of examples (only used for few shot learning)")
 
     parser.add_argument("--other_predictions", type=str, default="", help="Path to the best-run submission file for the ensemble")

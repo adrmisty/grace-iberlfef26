@@ -34,6 +34,9 @@ def load_dataset(dataset: str = "grace") -> Tuple[List[Dict], List[Dict], List[D
     elif dataset == "unified":
         split = settings.UNIFIED_SPLITS
         is_IOB = False
+    elif dataset == "blind_grace":
+        split = settings.BLIND_GRACE_SPLITS
+        is_IOB = False
     else:
         split = settings.GRACE_SPLITS
         is_IOB = False
