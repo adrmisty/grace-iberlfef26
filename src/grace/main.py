@@ -76,9 +76,11 @@ def main():
         
         if args.dataset == "grace":
             original_json_path = settings.GRACE_SPLITS["validation"]
-        else:
+        elif args.dataset == "unified":
             original_json_path = settings.UNIFIED_SPLITS["validation"]
-
+        else:
+            original_json_path = settings.BLIND_GRACE_SPLITS["validation"]
+            
         for size in args.sizes:
             for setting in args.settings:
                 out_dir = settings.MODEL_DIR / args.dataset / model_prefix / size / "submission"

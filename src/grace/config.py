@@ -27,7 +27,7 @@ GRACE_SPLITS: Dict[str, Path] = {
 }
 BLIND_GRACE_SPLITS: Dict[str, Path] = {
     "train": GRACE_DATA_DIR / "track_2_blind_test.json",
-    "validation": GRACE_DATA_DIR / "track_2_dev.json",
+    "validation": GRACE_DATA_DIR / "track_2_blind_test.json",
 }
 UNIFIED_SPLITS: Dict[str, Path] = {
     # for few-shots only

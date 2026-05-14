@@ -1,0 +1,2538 @@
+[
+  {
+    "id": "ANATOMÍA PATOLÓGICA_8UkSoC",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA PATOLÓGICA_9SYMgS",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ANATOMÍA PATOLÓGICA_AmvfE2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA PATOLÓGICA_HDqKrm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA PATOLÓGICA_wuGQbC",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "ANATOMÍA_EbtJTY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA_Erx5nd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA_U6VABM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA_VLVRYt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANATOMÍA_t3G5Et",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANESTESIA_492SL4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANESTESIA_5wYYA8",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ANESTESIA_6Ln5ch",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANESTESIA_o2ab9A",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ANESTESIA_yaAT3s",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ANESTESIOLOGÍA_RdLUye",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ANESTESIOLOGÍA_y2fwMp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "BIOÉTICA_QS2bvX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "BIOÉTICA_QnSiK4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_2dXMme",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_5pKTgK",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_6Dh2GV",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_7fxXC9",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_8Xhdto",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_9gSubi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_AKzFS8",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_AR39ob",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_FNcrEq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_FanzsD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_GP7pH2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_KpWNm5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_MZtrhk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_NX8RBj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_PmMfHa",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_QRURcR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_QsS8Ap",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_Sh4AHH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_TWbyZ9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_VktTwx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_WRkS2t",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_WUfdYu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_XFpm65",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_XXnkL6",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_bWiH9G",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_cHGxsB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_dyDqXB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_e77utn",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ge2iX3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_htyjzy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_io8TiG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_jbj6xB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_jubh5C",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_nEt6gH",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_pbbwW3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_td9JTL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_ts3vLa",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "CARDIOLOGÍA_uZuMeT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "COMUNICACIÓN_GWFmzd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "COMUNICACIÓN_ajssdg",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_8s9fqk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_CN5Cju",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_LnjNfy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_RQd3YU",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_V5SyDH",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_fbq7Su",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DERMATOLOGÍA_sT6nKM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_2VCU3N",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_2VUg4i",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_4Mvzss",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_4YDc2G",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_4pQMyk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_7CDrtX",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_AjBGcn",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_CLZhBi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_FMJtNG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_FxsFw3",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_JSwmXk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_N42gc2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_R6PnRy",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "DIGESTIVO_RzHypq",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_SWTmta",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_SrVmPF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_U7de3W",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_UDUVGx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_ZruFmn",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_a3xKsJ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_aa4rp5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_bpXAeq",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_cDhvtY",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_e5J3e3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_eJ8iEL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_eKphmS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_eQrRKD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_f3WecZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_fDMusY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_fGSBVh",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "DIGESTIVO_fzxW42",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_gPvAP2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_he2n9g",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_hvw3pe",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_iNfqbx",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_iU3TLq",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_k6Tx85",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_kSwah5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_mPryQ4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_nAiCcM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_oUKfCs",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_ogqVka",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_ooTvC7",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_qtcxL2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_tCVBxH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_tfaH6G",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_txqeNZ",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "DIGESTIVO_ufgH4z",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_v6V3sg",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "DIGESTIVO_xUTGt4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_xaLx9k",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_yMLq5a",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "DIGESTIVO_yyHjBA",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_3K2UaZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_4YfA4W",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_4aeh2g",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_64LRgp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_78e2Gt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_7YH5Ks",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_8McjrB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_97rS5C",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_DuBRSb",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_FGWBno",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_HGCPke",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_HbVEq3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_HnfeGd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_Ho5CvA",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_KKDRJY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_MaQSTb",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_N24Rpg",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_NxX7Sk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_Pr53dG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_Qdi3XH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_SoS72T",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_UonQLQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_Wf8MKx",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_WzfndS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_XocDb3",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_cCahL3",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_cMo46b",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_dJDShk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_epVBA7",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_fmP8L9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_gZ4Jou",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_hpLv4w",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_mJ8vZq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_mj2pBX",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_nXZY7w",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_njqEeH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_pDqq6i",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_q7LAux",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_qUnAyE",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ENDOCRINOLOGÍA_rXqTXY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "FARMACOLOGÍA_Uz4CBe",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "FARMACOLOGÍA_ekgKA9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "FARMACOLOGÍA_i6aLsk",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "FARMACOLOGÍA_uDgN3w",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "FARMACOLOGÍA_z6JzQP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENETICA_XiZpBz",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_6CnDz7",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_Sp3wbM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_f2E9Wc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_jnrM8M",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_kRnQQQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_nvzNvp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GENÉTICA_sMvEuc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GERIATRIA_2T8fQd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GERIATRÍA_AjjAsb",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GERIATRÍA_Sg6xg2",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GERIATRÍA_Z8xjYG",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GERIATRÍA_bYRWzg",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GERIATRÍA_oJGkaT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GERIATRÍA_p3AE3W",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GESTIÓN CLÍNICA_4it6VW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_28zFXN",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_5YBx5U",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_6Ns7jj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_6PDKzt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_77V9fS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_7NFxUV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_7xLKvL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8UWRmn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_8heTtx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_BPSuom",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_BvQrSd",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_DXHjyU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_EiFyNZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_EsAzfh",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_Ezz5HP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_FkrMQp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_GVeXti",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_GXKkg4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_H7Drv3",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_HXuJeq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_KMv4rb",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_RGK4zj",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_WuUJ4C",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_XaTmnt",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_Xg7F8y",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_Z7ayHr",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ZYS8Tm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_beVTVp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_gpUGtx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_gyMvQk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_hsHGwV",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_jPHL4Q",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_kSRtUA",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_mMpCGX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_mfzmEk",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ndK5F2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_rAS2VH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_rWnqnE",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_sDLPf3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_uoehVF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_ynXsEe",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "GINECOLOGÍA_zDDkHQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_2jNdD6",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_2nfhA3",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_3YdrVv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_3uEtue",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_6KdFpc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_7Mbf4C",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_AXmKGc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_Aokzo4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_Dd9ype",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_FLiVTM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_JAHryK",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_Js6G5A",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_Na7NvH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_RdFhtj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_TueKfi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_WtxHJy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_YcGQhH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_YgYbou",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_azUMki",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_cLGa3X",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_f3ej8S",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_hXaMXj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_ixuvmw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_jvn8mS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_kGwS7c",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_m4joSF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_mBrp3u",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_nTaR2b",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_psX6aJ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_qWRqfi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_rGXpGo",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_tQaVpP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_tjRtiy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_wumkCn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_xBJcNS",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_xexj7Y",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "HEMATOLOGÍA_yQuWWq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_2GPpzc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_2aqCWc",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_2miiJv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_3Ad5bm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_4o6rKM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_8GHo3Q",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_8ksTHK",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_ANNuPT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_AbANCh",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_BfGgaq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_CrSEy3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_Dmf9PC",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_EmAiPt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_JWGJjR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_JtnxFW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_MunwVf",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "INFECCIOSAS_NRdMJj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_Ncar3V",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_PUja6W",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_Qqd9uY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_RTefJM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_RjLEnU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_VJqq4Z",
+    "prediction": "{\"sentence_relevancy\":[ \"not-relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "INFECCIOSAS_WBvj4A",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "INFECCIOSAS_XbTFYo",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_XzJBrf",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_bDUXXx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_eF7syQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_fuCoHg",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_gCxjRD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_gVDWKc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_kDC2Cj",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "INFECCIOSAS_kRd2xp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_nPzHJX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_nkropD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_oMvnpj",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "INFECCIOSAS_pP5Qy3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_pV7Mg7",
+    "prediction": "{\"sentence_relevancy\":[ \"not-relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "INFECCIOSAS_sfsQVj",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_thgDnZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INFECCIOSAS_ttKFWx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INMUNOLOGÍA_ffL3Rv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INMUNOLOGÍA_mLJgyn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INMUNOLOGÍA_oQQfj2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INMUNOLOGÍA_pyuLZ6",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "INMUNOLOGÍA_ujdFjQ",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MAXILOFACIAL_3Yzu4E",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "MAXILOFACIAL_MxzQwj",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "MAXILOFACIAL_hKRPUk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "MAXILOFACIAL_yMNcLe",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "MEDICINA LEGAL_FMN38M",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "MEDICINA LEGAL_mhPqR3",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MEDICINA LEGAL_vQFXoN",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MEDICINA LEGAL_ziPLPX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "MEDICINA PREVENTIVA_PeApPk",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "MEDICINA PREVENTIVA_THAFnv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "MEDICINA PREVENTIVA_i5RFDf",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MEDICINA PREVENTIVA_oj7sTV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MICROBIOLOGÍA_hSdtd6",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MICROBIOLOGÍA_qhVKgi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "MÁXILO_PkDRui",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_2dFjkT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_2rF5Jv",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "NEFROLOGÍA_53KeWB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_6JUxyS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_6SPhe3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_8eT7xR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_A5M6Da",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_AjWrYd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_AoURQY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_BFJiy7",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_CBGuaw",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_EEWep8",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEFROLOGÍA_EvVBaF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_FELdBP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_GHm9K3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_JbzrTS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_NnypQx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_NrT24f",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEFROLOGÍA_QEx6xx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_QnCHNG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_SRuSv9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_UKLKha",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_VvMsdd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_Wdn7Au",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_Wz6oBP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_XAvCbB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_YNZCHM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_aVwWdD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_fcxV5T",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_fkzQqE",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_g7rqd2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_gpYLB4",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_n5G88h",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_nZayYM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_pHCh7a",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "NEFROLOGÍA_ppuiFt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_swcPw3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_tWHtuV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_ua8pnk",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_v3NGGN",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_v95MNG",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_vhs6up",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEFROLOGÍA_yFzHdx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_ydP9Ex",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEFROLOGÍA_zGWZsJ",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEFROLOGÍA_zSyDm5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGIA_C6GYU4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGIA_JTZ3JY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGIA_N8xtnm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGIA_hQxo4o",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGIA_zXnkBM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_4DUaSG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_5hd3tF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_8s4kiL",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_9LcyEP",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_AfauXT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_AiBU7W",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_BUwptY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_DKuzWV",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_FYU45e",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_FpQ9Si",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_Fr5fnx",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_GuoyGx",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\", \"not-relevant\", \"not-relevant\", \"relevant\", \"relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_JCSz9C",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_JvexTR",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_KYNMsT",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_LbRqjZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_NRJoBm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_NzqzeD",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_PHuryM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_SbAjF6",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_WwqGDn",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_Xtsjwv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_aXB4xD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_bBaHne",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_dKdCJ4",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_dLASxY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_dWUFvD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_jHBwSE",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_jRhtFW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_jZLPx2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_jj2Q2a",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_k9sF9P",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_oPTDZ5",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_oSMugn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_oZ9E9L",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_omZBys",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"not-relevant\", \"not-relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_sVYDhL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_szne5c",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUMOLOGÍA_zG4EMj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_2nM4QH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_35huEC",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_3x25KW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_6UU4WX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_8dxjT9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_98eVEG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_99AfQo",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_ArviJa",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_BmYqUs",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Cip6uc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Gr5DQn",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_KZysaj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Kcou35",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_LBpgvs",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_MTVhrM",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_NKc23F",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Q2MJgB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Z4XMuh",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_Zz9NHj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_bwgdHc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_fiN4an",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_frVy9A",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_h89GrV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_i2AKYr",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_mnkjWi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_qQskMm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_r2SunL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_rLXHNs",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_sdiEd7",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_ttetsv",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "NEUROLOGÍA_ubWtWQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "NEUROLOGÍA_wbTQRU",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "NEUROLOGÍA_zXxvZ3",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\" ]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_3VqQur",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_RL2yzq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_YNduDj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_YgyfLz",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_keyyYx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_roWmeD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_s3L5Z8",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OFTALMOLOGÍA_sZiocv",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_8Rqww4",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "ONCOLOGÍA_BNsKFo",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_CHNv9T",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_Fjs8Md",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "ONCOLOGÍA_UipWPY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_aHMwcu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_b5MDb9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_h4Xcne",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_oS6gKR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_vXYtfx",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "ONCOLOGÍA_wTYMMJ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_4kMMG3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_GH7hGn",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_LfQjnR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_T4xcVh",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_VUBgTL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_aCoEn5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_aKHS4b",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_uuQLhp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_wKGjWi",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "OTORRINOLARINGOLOGÍA_zZ4UuL",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PALIATIVOS_ATkTaH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PALIATIVOS_aSDb7U",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PALIATIVOS_tFSRcG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PALIATIVOS_veohBm",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PALIATIVOS_ygjjRF",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PATOLÓGICA_BPjJNf",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PATOLÓGICA_VmM2iZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PATOLÓGICA_tRujb3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_5PjSr5",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PEDIATRÍA_6Xeg99",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_88W8Kp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_AjoZyw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_AysEzX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_Baw4bK",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_EGWAh3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_FYCyKS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_GYxcsz",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_JgCFD3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_KKNJTf",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PEDIATRÍA_NWgNva",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_Peka7f",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_QJYkXA",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_Qqbabj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_YwsDvh",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_aFgTAq",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_aURDes",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_ai7jnW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_bDnt9c",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_c5MudV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_cuVo9L",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_czjLUd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_evzgWc",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_exLPYd",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_fNYC3Q",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_hHG6xD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_itoq4a",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_jH8FEX",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_mrXKYP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_nvW6QA",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_oax3ZG",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_pfapFQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_sdtd22",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_tnKL5e",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_uRvZoD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_w6ua2M",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_wTPNcs",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_wdHVZp",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PEDIATRÍA_y3ZWHB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PLÁSTICA_8eZoUH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PLÁSTICA_KoH5sT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PLÁSTICA_gpy4ck",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_2uAZtU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_AWoFib",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_CqFA88",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_JJTxrh",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_JZECm2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_LiDaCE",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_LqnLz3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_LuPyoR",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_LvnFK6",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_SyPG78",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_TfXEXy",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_WfyMNu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_Z9Ykt8",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_ZWzcwW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_agwrbW",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_bs2ait",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_chtnpR",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_gC8u3u",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_gLLPPP",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_iucBLZ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_ksXNhS",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_nmeC3P",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_uNMknq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_ynCMZ5",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "PSIQUIATRÍA_zFjjmV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_26KYxY",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_36nhz5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_4R77sn",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_5M4dLQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_75K8df",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_7PTnbG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_AdgT8q",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_Cg9NZ5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_G4zQkq",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_GeHuws",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_JCGvBB",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_N7tJgV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_NaTBFh",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_QktN56",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_Smt4at",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_TYmi4z",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_VFQ94D",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_WAcLtH",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"not-relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_Xnb36x",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_ZkPXys",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_ajheBD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_dvBFhb",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_fgswpS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_gPLbRD",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_iGc2Hv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_nPdCFW",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_nfu2D9",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_pJPWFb",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_ppZYFD",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_uksWMZ",
+    "prediction": "{\"sentence_relevancy\":[ \"relevant\", \"not-relevant\", \"relevant\", \"relevant\", \"relevant\", \"not-relevant\" ]}"
+  },
+  {
+    "id": "REUMATOLOGÍA_xMg2iB",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\"\n]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_4kESxG",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_76CmQt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_7rF73G",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_9Nnw98",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_AoTTvt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_BNi5vj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_F8UFC3",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_HLSPZR",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_LN2fEH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_LwZ5aC",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_P9kH3F",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_PvdnTS",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_QgVnAS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_TLuFod",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_VtCQEU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_XQ2zZu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_Z4xZQY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_ZSTea6",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_a8ZHU7",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_brtyHb",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_cjpFRh",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_cruzcj",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_jhEF7s",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_pQhKzF",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_pqyWDy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_qhcwud",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_s6nf8n",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_smdMgJ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_uATdZU",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_uwbJFQ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_vo62US",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_wcJk4F",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_xzcmSY",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_yQA6Y5",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "TRAUMATOLOGÍA_ziFFTy",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_4dspbv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_4krqoV",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_84H5Br",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_CmDJoi",
+    "prediction": "{\"sentence_relevancy\":[\n  \"not-relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "URGENCIAS_CnmFnw",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_NTy2ew",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_TmGoTS",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_W6xyTx",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_aHdNxY",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "URGENCIAS_sD9r58",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_ukgThv",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_urjyFt",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_uwAtdH",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "URGENCIAS_xiTozu",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "VASCULAR_DxJowo",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "VASCULAR_SgWDvC",
+    "prediction": "{\"sentence_relevancy\":[\"not-relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "VASCULAR_gcimXp",
+    "prediction": "{\"sentence_relevancy\":[\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"relevant\",\n  \"not-relevant\"\n]}"
+  },
+  {
+    "id": "VASCULAR_qvJvfT",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\"]}"
+  },
+  {
+    "id": "VASCULAR_tvmdA2",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  },
+  {
+    "id": "VASCULAR_uZhReJ",
+    "prediction": "{\"sentence_relevancy\":[\"relevant\",\"relevant\",\"relevant\",\"not-relevant\"]}"
+  }
+]
